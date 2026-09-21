@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+  <style>
+      .cut-sc {
+    animation: cut-sc 1s cubic-bezier(1, -0.28, 0.01, 1.13) infinite alternate-reverse both;
+    transform-origin: center center;
+
+}
+@keyframes cut-sc {
+ 0% {
+    transform: rotate(0);
+   }
+  100% {
+    transform: rotate(-20deg);
+  }
+}
+   .cut-sc-2 {
+    animation: cut-sc-2 1s cubic-bezier(1, -0.28, 0.01, 1.13) infinite alternate-reverse both;
+    transform-origin: center center;
+
+}
+@keyframes cut-sc-2 {
+ 0% {
+    transform: rotate(0);
+   }
+  100% {
+    transform: rotate(20deg);
+  }
+}
+  </style>
+  <g class="cut-sc">
+  <path stroke="#0A0A30" stroke-linecap="round" stroke-width="1.5" d="M10.025 10.025l7.9 7.9"/>
+  <circle cx="8.05" cy="8.05" r="2.043" stroke="#265BFF" stroke-width="1.5" transform="rotate(45 8.05 8.05)"/>
+  </g>
+  <g class="cut-sc-2">
+    <path stroke="#0A0A30" stroke-linecap="round" stroke-width="1.5" d="M10.025 13.975l7.9-7.9"/>
+    <circle r="2.043" stroke="#265BFF" stroke-width="1.5" transform="scale(1 -1) rotate(45 23.279 1.742)"/>
+  </g>
+<style>*{animation:none!important;transition:none!important;stroke-dashoffset:0!important}</style></svg>

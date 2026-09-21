@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+ <style>
+  .sliders {
+	animation: sliders 1.5s cubic-bezier(0.860, 0.000, 0.070, 1.000) infinite alternate both;
+}
+@keyframes sliders {
+  0% {
+    transform: translateX(0px); 
+  }
+  100% {
+    transform: translateX(10px); 
+  }
+}
+  .sliders-2 {
+	animation: sliders-2 1.5s cubic-bezier(0.860, 0.000, 0.070, 1.000) infinite alternate both;
+}
+@keyframes sliders-2 {
+  0% {
+    transform: translateX(0px); 
+  }
+  100% {
+    transform: translateX(-10px); 
+  }
+}
+</style>
+  <path stroke="#000" stroke-linecap="round" stroke-width="1.5" d="M6 8.746h12M6 15.317h12"/>
+  <circle class="sliders" cx="7.5" cy="8.746" r="1.5" fill="#265BFF" stroke="#265BFF" stroke-width="1.5"/>
+  <circle class="sliders-2" cx="16.5" cy="15.254" r="1.5" fill="#265BFF" stroke="#265BFF" stroke-width="1.5"/>
+<style>*{animation:none!important;transition:none!important;stroke-dashoffset:0!important}</style></svg>

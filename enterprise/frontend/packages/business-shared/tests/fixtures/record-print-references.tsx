@@ -1,0 +1,14 @@
+import React from "react";
+import {createRoot} from "react-dom/client";
+import "../../src/styles.css";
+import {RecordPrint} from "../../src/lowcode/RecordPrint";
+import type {LowcodeField,TableSchema} from "../../src/lowcode/field-model";
+import type {Row} from "../../src/lowcode/model";
+const fallback="10000000-0000-4000-8000-000000000001",alternate="10000000-0000-4000-8000-000000000002",rootId="10000000-0000-4000-8000-000000000003",childA="10000000-0000-4000-8000-000000000004",childB="10000000-0000-4000-8000-000000000005";
+const calls:Record<string,unknown>[]=[],originalFetch=window.fetch;(window as unknown as {printReferenceFixture:unknown}).printReferenceFixture={calls};
+window.fetch=async(input,init)=>{const path=new URL(String(input),location.origin).pathname;if(path==="/api/v1/lc/relation-records/search"){const body=JSON.parse(String(init?.body));calls.push(body);return new Response(JSON.stringify({items:(body.ids as string[]).map(id=>({id,label:id===rootId?"根级已授权客户":id===childA?"第一行已授权客户":"第二行已授权客户"})),offset:0,hasMore:false}),{headers:{"Content-Type":"application/json"}});}return originalFetch(input,init);};
+const relation:LowcodeField={id:"customer",label:"关联客户",type:"relation",relationConfig:{tableId:fallback,targets:[{id:"alternate",name:"另一来源",when:{fieldId:"source",operator:"EQ",value:"B"},tableId:alternate}]}};
+const schema:TableSchema={name:"授权记录打印",description:"",fields:[{id:"source",label:"不打印的来源字段",type:"text"},relation,{id:"conditional",label:"条件不满足的内容",type:"text",visibleWhen:{fieldId:"source",operator:"EQ",value:"A"}},{id:"lines",label:"明细行",type:"subtable",subtableConfig:{fields:[{id:"source",label:"不打印的行来源",type:"text",hidden:true},relation]}}],printConfig:{fieldIds:["customer","lines"],columns:1,orientation:"portrait",showMetadata:false},printTemplates:[{id:"customerOnly",name:"仅关联客户",config:{fieldIds:["customer","conditional"],columns:2,orientation:"landscape",showMetadata:true}},{id:"withLines",name:"关联与明细",config:{fieldIds:["customer","lines"],columns:1,orientation:"portrait",showMetadata:false}}],defaultPrintTemplateId:"customerOnly"};
+Object.assign((window as unknown as {printReferenceFixture:object}).printReferenceFixture,{schema,initialSchema:JSON.stringify(schema)});
+const row:Row={id:rootId,tableId:fallback,revision:1,createdBy:rootId,creatorName:"验收成员",createdAt:"2026-09-12T00:00:00Z",updatedAt:"2026-09-12T00:00:00Z",canUpdate:false,canDelete:false,pendingChange:false,title:"授权记录打印",data:{source:"B",conditional:"不应显示",customer:[rootId],lines:[{id:childA,values:{source:"A",customer:[childA]}},{id:childB,values:{source:"B",customer:[childB]}}]}};
+const root=createRoot(document.getElementById("root")!);root.render(<RecordPrint schema={schema} row={row} directory={{people:[],units:[],positions:[]}} onClose={()=>{}}/>);if(import.meta.hot)import.meta.hot.dispose(()=>{root.unmount();window.fetch=originalFetch;});

@@ -1,0 +1,1542 @@
+[
+  {
+    "name": "Archive",
+    "slug": "archive",
+    "url": "/icons/archive.svg",
+    "source": "https://www.potlabicons.com/",
+    "sha256": "0cf2eaa5b86258569bf2e26e63db494601984964643c398ccd69e6a31b83a336",
+    "adaptation": "Preview asset: standalone namespace, duplicate root attributes removed for valid XML, unchanged geometry; static copy disables CSS/SMIL animation.",
+    "staticUrl": "/icons-static/archive.svg",
+    "staticSha256": "b032c5bb64d618abdd06ae4ec258186b5f6e08bc4fe6c99379cda5a7fced10a4"
+  },
+  {
+    "name": "Article",
+    "slug": "article",
+    "url": "/icons/article.svg",
+    "source": "https://www.potlabicons.com/",
+    "sha256": "4253bad5a73086cd9bd22421c6d9b546ee8c0a0cd428c2d518f46a2bf07c696e",
+    "adaptation": "Preview asset: standalone namespace, duplicate root attributes removed for valid XML, unchanged geometry; static copy disables CSS/SMIL animation.",
+    "staticUrl": "/icons-static/article.svg",
+    "staticSha256": "45ac783aa00abd42b162297758e1e6954d6f4a2cbff1fd7cefcbaa8948ee66f4"
+  },
+  {
+    "name": "Bookmark",
+    "slug": "bookmark",
+    "url": "/icons/bookmark.svg",
+    "source": "https://www.potlabicons.com/",
+    "sha256": "16958669fb2d84e6b987396b304b3efd49871391480072f5b4032a69a4258660",
+    "adaptation": "Preview asset: standalone namespace, duplicate root attributes removed for valid XML, unchanged geometry; static copy disables CSS/SMIL animation.",
+    "staticUrl": "/icons-static/bookmark.svg",
+    "staticSha256": "de05cba3dca6e3a9b3146f50b2e2b67609b088ece12bdc91ab663bf87abd7aa9"
+  },
+  {
+    "name": "Chart",
+    "slug": "chart",
+    "url": "/icons/chart.svg",
+    "source": "https://www.potlabicons.com/",
+    "sha256": "3878188cac08ac9a0f0def73f481aa3d6869400868ee0f4ec424bbc9adcf66e1",
+    "adaptation": "Preview asset: standalone namespace, duplicate root attributes removed for valid XML, unchanged geometry; static copy disables CSS/SMIL animation.",
+    "staticUrl": "/icons-static/chart.svg",
+    "staticSha256": "91408443e8818bc704fd77a150a157bf9d55832e2e595621c480fa65db24f967"
+  },
+  {
+    "name": "Check Circle",
+    "slug": "check-circle",
+    "url": "/icons/check-circle.svg",
+    "source": "https://www.potlabicons.com/",
+    "sha256": "c51a8d13208df092ba62fbad084e26a1eb4cf6e45e3ed562b076abfd11bae3f4",
+    "adaptation": "Preview asset: standalone namespace, duplicate root attributes removed for valid XML, unchanged geometry; static copy disables CSS/SMIL animation.",
+    "staticUrl": "/icons-static/check-circle.svg",
+    "staticSha256": "ab647ffc28f7745455ca7693526829449dc4e3aee40754927bb583daf4a59c3f"
+  },
+  {
+    "name": "Check Square",
+    "slug": "check-square",
+    "url": "/icons/check-square.svg",
+    "source": "https://www.potlabicons.com/",
+    "sha256": "b3314c1486a441f87032d88499b85df2fe8c68153567091cf068d729db0b9508",
+    "adaptation": "Preview asset: standalone namespace, duplicate root attributes removed for valid XML, unchanged geometry; static copy disables CSS/SMIL animation.",
+    "staticUrl": "/icons-static/check-square.svg",
+    "staticSha256": "99c7ab6ab972f00037b5ac958981ee3e287bc9f5c7a541313b281a21c04ba310"
+  },
+  {
+    "name": "Check",
+    "slug": "check",
+    "url": "/icons/check.svg",
+    "source": "https://www.potlabicons.com/",
+    "sha256": "ebe92898cbe1dcaffe1f0055ef4c4d36c57d4c3ddf56f9e6491c1a90a125e3cf",
+    "adaptation": "Preview asset: standalone namespace, duplicate root attributes removed for valid XML, unchanged geometry; static copy disables CSS/SMIL animation.",
+    "staticUrl": "/icons-static/check.svg",
+    "staticSha256": "7adf996f04895098dfa43ecbdc49393ee7feb5964447a8ac3ae4c5a6a0eaa16c"
+  },
+  {
+    "name": "Clock Circle",
+    "slug": "clock-circle",
+    "url": "/icons/clock-circle.svg",
+    "source": "https://www.potlabicons.com/",
+    "sha256": "64dcdcec27b7e8eea81308be9a08691c83775c318ac1050cf44a49f810446765",
+    "adaptation": "Preview asset: standalone namespace, duplicate root attributes removed for valid XML, unchanged geometry; static copy disables CSS/SMIL animation.",
+    "staticUrl": "/icons-static/clock-circle.svg",
+    "staticSha256": "e7dba96ccea89ce3cea66e8c60b59207e767746ae54637726bc05106a05f7787"
+  },
+  {
+    "name": "Clock Square",
+    "slug": "clock-square",
+    "url": "/icons/clock-square.svg",
+    "source": "https://www.potlabicons.com/",
+    "sha256": "c9bb0e8a08c77775fb94006eecb2c06cd0007af4d07b546c86a2edc18030513d",
+    "adaptation": "Preview asset: standalone namespace, duplicate root attributes removed for valid XML, unchanged geometry; static copy disables CSS/SMIL animation.",
+    "staticUrl": "/icons-static/clock-square.svg",
+    "staticSha256": "f85284632c51876dd11a34f29047d365c33d20583f089b40a112db77f4fc8b3b"
+  },
+  {
+    "name": "Close Square",
+    "slug": "close-square",
+    "url": "/icons/close-square.svg",
+    "source": "https://www.potlabicons.com/",
+    "sha256": "93b1c7b35b753e16baadd756cc44565696c311213f1101739bf779453211b03f",
+    "adaptation": "Preview asset: standalone namespace, duplicate root attributes removed for valid XML, unchanged geometry; static copy disables CSS/SMIL animation.",
+    "staticUrl": "/icons-static/close-square.svg",
+    "staticSha256": "57c273610df6ad448cbc86046bfd290194437d890307a55d8cfa297c90f23ace"
+  },
+  {
+    "name": "Cloud Done",
+    "slug": "cloud-done",
+    "url": "/icons/cloud-done.svg",
+    "source": "https://www.potlabicons.com/",
+    "sha256": "5c20a19b4de945bb7bceea3c22334b6d9a27cf11e9acd32c5ddfe9c47e4aa2e3",
+    "adaptation": "Preview asset: standalone namespace, duplicate root attributes removed for valid XML, unchanged geometry; static copy disables CSS/SMIL animation.",
+    "staticUrl": "/icons-static/cloud-done.svg",
+    "staticSha256": "bcc01bdb786ee3a9ef8d1cd8d18f89de118fd3aaacb26557f862ee163b53594f"
+  },
+  {
+    "name": "Cloud Download",
+    "slug": "cloud-download",
+    "url": "/icons/cloud-download.svg",
+    "source": "https://www.potlabicons.com/",
+    "sha256": "e63b26aff7f228f607c51785a41e925f2d5f13897e414d958cacefff81b50da2",
+    "adaptation": "Preview asset: standalone namespace, duplicate root attributes removed for valid XML, unchanged geometry; static copy disables CSS/SMIL animation.",
+    "staticUrl": "/icons-static/cloud-download.svg",
+    "staticSha256": "9e21e0c05efe9241cae9084c23181836bba36815750b2c9f21bf755ae719d59e"
+  },
+  {
+    "name": "Cloud Upload",
+    "slug": "cloud-upload",
+    "url": "/icons/cloud-upload.svg",
+    "source": "https://www.potlabicons.com/",
+    "sha256": "bde0bfd5427488a498201ae62fe9af9c73e4ff64d2aca961e22feb24a13afc14",
+    "adaptation": "Preview asset: standalone namespace, duplicate root attributes removed for valid XML, unchanged geometry; static copy disables CSS/SMIL animation.",
+    "staticUrl": "/icons-static/cloud-upload.svg",
+    "staticSha256": "538a2dec11c72524441c7f2ac0043770e453dbb1526e0955a9c7ef76385ff81f"
+  },
+  {
+    "name": "Compass",
+    "slug": "compass",
+    "url": "/icons/compass.svg",
+    "source": "https://www.potlabicons.com/",
+    "sha256": "ab29371734345a1b56c9cb1e0e946df9b4709944a02f878e0f74804bfaf59883",
+    "adaptation": "Preview asset: standalone namespace, duplicate root attributes removed for valid XML, unchanged geometry; static copy disables CSS/SMIL animation.",
+    "staticUrl": "/icons-static/compass.svg",
+    "staticSha256": "a2eeede6274a7bb00b73b717c0fbf4b7b1c2ba7a94dcce9b4c186fcf284ca3b5"
+  },
+  {
+    "name": "Cut",
+    "slug": "cut",
+    "url": "/icons/cut.svg",
+    "source": "https://www.potlabicons.com/",
+    "sha256": "44a8a7c9d75599ff76a873eaabf040c64422a082d7273accf0aeeb52b7d96cd1",
+    "adaptation": "Preview asset: standalone namespace, duplicate root attributes removed for valid XML, unchanged geometry; static copy disables CSS/SMIL animation.",
+    "staticUrl": "/icons-static/cut.svg",
+    "staticSha256": "cd9e56c7eae6f9de3bfa9e947e42e6737fb4a5a7cfdaaa8153b7b10a8248a4fd"
+  },
+  {
+    "name": "Discount",
+    "slug": "discount",
+    "url": "/icons/discount.svg",
+    "source": "https://www.potlabicons.com/",
+    "sha256": "3e7c1e193310d64e53367f3dd69ca6eeff1bc8812419384371455a0bd2c9a3a7",
+    "adaptation": "Preview asset: standalone namespace, duplicate root attributes removed for valid XML, unchanged geometry; static copy disables CSS/SMIL animation.",
+    "staticUrl": "/icons-static/discount.svg",
+    "staticSha256": "d98bb28415857e07957197851c5eb4ed4aaf5afda3ef07257cc0ded80394282b"
+  },
+  {
+    "name": "Download",
+    "slug": "download",
+    "url": "/icons/download.svg",
+    "source": "https://www.potlabicons.com/",
+    "sha256": "a28698de718afd394c54e9086e42816ba9b9c3556772498ec62bdeaedabc5712",
+    "adaptation": "Preview asset: standalone namespace, duplicate root attributes removed for valid XML, unchanged geometry; static copy disables CSS/SMIL animation.",
+    "staticUrl": "/icons-static/download.svg",
+    "staticSha256": "b3d01c556eedeece9f2799a37a669f026bec4b2b668d6996d8d757a4b16dedb2"
+  },
+  {
+    "name": "Download 2",
+    "slug": "download-2",
+    "url": "/icons/download-2.svg",
+    "source": "https://www.potlabicons.com/",
+    "sha256": "7503f344d98484de8473acd84db19eb2a80aefccc9ae4c145a54922a442739b9",
+    "adaptation": "Preview asset: standalone namespace, duplicate root attributes removed for valid XML, unchanged geometry; static copy disables CSS/SMIL animation.",
+    "staticUrl": "/icons-static/download-2.svg",
+    "staticSha256": "816ce1ac3dd96bb3c8c556f017a42d2f8ec0fac2be6aa5ed52883a7239fda564"
+  },
+  {
+    "name": "Download 3",
+    "slug": "download-3",
+    "url": "/icons/download-3.svg",
+    "source": "https://www.potlabicons.com/",
+    "sha256": "920fe37018cdbbc4a55c131f1dd25cd5ff67cf9476152d2ff7b7be5b65bc80c3",
+    "adaptation": "Preview asset: standalone namespace, duplicate root attributes removed for valid XML, unchanged geometry; static copy disables CSS/SMIL animation.",
+    "staticUrl": "/icons-static/download-3.svg",
+    "staticSha256": "16868d35c293151d8cd3d507324c4f511f6fdc53ed9637a9113b87d7e723d6d0"
+  },
+  {
+    "name": "Edit",
+    "slug": "edit",
+    "url": "/icons/edit.svg",
+    "source": "https://www.potlabicons.com/",
+    "sha256": "8101a1a64994cc028a18350e950e4b190817f141294b18eee0c81d5517ff6a80",
+    "adaptation": "Preview asset: standalone namespace, duplicate root attributes removed for valid XML, unchanged geometry; static copy disables CSS/SMIL animation.",
+    "staticUrl": "/icons-static/edit.svg",
+    "staticSha256": "ab6755767403f3acda0875b4a6ea89df855c281c4e1996bbe8d60976a8370ca5"
+  },
+  {
+    "name": "Eye",
+    "slug": "eye",
+    "url": "/icons/eye.svg",
+    "source": "https://www.potlabicons.com/",
+    "sha256": "0d916523aacae92ae97dd9cadc02ef8445b323d4c0bc93da833e48ca54044966",
+    "adaptation": "Preview asset: standalone namespace, duplicate root attributes removed for valid XML, unchanged geometry; static copy disables CSS/SMIL animation.",
+    "staticUrl": "/icons-static/eye.svg",
+    "staticSha256": "cd377fd921942ce18849d9e56add5f3d7182c3816176623141a97715fb4b5105"
+  },
+  {
+    "name": "Eye Off",
+    "slug": "eye-off",
+    "url": "/icons/eye-off.svg",
+    "source": "https://www.potlabicons.com/",
+    "sha256": "c3266342f0106b5ac8804f318e4ca655ae9ad7601d722769fafc448df36365c1",
+    "adaptation": "Preview asset: standalone namespace, duplicate root attributes removed for valid XML, unchanged geometry; static copy disables CSS/SMIL animation.",
+    "staticUrl": "/icons-static/eye-off.svg",
+    "staticSha256": "575a25cf9644d309dfbedc72f43abf9ed012e1ef301d9eefb5e12420cea722c5"
+  },
+  {
+    "name": "Flash",
+    "slug": "flash",
+    "url": "/icons/flash.svg",
+    "source": "https://www.potlabicons.com/",
+    "sha256": "4d5cc35b949c7120d563b86fd43f6e126a1b3011070fbcdcdd533ef77c0a66ea",
+    "adaptation": "Preview asset: standalone namespace, duplicate root attributes removed for valid XML, unchanged geometry; static copy disables CSS/SMIL animation.",
+    "staticUrl": "/icons-static/flash.svg",
+    "staticSha256": "338631b199dcfc5d51b18bad11aefc4764bad93893b4081ec9a9d9cc2a14aba7"
+  },
+  {
+    "name": "Heart",
+    "slug": "heart",
+    "url": "/icons/heart.svg",
+    "source": "https://www.potlabicons.com/",
+    "sha256": "43b5aaaa60f1a3765842c4e166bedc31ca98a94e43b682c20b06bd4d9ff92f8b",
+    "adaptation": "Preview asset: standalone namespace, duplicate root attributes removed for valid XML, unchanged geometry; static copy disables CSS/SMIL animation.",
+    "staticUrl": "/icons-static/heart.svg",
+    "staticSha256": "ffc49faf04674cdd5d5f62df1543d405f9e306cbc4cf0456711647789cb62e3a"
+  },
+  {
+    "name": "Image",
+    "slug": "image",
+    "url": "/icons/image.svg",
+    "source": "https://www.potlabicons.com/",
+    "sha256": "7c38da1479b5499ac27b81bb942ce8d79293321b80fec77f87dd22dd942fca4c",
+    "adaptation": "Preview asset: standalone namespace, duplicate root attributes removed for valid XML, unchanged geometry; static copy disables CSS/SMIL animation.",
+    "staticUrl": "/icons-static/image.svg",
+    "staticSha256": "03baecbf88c54fc878cf86c44ce557f1069120d82d713076bfea1fdb0b5c0ed6"
+  },
+  {
+    "name": "Input",
+    "slug": "input",
+    "url": "/icons/input.svg",
+    "source": "https://www.potlabicons.com/",
+    "sha256": "e7c2548d9a1f736a0fcf74e4ca41d434d3c346650ef62b4ce45661d1f3fe2dcf",
+    "adaptation": "Preview asset: standalone namespace, duplicate root attributes removed for valid XML, unchanged geometry; static copy disables CSS/SMIL animation.",
+    "staticUrl": "/icons-static/input.svg",
+    "staticSha256": "a914bddf7ad8a250f4f70456e50564134c857cef5fd3ecec18370e4dbae5ab2a"
+  },
+  {
+    "name": "Link",
+    "slug": "link",
+    "url": "/icons/link.svg",
+    "source": "https://www.potlabicons.com/",
+    "sha256": "73e0c8079944d0c606855e6fa2f837fdde3bd9a860ec8ab5087bf50674609dc3",
+    "adaptation": "Preview asset: standalone namespace, duplicate root attributes removed for valid XML, unchanged geometry; static copy disables CSS/SMIL animation.",
+    "staticUrl": "/icons-static/link.svg",
+    "staticSha256": "31715a4e59c5b03eab18d9add05901895cf450137459e470a8bec94d44b801db"
+  },
+  {
+    "name": "Link Off",
+    "slug": "link-off",
+    "url": "/icons/link-off.svg",
+    "source": "https://www.potlabicons.com/",
+    "sha256": "ea69e94713b4372662b58d6107c14b1a8cdb0fa35895cfde5c13b1611200587d",
+    "adaptation": "Preview asset: standalone namespace, duplicate root attributes removed for valid XML, unchanged geometry; static copy disables CSS/SMIL animation.",
+    "staticUrl": "/icons-static/link-off.svg",
+    "staticSha256": "9a6575da4b645b0d072bf6a2a6e63b1760e45416d5d9b753cb1f8415e09d5ab5"
+  },
+  {
+    "name": "Location",
+    "slug": "location",
+    "url": "/icons/location.svg",
+    "source": "https://www.potlabicons.com/",
+    "sha256": "48ad7ca067dec2dadf9c01028b64cfbb8997ebd2e52cd36a1d80d7dc535fabb2",
+    "adaptation": "Preview asset: standalone namespace, duplicate root attributes removed for valid XML, unchanged geometry; static copy disables CSS/SMIL animation.",
+    "staticUrl": "/icons-static/location.svg",
+    "staticSha256": "7fab386edd2cd795973a3c0dc526758396fbb196ca84a109142baf34b0bda945"
+  },
+  {
+    "name": "Lock",
+    "slug": "lock",
+    "url": "/icons/lock.svg",
+    "source": "https://www.potlabicons.com/",
+    "sha256": "b231b0059856f134d1ee926f850b40144f7de5c8744ec500a00ba57767f87101",
+    "adaptation": "Preview asset: standalone namespace, duplicate root attributes removed for valid XML, unchanged geometry; static copy disables CSS/SMIL animation.",
+    "staticUrl": "/icons-static/lock.svg",
+    "staticSha256": "3ff3114d1407123574dcc2b71f563b2b145f7eb2886c939d502ac28d367b2aa1"
+  },
+  {
+    "name": "Log In",
+    "slug": "log-in",
+    "url": "/icons/log-in.svg",
+    "source": "https://www.potlabicons.com/",
+    "sha256": "9743e589c422de4d6776958c8f3ebd646117d900853d0553edd9b77e3578942c",
+    "adaptation": "Preview asset: standalone namespace, duplicate root attributes removed for valid XML, unchanged geometry; static copy disables CSS/SMIL animation.",
+    "staticUrl": "/icons-static/log-in.svg",
+    "staticSha256": "bd4bed0534a09cbc1e1bd709577cd8a97df19c26a5df363e6cdced4fb7f3fff6"
+  },
+  {
+    "name": "Log Out",
+    "slug": "log-out",
+    "url": "/icons/log-out.svg",
+    "source": "https://www.potlabicons.com/",
+    "sha256": "129670e0f5dd6a5043b622e75c4c93c7bd8918cabd4c19b3f4800c1be38be282",
+    "adaptation": "Preview asset: standalone namespace, duplicate root attributes removed for valid XML, unchanged geometry; static copy disables CSS/SMIL animation.",
+    "staticUrl": "/icons-static/log-out.svg",
+    "staticSha256": "f75f5413fc5268e21d22cd25fdc5d278f1ab76ae55acd8cb1e54a2af66ab500f"
+  },
+  {
+    "name": "Mail",
+    "slug": "mail",
+    "url": "/icons/mail.svg",
+    "source": "https://www.potlabicons.com/",
+    "sha256": "552dfce1f88d796564d91b81bdf15723828b5e4fdbaa201038540f8d8561ff02",
+    "adaptation": "Preview asset: standalone namespace, duplicate root attributes removed for valid XML, unchanged geometry; static copy disables CSS/SMIL animation.",
+    "staticUrl": "/icons-static/mail.svg",
+    "staticSha256": "a0337bce8ada08df32f641455ad3783122b7f3ac5adfeb1e83523c6ab78c2d27"
+  },
+  {
+    "name": "Minus",
+    "slug": "minus",
+    "url": "/icons/minus.svg",
+    "source": "https://www.potlabicons.com/",
+    "sha256": "2f4d25196ee9905094cae151592f13bbe3757b0d265cefaebf63bb306550a12a",
+    "adaptation": "Preview asset: standalone namespace, duplicate root attributes removed for valid XML, unchanged geometry; static copy disables CSS/SMIL animation.",
+    "staticUrl": "/icons-static/minus.svg",
+    "staticSha256": "660a38976e49c51e1be9df71160b0d8692c7cc7526a6fab11eb0b011dce23ae1"
+  },
+  {
+    "name": "Plus",
+    "slug": "plus",
+    "url": "/icons/plus.svg",
+    "source": "https://www.potlabicons.com/",
+    "sha256": "bb0e56f2ceed46755cefcc0d63b34b5d692d52cf31a5942ab3c3e7544c05cd82",
+    "adaptation": "Preview asset: standalone namespace, duplicate root attributes removed for valid XML, unchanged geometry; static copy disables CSS/SMIL animation.",
+    "staticUrl": "/icons-static/plus.svg",
+    "staticSha256": "c72112c2bbb24eb73cacedcc9bef23fb656b4564b316ec27521e489c6fb3d3a6"
+  },
+  {
+    "name": "Refresh",
+    "slug": "refresh",
+    "url": "/icons/refresh.svg",
+    "source": "https://www.potlabicons.com/",
+    "sha256": "1c7bf5b0161e1e84195898932116860c417b7e97075f03e6c7f3dc02ac07dad3",
+    "adaptation": "Preview asset: standalone namespace, duplicate root attributes removed for valid XML, unchanged geometry; static copy disables CSS/SMIL animation.",
+    "staticUrl": "/icons-static/refresh.svg",
+    "staticSha256": "71bf9ef97d4b8170888af4e8262b374ef2a0f98275135270f3937952439117c6"
+  },
+  {
+    "name": "Refresh 2",
+    "slug": "refresh-2",
+    "url": "/icons/refresh-2.svg",
+    "source": "https://www.potlabicons.com/",
+    "sha256": "964f1fe726403b6555c4f10041f98d21c3c824f7cbfafc74a7bd92fed56cba98",
+    "adaptation": "Preview asset: standalone namespace, duplicate root attributes removed for valid XML, unchanged geometry; static copy disables CSS/SMIL animation.",
+    "staticUrl": "/icons-static/refresh-2.svg",
+    "staticSha256": "f996695ad5ca46c4a2626669e0755760a5ee595fb80aa44326245b2ae310fcc0"
+  },
+  {
+    "name": "Search",
+    "slug": "search",
+    "url": "/icons/search.svg",
+    "source": "https://www.potlabicons.com/",
+    "sha256": "83e604fc67fdcc5fb6b11bc2700fff3e7254e3358cb81637074326ca4d3e530a",
+    "adaptation": "Preview asset: standalone namespace, duplicate root attributes removed for valid XML, unchanged geometry; static copy disables CSS/SMIL animation.",
+    "staticUrl": "/icons-static/search.svg",
+    "staticSha256": "42b87c907b3c080a332928567ea56853d5a0b06c3ccdc2e67674ac1878e37b47"
+  },
+  {
+    "name": "Send",
+    "slug": "send",
+    "url": "/icons/send.svg",
+    "source": "https://www.potlabicons.com/",
+    "sha256": "9185d24351745206962e1399bbec3b07a3bc115dd70265d4b5f67cfb8f250f6d",
+    "adaptation": "Preview asset: standalone namespace, duplicate root attributes removed for valid XML, unchanged geometry; static copy disables CSS/SMIL animation.",
+    "staticUrl": "/icons-static/send.svg",
+    "staticSha256": "aba3afb72c02877f6cdc97c289705d50ff479bd5a47d6fb270e5710ba3f00f15"
+  },
+  {
+    "name": "Setting",
+    "slug": "setting",
+    "url": "/icons/setting.svg",
+    "source": "https://www.potlabicons.com/",
+    "sha256": "4166bce7e91d97cc0930aa81fc7618987291d727ad3d1df56ab9434adc8929d7",
+    "adaptation": "Preview asset: standalone namespace, duplicate root attributes removed for valid XML, unchanged geometry; static copy disables CSS/SMIL animation.",
+    "staticUrl": "/icons-static/setting.svg",
+    "staticSha256": "68130f3f095b474d8b0d3e98f4ba37af45dbb40867eec3984fd40fe2afd06d15"
+  },
+  {
+    "name": "Setting 2",
+    "slug": "setting-2",
+    "url": "/icons/setting-2.svg",
+    "source": "https://www.potlabicons.com/",
+    "sha256": "1f471392c31df39dee87f0f2cf2961999f983171d8bfc0b5e0e111a679390bcc",
+    "adaptation": "Preview asset: standalone namespace, duplicate root attributes removed for valid XML, unchanged geometry; static copy disables CSS/SMIL animation.",
+    "staticUrl": "/icons-static/setting-2.svg",
+    "staticSha256": "ba1d2ce56d9e83a9fe695b624d5ca57f5ba34e1fc8fa4a93f5a2e786ee5031a0"
+  },
+  {
+    "name": "Share",
+    "slug": "share",
+    "url": "/icons/share.svg",
+    "source": "https://www.potlabicons.com/",
+    "sha256": "07d2f1419e740d22c69caa85029c1aff11048b16b7e6223012084ef90f796046",
+    "adaptation": "Preview asset: standalone namespace, duplicate root attributes removed for valid XML, unchanged geometry; static copy disables CSS/SMIL animation.",
+    "staticUrl": "/icons-static/share.svg",
+    "staticSha256": "fe50445a872343c5dd1041433c092a1699d90e400b5e506d7fa5344e888a5abc"
+  },
+  {
+    "name": "Shield Check",
+    "slug": "shield-check",
+    "url": "/icons/shield-check.svg",
+    "source": "https://www.potlabicons.com/",
+    "sha256": "a3d0e639f980d068296667f6ca77f9368480a523df54f717c4148489b4f45ac5",
+    "adaptation": "Preview asset: standalone namespace, duplicate root attributes removed for valid XML, unchanged geometry; static copy disables CSS/SMIL animation.",
+    "staticUrl": "/icons-static/shield-check.svg",
+    "staticSha256": "ee498d6530e07b3eab86620c30e122a0840e8a2c9d8196b8e4c5841e461137a1"
+  },
+  {
+    "name": "Slider",
+    "slug": "slider",
+    "url": "/icons/slider.svg",
+    "source": "https://www.potlabicons.com/",
+    "sha256": "429fa4a790196ee9a7cce843a3b0ba5806c98b6f5949effd51571dd7184aa844",
+    "adaptation": "Preview asset: standalone namespace, duplicate root attributes removed for valid XML, unchanged geometry; static copy disables CSS/SMIL animation.",
+    "staticUrl": "/icons-static/slider.svg",
+    "staticSha256": "08d81e7bc6091d01df80656d68038182d8cbee6e630d84d740764a85d7e6f755"
+  },
+  {
+    "name": "Star",
+    "slug": "star",
+    "url": "/icons/star.svg",
+    "source": "https://www.potlabicons.com/",
+    "sha256": "0f1ac96fb84c1f2e290920ce6e99b776f52f86067653ca1e038fff8a6202a7d6",
+    "adaptation": "Preview asset: standalone namespace, duplicate root attributes removed for valid XML, unchanged geometry; static copy disables CSS/SMIL animation.",
+    "staticUrl": "/icons-static/star.svg",
+    "staticSha256": "b5cbd8a76d6ea0af5f17180f91ff52df4a0b1450aecaa64295a80df5be254586"
+  },
+  {
+    "name": "Stopwatch",
+    "slug": "stopwatch",
+    "url": "/icons/stopwatch.svg",
+    "source": "https://www.potlabicons.com/",
+    "sha256": "dc4405bcfe2cd0f6683cf5d599831c68d725db495f716b33a68bb33dca0ddf0f",
+    "adaptation": "Preview asset: standalone namespace, duplicate root attributes removed for valid XML, unchanged geometry; static copy disables CSS/SMIL animation.",
+    "staticUrl": "/icons-static/stopwatch.svg",
+    "staticSha256": "81ffa8f90cdd5240cf8d2ef8488294a663ac21ea0a23b916b3d616ff7aecd094"
+  },
+  {
+    "name": "Toggle",
+    "slug": "toggle",
+    "url": "/icons/toggle.svg",
+    "source": "https://www.potlabicons.com/",
+    "sha256": "057e429dafe27dd1ba8bfa62e06859e456e9babe9d2dbde4d9cb6be0487b348f",
+    "adaptation": "Preview asset: standalone namespace, duplicate root attributes removed for valid XML, unchanged geometry; static copy disables CSS/SMIL animation.",
+    "staticUrl": "/icons-static/toggle.svg",
+    "staticSha256": "c5f16a4ef976d1ba02b24dcc713c3729c77b3632702faa6962833b259c9f4e9d"
+  },
+  {
+    "name": "Trash",
+    "slug": "trash",
+    "url": "/icons/trash.svg",
+    "source": "https://www.potlabicons.com/",
+    "sha256": "e9d42782109a47abdb774b3546078fd3b2bb07d1ed23ca122d715030f80cb181",
+    "adaptation": "Preview asset: standalone namespace, duplicate root attributes removed for valid XML, unchanged geometry; static copy disables CSS/SMIL animation.",
+    "staticUrl": "/icons-static/trash.svg",
+    "staticSha256": "192b44ab7ad1f044d7b84f5a7721e15475c1cf27c0c621e77c2962ec38ae4f1a"
+  },
+  {
+    "name": "Trending",
+    "slug": "trending",
+    "url": "/icons/trending.svg",
+    "source": "https://www.potlabicons.com/",
+    "sha256": "cc51ef8a560e14a190ce2b5b471cd9bb52d15ced8deef66a9acd7db87b9a4aa1",
+    "adaptation": "Preview asset: standalone namespace, duplicate root attributes removed for valid XML, unchanged geometry; static copy disables CSS/SMIL animation.",
+    "staticUrl": "/icons-static/trending.svg",
+    "staticSha256": "c45611ac1e2ab3b545230201844d20e65b8e7e55ee47065c6e4244f6d72f1fe0"
+  },
+  {
+    "name": "User",
+    "slug": "user",
+    "url": "/icons/user.svg",
+    "source": "https://www.potlabicons.com/",
+    "sha256": "cfd74bdda034d8930a7083d7d54db2bb65f611d682834c1540cfe1a6510b9430",
+    "adaptation": "Preview asset: standalone namespace, duplicate root attributes removed for valid XML, unchanged geometry; static copy disables CSS/SMIL animation.",
+    "staticUrl": "/icons-static/user.svg",
+    "staticSha256": "d34ddd29b91b04bcfe759a60b5bee2d7f6ab24097e4f7b9a6675ca6a88754c5d"
+  },
+  {
+    "name": "User 2",
+    "slug": "user-2",
+    "url": "/icons/user-2.svg",
+    "source": "https://www.potlabicons.com/",
+    "sha256": "d362b3f9d36242180809a1972486c53250af717b610e3cc60be54fddebcee9a7",
+    "adaptation": "Preview asset: standalone namespace, duplicate root attributes removed for valid XML, unchanged geometry; static copy disables CSS/SMIL animation.",
+    "staticUrl": "/icons-static/user-2.svg",
+    "staticSha256": "2d6ba017c122d785729473b4e5deea964fb11e4af7c98cacf984541d817f6074"
+  },
+  {
+    "name": "Zoom In",
+    "slug": "zoom-in",
+    "url": "/icons/zoom-in.svg",
+    "source": "https://www.potlabicons.com/",
+    "sha256": "98f808ab67997d660ab8c680da489d789c29b687427ebacb146b875c475f851b",
+    "adaptation": "Preview asset: standalone namespace, duplicate root attributes removed for valid XML, unchanged geometry; static copy disables CSS/SMIL animation.",
+    "staticUrl": "/icons-static/zoom-in.svg",
+    "staticSha256": "c42fc411a7d9106ecc05b773a1c71faa68b417b9b9c67f5f9fc7a8637c706766"
+  },
+  {
+    "name": "Zoom Out",
+    "slug": "zoom-out",
+    "url": "/icons/zoom-out.svg",
+    "source": "https://www.potlabicons.com/",
+    "sha256": "36b743e9d39c57b3c2c402e0f38b924d3700b973e6068e80d160c54c31e1b658",
+    "adaptation": "Preview asset: standalone namespace, duplicate root attributes removed for valid XML, unchanged geometry; static copy disables CSS/SMIL animation.",
+    "staticUrl": "/icons-static/zoom-out.svg",
+    "staticSha256": "c93a2352e6494b12092eb1a02b5628920f2309d6993a6ed87f7ed309b160b7ed"
+  },
+  {
+    "name": "Chevron Down Circle",
+    "slug": "chevron-down-circle",
+    "url": "/icons/chevron-down-circle.svg",
+    "source": "https://www.potlabicons.com/",
+    "sha256": "5cabea0bf30090f3dd23b4f86df8f13af1a8ba5fe122f8f4d291fc83977a7482",
+    "adaptation": "Preview asset: standalone namespace, duplicate root attributes removed for valid XML, unchanged geometry; static copy disables CSS/SMIL animation.",
+    "staticUrl": "/icons-static/chevron-down-circle.svg",
+    "staticSha256": "1e325034dbfe59d7b123fbd8ecdcd90ddea5a9ec33a42270954c325b55f3e037"
+  },
+  {
+    "name": "Chevron Right Circle",
+    "slug": "chevron-right-circle",
+    "url": "/icons/chevron-right-circle.svg",
+    "source": "https://www.potlabicons.com/",
+    "sha256": "c697d7c44fd45dc27a2de94b82b4448783d9424c0b7b38bb17b7a3d992b9f5cd",
+    "adaptation": "Preview asset: standalone namespace, duplicate root attributes removed for valid XML, unchanged geometry; static copy disables CSS/SMIL animation.",
+    "staticUrl": "/icons-static/chevron-right-circle.svg",
+    "staticSha256": "72511480fa4f489a9680de5e46b49c8653db1189cb668b7f83a2443294097e42"
+  },
+  {
+    "name": "Chevron Up Circle",
+    "slug": "chevron-up-circle",
+    "url": "/icons/chevron-up-circle.svg",
+    "source": "https://www.potlabicons.com/",
+    "sha256": "5f537a41918e0d91a154e9a01b337fed90a49fa2683d1ab765ef948c7c226dda",
+    "adaptation": "Preview asset: standalone namespace, duplicate root attributes removed for valid XML, unchanged geometry; static copy disables CSS/SMIL animation.",
+    "staticUrl": "/icons-static/chevron-up-circle.svg",
+    "staticSha256": "51b198de0dfc5befeb8a14523f8e6172015e02105efac1b8de9ed7d6a822f190"
+  },
+  {
+    "name": "Chevron Left Circle",
+    "slug": "chevron-left-circle",
+    "url": "/icons/chevron-left-circle.svg",
+    "source": "https://www.potlabicons.com/",
+    "sha256": "ad7953461832b26716d4ad2c60dc655c5c52d45a6005c60d0071cf14f5cce1e5",
+    "adaptation": "Preview asset: standalone namespace, duplicate root attributes removed for valid XML, unchanged geometry; static copy disables CSS/SMIL animation.",
+    "staticUrl": "/icons-static/chevron-left-circle.svg",
+    "staticSha256": "8e29c875beb3e9cc1e73ca683f6ef3bf62f9a991f5304d5bf80e3657aa40dc35"
+  },
+  {
+    "name": "Chevron Down Square",
+    "slug": "chevron-down-square",
+    "url": "/icons/chevron-down-square.svg",
+    "source": "https://www.potlabicons.com/",
+    "sha256": "283a32ddbab1775fec75312a800fcfd1cc12a937da2c41241e12464a3a169368",
+    "adaptation": "Preview asset: standalone namespace, duplicate root attributes removed for valid XML, unchanged geometry; static copy disables CSS/SMIL animation.",
+    "staticUrl": "/icons-static/chevron-down-square.svg",
+    "staticSha256": "abc821880d781402056eef5f42b5cad7d7fdcf21fe6d69c8aa0a1f845e4fb7b6"
+  },
+  {
+    "name": "Chevron Right Square ",
+    "slug": "chevron-right-square-",
+    "url": "/icons/chevron-right-square-.svg",
+    "source": "https://www.potlabicons.com/",
+    "sha256": "c03c34df670e20ec9f00d11f12fd242bfb8b544bd433154aa621512477e9cec4",
+    "adaptation": "Preview asset: standalone namespace, duplicate root attributes removed for valid XML, unchanged geometry; static copy disables CSS/SMIL animation.",
+    "staticUrl": "/icons-static/chevron-right-square-.svg",
+    "staticSha256": "6e75d25c995718bfd2c37ea286a61a7980b9d183cc866113541f26f578213155"
+  },
+  {
+    "name": "Chevron Up Square",
+    "slug": "chevron-up-square",
+    "url": "/icons/chevron-up-square.svg",
+    "source": "https://www.potlabicons.com/",
+    "sha256": "aa773de622436168c5e93cdc7d44e0ef2c52d11a1d752d1bf774155387d88897",
+    "adaptation": "Preview asset: standalone namespace, duplicate root attributes removed for valid XML, unchanged geometry; static copy disables CSS/SMIL animation.",
+    "staticUrl": "/icons-static/chevron-up-square.svg",
+    "staticSha256": "500c26b38e8119edd1e59268100dbfd41f95db6e61ee613c0b4942e8a0aa1d7d"
+  },
+  {
+    "name": "Chevron Left Square",
+    "slug": "chevron-left-square",
+    "url": "/icons/chevron-left-square.svg",
+    "source": "https://www.potlabicons.com/",
+    "sha256": "72a5f82cf48f84af8334116c344d31240bb4380d5097f289cc05d9c4b865fdd4",
+    "adaptation": "Preview asset: standalone namespace, duplicate root attributes removed for valid XML, unchanged geometry; static copy disables CSS/SMIL animation.",
+    "staticUrl": "/icons-static/chevron-left-square.svg",
+    "staticSha256": "eeda5e30be6df0e9933e3c5199cc5fc79f2dc9957e2ca6f1d50769dda27b4999"
+  },
+  {
+    "name": "Chevron Down",
+    "slug": "chevron-down",
+    "url": "/icons/chevron-down.svg",
+    "source": "https://www.potlabicons.com/",
+    "sha256": "f73ba601c53d51b0b9a99792d2cd72e8a5860e7b75a3cd51f813119057635bc6",
+    "adaptation": "Preview asset: standalone namespace, duplicate root attributes removed for valid XML, unchanged geometry; static copy disables CSS/SMIL animation.",
+    "staticUrl": "/icons-static/chevron-down.svg",
+    "staticSha256": "750395ce996bd7f0573cfd4f25f691ae8c6476638136bd6d100c9c69d4be162f"
+  },
+  {
+    "name": "Chevron Right",
+    "slug": "chevron-right",
+    "url": "/icons/chevron-right.svg",
+    "source": "https://www.potlabicons.com/",
+    "sha256": "9f089b9c88e84a5172af0d97d2c607b7bacff804df7cb9612cd0f3f9e4d3a42f",
+    "adaptation": "Preview asset: standalone namespace, duplicate root attributes removed for valid XML, unchanged geometry; static copy disables CSS/SMIL animation.",
+    "staticUrl": "/icons-static/chevron-right.svg",
+    "staticSha256": "aab721a74ca8efd889ad0b3e7383684d321362731b85a80db94df06dc9aa4f5d"
+  },
+  {
+    "name": "Chevron Up",
+    "slug": "chevron-up",
+    "url": "/icons/chevron-up.svg",
+    "source": "https://www.potlabicons.com/",
+    "sha256": "e3127bdc2d7cc20d5551d1e5400f8cd804e5741873a867b37afd56e922adb563",
+    "adaptation": "Preview asset: standalone namespace, duplicate root attributes removed for valid XML, unchanged geometry; static copy disables CSS/SMIL animation.",
+    "staticUrl": "/icons-static/chevron-up.svg",
+    "staticSha256": "1ca5d570da6af8a63c60e7b35b145eb38d6685412cecbb7b39a71a8a664b4697"
+  },
+  {
+    "name": "Chevron Left",
+    "slug": "chevron-left",
+    "url": "/icons/chevron-left.svg",
+    "source": "https://www.potlabicons.com/",
+    "sha256": "96c0dec32b2a1e2716e83963d58afd78257e10d2e38598d342109af4cd5c9e57",
+    "adaptation": "Preview asset: standalone namespace, duplicate root attributes removed for valid XML, unchanged geometry; static copy disables CSS/SMIL animation.",
+    "staticUrl": "/icons-static/chevron-left.svg",
+    "staticSha256": "13b2f4b56dbbe2ed6ceacd1dfffa44981c960852f1786029fd24cc0763e4925e"
+  },
+  {
+    "name": "Arrow Down ",
+    "slug": "arrow-down-",
+    "url": "/icons/arrow-down-.svg",
+    "source": "https://www.potlabicons.com/",
+    "sha256": "fcfd2c1cb2d4516af239ed30b28a3ebf98adb2cd46b1b11f5d7e8d5b068edd72",
+    "adaptation": "Preview asset: standalone namespace, duplicate root attributes removed for valid XML, unchanged geometry; static copy disables CSS/SMIL animation.",
+    "staticUrl": "/icons-static/arrow-down-.svg",
+    "staticSha256": "62dd7eb1242e4696d464422b41f7f7d34cce0349b558ec46231205bc8645841a"
+  },
+  {
+    "name": "Arrow Right",
+    "slug": "arrow-right",
+    "url": "/icons/arrow-right.svg",
+    "source": "https://www.potlabicons.com/",
+    "sha256": "278d78626ed4b014681af729b9695ce1fdae6f29ad869302c53fe48cf0f65b1f",
+    "adaptation": "Preview asset: standalone namespace, duplicate root attributes removed for valid XML, unchanged geometry; static copy disables CSS/SMIL animation.",
+    "staticUrl": "/icons-static/arrow-right.svg",
+    "staticSha256": "c870cbd5847164144575d33033387453485c977917fb04f6a300f7cb9e40a558"
+  },
+  {
+    "name": "Arrow Up",
+    "slug": "arrow-up",
+    "url": "/icons/arrow-up.svg",
+    "source": "https://www.potlabicons.com/",
+    "sha256": "ac62d325f3838b3c2d6aa1f84bd79bd154be6d18c88ab4e0b2ac5082db011c73",
+    "adaptation": "Preview asset: standalone namespace, duplicate root attributes removed for valid XML, unchanged geometry; static copy disables CSS/SMIL animation.",
+    "staticUrl": "/icons-static/arrow-up.svg",
+    "staticSha256": "06fb5ab2bcbad1b87a0add1b2a249d26c374d7e9728c5364686de3cf3ed27300"
+  },
+  {
+    "name": "Arrow Left",
+    "slug": "arrow-left",
+    "url": "/icons/arrow-left.svg",
+    "source": "https://www.potlabicons.com/",
+    "sha256": "442eb258ecb722c489e29157292c6ab78ac89f0b16dd66e7a81edb7cc9fa52d0",
+    "adaptation": "Preview asset: standalone namespace, duplicate root attributes removed for valid XML, unchanged geometry; static copy disables CSS/SMIL animation.",
+    "staticUrl": "/icons-static/arrow-left.svg",
+    "staticSha256": "05d51066ecc51497f5796983f108f5e9ff4a4b42ab4ef8bff2de880e14514709"
+  },
+  {
+    "name": "Arrow Down 2",
+    "slug": "arrow-down-2",
+    "url": "/icons/arrow-down-2.svg",
+    "source": "https://www.potlabicons.com/",
+    "sha256": "0cdada05ca767a801026f5f93da2113a05a146c1af004a9cc9fa619f1dca1617",
+    "adaptation": "Preview asset: standalone namespace, duplicate root attributes removed for valid XML, unchanged geometry; static copy disables CSS/SMIL animation.",
+    "staticUrl": "/icons-static/arrow-down-2.svg",
+    "staticSha256": "81464136bd4adbdc0ebf4204ce8b7049a4bdd0c1924a74fcf88fc638caff9cf5"
+  },
+  {
+    "name": "Arrow Right 2",
+    "slug": "arrow-right-2",
+    "url": "/icons/arrow-right-2.svg",
+    "source": "https://www.potlabicons.com/",
+    "sha256": "ca8fd08c9d44bbdb32e205272faabca7cbd6eacbfbec6d883289de41b34ca518",
+    "adaptation": "Preview asset: standalone namespace, duplicate root attributes removed for valid XML, unchanged geometry; static copy disables CSS/SMIL animation.",
+    "staticUrl": "/icons-static/arrow-right-2.svg",
+    "staticSha256": "2c16614b1ddc047ee148af03153494eb34212fbabde518b1f061409c56644a53"
+  },
+  {
+    "name": "Arrow Up 2",
+    "slug": "arrow-up-2",
+    "url": "/icons/arrow-up-2.svg",
+    "source": "https://www.potlabicons.com/",
+    "sha256": "e99faff9b1a41c591a4cc0aaa5ff839c49aba2724c1345ebae5a50e155dbc0d6",
+    "adaptation": "Preview asset: standalone namespace, duplicate root attributes removed for valid XML, unchanged geometry; static copy disables CSS/SMIL animation.",
+    "staticUrl": "/icons-static/arrow-up-2.svg",
+    "staticSha256": "95c12169e325da9eeddd7e3384065d919f2bad23b9ee7d5d0582631b189b3a3b"
+  },
+  {
+    "name": "Arrow Left 2",
+    "slug": "arrow-left-2",
+    "url": "/icons/arrow-left-2.svg",
+    "source": "https://www.potlabicons.com/",
+    "sha256": "bf36475dd0974f8cb7c797b5bfe886875f164a77136d777d45dd943e1783c731",
+    "adaptation": "Preview asset: standalone namespace, duplicate root attributes removed for valid XML, unchanged geometry; static copy disables CSS/SMIL animation.",
+    "staticUrl": "/icons-static/arrow-left-2.svg",
+    "staticSha256": "ff84e34680ef1fdf9dabe9938dca5c03ed4cb38b7e70a7957c8599359b8a056b"
+  },
+  {
+    "name": "Happy",
+    "slug": "happy",
+    "url": "/icons/happy.svg",
+    "source": "https://www.potlabicons.com/",
+    "sha256": "14e86496d949fb65e520468b2ac0b7280eec6b27527290e2ed2f0a9c16b39bcf",
+    "adaptation": "Preview asset: standalone namespace, duplicate root attributes removed for valid XML, unchanged geometry; static copy disables CSS/SMIL animation.",
+    "staticUrl": "/icons-static/happy.svg",
+    "staticSha256": "715b1817844182769fce9aedc45e2d371f67e82eadea117c8fa6bfb3cf17e5c8"
+  },
+  {
+    "name": "Love",
+    "slug": "love",
+    "url": "/icons/love.svg",
+    "source": "https://www.potlabicons.com/",
+    "sha256": "29129c1f7a90e7fdc1bb04fbef49d64bc135690621699570eadc2e6b42906dd5",
+    "adaptation": "Preview asset: standalone namespace, duplicate root attributes removed for valid XML, unchanged geometry; static copy disables CSS/SMIL animation.",
+    "staticUrl": "/icons-static/love.svg",
+    "staticSha256": "35b095c733e2377c33106e804f7550d64fe96ad6c0de3e3313fdadf1a2615061"
+  },
+  {
+    "name": "Neutral",
+    "slug": "neutral",
+    "url": "/icons/neutral.svg",
+    "source": "https://www.potlabicons.com/",
+    "sha256": "1af985dad443c3bf644ebf24d3b1214befbebf06656693936dc35ee4582ff083",
+    "adaptation": "Preview asset: standalone namespace, duplicate root attributes removed for valid XML, unchanged geometry; static copy disables CSS/SMIL animation.",
+    "staticUrl": "/icons-static/neutral.svg",
+    "staticSha256": "7a429cd37ff7c81ad07ec0e8a97684338a018b73380cae50cf126922b43db390"
+  },
+  {
+    "name": "Sad",
+    "slug": "sad",
+    "url": "/icons/sad.svg",
+    "source": "https://www.potlabicons.com/",
+    "sha256": "afd8bc55aad0da4788b182dfc08e5c6cbcd828157d29d1d4d35031a1361d617d",
+    "adaptation": "Preview asset: standalone namespace, duplicate root attributes removed for valid XML, unchanged geometry; static copy disables CSS/SMIL animation.",
+    "staticUrl": "/icons-static/sad.svg",
+    "staticSha256": "e88061970093c67801d4d2a99b787ddee57bc2e43d763ab99573fef8712b512a"
+  },
+  {
+    "name": "Upside Down",
+    "slug": "upside-down",
+    "url": "/icons/upside-down.svg",
+    "source": "https://www.potlabicons.com/",
+    "sha256": "0fff51f29dd4d9ee256d9c7302a1be5e367b81aecfef51b11b55e6662f80670e",
+    "adaptation": "Preview asset: standalone namespace, duplicate root attributes removed for valid XML, unchanged geometry; static copy disables CSS/SMIL animation.",
+    "staticUrl": "/icons-static/upside-down.svg",
+    "staticSha256": "6023f23545910113e5590e5fa7e1108ae90f708ea92e3b3e39775e9e9e19d095"
+  },
+  {
+    "name": "Wow",
+    "slug": "wow",
+    "url": "/icons/wow.svg",
+    "source": "https://www.potlabicons.com/",
+    "sha256": "41151dc9d47df560f0f5d5246058df65117c5c0f9a187614de3408b77733e028",
+    "adaptation": "Preview asset: standalone namespace, duplicate root attributes removed for valid XML, unchanged geometry; static copy disables CSS/SMIL animation.",
+    "staticUrl": "/icons-static/wow.svg",
+    "staticSha256": "203432700cd595d913f0c2482293c4ac28fdc5b8796a8b1ad4af51f0b6e601ad"
+  },
+  {
+    "name": "Infinity ",
+    "slug": "infinity-",
+    "url": "/icons/infinity-.svg",
+    "source": "https://www.potlabicons.com/",
+    "sha256": "431b4952bcf180806758f9b8a28d88e3cb05eab46880a1d07e48dbd42bccf2e8",
+    "adaptation": "Preview asset: standalone namespace, duplicate root attributes removed for valid XML, unchanged geometry; static copy disables CSS/SMIL animation.",
+    "staticUrl": "/icons-static/infinity-.svg",
+    "staticSha256": "8e4a68c71d84090eaeb3aff58b2d0c60cade49d5345d6cd6a84c92f24a770233"
+  },
+  {
+    "name": "Loader 1",
+    "slug": "loader-1",
+    "url": "/icons/loader-1.svg",
+    "source": "https://www.potlabicons.com/",
+    "sha256": "55ec43f2a8d1edf60eea1b22732e4c7178c7fa3efea4aa6b8a1f8dec860a4dfc",
+    "adaptation": "Preview asset: standalone namespace, duplicate root attributes removed for valid XML, unchanged geometry; static copy disables CSS/SMIL animation.",
+    "staticUrl": "/icons-static/loader-1.svg",
+    "staticSha256": "4b4cae970dba85fa16c1eaabcabe2c3493ed97cabd51bb91892a4e262567c0bb"
+  },
+  {
+    "name": "Loader 2",
+    "slug": "loader-2",
+    "url": "/icons/loader-2.svg",
+    "source": "https://www.potlabicons.com/",
+    "sha256": "7ecedbd325adf5e32c3eef417618173cc2ad68e7bbaa77b585aa1b169fe732c6",
+    "adaptation": "Preview asset: standalone namespace, duplicate root attributes removed for valid XML, unchanged geometry; static copy disables CSS/SMIL animation.",
+    "staticUrl": "/icons-static/loader-2.svg",
+    "staticSha256": "a0debbe29980409e09000eb4293df3613096f71ddfb9a479ee684d7eb4cb53d9"
+  },
+  {
+    "name": "Loader 3",
+    "slug": "loader-3",
+    "url": "/icons/loader-3.svg",
+    "source": "https://www.potlabicons.com/",
+    "sha256": "ef7fecad64a38d771e435ae85966275d63cdaae1a8efe958bc49cc375cc4d19c",
+    "adaptation": "Preview asset: standalone namespace, duplicate root attributes removed for valid XML, unchanged geometry; static copy disables CSS/SMIL animation.",
+    "staticUrl": "/icons-static/loader-3.svg",
+    "staticSha256": "b01dc530191e6d05ec692b8ee5f858b70ef237d66e59a8243237df96524f4acf"
+  },
+  {
+    "name": "Loader 4",
+    "slug": "loader-4",
+    "url": "/icons/loader-4.svg",
+    "source": "https://www.potlabicons.com/",
+    "sha256": "bcd67c706e8b504952683a9f59ff60bc7f9d31278196939f252867266fff793e",
+    "adaptation": "Preview asset: standalone namespace, duplicate root attributes removed for valid XML, unchanged geometry; static copy disables CSS/SMIL animation.",
+    "staticUrl": "/icons-static/loader-4.svg",
+    "staticSha256": "22d4b5b1f9323edcb8516e2608d8747151f66b6b89c6ef6827d3acf6e5911313"
+  },
+  {
+    "name": "Loader 5",
+    "slug": "loader-5",
+    "url": "/icons/loader-5.svg",
+    "source": "https://www.potlabicons.com/",
+    "sha256": "3a55b75af0f1de3b8ee3c0b62e1e9271d482950e3fdda3088acd309792f764b7",
+    "adaptation": "Preview asset: standalone namespace, duplicate root attributes removed for valid XML, unchanged geometry; static copy disables CSS/SMIL animation.",
+    "staticUrl": "/icons-static/loader-5.svg",
+    "staticSha256": "789746fed5b2b23533cba196b139fe20967ee6e2f89cacb0450c755d99058337"
+  },
+  {
+    "name": "Loader 7",
+    "slug": "loader-7",
+    "url": "/icons/loader-7.svg",
+    "source": "https://www.potlabicons.com/",
+    "sha256": "fab58102f85ed527e4597d653d7a5136a7757229b8da9c3a922c7920fc7973ac",
+    "adaptation": "Preview asset: standalone namespace, duplicate root attributes removed for valid XML, unchanged geometry; static copy disables CSS/SMIL animation.",
+    "staticUrl": "/icons-static/loader-7.svg",
+    "staticSha256": "a72db8ff7ff9422423f42ec6b3cb08547fd3df6511faf6528310e3254a9adb83"
+  },
+  {
+    "name": "Loader 8",
+    "slug": "loader-8",
+    "url": "/icons/loader-8.svg",
+    "source": "https://www.potlabicons.com/",
+    "sha256": "5717fd96fc12d0e0228c07e2de677a924672089136d2a452b3602adbc33d8d1b",
+    "adaptation": "Preview asset: standalone namespace, duplicate root attributes removed for valid XML, unchanged geometry; static copy disables CSS/SMIL animation.",
+    "staticUrl": "/icons-static/loader-8.svg",
+    "staticSha256": "5097a4ee59cc281c0f3fdd34f60b1d8834e668bd4f70586e7746832467118083"
+  },
+  {
+    "name": "Loader 9",
+    "slug": "loader-9",
+    "url": "/icons/loader-9.svg",
+    "source": "https://www.potlabicons.com/",
+    "sha256": "f7358eefca8f58fe7d5b3c0ae5cd268eb5aa801034ca83ed2a050ee02b035c88",
+    "adaptation": "Preview asset: standalone namespace, duplicate root attributes removed for valid XML, unchanged geometry; static copy disables CSS/SMIL animation.",
+    "staticUrl": "/icons-static/loader-9.svg",
+    "staticSha256": "d927d4965c183e3c53aafb0d53df15cd7d8c9f7a27f547e517ece359881b5c06"
+  },
+  {
+    "name": "Loader 10",
+    "slug": "loader-10",
+    "url": "/icons/loader-10.svg",
+    "source": "https://www.potlabicons.com/",
+    "sha256": "dc2aee3f9aeca5593884f04a80f8239f8895f59f0cc7018fbf8b6e87daa59280",
+    "adaptation": "Preview asset: standalone namespace, duplicate root attributes removed for valid XML, unchanged geometry; static copy disables CSS/SMIL animation.",
+    "staticUrl": "/icons-static/loader-10.svg",
+    "staticSha256": "642e4b6b4d626d6fbf0a9f561ddc9a941e26fea71523a72b7685c80abad3b69e"
+  },
+  {
+    "name": "Loader 11",
+    "slug": "loader-11",
+    "url": "/icons/loader-11.svg",
+    "source": "https://www.potlabicons.com/",
+    "sha256": "8b6caefb250b10993354e383196f053022ac890c84e2269989ba0a87287f237d",
+    "adaptation": "Preview asset: standalone namespace, duplicate root attributes removed for valid XML, unchanged geometry; static copy disables CSS/SMIL animation.",
+    "staticUrl": "/icons-static/loader-11.svg",
+    "staticSha256": "b7a190b5420c2fb15a91edf0cf502d18e4009c5abcd5bac0ae9f75b2fbfc3ae2"
+  },
+  {
+    "name": "Loader 12",
+    "slug": "loader-12",
+    "url": "/icons/loader-12.svg",
+    "source": "https://www.potlabicons.com/",
+    "sha256": "d0acbb9a573885252f84df9f593ac3b2faaef38ceadc80960dc8757339330641",
+    "adaptation": "Preview asset: standalone namespace, duplicate root attributes removed for valid XML, unchanged geometry; static copy disables CSS/SMIL animation.",
+    "staticUrl": "/icons-static/loader-12.svg",
+    "staticSha256": "9565081ae485fbd8cae8f4e53dc81f82dfdbd1ad7c18b10db8626ebe5846061e"
+  },
+  {
+    "name": "Loader 13",
+    "slug": "loader-13",
+    "url": "/icons/loader-13.svg",
+    "source": "https://www.potlabicons.com/",
+    "sha256": "416ab529b72f37e89988dc07524a9d6af301e9b272dda18c926effc5e9a5e638",
+    "adaptation": "Preview asset: standalone namespace, duplicate root attributes removed for valid XML, unchanged geometry; static copy disables CSS/SMIL animation.",
+    "staticUrl": "/icons-static/loader-13.svg",
+    "staticSha256": "11704455080745242371d70a44a1d42062308d1e795be74abe35c7f8bd072ada"
+  },
+  {
+    "name": "Loader 14",
+    "slug": "loader-14",
+    "url": "/icons/loader-14.svg",
+    "source": "https://www.potlabicons.com/",
+    "sha256": "0453e3bff1acb42975cf8ce2e0c4921d5b5d64d8961d61e6537945f5e616eb90",
+    "adaptation": "Preview asset: standalone namespace, duplicate root attributes removed for valid XML, unchanged geometry; static copy disables CSS/SMIL animation.",
+    "staticUrl": "/icons-static/loader-14.svg",
+    "staticSha256": "7b72ba754cca5a76dc5ae87dfaf64d7f170d3a9981ecf9628697b3e10d7321ee"
+  },
+  {
+    "name": "Play Loader",
+    "slug": "play-loader",
+    "url": "/icons/play-loader.svg",
+    "source": "https://www.potlabicons.com/",
+    "sha256": "6cdf72e6b855ba3c61550a139ba5c9821cb11cae1c1eafefa1facaa02458e29d",
+    "adaptation": "Preview asset: standalone namespace, duplicate root attributes removed for valid XML, unchanged geometry; static copy disables CSS/SMIL animation.",
+    "staticUrl": "/icons-static/play-loader.svg",
+    "staticSha256": "6b5e34f9dc92347561b7a288d2957b0980cec92503a843b81a6e6215aea53c67"
+  },
+  {
+    "name": "Loader by Yascker",
+    "slug": "loader-by-yascker",
+    "url": "/icons/loader-by-yascker.svg",
+    "source": "https://www.potlabicons.com/",
+    "sha256": "629122b14a5c384679469b3b8e91e910882744c12140379765155e64535bee38",
+    "adaptation": "Preview asset: standalone namespace, duplicate root attributes removed for valid XML, unchanged geometry; static copy disables CSS/SMIL animation.",
+    "staticUrl": "/icons-static/loader-by-yascker.svg",
+    "staticSha256": "509200f1a9e42c2c03b34fd7be3e443e4b2837552ebc6c17ecbbda50cad447ab"
+  },
+  {
+    "name": "Ban",
+    "slug": "ban",
+    "url": "/icons/ban.svg",
+    "source": "https://www.potlabicons.com/",
+    "sha256": "62088ef0bf861288295312f531fcda5a1c31a9dc3ab0cf1312f6d74a1b04473e",
+    "adaptation": "Preview asset: standalone namespace, duplicate root attributes removed for valid XML, unchanged geometry; static copy disables CSS/SMIL animation.",
+    "staticUrl": "/icons-static/ban.svg",
+    "staticSha256": "11444baed4c193f0dda6c97f53d254367003418c86d382b5f1882dd21f73376a"
+  },
+  {
+    "name": "Exclamation Circle",
+    "slug": "exclamation-circle",
+    "url": "/icons/exclamation-circle.svg",
+    "source": "https://www.potlabicons.com/",
+    "sha256": "5e8a68aa7bc75c0b0fe67de6c642b772d14ea2d8dcbc743051c12da67a15e44b",
+    "adaptation": "Preview asset: standalone namespace, duplicate root attributes removed for valid XML, unchanged geometry; static copy disables CSS/SMIL animation.",
+    "staticUrl": "/icons-static/exclamation-circle.svg",
+    "staticSha256": "13e8199e3070888ad3281747eb7855c4726ea6586cb5665a8ba42f978654401a"
+  },
+  {
+    "name": "Exclamation Triangle",
+    "slug": "exclamation-triangle",
+    "url": "/icons/exclamation-triangle.svg",
+    "source": "https://www.potlabicons.com/",
+    "sha256": "d8187bf57bb9bdbdd0e18bcbe95a03d3cc07ec252568c7d26cde3d16c6db88e5",
+    "adaptation": "Preview asset: standalone namespace, duplicate root attributes removed for valid XML, unchanged geometry; static copy disables CSS/SMIL animation.",
+    "staticUrl": "/icons-static/exclamation-triangle.svg",
+    "staticSha256": "52ab236c1fec58fcf4ee5d7b67607791e855604cc9f998efeea8a47511a8017a"
+  },
+  {
+    "name": "Hexagon Exclamation",
+    "slug": "hexagon-exclamation",
+    "url": "/icons/hexagon-exclamation.svg",
+    "source": "https://www.potlabicons.com/",
+    "sha256": "be88ae8d9e16b5e1f5decaf24eedcd4da7f387ccbb90ff11ede1df0cfddae62f",
+    "adaptation": "Preview asset: standalone namespace, duplicate root attributes removed for valid XML, unchanged geometry; static copy disables CSS/SMIL animation.",
+    "staticUrl": "/icons-static/hexagon-exclamation.svg",
+    "staticSha256": "5ac84a5f3117b941be3e668df5477cc568c1061b25481333d9ba3c6292232c7d"
+  },
+  {
+    "name": "Info Question",
+    "slug": "info-question",
+    "url": "/icons/info-question.svg",
+    "source": "https://www.potlabicons.com/",
+    "sha256": "a141e21ae8942b0fd61111b221bfa485f43389574903f80e82008b7145bc5852",
+    "adaptation": "Preview asset: standalone namespace, duplicate root attributes removed for valid XML, unchanged geometry; static copy disables CSS/SMIL animation.",
+    "staticUrl": "/icons-static/info-question.svg",
+    "staticSha256": "8e23e80f29cdd2b219d789e3c4445561bbef33b4f69bc09e6c74d622ce6ea732"
+  },
+  {
+    "name": "Info",
+    "slug": "info",
+    "url": "/icons/info.svg",
+    "source": "https://www.potlabicons.com/",
+    "sha256": "38d7be06f05608bab7480fab755705b5fa208b1f2c13b435c1cf135a7138b5aa",
+    "adaptation": "Preview asset: standalone namespace, duplicate root attributes removed for valid XML, unchanged geometry; static copy disables CSS/SMIL animation.",
+    "staticUrl": "/icons-static/info.svg",
+    "staticSha256": "43dc28c0b78b7e707b3a151b267156f8695e97349a42430c3bb13b89efd1041d"
+  },
+  {
+    "name": "Notification Add",
+    "slug": "notification-add",
+    "url": "/icons/notification-add.svg",
+    "source": "https://www.potlabicons.com/",
+    "sha256": "2c26118f5d77e9d73d7c655c5c849fd1384fa2a15a519132a94b514980eb942a",
+    "adaptation": "Preview asset: standalone namespace, duplicate root attributes removed for valid XML, unchanged geometry; static copy disables CSS/SMIL animation.",
+    "staticUrl": "/icons-static/notification-add.svg",
+    "staticSha256": "4c41b5dc51c41dc0e15186cedbe31677554209fa148fc42a79bbaca4d42c998a"
+  },
+  {
+    "name": "Notification Info",
+    "slug": "notification-info",
+    "url": "/icons/notification-info.svg",
+    "source": "https://www.potlabicons.com/",
+    "sha256": "e402b3c7d4e22b3c22d5dbda900654a244af76f89f0f6c93aa7ffff29038cb16",
+    "adaptation": "Preview asset: standalone namespace, duplicate root attributes removed for valid XML, unchanged geometry; static copy disables CSS/SMIL animation.",
+    "staticUrl": "/icons-static/notification-info.svg",
+    "staticSha256": "50c1d8cb5da2646c6a8068e90e7992ff15f655f4bfdc610cbb9393da0060b9b5"
+  },
+  {
+    "name": "Notification Remove",
+    "slug": "notification-remove",
+    "url": "/icons/notification-remove.svg",
+    "source": "https://www.potlabicons.com/",
+    "sha256": "6988610e0f59f6639f44cbd6dbaefbf64bda1132fbd86927d000ce4b36073612",
+    "adaptation": "Preview asset: standalone namespace, duplicate root attributes removed for valid XML, unchanged geometry; static copy disables CSS/SMIL animation.",
+    "staticUrl": "/icons-static/notification-remove.svg",
+    "staticSha256": "760f7bb75be872418c643f678172870779c2dd20a295abfbe4d7a645de18889c"
+  },
+  {
+    "name": "Notification Off",
+    "slug": "notification-off",
+    "url": "/icons/notification-off.svg",
+    "source": "https://www.potlabicons.com/",
+    "sha256": "56ce957aabfb828abb1e1b5542611e87a549d89e0170b04f2f5dd9e6d83de56b",
+    "adaptation": "Preview asset: standalone namespace, duplicate root attributes removed for valid XML, unchanged geometry; static copy disables CSS/SMIL animation.",
+    "staticUrl": "/icons-static/notification-off.svg",
+    "staticSha256": "67f085c1a12d46119aaed5d68e5e7ef998c24be9ccc85c763bb86f319efc1714"
+  },
+  {
+    "name": "Notification Snooze",
+    "slug": "notification-snooze",
+    "url": "/icons/notification-snooze.svg",
+    "source": "https://www.potlabicons.com/",
+    "sha256": "72e40efe6492e2540c841bb5aede7e12f0c22dcf7a82f622e48d9091d03225df",
+    "adaptation": "Preview asset: standalone namespace, duplicate root attributes removed for valid XML, unchanged geometry; static copy disables CSS/SMIL animation.",
+    "staticUrl": "/icons-static/notification-snooze.svg",
+    "staticSha256": "1752ef54ae35ed837fc52125de096ca582fe3326dc3635a3074f18fefb63d1cb"
+  },
+  {
+    "name": "Notification Square",
+    "slug": "notification-square",
+    "url": "/icons/notification-square.svg",
+    "source": "https://www.potlabicons.com/",
+    "sha256": "04910111e55656682dd8d7985ea88cddf515f053f82381816c4c24bb9dfa1a99",
+    "adaptation": "Preview asset: standalone namespace, duplicate root attributes removed for valid XML, unchanged geometry; static copy disables CSS/SMIL animation.",
+    "staticUrl": "/icons-static/notification-square.svg",
+    "staticSha256": "df5fd77ec50b3724bf136524c6da8d5be215f69d79f5c9fc9153e8a0ca89cd90"
+  },
+  {
+    "name": "Notification",
+    "slug": "notification",
+    "url": "/icons/notification.svg",
+    "source": "https://www.potlabicons.com/",
+    "sha256": "eb9a7d60ef3dd4fd3726af460fc337b47c19579481460229e383a5327b9af1f8",
+    "adaptation": "Preview asset: standalone namespace, duplicate root attributes removed for valid XML, unchanged geometry; static copy disables CSS/SMIL animation.",
+    "staticUrl": "/icons-static/notification.svg",
+    "staticSha256": "42aa66f202f34f2eafb2fa8a536037f2b991370d36025594caacbbf9e96cb152"
+  },
+  {
+    "name": "2022",
+    "slug": "2022",
+    "url": "/icons/2022.svg",
+    "source": "https://www.potlabicons.com/",
+    "sha256": "b1197f78e66782c3ea1f7dc55556d011ceb5ae3ed87ceedb22899b5ffe3025c7",
+    "adaptation": "Preview asset: standalone namespace, duplicate root attributes removed for valid XML, unchanged geometry; static copy disables CSS/SMIL animation.",
+    "staticUrl": "/icons-static/2022.svg",
+    "staticSha256": "7a1295eb505fec84c9ce3837c9a4d6efe93457e2d643ebdc984b02ba6cf8fabc"
+  },
+  {
+    "name": "Balloon",
+    "slug": "balloon",
+    "url": "/icons/balloon.svg",
+    "source": "https://www.potlabicons.com/",
+    "sha256": "b94ebd6f63f76e89993c33e8b9fa1fe0d906d805ceae9886c02bf5a3bffb5fc4",
+    "adaptation": "Preview asset: standalone namespace, duplicate root attributes removed for valid XML, unchanged geometry; static copy disables CSS/SMIL animation.",
+    "staticUrl": "/icons-static/balloon.svg",
+    "staticSha256": "f1b68672edec9c9f62a0e746cad34f00277bb3c46719cb6b3f22fed065dcdc55"
+  },
+  {
+    "name": "Cake",
+    "slug": "cake",
+    "url": "/icons/cake.svg",
+    "source": "https://www.potlabicons.com/",
+    "sha256": "874b1ff66f0ea512a4a9d8b740894cbdd9929c6db80853903453936dec641a0d",
+    "adaptation": "Preview asset: standalone namespace, duplicate root attributes removed for valid XML, unchanged geometry; static copy disables CSS/SMIL animation.",
+    "staticUrl": "/icons-static/cake.svg",
+    "staticSha256": "859417d622574388ae35ff4d3442c54868f3af13d5feceb7b8a46a5ecfe0dd2d"
+  },
+  {
+    "name": "Candle",
+    "slug": "candle",
+    "url": "/icons/candle.svg",
+    "source": "https://www.potlabicons.com/",
+    "sha256": "284d1651d4406e86a6c8f27009fe3edab1c0564f3b9cfd8d64c77eb277798db8",
+    "adaptation": "Preview asset: standalone namespace, duplicate root attributes removed for valid XML, unchanged geometry; static copy disables CSS/SMIL animation.",
+    "staticUrl": "/icons-static/candle.svg",
+    "staticSha256": "aeb1be8e3c6c6f873dc9001daf4f15950bf569e456900fcff060f7df00e01e6c"
+  },
+  {
+    "name": "Champagne",
+    "slug": "champagne",
+    "url": "/icons/champagne.svg",
+    "source": "https://www.potlabicons.com/",
+    "sha256": "b9ce6ff2797b55493de915c3b1996ab28e121881ba234bdde1da3e206518dfee",
+    "adaptation": "Preview asset: standalone namespace, duplicate root attributes removed for valid XML, unchanged geometry; static copy disables CSS/SMIL animation.",
+    "staticUrl": "/icons-static/champagne.svg",
+    "staticSha256": "2c678b4dd5b248a3310b0a9d2ac04b92d9bec30edc23e8bbc42904ab32110400"
+  },
+  {
+    "name": "Champagne 2",
+    "slug": "champagne-2",
+    "url": "/icons/champagne-2.svg",
+    "source": "https://www.potlabicons.com/",
+    "sha256": "705bc06213864842505a3ef069567f46f57cd00b8ddaadb0506fefc3f6e30996",
+    "adaptation": "Preview asset: standalone namespace, duplicate root attributes removed for valid XML, unchanged geometry; static copy disables CSS/SMIL animation.",
+    "staticUrl": "/icons-static/champagne-2.svg",
+    "staticSha256": "4b9948a9886cdce7dc12a94a3e01709a09b6b3a439af3140c536f12b0b9f5f7f"
+  },
+  {
+    "name": "Confetti",
+    "slug": "confetti",
+    "url": "/icons/confetti.svg",
+    "source": "https://www.potlabicons.com/",
+    "sha256": "aebf8edc1c1529d2afa2a1cc88c3b2fc20eab35dcd09b2344d6347e974906c32",
+    "adaptation": "Preview asset: standalone namespace, duplicate root attributes removed for valid XML, unchanged geometry; static copy disables CSS/SMIL animation.",
+    "staticUrl": "/icons-static/confetti.svg",
+    "staticSha256": "6433995e5b9ce43c9cb20429bd83f81a33daf57cbfa4625339006fe72e58e1ed"
+  },
+  {
+    "name": "Firework",
+    "slug": "firework",
+    "url": "/icons/firework.svg",
+    "source": "https://www.potlabicons.com/",
+    "sha256": "2943e2f87455f74f4f70019e3d2e5fd5795d9db0d966e5ce5130252da44f8985",
+    "adaptation": "Preview asset: standalone namespace, duplicate root attributes removed for valid XML, unchanged geometry; static copy disables CSS/SMIL animation.",
+    "staticUrl": "/icons-static/firework.svg",
+    "staticSha256": "84fc3fbc36c3508c004ecb28c4f62a5df94f13157438f02848882a4978bf2eb1"
+  },
+  {
+    "name": "Gift Box",
+    "slug": "gift-box",
+    "url": "/icons/gift-box.svg",
+    "source": "https://www.potlabicons.com/",
+    "sha256": "9060da7f9f9e961d5980e8f66ef14edf3dc7c12fd601e07bfba0dc78ea323718",
+    "adaptation": "Preview asset: standalone namespace, duplicate root attributes removed for valid XML, unchanged geometry; static copy disables CSS/SMIL animation.",
+    "staticUrl": "/icons-static/gift-box.svg",
+    "staticSha256": "e6b53e3a00bce5ce582aea9cf71a3f81155c871e90c507934c12275af00a8fa2"
+  },
+  {
+    "name": "Chrome",
+    "slug": "chrome",
+    "url": "/icons/chrome.svg",
+    "source": "https://www.potlabicons.com/",
+    "sha256": "6df75ea7ea22c1f051e77ae2d7b6bf404c30b1454437ca6e95ff7dff0876fcab",
+    "adaptation": "Preview asset: standalone namespace, duplicate root attributes removed for valid XML, unchanged geometry; static copy disables CSS/SMIL animation.",
+    "staticUrl": "/icons-static/chrome.svg",
+    "staticSha256": "80a5b1f3fe1f0e523f98cae6b5e05aee85f38383fe4ad13ed3a5d7b6d7377ed4"
+  },
+  {
+    "name": "Discord",
+    "slug": "discord",
+    "url": "/icons/discord.svg",
+    "source": "https://www.potlabicons.com/",
+    "sha256": "ae2303b46f1cd33571af7c2b8fe959f52f906f59f1be44562e34b2a52711ea43",
+    "adaptation": "Preview asset: standalone namespace, duplicate root attributes removed for valid XML, unchanged geometry; static copy disables CSS/SMIL animation.",
+    "staticUrl": "/icons-static/discord.svg",
+    "staticSha256": "68ff151403fc62375ee25bb1e51ac01f0dcea229d558fc37f26facd5c720f90c"
+  },
+  {
+    "name": "Dribbble",
+    "slug": "dribbble",
+    "url": "/icons/dribbble.svg",
+    "source": "https://www.potlabicons.com/",
+    "sha256": "f6ca865a92539322861313c6e1a6f0f9bc7cca082c369eaa7eab929d65c3b214",
+    "adaptation": "Preview asset: standalone namespace, duplicate root attributes removed for valid XML, unchanged geometry; static copy disables CSS/SMIL animation.",
+    "staticUrl": "/icons-static/dribbble.svg",
+    "staticSha256": "57e83fe9a134d0e235097dcc1b85a36c567dd1ad84ad0ecf7d349c4f48da9da6"
+  },
+  {
+    "name": "LinkedIn",
+    "slug": "linkedin",
+    "url": "/icons/linkedin.svg",
+    "source": "https://www.potlabicons.com/",
+    "sha256": "52a794ba9486c4d1e600ef07c2a129cb582ae75a2cdc2c826c9a5363fd9d9448",
+    "adaptation": "Preview asset: standalone namespace, duplicate root attributes removed for valid XML, unchanged geometry; static copy disables CSS/SMIL animation.",
+    "staticUrl": "/icons-static/linkedin.svg",
+    "staticSha256": "edd5a00525b46c8c5753f5f2a2eacff3756ef0613a5879e7e6cf182d23c4f750"
+  },
+  {
+    "name": "Meta",
+    "slug": "meta",
+    "url": "/icons/meta.svg",
+    "source": "https://www.potlabicons.com/",
+    "sha256": "a72cf1a0da4ae659e8d354e2ae38dc1a983a789f01cac7e321e7ab6d4b97f618",
+    "adaptation": "Preview asset: standalone namespace, duplicate root attributes removed for valid XML, unchanged geometry; static copy disables CSS/SMIL animation.",
+    "staticUrl": "/icons-static/meta.svg",
+    "staticSha256": "443d8f375876bbb253b5cc17251ab0d78364689262e30cb0512b848a0a79177d"
+  },
+  {
+    "name": "Nintendo Switch",
+    "slug": "nintendo-switch",
+    "url": "/icons/nintendo-switch.svg",
+    "source": "https://www.potlabicons.com/",
+    "sha256": "e5da682197eacbe153e8c9771b64ef4ca652b4ced2c7f26d6dd918f29a52c2de",
+    "adaptation": "Preview asset: standalone namespace, duplicate root attributes removed for valid XML, unchanged geometry; static copy disables CSS/SMIL animation.",
+    "staticUrl": "/icons-static/nintendo-switch.svg",
+    "staticSha256": "0b583170d1ab01f633f3a53a34fafd2d45fc6de4d164d04bc2770e43c7c6951a"
+  },
+  {
+    "name": "PayPal",
+    "slug": "paypal",
+    "url": "/icons/paypal.svg",
+    "source": "https://www.potlabicons.com/",
+    "sha256": "c608f790895b62b80bd2d1b025705754f3ba415c9d988e164cfa2ae40273b6fc",
+    "adaptation": "Preview asset: standalone namespace, duplicate root attributes removed for valid XML, unchanged geometry; static copy disables CSS/SMIL animation.",
+    "staticUrl": "/icons-static/paypal.svg",
+    "staticSha256": "4888c53843bae0bbf0a74781d9ccc0377930499074c1d160a36835b8de7fda94"
+  },
+  {
+    "name": "Pinterest",
+    "slug": "pinterest",
+    "url": "/icons/pinterest.svg",
+    "source": "https://www.potlabicons.com/",
+    "sha256": "a6ded93db8b37565d43bb8ff197104d306a5af13bb1d1f5deea74ecd35ae05d8",
+    "adaptation": "Preview asset: standalone namespace, duplicate root attributes removed for valid XML, unchanged geometry; static copy disables CSS/SMIL animation.",
+    "staticUrl": "/icons-static/pinterest.svg",
+    "staticSha256": "9d522b580ea308decb7bbab39c3b1af431e31c715da9c22593a170e47240da7c"
+  },
+  {
+    "name": "TikTok",
+    "slug": "tiktok",
+    "url": "/icons/tiktok.svg",
+    "source": "https://www.potlabicons.com/",
+    "sha256": "f2632145dae991451953b9ef667cc34024b108ae9c16b8395abee8d4bddfd417",
+    "adaptation": "Preview asset: standalone namespace, duplicate root attributes removed for valid XML, unchanged geometry; static copy disables CSS/SMIL animation.",
+    "staticUrl": "/icons-static/tiktok.svg",
+    "staticSha256": "534f5490dae5b3c414bc6ff25510fb9a9c0adb8920c3580613f7b65b6ea35d9b"
+  },
+  {
+    "name": "Twitch",
+    "slug": "twitch",
+    "url": "/icons/twitch.svg",
+    "source": "https://www.potlabicons.com/",
+    "sha256": "4ba36fa1da0203e2cc8a52d58ec8a7ef83ae3dc994558282c1ca4a82530ae5ab",
+    "adaptation": "Preview asset: standalone namespace, duplicate root attributes removed for valid XML, unchanged geometry; static copy disables CSS/SMIL animation.",
+    "staticUrl": "/icons-static/twitch.svg",
+    "staticSha256": "5ac04a2b98d090ff7311f4d378d8a498cf6d3283a078b85b9104ce164442ff75"
+  },
+  {
+    "name": "YouTube",
+    "slug": "youtube",
+    "url": "/icons/youtube.svg",
+    "source": "https://www.potlabicons.com/",
+    "sha256": "7304548f7086c96800198c21633e954d73a307e500814372c8138ac8ee804d6a",
+    "adaptation": "Preview asset: standalone namespace, duplicate root attributes removed for valid XML, unchanged geometry; static copy disables CSS/SMIL animation.",
+    "staticUrl": "/icons-static/youtube.svg",
+    "staticSha256": "84f459d8df47320faf45725b4c9ebcfff80736e98e5d48693771eb05cd069a87"
+  },
+  {
+    "name": "Instagram",
+    "slug": "instagram",
+    "url": "/icons/instagram.svg",
+    "source": "https://www.potlabicons.com/",
+    "sha256": "4e6156552972ba51b3d8c06193cb57d443201fbff4220fbcd8223b35e5a12acd",
+    "adaptation": "Preview asset: standalone namespace, duplicate root attributes removed for valid XML, unchanged geometry; static copy disables CSS/SMIL animation.",
+    "staticUrl": "/icons-static/instagram.svg",
+    "staticSha256": "16ef1777d9f7e0a3c05b294b65c692bb32bd7b9a89f182048b00cb62d650e9b1"
+  },
+  {
+    "name": "Chat",
+    "slug": "chat",
+    "url": "/icons/chat.svg",
+    "source": "https://www.potlabicons.com/",
+    "sha256": "eff135e43cb036be2872a801a461dec0414fe3bddbbbac4bf333d719763af2ae",
+    "adaptation": "Preview asset: standalone namespace, duplicate root attributes removed for valid XML, unchanged geometry; static copy disables CSS/SMIL animation.",
+    "staticUrl": "/icons-static/chat.svg",
+    "staticSha256": "ae77a370e0243309b8e7da8902888e690c65298f7946b70646709d893ad677f1"
+  },
+  {
+    "name": "Chat 2",
+    "slug": "chat-2",
+    "url": "/icons/chat-2.svg",
+    "source": "https://www.potlabicons.com/",
+    "sha256": "a4eed81d56f334c1bc6c0029f67a1bfb7248ff4b3d5704ffbf1846b57a21e147",
+    "adaptation": "Preview asset: standalone namespace, duplicate root attributes removed for valid XML, unchanged geometry; static copy disables CSS/SMIL animation.",
+    "staticUrl": "/icons-static/chat-2.svg",
+    "staticSha256": "4fcf3e7644524f0538b25b71fc5832017841e394220930746123558c7952cb9f"
+  },
+  {
+    "name": "Chat 3",
+    "slug": "chat-3",
+    "url": "/icons/chat-3.svg",
+    "source": "https://www.potlabicons.com/",
+    "sha256": "02ba9d7e5311b7245f6a6db4189156d3cfe69b01240fc605fde21675f2d1b827",
+    "adaptation": "Preview asset: standalone namespace, duplicate root attributes removed for valid XML, unchanged geometry; static copy disables CSS/SMIL animation.",
+    "staticUrl": "/icons-static/chat-3.svg",
+    "staticSha256": "d603bc0316229e8af172ed39364b3f52c82d8ce4da27c9fd9012a7f5fd77bf66"
+  },
+  {
+    "name": "Phone",
+    "slug": "phone",
+    "url": "/icons/phone.svg",
+    "source": "https://www.potlabicons.com/",
+    "sha256": "897361c24f0c83ff616b470731ae20f5a45202d56df21b30a882d1dd3c2dfa8e",
+    "adaptation": "Preview asset: standalone namespace, duplicate root attributes removed for valid XML, unchanged geometry; static copy disables CSS/SMIL animation.",
+    "staticUrl": "/icons-static/phone.svg",
+    "staticSha256": "a414d46a696780e9478e32ec795b16a9bdc059c93ec807f4a789d24142d2e3a4"
+  },
+  {
+    "name": "Airplay",
+    "slug": "airplay",
+    "url": "/icons/airplay.svg",
+    "source": "https://www.potlabicons.com/",
+    "sha256": "f13331e978ca17c9efcfd18e8a3b6fb40bd15e7d2726de53a8916ff9e77a9b11",
+    "adaptation": "Preview asset: standalone namespace, duplicate root attributes removed for valid XML, unchanged geometry; static copy disables CSS/SMIL animation.",
+    "staticUrl": "/icons-static/airplay.svg",
+    "staticSha256": "64e4833af3921ec6488e69df31078faee1baf5f70eb788f9a72b0dd148c03252"
+  },
+  {
+    "name": "Airpod Case",
+    "slug": "airpod-case",
+    "url": "/icons/airpod-case.svg",
+    "source": "https://www.potlabicons.com/",
+    "sha256": "41de35f4a2f237d772d7f019e3382f254779dba1152db099bd805dbb12128b6c",
+    "adaptation": "Preview asset: standalone namespace, duplicate root attributes removed for valid XML, unchanged geometry; static copy disables CSS/SMIL animation.",
+    "staticUrl": "/icons-static/airpod-case.svg",
+    "staticSha256": "6e1d160b9ea7432a953423dd9099dfb81fd586e3bae8cab0090ffce6b4037d6b"
+  },
+  {
+    "name": "Airpod",
+    "slug": "airpod",
+    "url": "/icons/airpod.svg",
+    "source": "https://www.potlabicons.com/",
+    "sha256": "e3d76fe5c36d7ff36d6858f1cde2c92a8ac0adab98227871fc74286633a23002",
+    "adaptation": "Preview asset: standalone namespace, duplicate root attributes removed for valid XML, unchanged geometry; static copy disables CSS/SMIL animation.",
+    "staticUrl": "/icons-static/airpod.svg",
+    "staticSha256": "84216fb6a1fa28d1e13555ab0a53fe657482016b571fff5972b28aa5ca8618bf"
+  },
+  {
+    "name": "Bluetooth",
+    "slug": "bluetooth",
+    "url": "/icons/bluetooth.svg",
+    "source": "https://www.potlabicons.com/",
+    "sha256": "2db586d6acb81576d262923ef8958901dca39325f5bc713f1e35c03ce3f877a4",
+    "adaptation": "Preview asset: standalone namespace, duplicate root attributes removed for valid XML, unchanged geometry; static copy disables CSS/SMIL animation.",
+    "staticUrl": "/icons-static/bluetooth.svg",
+    "staticSha256": "f396e652240215c35c44157ce0b2b17fa853e0c2bf12ad91776f85cece25228e"
+  },
+  {
+    "name": "Bluetooth off",
+    "slug": "bluetooth-off",
+    "url": "/icons/bluetooth-off.svg",
+    "source": "https://www.potlabicons.com/",
+    "sha256": "150de7f5b88cadd621a015c7244130636ee76609a56cc1e984533171021926fd",
+    "adaptation": "Preview asset: standalone namespace, duplicate root attributes removed for valid XML, unchanged geometry; static copy disables CSS/SMIL animation.",
+    "staticUrl": "/icons-static/bluetooth-off.svg",
+    "staticSha256": "8e35107b8d56547dfff30a6ae3325130f9e711af3fdc9882d62b120a4144a8de"
+  },
+  {
+    "name": "Homepod",
+    "slug": "homepod",
+    "url": "/icons/homepod.svg",
+    "source": "https://www.potlabicons.com/",
+    "sha256": "d9e67af0c9e56496bc609dec8dfc4fe0bd0d9abe4e592aa0585c41442a3e681d",
+    "adaptation": "Preview asset: standalone namespace, duplicate root attributes removed for valid XML, unchanged geometry; static copy disables CSS/SMIL animation.",
+    "staticUrl": "/icons-static/homepod.svg",
+    "staticSha256": "59934c8538f411296c519cee08b0c7fa3cf142642a173ab649f0fc6a6f2506f8"
+  },
+  {
+    "name": "Mic off",
+    "slug": "mic-off",
+    "url": "/icons/mic-off.svg",
+    "source": "https://www.potlabicons.com/",
+    "sha256": "9de76298e4bb34fde2497afc424ae5a56433f0f7cb50ff050d6413d0149ad7c1",
+    "adaptation": "Preview asset: standalone namespace, duplicate root attributes removed for valid XML, unchanged geometry; static copy disables CSS/SMIL animation.",
+    "staticUrl": "/icons-static/mic-off.svg",
+    "staticSha256": "b6650a454cbc9def03b64f2009d4e551676bc3cf251cadcb2edee54066b70292"
+  },
+  {
+    "name": "Vibration",
+    "slug": "vibration",
+    "url": "/icons/vibration.svg",
+    "source": "https://www.potlabicons.com/",
+    "sha256": "007c4052fbb1e949c7c2c25d9a91aa759a9b728060a975c5542ddc765cdfda75",
+    "adaptation": "Preview asset: standalone namespace, duplicate root attributes removed for valid XML, unchanged geometry; static copy disables CSS/SMIL animation.",
+    "staticUrl": "/icons-static/vibration.svg",
+    "staticSha256": "771794e68472e001c5bb78c73bacf43b5162b96237bb1ca52123e30acc35d5d0"
+  },
+  {
+    "name": "Mouse",
+    "slug": "mouse",
+    "url": "/icons/mouse.svg",
+    "source": "https://www.potlabicons.com/",
+    "sha256": "09c6ebd4d177dcebb6bc2cb8e3ea4169e7bc50a395043e3db419f0db73972e2d",
+    "adaptation": "Preview asset: standalone namespace, duplicate root attributes removed for valid XML, unchanged geometry; static copy disables CSS/SMIL animation.",
+    "staticUrl": "/icons-static/mouse.svg",
+    "staticSha256": "a9cc610a8753aa49c9080eecc8d0ad75a9873bd3d48210cc1ccdc472e486134b"
+  },
+  {
+    "name": "Smartwatch",
+    "slug": "smartwatch",
+    "url": "/icons/smartwatch.svg",
+    "source": "https://www.potlabicons.com/",
+    "sha256": "7a977e4020b81ca87099361707b12365b8a694e212e0a4bbee426853133bff8f",
+    "adaptation": "Preview asset: standalone namespace, duplicate root attributes removed for valid XML, unchanged geometry; static copy disables CSS/SMIL animation.",
+    "staticUrl": "/icons-static/smartwatch.svg",
+    "staticSha256": "b953a771b694e7d8b0b78b28c835f46a8d5e404634e232df3b5133892a9370ed"
+  },
+  {
+    "name": "Smartwatch 2",
+    "slug": "smartwatch-2",
+    "url": "/icons/smartwatch-2.svg",
+    "source": "https://www.potlabicons.com/",
+    "sha256": "26116ff27060253620754e16338da91242acddb4bcb4a4d921297433758236ed",
+    "adaptation": "Preview asset: standalone namespace, duplicate root attributes removed for valid XML, unchanged geometry; static copy disables CSS/SMIL animation.",
+    "staticUrl": "/icons-static/smartwatch-2.svg",
+    "staticSha256": "fe7c2cf96576f536cd5b5a60d3817761cc656e4b58f396517dd80e1a81fff712"
+  },
+  {
+    "name": "Speaker",
+    "slug": "speaker",
+    "url": "/icons/speaker.svg",
+    "source": "https://www.potlabicons.com/",
+    "sha256": "b7133d9b2c1c7a6f4e55dd4c7ade8e4b5dca68eca7096c130a297530e059ebfd",
+    "adaptation": "Preview asset: standalone namespace, duplicate root attributes removed for valid XML, unchanged geometry; static copy disables CSS/SMIL animation.",
+    "staticUrl": "/icons-static/speaker.svg",
+    "staticSha256": "2cb9c320815f28812eee3830a9446cbaf436f068a5241ed92cfe39fccfbe6a54"
+  },
+  {
+    "name": "Candle 2",
+    "slug": "candle-2",
+    "url": "/icons/candle-2.svg",
+    "source": "https://www.potlabicons.com/",
+    "sha256": "5bfff9b18e40e88d51fba01426b20326cc190feb0e1ea6d6cef0f44e7b9e9751",
+    "adaptation": "Preview asset: standalone namespace, duplicate root attributes removed for valid XML, unchanged geometry; static copy disables CSS/SMIL animation.",
+    "staticUrl": "/icons-static/candle-2.svg",
+    "staticSha256": "c9accfb53f9066133fb67c423ecfd7ff4562946c5dd5349ac94a5641bc625134"
+  },
+  {
+    "name": "Christmas Snow",
+    "slug": "christmas-snow",
+    "url": "/icons/christmas-snow.svg",
+    "source": "https://www.potlabicons.com/",
+    "sha256": "1e26c02c71d088a9750bc807cb6c06dcbb5393423f3d7286695b9b61156c5702",
+    "adaptation": "Preview asset: standalone namespace, duplicate root attributes removed for valid XML, unchanged geometry; static copy disables CSS/SMIL animation.",
+    "staticUrl": "/icons-static/christmas-snow.svg",
+    "staticSha256": "6ab304033cabbe70eaf4e64497bfc24c811c61aebb6a47da7393df5465c5076a"
+  },
+  {
+    "name": "Gift 2",
+    "slug": "gift-2",
+    "url": "/icons/gift-2.svg",
+    "source": "https://www.potlabicons.com/",
+    "sha256": "edd04fee5de1dd02d4d518d50989c8352a6945d8b764f4c2bcc0ab153d060077",
+    "adaptation": "Preview asset: standalone namespace, duplicate root attributes removed for valid XML, unchanged geometry; static copy disables CSS/SMIL animation.",
+    "staticUrl": "/icons-static/gift-2.svg",
+    "staticSha256": "546b3523978fc231e6a7b1703af11d84a206cfb201dcbab40a7baa30bdec162f"
+  },
+  {
+    "name": "Snow Globe",
+    "slug": "snow-globe",
+    "url": "/icons/snow-globe.svg",
+    "source": "https://www.potlabicons.com/",
+    "sha256": "150308b99298d3ba2c54dacca283217adf535c013227fec3c7a301cb0246b3c9",
+    "adaptation": "Preview asset: standalone namespace, duplicate root attributes removed for valid XML, unchanged geometry; static copy disables CSS/SMIL animation.",
+    "staticUrl": "/icons-static/snow-globe.svg",
+    "staticSha256": "462ad45fe1ef721f6e052178f13b27e7c9b02e2cfdb2c7bee9ff22a020431543"
+  },
+  {
+    "name": "Snowman",
+    "slug": "snowman",
+    "url": "/icons/snowman.svg",
+    "source": "https://www.potlabicons.com/",
+    "sha256": "f9db86f112822c91b929c7bd2a5708a6bcd18316a060b92260d5f99ebf842c00",
+    "adaptation": "Preview asset: standalone namespace, duplicate root attributes removed for valid XML, unchanged geometry; static copy disables CSS/SMIL animation.",
+    "staticUrl": "/icons-static/snowman.svg",
+    "staticSha256": "63af840155c8d96e838ec00c1c68e4a3f472af75019b6163f27cd05716f680ce"
+  },
+  {
+    "name": "Snowman 2",
+    "slug": "snowman-2",
+    "url": "/icons/snowman-2.svg",
+    "source": "https://www.potlabicons.com/",
+    "sha256": "85337540df5bc6f39e71b30ca7b0d9ed64f2315eb745d0acd76f7b9d14614a04",
+    "adaptation": "Preview asset: standalone namespace, duplicate root attributes removed for valid XML, unchanged geometry; static copy disables CSS/SMIL animation.",
+    "staticUrl": "/icons-static/snowman-2.svg",
+    "staticSha256": "1dff6d775f979247afedb8bd30bae567a2f6e9f8c3219a79ebadd29c96b223ef"
+  },
+  {
+    "name": "Tree Ornament",
+    "slug": "tree-ornament",
+    "url": "/icons/tree-ornament.svg",
+    "source": "https://www.potlabicons.com/",
+    "sha256": "609dbbe31d5b848b03c399cfdc96ea153f241cee0359b34e7cdfe213d40e2c8a",
+    "adaptation": "Preview asset: standalone namespace, duplicate root attributes removed for valid XML, unchanged geometry; static copy disables CSS/SMIL animation.",
+    "staticUrl": "/icons-static/tree-ornament.svg",
+    "staticSha256": "63a42fb095f8eb90803b511687204b269ab18c82612bb39df3b1976f1083efb3"
+  },
+  {
+    "name": "Tree Ornament 2",
+    "slug": "tree-ornament-2",
+    "url": "/icons/tree-ornament-2.svg",
+    "source": "https://www.potlabicons.com/",
+    "sha256": "9f220647c74643ad4a025c37ec6a653e3cc72edab6cc76e55d9fc59a0e8aa231",
+    "adaptation": "Preview asset: standalone namespace, duplicate root attributes removed for valid XML, unchanged geometry; static copy disables CSS/SMIL animation.",
+    "staticUrl": "/icons-static/tree-ornament-2.svg",
+    "staticSha256": "3ca02ba57c221c6a6064c75e151989a2df727cef8a9a267976f0c16cb1c7fa35"
+  },
+  {
+    "name": "Tree",
+    "slug": "tree",
+    "url": "/icons/tree.svg",
+    "source": "https://www.potlabicons.com/",
+    "sha256": "1e6b0d64ccbc4c05b4d1db582f091894b5f6a3fb0ff7f737702fd45cf8897536",
+    "adaptation": "Preview asset: standalone namespace, duplicate root attributes removed for valid XML, unchanged geometry; static copy disables CSS/SMIL animation.",
+    "staticUrl": "/icons-static/tree.svg",
+    "staticSha256": "1409d63aa349072000982a71f9e8264bb0fcf481d43d44bb9b4cf997ff94b826"
+  }
+]

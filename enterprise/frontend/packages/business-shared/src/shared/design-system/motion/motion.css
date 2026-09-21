@@ -1,0 +1,24 @@
+/* Component-local CSS for Radix portals. Timing is generated from MOTION. */
+@import './motion-defaults.css';
+[data-dw-surface] {
+  transform-origin: var(--radix-dropdown-menu-content-transform-origin, var(--radix-popover-content-transform-origin, center));
+}
+[data-dw-surface][data-state='open'] { animation: dw-menu-enter var(--dw-motion-menu) var(--dw-ease-enter); }
+[data-dw-surface][data-state='closed'] { animation: dw-menu-exit var(--dw-motion-menu-exit) var(--dw-ease-exit); pointer-events: none; }
+[data-dw-surface][data-side='bottom'] { --dw-from-y: -4px; --dw-from-x: 0px; }
+[data-dw-surface][data-side='top'] { --dw-from-y: 4px; --dw-from-x: 0px; }
+[data-dw-surface][data-side='right'] { --dw-from-x: -4px; --dw-from-y: 0px; }
+[data-dw-surface][data-side='left'] { --dw-from-x: 4px; --dw-from-y: 0px; }
+@keyframes dw-menu-enter {
+  from { opacity: 0; transform: translate(var(--dw-from-x, 0px), var(--dw-from-y, -4px)) scale(.98); }
+  to { opacity: 1; transform: translate(0, 0) scale(1); }
+}
+@keyframes dw-menu-exit { from { opacity: 1; } to { opacity: 0; } }
+.dw-card-link { transition: background-color 120ms, border-color 120ms, box-shadow 120ms; }
+@media (hover: hover) and (pointer: fine) {
+  .dw-card-link:hover { box-shadow: var(--shadow-tactile); }
+}
+@media (prefers-reduced-motion: reduce) {
+  [data-dw-surface] { animation: none !important; transition: none !important; }
+}
+.enterprise-module[data-motion='reduced'] [data-dw-surface] { animation: none !important; transition: none !important; }

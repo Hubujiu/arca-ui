@@ -1,0 +1,4 @@
+packages:
+  - frontend/apps/*
+  - frontend/modules/*
+  - frontend/packages/*

@@ -1,0 +1,17 @@
+@page record-portrait { size: A4 portrait; margin: 10mm; }
+@page record-landscape { size: A4 landscape; margin: 10mm; }
+[data-record-print-root] {
+  position: fixed; left: -100000px; top: 0; width: 190mm;
+  pointer-events: none; page: record-portrait;
+}
+[data-record-print-root][data-orientation="landscape"] { width: 277mm; page: record-landscape; }
+@media print {
+  html:has([data-record-print-root]), body:has([data-record-print-root]) { height: auto !important; overflow: visible !important; background: var(--ui-surface) !important; }
+  body:has([data-record-print-root]) > * { display: none !important; }
+  body > [data-record-print-root] { display: block !important; position: static !important; width: auto !important; pointer-events: auto; }
+  [data-record-print-root] * { box-shadow: none !important; color: var(--ui-ink) !important; }
+  [data-record-print-root] button { display: none !important; }
+  [data-record-print-root] article { padding: 0 !important; background: var(--ui-surface) !important; }
+  [data-record-print-root] .truncate { white-space: normal !important; overflow: visible !important; }
+  [data-record-print-root] img { max-width: 100%; break-inside: avoid; }
+}

@@ -1,0 +1,119 @@
+@scope (.enterprise-module) {
+/* Sign-in composition shares the same surfaces and type scale as the app. */
+.login-layout {
+  display: grid;
+  min-height: 100dvh;
+  max-width: 1280px;
+  grid-template-columns: 1.05fr 1fr;
+  margin: auto;
+}
+
+.login-story {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 40px;
+  padding: 20px 48px 36px;
+}
+
+.login-story .brand {
+  padding-left: 0;
+}
+
+.login-story h1 {
+  line-height: 1.65;
+}
+
+.login-story p {
+  max-width: 36ch;
+  margin-top: 20px;
+  color: var(--ui-muted-ink);
+  line-height: 1.9;
+}
+
+.login-features {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin: 32px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.login-features li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: var(--ui-muted-ink);
+}
+
+.story-foot {
+  color: var(--ui-muted-ink);
+  font-size: var(--text-caption);
+}
+
+.login-side {
+  display: grid;
+  place-items: center;
+  padding: 48px 32px;
+}
+
+.login-card {
+  width: 100%;
+  max-width: 440px;
+  padding: 36px;
+  border: 1px solid var(--ui-border);
+  border-radius: var(--radius-panel);
+  background: var(--ui-surface);
+  box-shadow: var(--ui-shadow);
+}
+
+.login-card h2 {
+  font-size: var(--text-heading);
+}
+
+.login-card > p {
+  margin: 12px 0 28px;
+  color: var(--ui-muted-ink);
+}
+
+.login-card form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 24px;
+}
+
+.login-switch {
+  margin-top: 20px;
+  color: var(--ui-muted-ink);
+  text-align: center;
+}
+
+.login-card .fine-print {
+  margin: 24px 0 0;
+  padding-top: 20px;
+  border-top: 1px solid var(--ui-border);
+  font-size: var(--text-caption);
+  text-align: center;
+}
+
+.login-mobile-brand {
+  display: none;
+}
+
+@media (max-width: 1000px) {
+  .login-story { padding: 20px 28px 32px; }
+  .login-side { padding: 32px 24px; }
+  .login-card { padding: 28px; }
+}
+
+@media (max-width: 760px) {
+  .login-layout { grid-template-columns: 1fr; }
+  .login-story { display: none; }
+  .login-side { min-height: 100dvh; padding: 24px 20px; }
+  .login-card { padding: 28px 24px; }
+  .login-mobile-brand { display: flex; padding: 0 0 28px; }
+}
+
+}

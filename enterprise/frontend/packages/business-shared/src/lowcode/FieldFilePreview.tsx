@@ -1,0 +1,10 @@
+import {lazy,Suspense,useEffect,useState} from "react";
+import {AppModal} from "@/shared/ui";
+import {fetchFile} from "@/shared/api/client";
+const PdfViewer=lazy(()=>import("@/file-preview/PdfViewer").then(module=>({default:module.PdfViewer})));
+export function fileCanPreview(contentType:string){return ["image/png","image/jpeg","image/webp","image/gif","application/pdf","text/plain"].includes(contentType.split(";")[0].toLowerCase());}
+export function FieldFilePreview({name,path,contentType,onClose}:{name:string;path:string;contentType:string;onClose:()=>void}){
+  const [blob,setBlob]=useState<Blob>(),[source,setSource]=useState(""),[text,setText]=useState(""),[error,setError]=useState("");
+  useEffect(()=>{const abort=new AbortController();let url="";void fetchFile(path,name,abort.signal).then(async result=>{if(abort.signal.aborted)return;setBlob(result.blob);if(contentType.startsWith("image/")){url=URL.createObjectURL(result.blob);setSource(url);}else if(contentType.startsWith("text/plain")){const content=await result.blob.slice(0,100000).text();if(!abort.signal.aborted)setText(content+(result.blob.size>100000?"\n…预览只显示前 100 KB":""));}}).catch(error=>{if(!abort.signal.aborted)setError(error instanceof Error?error.message:"预览暂不可用");});return()=>{abort.abort();if(url)URL.revokeObjectURL(url);};},[path,name,contentType]);
+  return <AppModal open onOpenChange={open=>{if(!open)onClose();}} title={name} className="max-w-5xl"><div className="min-w-0">{error?<p role="alert" className="text-body text-destructive">{error}</p>:!blob?<p className="text-body text-muted-foreground">正在读取预览…</p>:contentType.startsWith("image/")?<img src={source} alt={name} className="max-h-data-list w-full object-contain"/>:contentType==="application/pdf"?<div className="h-data-list"><Suspense fallback={<p className="text-body text-muted-foreground">正在加载 PDF 预览…</p>}><PdfViewer blob={blob}/></Suspense></div>:<pre className="max-h-data-list overflow-auto whitespace-pre-wrap break-words text-body">{text}</pre>}</div></AppModal>;
+}

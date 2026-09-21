@@ -1,0 +1,5 @@
+{
+  "extends": "../../../tsconfig.base.json",
+  "compilerOptions": { "baseUrl": ".", "paths": { "@/*": ["../../packages/business-shared/src/*"], "@module/*": ["src/*"], "@approved/potlab-icons": ["../../packages/business-shared/approved/potlab-icons/src/Potlab.tsx"], "@approved/popover": ["../../packages/business-shared/approved/beui-popover/popover.tsx"] }, "noUnusedLocals": false, "noUnusedParameters": false },
+  "include": ["src", "../../packages/business-shared/src", "../../packages/business-shared/approved"]
+}

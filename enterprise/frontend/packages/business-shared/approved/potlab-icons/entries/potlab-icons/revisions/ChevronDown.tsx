@@ -1,0 +1,1 @@
+export default {body:'',accent:'M6 9l6 6 6-6'};

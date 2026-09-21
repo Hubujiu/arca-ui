@@ -1,0 +1,62 @@
+/* Named application layout dimensions. Color, type and shape remain semantic. */
+@theme inline {
+  --spacing-mobile-panel: 88vw;
+  --spacing-sidebar-icon: var(--sidebar-width-icon);
+  --spacing-sidebar: var(--sidebar-width);
+  --spacing-sidebar-panel: calc(100svh - 1rem);
+  --spacing-dialog-viewport: calc(100vw - 2rem);
+  --spacing-lightbox: 90vw;
+  --spacing-command-offset: 18vh;
+  --spacing-command-list: 60vh;
+  --spacing-context-menu: 85vw;
+  --spacing-select-list: min(20rem,50vh);
+  --spacing-document-dock: min(52vh,28rem);
+  --spacing-workspace-body: calc(100dvh - 8.5rem);
+  --spacing-record-panel: 70dvh;
+  --spacing-data-list: 65dvh;
+  --spacing-popover-trigger: var(--radix-popover-trigger-width);
+  --spacing-popover-viewport: calc(100vw - 24px);
+  --spacing-select-trigger: var(--radix-select-trigger-width);
+  --spacing-record-view: 78dvh;
+  --spacing-organization-panel: min(72vh,800px);
+  --spacing-people-picker: min(40rem,88vh);
+  --spacing-sharing-dialog: min(75dvh,44rem);
+  --spacing-motion-catalog: min(32rem,52vh);
+  --spacing-dialog-body: min(55dvh,32rem);
+  --spacing-dialog-content: min(70vh,36rem);
+}
+@utility transition-opacity-height-margin { transition-property: opacity,height,margin; }
+@utility transition-border-color-background-color { transition-property: border-color,background-color; }
+@utility transition-border-color { transition-property: border-color; }
+@utility transition-color-background-color { transition-property: color,background-color; }
+@utility transition-border-color-transform { transition-property: border-color,transform; }
+@utility transition-transform-opacity { transition-property: transform,opacity; }
+@utility transition-stroke { transition-property: stroke; }
+@utility grid-cols-form-designer { grid-template-columns: 180px minmax(0,1fr) 280px; }
+@utility grid-cols-form-inspector { grid-template-columns: minmax(0,1fr) 340px; }
+@utility grid-cols-record-labels { grid-template-columns: 5.5rem minmax(0,1fr); }
+@utility grid-cols-application-navigation { grid-template-columns: 230px minmax(0,1fr); }
+@utility grid-cols-connector-settings { grid-template-columns: 200px 1fr; }
+@utility grid-cols-application-settings { grid-template-columns: 230px 1fr; }
+@utility grid-cols-automation-settings { grid-template-columns: 210px 1fr; }
+@utility grid-cols-record-settings { grid-template-columns: 12rem minmax(0,1fr); }
+@utility grid-cols-record-settings-detail { grid-template-columns: 12rem minmax(0,1fr) 19rem; }
+@utility grid-cols-mapping-row { grid-template-columns: 1fr 1fr auto; }
+@utility grid-cols-permission-settings { grid-template-columns: 15rem minmax(0,1fr); }
+@utility grid-cols-relation-settings { grid-template-columns: 220px 1fr; }
+@utility grid-cols-auto-content { grid-template-columns: auto 1fr; }
+@utility grid-cols-record-columns { grid-template-columns: minmax(0,1fr) 160px 180px 30px; }
+@utility grid-cols-workflow-inspector { grid-template-columns: minmax(0,1fr) 330px; }
+@utility grid-cols-organization-inspector { grid-template-columns: minmax(0,1fr) 320px; }
+@utility rounded-inherit { border-radius: inherit; }
+@utility gap-inherit { gap: inherit; }
+@utility scrollbar-hidden { scrollbar-width: none; -ms-overflow-style: none; }
+@utility appearance-textfield { appearance: textfield; }
+
+@theme inline { --spacing-safe-area: max(0.75rem, env(safe-area-inset-bottom)); }
+@utility search-trigger-stroke { --search-trigger-stroke: var(--color-border); }
+@utility search-trigger-stroke-strong { --search-trigger-stroke: var(--color-border-strong); }
+@utility calendar-cell-size { --cell-size: 2rem; }
+/* React Flow reads these interaction markers; they also document hit behavior. */
+.nodrag { touch-action: manipulation; }
+.nopan { overscroll-behavior: contain; }

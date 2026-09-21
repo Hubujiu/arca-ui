@@ -1,0 +1,23 @@
+import { MultilineEntry } from "@/components/controls";
+import {useEffect,useState} from "react";
+import {api} from "@/shared/api/client";
+import {Button,Input} from "@/shared/ui";
+import {base,message} from "./model";
+import {automationKinds,redactAutomationValue,type Automation} from "./automation-model";
+import {debugStates,parseDebugInput,type AutomationDebugResult} from "./automation-debug";
+
+function Snapshot({label,value}:{label:string;value:unknown}) {return <details className="min-w-0"><summary className="cursor-pointer text-caption text-muted-foreground">{label}</summary><pre className="mt-2 max-h-72 overflow-auto whitespace-pre-wrap break-all rounded-control bg-muted/30 p-3 text-caption">{JSON.stringify(redactAutomationValue(value),null,2)}</pre></details>;}
+export function AutomationDebug({automation,dirty}:{automation:Automation;dirty:boolean}) {
+  const [dataText,setDataText]=useState("{}"),[mocksText,setMocksText]=useState("{}"),[recordId,setRecordId]=useState(""),[recordRevision,setRecordRevision]=useState(""),[busy,setBusy]=useState(false),[error,setError]=useState(""),[result,setResult]=useState<AutomationDebugResult>();
+  useEffect(()=>{setResult(undefined);setError("");},[automation.id,automation.revision]);
+  function edit(update:()=>void){update();setResult(undefined);setError("");}
+  async function preview(){setError("");setResult(undefined);let input;try{input=parseDebugInput(automation.revision,dataText,mocksText,recordId,recordRevision);}catch(cause){setError(message(cause));return;}setBusy(true);try{setResult(await api<AutomationDebugResult>(`${base}/automations/${automation.id}/debug`,"POST",input));}catch(cause){setError(message(cause));}finally{setBusy(false);}}
+  return <section aria-label="无副作用调试" className="min-w-0 space-y-5"><div className="rounded-card border border-border bg-muted/20 p-4"><h3 className="text-body font-medium">预览已保存草稿 · 修订 {automation.revision}</h3><p className="mt-2 text-caption leading-6 text-muted-foreground">使用固定输入检查每步映射和条件。查询节点按当前权限读取真实记录或有效组织成员；写入、删除、通知、打印文档、HTTP、邮件、短信和 AI 仅生成模拟输出，不产生实际操作。调试结果不会进入运行记录。</p><p className="mt-1 text-caption leading-6 text-muted-foreground">关联记录仅用于权限与修订校验，数据始终采用下方测试 JSON。子自动化使用当前已发布版本。</p></div>
+    {dirty&&<p role="status" className="text-body text-muted-foreground">请先保存或撤销草稿修改，再调试所示修订。</p>}
+    <fieldset disabled={busy} className="min-w-0 space-y-4"><label className="block min-w-0 text-body">测试数据（JSON 对象）<MultilineEntry aria-label="调试测试数据" rows={7} value={dataText} onChange={event=>edit(()=>setDataText(event.target.value))} className="mt-2 w-full"/></label><div className="grid min-w-0 gap-4 md:grid-cols-2"><Input label="关联记录 ID（可选）" value={recordId} onChange={value=>edit(()=>setRecordId(value))}/><Input label="记录修订（可选）" value={recordRevision} inputMode="numeric" onChange={value=>edit(()=>setRecordRevision(value))}/></div>
+      <details><summary className="cursor-pointer text-body">为模拟动作提供输出</summary><p className="my-3 text-caption leading-6 text-muted-foreground">按完整节点路径提供 JSON 对象，例如 {`{"root.step1":{"recordId":"测试记录 ID"}}`}。循环内可用 root.loop.0.step2。查询、条件、函数、循环与子流程不能被替换；所有动作输出均标记 simulated。</p><MultilineEntry aria-label="调试模拟输出" rows={6} value={mocksText} onChange={event=>edit(()=>setMocksText(event.target.value))} className="w-full"/></details>
+      <Button disabled={busy||dirty} onClick={()=>void preview()}>{busy?"正在预览…":"无副作用调试"}</Button>
+    </fieldset>{error&&<p role="alert" className="text-body text-destructive">{error}</p>}
+    {result&&<div className="min-w-0 space-y-4" aria-label="调试结果"><p role={result.error?"alert":"status"} className={`rounded-control p-3 text-body ${result.error?"bg-destructive/5 text-destructive":"bg-primary/5"}`}>{result.error?`调试已停止：${result.error}`:`调试完成 · ${result.steps.length} 个步骤预览 · 未执行实际动作`}</p><Snapshot label="查看触发输入" value={result.trigger}/><ol className="space-y-3">{result.steps.map(step=><li key={step.stepPath} className="min-w-0 space-y-3 rounded-card border border-border p-4"><div className="flex flex-wrap items-center gap-2 text-body"><span className="break-all font-mono text-caption">{step.stepPath}</span><span>{automationKinds[step.kind]}</span><span className="rounded-control bg-muted px-2 py-1 text-caption">{debugStates[step.state]}{step.mocked?" · 自定义输出":""}</span></div>{step.error&&<p className="text-caption text-destructive">{step.error}</p>}<div className="grid min-w-0 gap-3 sm:grid-cols-2"><Snapshot label="查看输入" value={step.input}/><Snapshot label="查看输出" value={step.output}/></div></li>)}</ol><Snapshot label="查看全部步骤输出" value={result.outputs}/>{result.unusedMockPaths.length>0&&<p className="break-all text-caption text-muted-foreground">未使用的模拟路径：{result.unusedMockPaths.join("、")}</p>}</div>}
+  </section>;
+}

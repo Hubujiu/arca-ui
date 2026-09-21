@@ -1,0 +1,110 @@
+@import "tailwindcss/theme" layer(theme);
+@import "tailwindcss/utilities" layer(utilities);
+@import "./shared/design-system/data-layout.css";
+@import "./shared/design-system/record-print.css";
+@import "./shared/design-system/layout-tokens.css";
+@import "tw-animate-css";
+@import "./shared/design-system/motion/motion.css";
+@import "./shared/design-system/theme-defaults.css";
+
+@import "./shared/design-system/workspace/workspace.css";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme inline {
+  --font-sans: system-ui, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Noto Sans SC", "Microsoft YaHei", sans-serif;
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary-text: var(--primary-text);
+  --color-primary-hover: var(--primary-hover);
+  --color-primary-hover-foreground: var(--primary-hover-foreground);
+  --color-accent-hover: var(--accent-hover);
+  --color-accent-hover-foreground: var(--accent-hover-foreground);
+  --color-warning: var(--warning);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-success: var(--success);
+  --color-border-strong: var(--border-strong);
+  --radius-sm: 6px;
+  --radius-md: 6px;
+  --radius-lg: 10px;
+  --radius-xl: 12px;
+}
+
+@layer base {
+  .enterprise-module, .enterprise-module * { border-color: var(--border); }
+  .enterprise-module, .enterprise-module * {
+    scrollbar-width: thin;
+    scrollbar-color: color-mix(in srgb, var(--muted-foreground) 35%, transparent) transparent;
+  }
+  .enterprise-module { min-height: 100%; }
+  .enterprise-module {
+    margin: 0;
+    background: var(--background);
+    color: var(--foreground);
+    font-family: var(--font-sans);
+    font-size: var(--text-body);
+    line-height: 1.5;
+  }
+  .enterprise-module :is(button, input, select, textarea) { font: inherit; color: inherit; }
+  .enterprise-module button { cursor: pointer; }
+  .enterprise-module a { color: inherit; text-decoration: none; }
+  .enterprise-module mark {
+    background: color-mix(in srgb, var(--primary) 18%, transparent);
+    color: inherit;
+    border-radius: var(--radius-control);
+    padding: 0 0.15em;
+  }
+}
+.enterprise-module .docx-preview p { margin: 0 0 0.85em; }
+.enterprise-module .docx-preview table { width: 100%; border-collapse: collapse; margin: 1rem 0; }
+.enterprise-module .docx-preview td, .enterprise-module .docx-preview th { border: 1px solid var(--border); padding: 0.4rem 0.6rem; }
+.enterprise-module .scrollbar-hide { scrollbar-width: none; }
+.enterprise-module .scrollbar-hide::-webkit-scrollbar { display: none; }
+@keyframes pop-in {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+/* Brand fills stay exact; body-sized link/icon ink meets surface contrast. */
+@layer utilities { .text-primary { color: var(--primary-text); } }
+@layer base {
+  .enterprise-module :is(button, a, input, select, textarea, [tabindex]):focus-visible {
+    outline: 2px solid var(--ring);
+    outline-offset: 3px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .enterprise-module, .enterprise-module *, .enterprise-module *::before, .enterprise-module *::after { scroll-behavior: auto !important; }
+}
+.enterprise-module[data-motion="reduced"] *, .enterprise-module[data-motion="reduced"] *::before, .enterprise-module[data-motion="reduced"] *::after {
+  animation-duration: 0.01ms !important;
+  animation-iteration-count: 1 !important;
+  transition-duration: 0.01ms !important;
+  scroll-behavior: auto !important;
+}
+.enterprise-module[data-density="compact"] {
+  --radius-control: 10px;
+  --radius-card: 16px;
+  --radius-panel: 20px;
+  font-size: 13px;
+}
+.enterprise-module[data-density="compact"] :is(.p-8, .p-7, .p-6) { padding: 1rem; }
+.enterprise-module[data-density="compact"] :is(.gap-6, .gap-5) { gap: 0.875rem; }
+

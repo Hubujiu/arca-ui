@@ -1,0 +1,93 @@
+@scope (.enterprise-module) {
+/* Document defaults. Component geometry belongs to its own stylesheet. */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--ui-ground);
+  color: var(--ui-ink);
+  font-family: "Segoe UI", "Microsoft YaHei", system-ui, sans-serif;
+  font-size: var(--text-body);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+button, input, select {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+button:disabled {
+  cursor: not-allowed;
+}
+
+h1, h2, h3, p {
+  margin: 0;
+}
+
+h1 {
+  font-size: var(--text-heading);
+  font-weight: 600;
+  letter-spacing: -0.5px;
+  line-height: 1.4;
+}
+
+h2 {
+  font-size: var(--text-title);
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+h3 {
+  margin: 24px 0 14px;
+  font-size: var(--text-body);
+  font-weight: 600;
+}
+
+small {
+  display: block;
+  margin-top: 4px;
+  color: var(--ui-muted-ink);
+  font-size: var(--text-caption);
+  line-height: 1.6;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+:focus-visible {
+  outline: 2px solid var(--ui-accent);
+  outline-offset: 3px;
+}
+
+::selection {
+  background: var(--ui-accent-soft);
+  color: var(--ui-ink);
+}
+
+.app-loading {
+  display: grid;
+  min-height: 100dvh;
+  place-items: center;
+}
+
+.portal-toast {
+  font-family: inherit;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+}

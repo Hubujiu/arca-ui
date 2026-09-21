@@ -1,0 +1,267 @@
+{
+  "table": {
+    "id": "10000000-0000-4000-8000-000000000002",
+    "appId": "10000000-0000-4000-8000-000000000001",
+    "name": "合同台账",
+    "description": "",
+    "revision": 1,
+    "permissions": {
+      "manage": true,
+      "create": true,
+      "read": "ALL",
+      "update": "ALL",
+      "delete": "ALL"
+    },
+    "publishedVersion": {
+      "id": "10000000-0000-4000-8000-000000000004",
+      "version": 1,
+      "schema": {
+        "name": "合同台账",
+        "description": "",
+        "fields": [
+          {
+            "id": "name",
+            "label": "合同名称",
+            "type": "text"
+          },
+          {
+            "id": "amount",
+            "label": "合同金额",
+            "type": "number"
+          },
+          {
+            "id": "due",
+            "label": "到期日期",
+            "type": "date"
+          }
+        ]
+      }
+    }
+  },
+  "definitions": [
+    {
+      "id": "10000000-0000-4000-8000-000000000003",
+      "tableId": "10000000-0000-4000-8000-000000000002",
+      "appId": "10000000-0000-4000-8000-000000000001",
+      "name": "合同金额检查",
+      "revision": 1,
+      "enabled": false,
+      "draft": {
+        "trigger": {
+          "type": "BUTTON",
+          "intervalMinutes": null,
+          "dateFieldId": null,
+          "offsetMinutes": null
+        },
+        "steps": [
+          {
+            "id": "query",
+            "kind": "QUERY",
+            "tableId": "10000000-0000-4000-8000-000000000002",
+            "inputs": {
+              "query": {
+                "literal": null,
+                "path": "trigger.data.name"
+              },
+              "limit": {
+                "literal": 20,
+                "path": null
+              }
+            }
+          },
+          {
+            "id": "condition",
+            "kind": "CONDITION",
+            "rule": {
+              "fieldId": "amount",
+              "operator": "GT",
+              "value": 1000
+            },
+            "steps": [
+              {
+                "id": "calculate",
+                "kind": "FUNCTION",
+                "values": {
+                  "amount": {
+                    "literal": null,
+                    "path": "trigger.data.amount"
+                  }
+                },
+                "formula": {
+                  "op": "MUL",
+                  "left": {
+                    "op": "FIELD",
+                    "fieldId": "amount"
+                  },
+                  "right": {
+                    "op": "CONST",
+                    "value": 0.1
+                  }
+                }
+              }
+            ],
+            "elseSteps": [
+              {
+                "id": "otherwise",
+                "kind": "FUNCTION",
+                "formula": {
+                  "op": "CONST",
+                  "value": 0
+                }
+              }
+            ]
+          },
+          {
+            "id": "loop",
+            "kind": "FOREACH",
+            "inputs": {
+              "items": {
+                "path": "steps.query.items",
+                "literal": null
+              }
+            },
+            "steps": [
+              {
+                "id": "loopValue",
+                "kind": "FUNCTION",
+                "values": {
+                  "amount": {
+                    "path": "item.data.amount",
+                    "literal": null
+                  }
+                },
+                "formula": {
+                  "op": "FIELD",
+                  "fieldId": "amount"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "publishedVersionId": "10000000-0000-4000-8000-000000000004",
+      "publishedVersion": {
+        "id": "10000000-0000-4000-8000-000000000004",
+        "version": 1,
+        "definition": {
+          "trigger": {
+            "type": "BUTTON",
+            "intervalMinutes": null,
+            "dateFieldId": null,
+            "offsetMinutes": null
+          },
+          "steps": [
+            {
+              "id": "query",
+              "kind": "QUERY",
+              "tableId": "10000000-0000-4000-8000-000000000002",
+              "inputs": {
+                "query": {
+                  "literal": null,
+                  "path": "trigger.data.name"
+                },
+                "limit": {
+                  "literal": 20,
+                  "path": null
+                }
+              }
+            },
+            {
+              "id": "condition",
+              "kind": "CONDITION",
+              "rule": {
+                "fieldId": "amount",
+                "operator": "GT",
+                "value": 1000
+              },
+              "steps": [
+                {
+                  "id": "calculate",
+                  "kind": "FUNCTION",
+                  "values": {
+                    "amount": {
+                      "literal": null,
+                      "path": "trigger.data.amount"
+                    }
+                  },
+                  "formula": {
+                    "op": "MUL",
+                    "left": {
+                      "op": "FIELD",
+                      "fieldId": "amount"
+                    },
+                    "right": {
+                      "op": "CONST",
+                      "value": 0.1
+                    }
+                  }
+                }
+              ],
+              "elseSteps": [
+                {
+                  "id": "otherwise",
+                  "kind": "FUNCTION",
+                  "formula": {
+                    "op": "CONST",
+                    "value": 0
+                  }
+                }
+              ]
+            },
+            {
+              "id": "loop",
+              "kind": "FOREACH",
+              "inputs": {
+                "items": {
+                  "path": "steps.query.items",
+                  "literal": null
+                }
+              },
+              "steps": [
+                {
+                  "id": "loopValue",
+                  "kind": "FUNCTION",
+                  "values": {
+                    "amount": {
+                      "path": "item.data.amount",
+                      "literal": null
+                    }
+                  },
+                  "formula": {
+                    "op": "FIELD",
+                    "fieldId": "amount"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "10000000-0000-4000-8000-000000000005",
+      "tableId": "10000000-0000-4000-8000-000000000002",
+      "appId": "10000000-0000-4000-8000-000000000001",
+      "name": "到期通知草稿",
+      "revision": 1,
+      "enabled": false,
+      "draft": {
+        "trigger": {
+          "type": "DATE_FIELD",
+          "dateFieldId": "due",
+          "offsetMinutes": -1440
+        },
+        "steps": [
+          {
+            "id": "calculate",
+            "kind": "FUNCTION",
+            "formula": {
+              "op": "CONST",
+              "value": 1
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

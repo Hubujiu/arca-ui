@@ -1,0 +1,6 @@
+{
+  "name": "@enterprise/authorization", "version": "1.0.0", "private": true, "type": "module",
+  "scripts": { "dev": "vite", "build": "vite build", "typecheck": "tsc -p tsconfig.json" },
+  "dependencies": { "@enterprise/business-shared": "workspace:*", "@enterprise/module-sdk": "workspace:*", "react": "19.2.4", "react-dom": "19.2.4", "react-router-dom": "7.9.6", "sonner": "2.0.7" },
+  "devDependencies": { "@types/react": "^19.0.0", "@types/react-dom": "^19.0.0", "typescript": "~5.8.3", "vite": "^6.3.5" }
+}

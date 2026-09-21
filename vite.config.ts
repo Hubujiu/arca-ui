@@ -5,10 +5,12 @@ import { defineConfig } from "vite"
 
 // https://vite.dev/config/
 export default defineConfig({
+  base: process.env.NODE_ENV === "production" ? "/arca-ui/" : "/",
   plugins: [react(), tailwindcss()],
   resolve: {
     alias: {
-      "@": path.resolve(__dirname, "./src"),
+      "@": path.resolve(import.meta.dirname, "./src"),
+      "lenis/react": path.resolve(import.meta.dirname, "./node_modules/lenis/dist/lenis-react.mjs"),
     },
   },
 })

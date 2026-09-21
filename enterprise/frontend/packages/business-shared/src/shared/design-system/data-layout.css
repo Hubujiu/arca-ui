@@ -1,0 +1,128 @@
+/* Runtime geometry belongs to the document or layout data, not the theme. */
+.dw-image-bounds { width: var(--image-width); height: var(--image-height); }
+.dw-document-image {
+  width: var(--image-width);
+  height: var(--image-height);
+  max-width: none;
+  transform: rotate(var(--image-angle));
+}
+.dw-content-stage { min-height: var(--stage-min-height); }
+.dw-running-indicator { width: var(--indicator-size); height: var(--indicator-size); }
+
+/* Explicit runtime data and diagram geometry contracts. */
+.dw-data-loader-1 {
+  font-size: var(--dw-data-loader-1-font-size);
+  line-height: var(--dw-data-loader-1-line-height);
+}
+.dw-data-loader-2 {
+  font-size: var(--dw-data-loader-2-font-size);
+}
+.dw-data-loader-3 {
+  font-size: var(--dw-data-loader-3-font-size);
+  line-height: var(--dw-data-loader-3-line-height);
+}
+.dw-data-morphing-search-1 {
+  box-shadow: var(--dw-data-morphing-search-1-box-shadow);
+}
+.dw-data-morphing-search-2 {
+  translate: var(--dw-data-morphing-search-2-translate);
+}
+.dw-data-morphing-search-3 {
+  box-shadow: var(--dw-data-morphing-search-3-box-shadow);
+}
+.dw-data-table-header-1 {
+  box-shadow: var(--dw-data-table-header-1-box-shadow);
+}
+.dw-data-structured-viewer-1 {
+  padding-left: var(--dw-data-structured-viewer-1-padding-left);
+}
+.dw-data-app-workspace-1 {
+  width: var(--dw-data-app-workspace-1-width);
+}
+.dw-data-extended-fields-1 {
+  width: var(--dw-data-extended-fields-1-width);
+}
+.dw-data-field-designer-1 {
+  background-color: var(--dw-data-field-designer-1-background-color);
+}
+.dw-data-field-renderer-1 {
+  background-color: var(--dw-data-field-renderer-1-background-color);
+}
+.dw-data-field-renderer-2 {
+  background-color: var(--dw-data-field-renderer-2-background-color);
+}
+.dw-data-field-renderer-3 {
+  background-color: var(--dw-data-field-renderer-3-background-color);
+}
+.dw-data-field-renderer-4 {
+  width: var(--dw-data-field-renderer-4-width);
+}
+.dw-data-field-renderer-5 {
+  width: var(--dw-data-field-renderer-5-width);
+}
+.dw-data-record-print-1 {
+  grid-template-columns: var(--dw-data-record-print-1-grid-template-columns);
+}
+.dw-data-record-print-2 {
+  grid-column: var(--dw-data-record-print-2-grid-column);
+}
+.dw-data-workflow-approval-progress-1 {
+  width: var(--dw-data-workflow-approval-progress-1-width);
+}
+.dw-data-workflow-designer-1 {
+  background: var(--dw-data-workflow-designer-1-background);
+  color: var(--dw-data-workflow-designer-1-color);
+  box-shadow: var(--dw-data-workflow-designer-1-box-shadow);
+}
+.dw-data-workflow-designer-2 {
+  background: var(--dw-data-workflow-designer-2-background);
+  color: var(--dw-data-workflow-designer-2-color);
+}
+.dw-data-workflow-designer-3 {
+  top: var(--dw-data-workflow-designer-3-top);
+}
+.dw-data-workflow-designer-4 {
+  background: var(--dw-data-workflow-designer-4-background);
+  color: var(--dw-data-workflow-designer-4-color);
+  box-shadow: var(--dw-data-workflow-designer-4-box-shadow);
+}
+.dw-data-workflow-designer-5 {
+  stroke: var(--dw-data-workflow-designer-5-stroke);
+  stroke-width: var(--dw-data-workflow-designer-5-stroke-width);
+  transition: var(--dw-data-workflow-designer-5-transition);
+}
+.dw-data-workflow-designer-6 {
+  position: var(--dw-data-workflow-designer-6-position);
+  transform: var(--dw-data-workflow-designer-6-transform);
+  pointer-events: var(--dw-data-workflow-designer-6-pointer-events);
+}
+.dw-data-workflow-designer-7 {
+  position: var(--dw-data-workflow-designer-7-position);
+  transform: var(--dw-data-workflow-designer-7-transform);
+  pointer-events: var(--dw-data-workflow-designer-7-pointer-events);
+}
+.dw-data-workflow-designer-8 {
+  background: var(--dw-data-workflow-designer-8-background);
+  color: var(--dw-data-workflow-designer-8-color);
+  box-shadow: var(--dw-data-workflow-designer-8-box-shadow);
+}
+.dw-data-workflow-designer-9 {
+  background: var(--dw-data-workflow-designer-9-background);
+  color: var(--dw-data-workflow-designer-9-color);
+  box-shadow: var(--dw-data-workflow-designer-9-box-shadow);
+}
+.dw-data-admin-page-1 {
+  padding-left: var(--dw-data-admin-page-1-padding-left);
+}
+.dw-data-people-picker-1 {
+  padding-left: var(--dw-data-people-picker-1-padding-left);
+}
+.dw-data-people-picker-2 {
+  padding-left: var(--dw-data-people-picker-2-padding-left);
+}
+
+[data-field-grid] { grid-column: var(--field-grid); }
+[data-field-divider] { border-top-style: var(--divider-style); border-top-color: var(--divider-color, var(--border)); border-top-width: var(--divider-width); }
+.dw-color-swatch { background-color: var(--swatch-color); }
+
+.dw-data-value-fields-1 { background-color: var(--dw-data-value-fields-1-background-color); }

@@ -1,0 +1,14 @@
+{
+  "extends": "../../../tsconfig.base.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"],
+      "@approved/potlab-icons": ["approved/potlab-icons/src/Potlab.tsx"],
+      "@approved/popover": ["approved/beui-popover/popover.tsx"]
+    },
+    "noUnusedLocals": false,
+    "noUnusedParameters": false
+  },
+  "include": ["src", "build", "approved"]
+}

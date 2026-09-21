@@ -1,0 +1,7 @@
+/* Generated from lib/motion-tokens.ts. Do not hand-edit. */
+.enterprise-module {
+  --dw-motion-menu: 0.14s;
+  --dw-motion-menu-exit: 0.09s;
+  --dw-ease-enter: cubic-bezier(0.16, 1, 0.3, 1);
+  --dw-ease-exit: cubic-bezier(0.4, 0, 1, 1);
+}

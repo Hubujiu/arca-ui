@@ -1,21 +1,19 @@
-# React + TypeScript + Vite + shadcn/ui
+# Arca
 
-This is a template for a new Vite project with React, TypeScript, and shadcn/ui.
+基于 Base UI 的 React 组件库。
 
-## Adding components
+## 技术栈
 
-To add components to your app, run the following command:
+- React 19 + Vite + TypeScript
+- Tailwind CSS v4 · Nova tokens
+- `@base-ui/react`
+- Motion · Recharts · Lucide
+
+## 本地运行
 
 ```bash
-npx shadcn@latest add button
+npm install
+npm run dev
 ```
 
-This will place the ui components in the `src/components` directory.
-
-## Using components
-
-To use the components in your app, import them as follows:
-
-```tsx
-import { Button } from "@/components/ui/button"
-```
+打开首页浏览组件目录，`/docs` 查看接入说明。

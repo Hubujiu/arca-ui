@@ -1,0 +1,15 @@
+import { iconFactory } from "@approved/potlab-icons";
+export const ShieldCheck = iconFactory("ShieldCheck");
+export const Users = iconFactory("Users");
+export const Network = iconFactory("Network");
+export const LayoutGrid = iconFactory("Table");
+export const KeyRound = iconFactory("Lock");
+export const History = iconFactory("Clock");
+export const LogOut = iconFactory("LogOut");
+export const RefreshCw = iconFactory("RefreshCw");
+export const Plus = iconFactory("Plus");
+export const ArrowRight = iconFactory("Arrow Right");
+export const Menu = iconFactory("Menu");
+export const X = iconFactory("X");
+export const Check = iconFactory("Check");
+export const LoaderCircle = iconFactory("LoaderCircle");

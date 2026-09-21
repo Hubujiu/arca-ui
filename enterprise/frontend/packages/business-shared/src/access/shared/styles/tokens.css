@@ -1,0 +1,17 @@
+/* Portal aliases inherit the same approved palette as the knowledge app. */
+.enterprise-module {
+  --background: var(--ui-ground); --surface: var(--ui-surface); --foreground: var(--ui-ink);
+  --muted-foreground: var(--ui-muted-ink); --border: var(--ui-border); --input-border: var(--ui-muted-ink);
+  --primary: var(--ui-accent); --primary-foreground: var(--ui-on-accent);
+  --accent: var(--ui-accent-soft); --accent-foreground: var(--ui-ink);
+  --mint: color-mix(in srgb, var(--ui-status-success) 12%, var(--ui-surface));
+  --orange: color-mix(in srgb, var(--ui-status-warning) 12%, var(--ui-surface));
+  --pink: color-mix(in srgb, var(--ui-status-danger) 12%, var(--ui-surface));
+  --radius-dialog: var(--radius-panel);
+}
+@theme inline {
+  --color-background: var(--background); --color-foreground: var(--foreground);
+  --color-primary: var(--primary); --color-primary-foreground: var(--primary-foreground);
+  --color-accent: var(--accent); --color-accent-foreground: var(--accent-foreground);
+  --color-border: var(--border); --color-muted-foreground: var(--muted-foreground);
+}
