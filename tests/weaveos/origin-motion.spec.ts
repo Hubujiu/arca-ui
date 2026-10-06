@@ -19,6 +19,7 @@ test('window geometry really travels from and returns toward the trigger',async(
   const widths:number[]=[];const start=performance.now();function sample(){const el=document.querySelector('[role="dialog"]');if(el)widths.push(el.getBoundingClientRect().width);if(performance.now()-start>900){resolve(widths);return}requestAnimationFrame(sample)}sample()
  }))
  await trigger.click();const opening=await openingSamples
+ console.log('V042_OPENING_GEOMETRY',JSON.stringify({count:opening.length,widths:opening,expanded:opened!.width}))
  expect(opening.some(w=>w<opened!.width*.65)).toBe(true)
  await expect(dialog).toHaveCSS('transform','none')
  const final=await dialog.boundingBox();expect(Math.abs(final!.x+final!.width/2-720)).toBeLessThan(2)

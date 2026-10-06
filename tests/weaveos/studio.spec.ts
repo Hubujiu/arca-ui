@@ -20,7 +20,14 @@ test('source dialog has accessible title, focus isolation and restores origin', 
  const trigger=page.getByRole('button',{name:'新建应用',exact:true}); await trigger.click()
  const dialog=page.getByRole('dialog',{name:'创建应用',exact:true}); await expect(dialog).toBeVisible()
  await expect(dialog.getByLabel('应用名称')).toBeFocused()
- for(let i=0;i<10;i++) { await page.keyboard.press('Tab'); const inside=await dialog.evaluate(el=>el.contains(document.activeElement)); if(!inside) console.log('V042_FOCUS_DIAGNOSTIC',await page.evaluate(()=>document.activeElement?.outerHTML)); expect(inside).toBe(true) }
+ // Base UI uses aria-hidden focus sentinels and redirects them on the next
+ // animation frame. Actual background focus is still forbidden, even briefly.
+ await page.evaluate(()=>{
+  const escaped:string[]=[];(window as unknown as {v042FocusEscapes:string[]}).v042FocusEscapes=escaped
+  document.addEventListener('focusin',event=>{const target=event.target;if(target instanceof HTMLElement && !target.closest('[role="dialog"]') && !target.hasAttribute('data-base-ui-focus-guard'))escaped.push(target.outerHTML)})
+ })
+ for(let i=0;i<10;i++) { await page.keyboard.press('Tab'); await expect.poll(()=>dialog.evaluate(el=>el.contains(document.activeElement)),{timeout:1000}).toBe(true) }
+ expect(await page.evaluate(()=>(window as unknown as {v042FocusEscapes:string[]}).v042FocusEscapes)).toEqual([])
  await page.keyboard.press('Escape'); await expect(dialog).toBeHidden(); await expect(trigger).toBeFocused()
 })
 
@@ -94,7 +101,11 @@ test('theme controls, basic controls and component navigation work', async ({pag
 
 test('studio and open modal have no serious accessibility violations', async ({page})=>{
  for(const modal of [false,true]) {
- if(modal) await page.getByRole('button',{name:'新建应用',exact:true}).click()
+ if(modal) {
+  await page.getByRole('button',{name:'新建应用',exact:true}).click()
+  await expect(page.getByRole('dialog')).toHaveCSS('opacity','1')
+  await expect(page.getByRole('dialog')).toHaveCSS('transform','none')
+ }
  const result=await new AxeBuilder({page}).analyze()
  expect(result.violations.filter(v=>v.impact==='serious'||v.impact==='critical')).toEqual([])
  }

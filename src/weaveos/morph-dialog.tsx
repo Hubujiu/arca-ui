@@ -65,12 +65,19 @@ function AnimatedPopup({children,className,initialFocus,finalFocus}:Omit<MorphDi
    const box={x:(window.innerWidth-el.offsetWidth)/2,y:(window.innerHeight-el.offsetHeight)/2,width:el.offsetWidth,height:el.offsetHeight}
    const source=origin.current?.isConnected ? origin.current.getBoundingClientRect() : null
    const from=reduced ? null : originTransform(source,box)
-   if(initializedElement.current!==el) {
+   const fresh=initializedElement.current!==el
+   if(fresh) {
      el.style.opacity=from ? '0.3' : '0'
      if(from) el.style.transform=`translate(${from.x}px, ${from.y}px) scale(${from.scaleX}, ${from.scaleY})`
      initializedElement.current=el
    }
-   const target=open ? {x:0,y:0,scaleX:1,scaleY:1,opacity:1} : {...(from ?? {x:0,y:0,scaleX:1,scaleY:1}),opacity:0}
+   // Supply fresh-node keyframes explicitly: DOM animation values must not
+   // infer individual x/scale properties from an imperatively assigned transform.
+   const target=open
+     ? fresh && from
+       ? {x:[from.x,0],y:[from.y,0],scaleX:[from.scaleX,1],scaleY:[from.scaleY,1],opacity:[0.3,1]}
+       : {x:0,y:0,scaleX:1,scaleY:1,opacity:1}
+     : {...(from ?? {x:0,y:0,scaleX:1,scaleY:1}),opacity:0}
    const animation=animate(el,target,reduced ? {duration:0.12} : {...springs.surface,opacity:{duration:open?0.18:0.2}})
    animation.then(()=>{if(cancelled) return; if(open) el.style.transform='none'; else actions.current?.unmount()})
    return ()=>{cancelled=true;animation.stop()}
