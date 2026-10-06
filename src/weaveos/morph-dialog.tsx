@@ -56,6 +56,7 @@ function AnimatedPopup({children,className,initialFocus,finalFocus}:Omit<MorphDi
  const {open,origin,actions}=useMorph()
  const panel=useRef<HTMLDivElement|null>(null)
  const initializedElement=useRef<HTMLDivElement|null>(null)
+ const previousOpen=useRef<boolean|null>(null)
  const reduced=useReducedMotion() ?? false
  useLayoutEffect(()=>{
    const el=panel.current
@@ -65,7 +66,11 @@ function AnimatedPopup({children,className,initialFocus,finalFocus}:Omit<MorphDi
    const box={x:(window.innerWidth-el.offsetWidth)/2,y:(window.innerHeight-el.offsetHeight)/2,width:el.offsetWidth,height:el.offsetHeight}
    const source=origin.current?.isConnected ? origin.current.getBoundingClientRect() : null
    const from=reduced ? null : originTransform(source,box)
-   const fresh=initializedElement.current!==el
+   // StrictMode replays a mounted layout effect without replacing its DOM.
+   // Replay an entering animation from its source, while a real open/close
+   // reversal keeps the currently animated values.
+   const fresh=initializedElement.current!==el || (open && previousOpen.current===true)
+   previousOpen.current=open
    if(fresh) {
      el.style.opacity=from ? '0.3' : '0'
      if(from) el.style.transform=`translate(${from.x}px, ${from.y}px) scale(${from.scaleX}, ${from.scaleY})`
