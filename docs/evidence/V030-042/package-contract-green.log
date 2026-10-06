@@ -1,0 +1,17 @@
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> arca-ui@0.0.1 test:weaveos:package
+> node --test tests/weaveos/package.test.mjs
+
+✔ consumer artifact exports controls, theme and source-aware dialog (0.889574ms)
+✔ package has typed exports, explicit React peers and safe unpublished metadata (0.274695ms)
+✔ artifact has no source aliases or demo app and CSS stays scoped (0.318832ms)
+✔ distributed license and source attribution accompany components (0.143587ms)
+ℹ tests 4
+ℹ suites 0
+ℹ pass 4
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 498.906841

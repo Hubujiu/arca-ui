@@ -1,0 +1,92 @@
+✖ consumer artifact exports controls, theme and source-aware dialog (1.069187ms)
+✖ package has typed exports, explicit React peers and safe unpublished metadata (0.623313ms)
+✖ artifact has no source aliases or demo app and CSS stays scoped (4.539923ms)
+✖ distributed license and source attribution accompany components (0.230939ms)
+ℹ tests 4
+ℹ suites 0
+ℹ pass 0
+ℹ fail 4
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 89.475729
+
+✖ failing tests:
+
+test at tests/weaveos/package.test.mjs:6:1
+✖ consumer artifact exports controls, theme and source-aware dialog (1.069187ms)
+  AssertionError [ERR_ASSERTION]: missing public export Button
+      at TestContext.<anonymous> (file:///workspace/scratch/75c2273f6a80/arca-ui-V030-042/tests/weaveos/package.test.mjs:7:244)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.start (node:internal/test_runner/test:1242:17)
+      at startSubtestAfterBootstrap (node:internal/test_runner/harness:387:17) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    expected: true,
+    operator: '==',
+    diff: 'simple'
+  }
+
+test at tests/weaveos/package.test.mjs:10:1
+✖ package has typed exports, explicit React peers and safe unpublished metadata (0.623313ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  + actual - expected
+  
+  + undefined
+  - '@weaveos/ui'
+  
+      at TestContext.<anonymous> (file:///workspace/scratch/75c2273f6a80/arca-ui-V030-042/tests/weaveos/package.test.mjs:12:9)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:387:3) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    expected: '@weaveos/ui',
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tests/weaveos/package.test.mjs:18:1
+✖ artifact has no source aliases or demo app and CSS stays scoped (4.539923ms)
+  AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+  
+    assert.ok(css.includes('.wo-theme'))
+  
+      at TestContext.<anonymous> (file:///workspace/scratch/75c2273f6a80/arca-ui-V030-042/tests/weaveos/package.test.mjs:22:9)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: '==',
+    diff: 'simple'
+  }
+
+test at tests/weaveos/package.test.mjs:24:1
+✖ distributed license and source attribution accompany components (0.230939ms)
+  AssertionError [ERR_ASSERTION]: missing REUI-LICENSE.txt
+      at TestContext.<anonymous> (file:///workspace/scratch/75c2273f6a80/arca-ui-V030-042/tests/weaveos/package.test.mjs:25:65)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: '==',
+    diff: 'simple'
+  }

@@ -1,0 +1,3 @@
+export interface Rect { x: number; y: number; width: number; height: number }
+export interface OriginTransform { x: number; y: number; scaleX: number; scaleY: number }
+export function originTransform(_source: Rect | null, _panel: Rect): OriginTransform | null { return null }
