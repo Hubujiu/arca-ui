@@ -55,7 +55,7 @@ export function MorphDialogContent({children,className='',initialFocus,finalFocu
 function AnimatedPopup({children,className,initialFocus,finalFocus}:Omit<MorphDialogContentProps,'theme'>) {
  const {open,origin,actions}=useMorph()
  const panel=useRef<HTMLDivElement|null>(null)
- const hasOpened=useRef(false)
+ const initializedElement=useRef<HTMLDivElement|null>(null)
  const reduced=useReducedMotion() ?? false
  useLayoutEffect(()=>{
    const el=panel.current
@@ -65,10 +65,10 @@ function AnimatedPopup({children,className,initialFocus,finalFocus}:Omit<MorphDi
    const box={x:(window.innerWidth-el.offsetWidth)/2,y:(window.innerHeight-el.offsetHeight)/2,width:el.offsetWidth,height:el.offsetHeight}
    const source=origin.current?.isConnected ? origin.current.getBoundingClientRect() : null
    const from=reduced ? null : originTransform(source,box)
-   if(!hasOpened.current) {
+   if(initializedElement.current!==el) {
      el.style.opacity=from ? '0.3' : '0'
      if(from) el.style.transform=`translate(${from.x}px, ${from.y}px) scale(${from.scaleX}, ${from.scaleY})`
-     hasOpened.current=true
+     initializedElement.current=el
    }
    const target=open ? {x:0,y:0,scaleX:1,scaleY:1,opacity:1} : {...(from ?? {x:0,y:0,scaleX:1,scaleY:1}),opacity:0}
    const animation=animate(el,target,reduced ? {duration:0.12} : {...springs.surface,opacity:{duration:open?0.18:0.2}})

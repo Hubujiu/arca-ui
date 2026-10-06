@@ -20,7 +20,7 @@ test('source dialog has accessible title, focus isolation and restores origin', 
  const trigger=page.getByRole('button',{name:'新建应用',exact:true}); await trigger.click()
  const dialog=page.getByRole('dialog',{name:'创建应用',exact:true}); await expect(dialog).toBeVisible()
  await expect(dialog.getByLabel('应用名称')).toBeFocused()
- for(let i=0;i<10;i++) { await page.keyboard.press('Tab'); const inside=await dialog.evaluate(el=>el.contains(document.activeElement)); if(!inside) console.log('V042_FOCUS_DIAGNOSTIC',await page.evaluate(()=>document.activeElement?.outerHTML)); expect(inside).toBe(true) }
+ for(let i=0;i<10;i++) { await page.keyboard.press('Tab'); expect(await dialog.evaluate(el=>el.contains(document.activeElement))).toBe(true) }
  await page.keyboard.press('Escape'); await expect(dialog).toBeHidden(); await expect(trigger).toBeFocused()
 })
 
@@ -43,13 +43,13 @@ test('save feedback waits for result and errors retain editable input', async ({
  await page.getByRole('button',{name:'新建应用',exact:true}).click()
  const dialog=page.getByRole('dialog',{name:'创建应用',exact:true})
  await dialog.getByLabel('应用名称').fill('测试应用')
- await dialog.getByRole('checkbox',{name:'模拟保存失败'}).check()
+ await dialog.getByLabel('模拟保存失败').check()
  await dialog.getByRole('button',{name:'创建',exact:true}).click()
  await expect(dialog.getByRole('button',{name:'保存中'})).toBeDisabled()
  await expect(page.getByText('应用已创建',{exact:true})).toHaveCount(0)
  await expect(dialog.getByRole('alert')).toContainText('保存失败')
  await expect(dialog.getByLabel('应用名称')).toHaveValue('测试应用')
- await dialog.getByRole('checkbox',{name:'模拟保存失败'}).uncheck()
+ await dialog.getByLabel('模拟保存失败').uncheck()
  await dialog.getByRole('button',{name:'创建',exact:true}).click()
  await expect(page.getByRole('status')).toContainText('应用已创建')
  await expect(dialog).toBeHidden()
