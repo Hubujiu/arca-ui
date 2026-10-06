@@ -26,3 +26,7 @@ dist-ssr
 tmp/
 output/
 .playwright-cli/
+
+test-results/
+playwright-report/
+!docs/evidence/**/*.log
