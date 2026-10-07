@@ -9,3 +9,8 @@ export type { Rect, OriginTransform } from './geometry'
 
 export { DataTable, Pagination } from "./data-table"
 export type { DataColumn, TableSort, DataTableProps, PaginationProps } from "./data-table"
+
+export { FilterManager } from "./filter-manager"
+export type { FilterManagerProps } from "./filter-manager"
+export { validateFilter } from "./filter-model"
+export type { FilterField, FilterPreset, FilterGroup, FilterCondition, FilterOperator } from "./filter-model"

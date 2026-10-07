@@ -4,7 +4,7 @@ import postcss from 'postcss'
 const root=process.cwd(), output=path.join(root,'dist-library')
 fs.mkdirSync(output,{recursive:true})
 const source=postcss.parse(fs.readFileSync('src/weaveos/studio.css','utf8'))
-const allowed=/^\.wo-(?:theme(?:\b|\[)|button|field|input|textarea|select|switch|check|badge|overlay|backdrop|dialog|close|icon-button|form|error|spin|sr-only|table|pagination)/
+const allowed=/^\.wo-(?:theme(?:\b|\[)|button|field|input|textarea|select|switch|check|badge|overlay|backdrop|dialog|close|icon-button|form|error|spin|sr-only|table|pagination|filter)/
 function filter(container){
  for(const node of [...container.nodes]){
   if(node.type==='rule'){

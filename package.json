@@ -13,7 +13,7 @@
     "test:weaveos": "playwright test -c playwright.weaveos.config.ts",
     "dev:weaveos": "vite --config vite.weaveos.config.ts",
     "build:weaveos": "vite build --config vite.weaveos.config.ts",
-    "test:weaveos:unit": "node --test tests/weaveos/geometry.test.mjs tests/weaveos/pagination.test.mjs",
+    "test:weaveos:unit": "node --test tests/weaveos/geometry.test.mjs tests/weaveos/pagination.test.mjs tests/weaveos/filter-model.test.mjs",
     "build:weaveos:library": "vite build --config vite.weaveos-library.config.ts && tsc -p tsconfig.weaveos-library.json && node scripts/weaveos/package.mjs",
     "test:weaveos:package": "node --test tests/weaveos/package.test.mjs"
   },
