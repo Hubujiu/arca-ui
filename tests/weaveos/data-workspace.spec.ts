@@ -73,5 +73,6 @@ test('failed response keeps previous confirmed page and exposes an explicit retr
  await expect(page.getByText('当前第 1 页',{exact:true})).toBeVisible()
  await page.getByRole('checkbox',{name:'模拟查询失败'}).uncheck();await page.getByRole('button',{name:'重试',exact:true}).click()
  await expect(page.getByRole('alert')).toHaveCount(0)
+ await expect(page.getByText('当前第 2 页',{exact:true})).toBeVisible()
  await expect(page.getByRole('table',{name:'报销记录'}).getByRole('row')).toHaveCount(21)
 })
