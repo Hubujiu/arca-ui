@@ -22,7 +22,7 @@ test('text has no normal sort while numerical sorting is server-controlled',asyn
  const before=await page.getByRole('table',{name:'报销记录'}).getByRole('row').nth(1).innerText()
  await page.getByRole('button',{name:'排序：金额'}).click()
  await expect(page.getByTestId('table-request')).toContainText('"sort":{"key":"amount","direction":"asc"}')
- await expect(page.getByRole('table',{name:'报销记录'}).getByRole('row').nth(1)).toHaveText(before,{useInnerText:true})
+ await expect(page.getByRole('table',{name:'报销记录'}).getByRole('row').nth(1)).toHaveText(before)
 })
 test('hide a column changes display without clearing sort or issuing a query',async({page})=>{
  await page.getByRole('button',{name:'排序：金额'}).click()
