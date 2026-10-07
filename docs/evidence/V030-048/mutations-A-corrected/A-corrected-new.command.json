@@ -1,0 +1,17 @@
+{
+  "label": "A-corrected-new",
+  "command": [
+    "npm",
+    "run",
+    "test:weaveos",
+    "--",
+    "--grep",
+    "window geometry"
+  ],
+  "cwd": "/workspace/arca-ui-v030-048",
+  "env": {
+    "CHROMIUM_PATH": "/workspace/.weaveos-tools/browsers/chromium-1243/chrome-linux64/chrome"
+  },
+  "assertion_sensitivity_only": true,
+  "test_source": "Root patch"
+}

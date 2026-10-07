@@ -1,0 +1,131 @@
+{
+  "config": {
+    "argv": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node",
+      "/workspace/arca-ui-v030-048/node_modules/.bin/playwright",
+      "test",
+      "-c",
+      "playwright.weaveos.config.ts",
+      "--grep",
+      "window geometry"
+    ],
+    "configFile": "/workspace/arca-ui-v030-048/playwright.weaveos.config.ts",
+    "rootDir": "/workspace/arca-ui-v030-048/tests/weaveos",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/workspace/arca-ui-v030-048/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "/workspace/arca-ui-v030-048/tests/weaveos",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 20000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "test-results/weaveos.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.63.0",
+    "workers": 2,
+    "webServer": {
+      "command": "npm run dev:weaveos",
+      "url": "http://127.0.0.1:5189/weaveos.html",
+      "reuseExistingServer": true
+    }
+  },
+  "suites": [
+    {
+      "title": "origin-motion.spec.ts",
+      "file": "origin-motion.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "window geometry really travels from and returns toward the trigger",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 20000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3907,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "V042_OPENING_GEOMETRY {\"count\":33,\"widths\":[440,99.23699951171875,103.75531005859375,155.94189453125,205.61865234375,251.1552734375,369.71240234375,425.05377197265625,437.7634582519531,439.9919738769531,440,440,440,440,440,440,440,440,440,440,440,440,440,440,440,440,440,440,440,440,440,440,440],\"expanded\":440}\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-07T12:53:55.200Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "01984ada43adcee2bac9-c8212f45b2400e925f9e",
+          "file": "origin-motion.spec.ts",
+          "line": 3,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-07T12:53:53.309Z",
+    "duration": 6057.492,
+    "expected": 1,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

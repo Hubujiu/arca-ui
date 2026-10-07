@@ -1,0 +1,42 @@
+
+> arca-ui@0.0.1 test:weaveos
+> playwright test -c playwright.weaveos.config.ts --grep window geometry
+
+[WebServer] (node:6914) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] (node:6927) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+✔ AND and OR compose without flattening or changing meaning (0.944589ms)
+✔ text supports only equal or not equal, numeric supports all six (0.361776ms)
+✔ depth three is valid and depth four is rejected (0.133608ms)
+✔ condition budget is twenty, independent of grouping (0.176271ms)
+✔ unknown fields, operators, empty groups and malformed leaves fail closed (0.247947ms)
+✔ empty text is an explicit valid equality, exact decimal strings remain unchanged (0.113468ms)
+✔ oversized and cyclic filters are rejected without throwing (0.165535ms)
+✖ opening starts at the source center with its size (2.905542ms)
+✖ each distinct source yields its own trajectory (0.496034ms)
+✔ absent source uses no displacement (0.234317ms)
+✔ invalid or zero rectangles fall back safely (0.226836ms)
+✔ no division by zero from an unmeasured panel (0.111946ms)
+✔ consumer artifact exports controls, theme and source-aware dialog (0.3178ms)
+✔ package has typed exports, explicit React peers and safe unpublished metadata (0.381555ms)
+✔ artifact has no source aliases or demo app and CSS stays scoped (0.370749ms)
+✔ distributed license and source attribution accompany components (0.103333ms)
+✔ small pages list exact pages; large totals use bounded windows (0.372792ms)
+✔ first and last pages retain nearby navigation without enumerating total (0.107198ms)
+✔ page input accepts only in-range integers, not coercions or partial numbers (0.181629ms)
+✔ invalid page metadata cannot produce navigable links (0.140278ms)
+
+Running 1 test using 1 worker
+
+(node:6955) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+V042_OPENING_GEOMETRY {"count":33,"widths":[440,99.23699951171875,103.75531005859375,155.94189453125,205.61865234375,251.1552734375,369.71240234375,425.05377197265625,437.7634582519531,439.9919738769531,440,440,440,440,440,440,440,440,440,440,440,440,440,440,440,440,440,440,440,440,440,440,440],"expanded":440}
+  ✓  1 [chromium] › tests/weaveos/origin-motion.spec.ts:3:1 › window geometry really travels from and returns toward the trigger (3.9s)
+
+  1 passed (6.1s)
+npm notice
+npm notice New major version of npm available! 11.9.0 -> 12.2.0
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.0
+npm notice To update run: npm install -g npm@12.2.0
+npm notice

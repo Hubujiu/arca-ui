@@ -1,0 +1,117 @@
+
+> arca-ui@0.0.1 test:weaveos
+> playwright test -c playwright.weaveos.config.ts --grep window geometry
+
+[WebServer] (node:7113) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] (node:7126) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+✔ AND and OR compose without flattening or changing meaning (1.327997ms)
+✔ text supports only equal or not equal, numeric supports all six (0.531157ms)
+✔ depth three is valid and depth four is rejected (0.159006ms)
+✔ condition budget is twenty, independent of grouping (0.241628ms)
+✔ unknown fields, operators, empty groups and malformed leaves fail closed (0.286905ms)
+✔ empty text is an explicit valid equality, exact decimal strings remain unchanged (0.158094ms)
+✔ oversized and cyclic filters are rejected without throwing (0.219104ms)
+✖ opening starts at the source center with its size (4.810043ms)
+✖ each distinct source yields its own trajectory (0.653077ms)
+✔ absent source uses no displacement (0.259825ms)
+✔ invalid or zero rectangles fall back safely (0.206726ms)
+✔ no division by zero from an unmeasured panel (0.122392ms)
+✔ consumer artifact exports controls, theme and source-aware dialog (0.361976ms)
+✔ package has typed exports, explicit React peers and safe unpublished metadata (0.230231ms)
+✔ artifact has no source aliases or demo app and CSS stays scoped (0.362226ms)
+✔ distributed license and source attribution accompany components (0.132807ms)
+✔ small pages list exact pages; large totals use bounded windows (0.251362ms)
+✔ first and last pages retain nearby navigation without enumerating total (0.134209ms)
+✔ page input accepts only in-range integers, not coercions or partial numbers (0.160218ms)
+✔ invalid page metadata cannot produce navigable links (0.138806ms)
+
+Running 2 tests using 2 workers
+
+(node:7155) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:7154) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘  2 [chromium] › tests/weaveos/origin-motion.spec.ts:4:36 › window geometry opens from and returns to its actual 从卡片打开 source (2.2s)
+  ✘  1 [chromium] › tests/weaveos/origin-motion.spec.ts:4:36 › window geometry opens from and returns to its actual 新建应用 source (2.2s)
+
+
+  1) [chromium] › tests/weaveos/origin-motion.spec.ts:4:36 › window geometry opens from and returns to its actual 新建应用 source 
+
+    Error: window must visit actual source bounds {"x":1279,"y":292.296875,"width":92,"height":34}; first={"x":674,"y":483.0143737792969,"width":92,"height":33.971221923828125}; last={"x":500,"y":204.75,"width":440,"height":590.5}
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: true
+    Received: false
+
+       at motion-observer.ts:32
+
+      30 |  expect(samples.length,'actual rendered geometry samples').toBeGreaterThan(0)
+      31 |  const near=samples.some(b=>Math.abs(b.x-source.x)<=6&&Math.abs(b.y-source.y)<=6&&Math.abs(b.width-source.width)<=6&&Math.abs(b.height-source.height)<=6)
+    > 32 |  expect(near,`window must visit actual source bounds ${JSON.stringify(source)}; first=${JSON.stringify(samples[0])}; last=${JSON.stringify(samples.at(-1))}`).toBe(true)
+         |                                                                                                                                                               ^
+      33 | }
+      34 | export function expectStationary(samples:Box[],target:Box){
+      35 |  expect(samples.length,'reduced-motion transition must actually be observed').toBeGreaterThan(0)
+        at expectOrigin (/workspace/arca-ui-v030-048/tests/weaveos/motion-observer.ts:32:159)
+        at /workspace/arca-ui-v030-048/tests/weaveos/origin-motion.spec.ts:13:3
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/origin-motion-window-geome-1127a-s-to-its-actual-新建应用-source-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/origin-motion-window-geome-1127a-s-to-its-actual-新建应用-source-chromium/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/origin-motion-window-geome-1127a-s-to-its-actual-新建应用-source-chromium/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/origin-motion-window-geome-1127a-s-to-its-actual-新建应用-source-chromium/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  2) [chromium] › tests/weaveos/origin-motion.spec.ts:4:36 › window geometry opens from and returns to its actual 从卡片打开 source 
+
+    Error: window must visit actual source bounds {"x":935,"y":371.296875,"width":173,"height":156}; first={"x":633.5,"y":422.06597900390625,"width":173,"height":155.86798095703125}; last={"x":500,"y":204.75,"width":440,"height":590.5}
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: true
+    Received: false
+
+       at motion-observer.ts:32
+
+      30 |  expect(samples.length,'actual rendered geometry samples').toBeGreaterThan(0)
+      31 |  const near=samples.some(b=>Math.abs(b.x-source.x)<=6&&Math.abs(b.y-source.y)<=6&&Math.abs(b.width-source.width)<=6&&Math.abs(b.height-source.height)<=6)
+    > 32 |  expect(near,`window must visit actual source bounds ${JSON.stringify(source)}; first=${JSON.stringify(samples[0])}; last=${JSON.stringify(samples.at(-1))}`).toBe(true)
+         |                                                                                                                                                               ^
+      33 | }
+      34 | export function expectStationary(samples:Box[],target:Box){
+      35 |  expect(samples.length,'reduced-motion transition must actually be observed').toBeGreaterThan(0)
+        at expectOrigin (/workspace/arca-ui-v030-048/tests/weaveos/motion-observer.ts:32:159)
+        at /workspace/arca-ui-v030-048/tests/weaveos/origin-motion.spec.ts:13:3
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/origin-motion-window-geome-1ab70--to-its-actual-从卡片打开-source-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/origin-motion-window-geome-1ab70--to-its-actual-从卡片打开-source-chromium/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/origin-motion-window-geome-1ab70--to-its-actual-从卡片打开-source-chromium/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/origin-motion-window-geome-1ab70--to-its-actual-从卡片打开-source-chromium/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  2 failed
+    [chromium] › tests/weaveos/origin-motion.spec.ts:4:36 › window geometry opens from and returns to its actual 新建应用 source 
+    [chromium] › tests/weaveos/origin-motion.spec.ts:4:36 › window geometry opens from and returns to its actual 从卡片打开 source 
+npm notice
+npm notice New major version of npm available! 11.9.0 -> 12.2.0
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.0
+npm notice To update run: npm install -g npm@12.2.0
+npm notice
