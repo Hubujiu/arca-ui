@@ -5,6 +5,7 @@ import type { ReactNode } from 'react'
 import { Button, Input, Select, Switch, Checkbox, Badge } from './primitives'
 import { MorphDialog, MorphDialogContent, MorphDialogTrigger, MorphDialogTitle, MorphDialogDescription, MorphDialogClose } from './morph-dialog'
 import { DataWorkspaceDemo } from './data-workspace'
+import { FieldBasicsDemo } from './field-basics-demo'
 import { springs } from './motion-tokens'
 import { WeaveTheme } from './theme'
 
@@ -71,6 +72,7 @@ export function Studio(){
     </>}
     {(section==='总览'||section==='导航与布局')&&<Section title="导航" tag="NAVIGATION"><div className="wo-navigation-demo"><div className="wo-segmented" role="tablist" aria-label="示例状态">{['全部','进行中','已完成'].map(label=><button key={label} role="tab" aria-selected={selected===label} onClick={()=>setSelected(label)}>{selected===label&&<motion.span layoutId="segment" className="wo-segment-indicator" transition={reduced?{duration:0}:springs.layout}/>}<span>{label}</span></button>)}</div><div className="wo-breadcrumb"><span>应用</span><ChevronRight size={13}/><span>人事管理</span><ChevronRight size={13}/><strong>成员</strong></div><div className="wo-nav-demo-panel" role="tabpanel">{selected==='全部'?'全部工作事项':selected==='进行中'?'正在处理的事项':'已完成的事项'}<Badge>{selected}</Badge></div></div></Section>}
     {section==='数据工作区'&&<DataWorkspaceDemo/>}
+    {section==='基础控件'&&<FieldBasicsDemo/>}
     {section==='总览'&&<div className="wo-token-grid"><div><Type size={19}/><span>字形</span><strong className="wo-type-sample">Aa 字</strong><small>Geist · System</small></div><div><Columns3 size={19}/><span>间距</span><div className="wo-spacing-bars"><i/><i/><i/><i/><i/></div><small>4 · 8 · 12 · 16 · 24</small></div><div><Sparkles size={19}/><span>色彩</span><div className="wo-swatches"><i/><i/><i/><i/><i/></div><small>黑白与中性色</small></div></div>}
     <div className="wo-page-note"><span>Arca · 为 WeaveOS 构建</span><span>React / Base UI / Motion</span></div>
    </div></div>
