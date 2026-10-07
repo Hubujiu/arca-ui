@@ -23,3 +23,6 @@ export type {ProgressProps} from './feedback'
 
 export {WorkspaceTabs} from './workspace-tabs'
 export type {WorkspaceTab,WorkspaceTabsProps} from './workspace-tabs'
+
+export {Breadcrumbs} from './breadcrumbs'
+export type {BreadcrumbEntry,BreadcrumbsProps} from './breadcrumbs'
