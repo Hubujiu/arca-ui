@@ -4,10 +4,11 @@ import { ArrowDownLeft, ArrowUpRight, Boxes, Check, ChevronRight, CircleHelp, Co
 import type { ReactNode } from 'react'
 import { Button, Input, Select, Switch, Checkbox, Badge } from './primitives'
 import { MorphDialog, MorphDialogContent, MorphDialogTrigger, MorphDialogTitle, MorphDialogDescription, MorphDialogClose } from './morph-dialog'
+import { DataWorkspaceDemo } from './data-workspace'
 import { springs } from './motion-tokens'
 import { WeaveTheme } from './theme'
 
-const nav=[{label:'总览',icon:Grid2X2},{label:'基础控件',icon:SlidersHorizontal},{label:'窗口与浮层',icon:Layers},{label:'导航与布局',icon:LayoutPanelLeft}]
+const nav=[{label:'总览',icon:Grid2X2},{label:'基础控件',icon:SlidersHorizontal},{label:'窗口与浮层',icon:Layers},{label:'导航与布局',icon:LayoutPanelLeft},{label:'数据工作区',icon:Columns3}]
 function Mark(){return <svg width="27" height="27" viewBox="0 0 28 28" fill="none" aria-hidden="true"><path d="M4 7L10 22L16 7M12 7L18 22L24 7" stroke="currentColor" strokeWidth="3.5" strokeLinecap="round" strokeLinejoin="round"/></svg>}
 function Section({title,tag,children,className=''}:{title:string;tag?:string;children:ReactNode;className?:string}){return <section className={`wo-section ${className}`}><header className="wo-section-header"><h2>{title}</h2>{tag&&<span>{tag}</span>}</header>{children}</section>}
 
@@ -69,6 +70,7 @@ export function Studio(){
       <div className="wo-foundation-grid"><Section title="输入" tag="INPUT"><div className="wo-input-samples"><label className="wo-field"><span>项目名称</span><Input placeholder="输入项目名称"/></label><div className="wo-field"><span>状态</span><Select label="项目状态" value={group} onValueChange={setGroup} options={[{value:'team',label:'进行中'},{value:'personal',label:'已完成'},{value:'none',label:'未开始'}]}/></div></div></Section><Section title="状态" tag="FEEDBACK"><div className="wo-status-samples"><Badge tone="success"><span className="wo-status-dot"/>已启用</Badge><Badge tone="warning">待审批</Badge><Badge>草稿</Badge></div><div className="wo-inline-message"><Check size={17}/><span>所有更改已保存</span><small>状态示例</small></div></Section></div>
     </>}
     {(section==='总览'||section==='导航与布局')&&<Section title="导航" tag="NAVIGATION"><div className="wo-navigation-demo"><div className="wo-segmented" role="tablist" aria-label="示例状态">{['全部','进行中','已完成'].map(label=><button key={label} role="tab" aria-selected={selected===label} onClick={()=>setSelected(label)}>{selected===label&&<motion.span layoutId="segment" className="wo-segment-indicator" transition={reduced?{duration:0}:springs.layout}/>}<span>{label}</span></button>)}</div><div className="wo-breadcrumb"><span>应用</span><ChevronRight size={13}/><span>人事管理</span><ChevronRight size={13}/><strong>成员</strong></div><div className="wo-nav-demo-panel" role="tabpanel">{selected==='全部'?'全部工作事项':selected==='进行中'?'正在处理的事项':'已完成的事项'}<Badge>{selected}</Badge></div></div></Section>}
+    {section==='数据工作区'&&<DataWorkspaceDemo/>}
     {section==='总览'&&<div className="wo-token-grid"><div><Type size={19}/><span>字形</span><strong className="wo-type-sample">Aa 字</strong><small>Geist · System</small></div><div><Columns3 size={19}/><span>间距</span><div className="wo-spacing-bars"><i/><i/><i/><i/><i/></div><small>4 · 8 · 12 · 16 · 24</small></div><div><Sparkles size={19}/><span>色彩</span><div className="wo-swatches"><i/><i/><i/><i/><i/></div><small>黑白与中性色</small></div></div>}
     <div className="wo-page-note"><span>Arca · 为 WeaveOS 构建</span><span>React / Base UI / Motion</span></div>
    </div></div>

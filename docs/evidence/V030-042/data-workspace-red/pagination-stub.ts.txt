@@ -1,0 +1,2 @@
+export function paginationWindow(_page:number,_pageCount:number):(number|'gap')[] {return []}
+export function parsePageInput(_input:string,_pageCount:number):number|null {return null}

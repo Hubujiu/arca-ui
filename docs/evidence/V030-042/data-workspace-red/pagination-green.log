@@ -1,0 +1,12 @@
+✔ small pages list exact pages; large totals use bounded windows (1.48112ms)
+✔ first and last pages retain nearby navigation without enumerating total (0.18518ms)
+✔ page input accepts only in-range integers, not coercions or partial numbers (0.254575ms)
+✔ invalid page metadata cannot produce navigable links (0.187394ms)
+ℹ tests 4
+ℹ suites 0
+ℹ pass 4
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 119.620699
