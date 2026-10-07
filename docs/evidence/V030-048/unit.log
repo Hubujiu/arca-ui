@@ -1,0 +1,33 @@
+
+> arca-ui@0.0.1 test:weaveos:unit
+> node --test tests/weaveos/geometry.test.mjs tests/weaveos/pagination.test.mjs tests/weaveos/filter-model.test.mjs
+
+✔ AND and OR compose without flattening or changing meaning (1.007722ms)
+✔ text supports only equal or not equal, numeric supports all six (0.494903ms)
+✔ depth three is valid and depth four is rejected (0.132205ms)
+✔ condition budget is twenty, independent of grouping (0.150824ms)
+✔ unknown fields, operators, empty groups and malformed leaves fail closed (0.254557ms)
+✔ empty text is an explicit valid equality, exact decimal strings remain unchanged (0.166587ms)
+✔ oversized and cyclic filters are rejected without throwing (0.154869ms)
+✔ opening starts at the source center with its size (1.943137ms)
+✔ each distinct source yields its own trajectory (0.174027ms)
+✔ absent source uses no displacement (0.159506ms)
+✔ invalid or zero rectangles fall back safely (0.22316ms)
+✔ no division by zero from an unmeasured panel (0.182761ms)
+✔ small pages list exact pages; large totals use bounded windows (1.966671ms)
+✔ first and last pages retain nearby navigation without enumerating total (0.288878ms)
+✔ page input accepts only in-range integers, not coercions or partial numbers (0.3043ms)
+✔ invalid page metadata cannot produce navigable links (0.251872ms)
+ℹ tests 16
+ℹ suites 0
+ℹ pass 16
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 142.146615
+npm notice
+npm notice New major version of npm available! 11.9.0 -> 12.2.0
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.0
+npm notice To update run: npm install -g npm@12.2.0
+npm notice

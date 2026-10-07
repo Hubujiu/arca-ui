@@ -1,0 +1,5 @@
+A-old: exit 1
+A-new: exit 1
+B-old: exit 0
+B-new: exit 1
+All original bytes restored.

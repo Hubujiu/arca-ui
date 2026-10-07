@@ -1,5 +1,6 @@
 import { test, expect } from '@playwright/test'
 import AxeBuilder from '@axe-core/playwright'
+import {armGeometry,finishGeometry,expectStationary} from './motion-observer'
 
 test.beforeEach(async ({ page }) => { await page.goto('/weaveos.html') })
 
@@ -73,11 +74,17 @@ test('nested select Escape dismisses only the list, then dialog', async ({page})
 
 test('reduced motion preserves usable modal without scale displacement', async ({page})=>{
  await page.emulateMedia({reducedMotion:'reduce'}); await page.reload()
+ await armGeometry(page)
  await page.getByRole('button',{name:'新建应用',exact:true}).click()
  const dialog=page.getByRole('dialog',{name:'创建应用',exact:true})
  await expect(dialog).toHaveAttribute('data-motion','reduced')
+ await expect(dialog).toHaveCSS('opacity','1')
  await expect(dialog).toHaveCSS('transform', 'none')
- await page.keyboard.press('Escape'); await expect(dialog).toBeHidden()
+ const target=await dialog.boundingBox();expect(target).not.toBeNull()
+ expectStationary(await finishGeometry(page),target!)
+ await armGeometry(page)
+ await page.keyboard.press('Escape'); await expect(dialog).toHaveCount(0)
+ expectStationary(await finishGeometry(page),target!)
 })
 
 test('mobile view fits viewport and dialog remains operable', async ({page})=>{

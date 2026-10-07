@@ -1,0 +1,4 @@
+372a3fa0acb3e0d84a790f8dcac9fd3005e222cf36977b1170c5b1faa2d805a2  src/weaveos/geometry.ts
+c1973788df8926e71f0fd19fc271f2d2d4c7c788eef4847ff3e543d674313b2d  src/weaveos/filter-manager.tsx
+cc25752d1f04d0755e9594c4233b75ac87d9ca825991d28d52fa29689409be74  tests/weaveos/origin-motion.spec.ts
+2f7adb96eb28815a9435444a316ed4387a6d99a937f3d56f06dc236cc7da5228  tests/weaveos/filter-manager.spec.ts

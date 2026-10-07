@@ -1,0 +1,13 @@
+diff --git a/src/weaveos/filter-manager.tsx b/src/weaveos/filter-manager.tsx
+index 7571339..4926d19 100644
+--- a/src/weaveos/filter-manager.tsx
++++ b/src/weaveos/filter-manager.tsx
+@@ -24,7 +24,7 @@ export function FilterManager({fields,presets,appliedId,onApply,onSave,onDelete,
+   if(pending.current||!draft)return
+   const name=draft.name.trim(),issue=!name?'请输入筛选名称':name.length>80?'名称最多八十个字符':validateFilter(draft.filter,fields)
+   if(issue){setError(issue);return}
+-  const next={...draft,name};if(new TextEncoder().encode(JSON.stringify(next)).length>32*1024){setError('筛选超过大小限制');return}
++  const next={...draft,name,filter:{...draft.filter,operator:'or' as const}};if(new TextEncoder().encode(JSON.stringify(next)).length>32*1024){setError('筛选超过大小限制');return}
+   pending.current=true;setBusy(true);setError('')
+   try{await onSave(next);setDraft(null);setBaseline('')}catch(e){setError(e instanceof Error?e.message:'保存失败，请重试')}finally{pending.current=false;setBusy(false)}
+  }

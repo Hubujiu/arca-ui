@@ -1,0 +1,233 @@
+--- a/tests/weaveos/filter-manager.spec.ts
++++ b/tests/weaveos/filter-manager.spec.ts
+@@ -21,8 +21,8 @@
+  await page.screenshot({path:'test-results/weaveos-filter-nested.png'})
+  await dialog.getByRole('button',{name:'保存筛选',exact:true}).click()
+  await expect(dialog.getByRole('button',{name:'应用：财务检查'})).toBeVisible()
+- await expect(page.getByTestId('filter-saved')).toContainText('"operator":"or"')
+- await expect(page.getByTestId('filter-saved')).toContainText('"value":"差旅"')
++ const saved=JSON.parse(await page.getByTestId('filter-saved').innerText()).find((preset:{name:string})=>preset.name==='财务检查')
++ expect(saved).toEqual({id:expect.any(String),name:'财务检查',filter:{operator:'and',children:[{fieldId:'reason',operator:'eq',value:'差旅'},{operator:'or',children:[{fieldId:'reason',operator:'eq',value:'客户'}]}]}})
+ })
+ test('failed persistence retains editor and never reports saved',async({page})=>{
+  await page.getByRole('dialog').getByRole('button',{name:'新建筛选'}).click()
+@@ -44,17 +44,14 @@
+ test('text comparisons exclude range operators and editor is accessible',async({page})=>{
+  await page.getByRole('button',{name:'新建筛选'}).click()
+  await page.getByRole('combobox',{name:'比较方式 1.1'}).click()
+- await expect(page.getByRole('option',{name:'等于',exact:true})).toBeVisible();await expect(page.getByRole('option',{name:'不等于',exact:true})).toBeVisible()
+- await expect(page.getByRole('option',{name:'大于',exact:true})).toHaveCount(0)
++ await expect(page.getByRole('option')).toHaveText(['等于','不等于'])
+  await page.keyboard.press('Escape')
+  const scan=await new AxeBuilder({page}).include('[role="dialog"]').analyze();expect(scan.violations).toEqual([])
+  await page.screenshot({path:'test-results/weaveos-filter-editor.png',fullPage:false})
+ })
+ test('applying a preset emits a page-one host query without client-side table filtering',async({page})=>{
+  await page.getByRole('button',{name:'应用：待审批'}).click()
+- await expect(page.getByTestId('table-request')).toContainText('"filter":{"operator":"and"')
+- await expect(page.getByTestId('table-request')).toContainText('"fieldId":"status"')
+- await expect(page.getByTestId('table-request')).toContainText('"page":1')
++ await expect.poll(async()=>JSON.parse(await page.getByTestId('table-request').innerText())).toEqual({page:1,sort:null,filter:{operator:'and',children:[{fieldId:'status',operator:'eq',value:'审批中'}]}})
+ })
+ test('editing a saved preset preserves identity, saving alone does not apply',async({page})=>{
+  await page.getByRole('button',{name:'编辑：待审批'}).click();await expect(page.getByLabel('筛选名称')).toHaveValue('待审批')
+--- a/tests/weaveos/package.test.mjs
++++ b/tests/weaveos/package.test.mjs
+@@ -4,8 +4,8 @@
+ import * as ui from '../../dist-library/index.js'
+ const directory=new URL('../../dist-library/',import.meta.url)
+ test('consumer artifact exports controls, theme and source-aware dialog',()=>{
+- for(const name of ['Button','Input','Checkbox','Switch','Select','Badge','WeaveTheme','MorphDialog','MorphDialogTrigger','MorphDialogContent','MorphDialogTitle','MorphDialogDescription','MorphDialogClose','springs','originTransform','DataTable','Pagination','FilterManager','validateFilter','WorkspaceTabs','Breadcrumbs']) assert.ok(ui[name],`missing public export ${name}`)
+- assert.equal('Studio' in ui,false);assert.equal('FilterManagerDemo' in ui,false);assert.equal('DataWorkspaceDemo' in ui,false)
++ const approved=['Button','Input','Checkbox','Switch','Select','Badge','WeaveTheme','MorphDialog','MorphDialogTrigger','MorphDialogContent','MorphDialogTitle','MorphDialogDescription','MorphDialogClose','springs','originTransform','DataTable','Pagination','FilterManager','validateFilter','WorkspaceTabs','Breadcrumbs','Textarea','DecimalInput','NullableBooleanInput','Tooltip','TooltipProvider','TooltipTrigger','TooltipContent','Progress','Skeleton']
++ assert.deepEqual(Object.keys(ui).sort(),approved.sort(),'the approved public component surface is exact, including every delivered control')
+ })
+ test('package has typed exports, explicit React peers and safe unpublished metadata',()=>{
+  const p=JSON.parse(fs.readFileSync(new URL('package.json',directory)))
+--- a/tests/weaveos/studio.spec.ts
++++ b/tests/weaveos/studio.spec.ts
+@@ -1,5 +1,6 @@
+ import { test, expect } from '@playwright/test'
+ import AxeBuilder from '@axe-core/playwright'
++import {armGeometry,finishGeometry,expectStationary} from './motion-observer'
+ 
+ test.beforeEach(async ({ page }) => { await page.goto('/weaveos.html') })
+ 
+@@ -73,11 +74,17 @@
+ 
+ test('reduced motion preserves usable modal without scale displacement', async ({page})=>{
+  await page.emulateMedia({reducedMotion:'reduce'}); await page.reload()
++ await armGeometry(page)
+  await page.getByRole('button',{name:'新建应用',exact:true}).click()
+  const dialog=page.getByRole('dialog',{name:'创建应用',exact:true})
+  await expect(dialog).toHaveAttribute('data-motion','reduced')
++ await expect(dialog).toHaveCSS('opacity','1')
+  await expect(dialog).toHaveCSS('transform', 'none')
+- await page.keyboard.press('Escape'); await expect(dialog).toBeHidden()
++ const target=await dialog.boundingBox();expect(target).not.toBeNull()
++ expectStationary(await finishGeometry(page),target!)
++ await armGeometry(page)
++ await page.keyboard.press('Escape'); await expect(dialog).toHaveCount(0)
++ expectStationary(await finishGeometry(page),target!)
+ })
+ 
+ test('mobile view fits viewport and dialog remains operable', async ({page})=>{
+--- a/tests/weaveos/data-workspace.spec.ts
++++ b/tests/weaveos/data-workspace.spec.ts
+@@ -28,12 +28,14 @@
+  await page.getByRole('button',{name:'排序：金额'}).click()
+  await expect(page.getByTestId('table-request')).toContainText('"key":"amount"')
+  const request=await page.getByTestId('table-request').innerText()
++ const count=await page.getByTestId('table-request-count').innerText()
+  await page.getByRole('button',{name:'显示字段'}).click()
+  const dialog=page.getByRole('dialog',{name:'显示字段'});await expect(dialog).toBeVisible()
+  await dialog.getByRole('checkbox',{name:'金额',exact:true}).uncheck()
+  await dialog.getByRole('button',{name:'完成',exact:true}).click();await expect(dialog).toBeHidden()
+  await expect(page.getByRole('columnheader',{name:/金额/})).toHaveCount(0)
+  await expect(page.getByTestId('table-request')).toHaveText(request)
++ await expect(page.getByTestId('table-request-count')).toHaveText(count)
+ })
+ test('related data change requires refresh and refresh requests page one',async({page})=>{
+  await page.getByLabel('跳转页码').fill('8');await page.getByLabel('跳转页码').press('Enter');await expect(page.getByText('当前第 8 页',{exact:true})).toBeVisible()
+@@ -62,9 +64,11 @@
+ })
+ test('invalid arbitrary page never emits a coerced query',async({page})=>{
+  const before=await page.getByTestId('table-request').innerText()
++ const count=await page.getByTestId('table-request-count').innerText()
+  await page.getByLabel('跳转页码').fill('1.5');await page.getByLabel('跳转页码').press('Enter')
+  await expect(page.getByRole('alert')).toContainText('整数')
+  await expect(page.getByTestId('table-request')).toHaveText(before)
++ await expect(page.getByTestId('table-request-count')).toHaveText(count)
+ })
+ test('failed response keeps previous confirmed page and exposes an explicit retry',async({page})=>{
+  await page.getByRole('checkbox',{name:'模拟查询失败'}).check()
+--- a/tests/weaveos/origin-motion.spec.ts
++++ b/tests/weaveos/origin-motion.spec.ts
+@@ -1,43 +1,39 @@
+ import {test,expect} from '@playwright/test'
++import {armGeometry,finishGeometry,expectOrigin} from './motion-observer'
+ 
+-test('window geometry really travels from and returns toward the trigger',async({page})=>{
++for(const name of ['新建应用','从卡片打开'])test(`window geometry opens from and returns to its actual ${name} source`,async({page})=>{
++ await page.goto('/weaveos.html')
++ const trigger=page.getByRole('button',{name,exact:true})
++ const source=await trigger.boundingBox();expect(source).not.toBeNull()
++ const dialog=page.getByRole('dialog',{name:'创建应用',exact:true})
++ for(let cycle=0;cycle<2;cycle++){
++  await armGeometry(page)
++  await trigger.click()
++  await expect(dialog).toHaveCSS('transform','none')
++  expectOrigin(await finishGeometry(page),source!)
++  const opened=await dialog.boundingBox();expect(opened).not.toBeNull()
++  const viewport=page.viewportSize()!
++  expect(Math.abs(opened!.x+opened!.width/2-viewport.width/2)).toBeLessThan(2)
++  expect(Math.abs(opened!.y+opened!.height/2-viewport.height/2)).toBeLessThan(2)
++  await armGeometry(page)
++  await page.keyboard.press('Escape')
++  await expect(dialog).toHaveCount(0)
++  expectOrigin(await finishGeometry(page),source!)
++  await expect(trigger).toBeFocused()
++ }
++})
++
++test('successful save returns the window to its source too',async({page})=>{
+  await page.goto('/weaveos.html')
+  const trigger=page.getByRole('button',{name:'新建应用',exact:true})
++ const source=await trigger.boundingBox();expect(source).not.toBeNull()
+  await trigger.click()
+  const dialog=page.getByRole('dialog',{name:'创建应用',exact:true})
+  await expect(dialog).toHaveCSS('transform','none')
+- const opened=await dialog.boundingBox();expect(opened).not.toBeNull()
+- const samples=page.evaluate(()=>new Promise<{width:number;x:number;y:number}[]>(resolve=>{
+-  const values:{width:number;x:number;y:number}[]=[];const start=performance.now()
+-  function sample(){const el=document.querySelector('[role="dialog"]');if(el){const b=el.getBoundingClientRect();values.push({width:b.width,x:b.x,y:b.y})}if(performance.now()-start>900){resolve(values);return}requestAnimationFrame(sample)}sample()
+- }))
+- await page.keyboard.press('Escape');const closing=await samples
+- expect(closing.some(b=>b.width<opened!.width*.65)).toBe(true)
+- await expect(dialog).toHaveCount(0)
+- // Opening after a full close must start small again, not inherit the old expanded frame.
+- const openingSamples=page.evaluate(()=>new Promise<number[]>(resolve=>{
+-  const widths:number[]=[];const start=performance.now();function sample(){const el=document.querySelector('[role="dialog"]');if(el)widths.push(el.getBoundingClientRect().width);if(performance.now()-start>900){resolve(widths);return}requestAnimationFrame(sample)}sample()
+- }))
+- await trigger.click();const opening=await openingSamples
+- console.log('V042_OPENING_GEOMETRY',JSON.stringify({count:opening.length,widths:opening,expanded:opened!.width}))
+- expect(opening.some(w=>w<opened!.width*.65)).toBe(true)
+- await expect(dialog).toHaveCSS('transform','none')
+- const final=await dialog.boundingBox();expect(Math.abs(final!.x+final!.width/2-720)).toBeLessThan(2)
+-})
+-
+-// Additional acceptance for application-controlled success closure, not original TDD.
+-test('successful save returns the window toward its source too',async({page})=>{
+- await page.goto('/weaveos.html')
+- await page.getByRole('button',{name:'新建应用',exact:true}).click()
+- const dialog=page.getByRole('dialog',{name:'创建应用',exact:true})
+- await expect(dialog).toHaveCSS('transform','none')
+- const opened=await dialog.boundingBox()
+  await dialog.getByLabel('应用名称').fill('受控关闭测试')
+- const samples=page.evaluate(()=>new Promise<number[]>(resolve=>{
+-  const widths:number[]=[];const start=performance.now();function sample(){const el=document.querySelector('[role="dialog"]');if(el)widths.push(el.getBoundingClientRect().width);if(performance.now()-start>2200){resolve(widths);return}requestAnimationFrame(sample)}sample()
+- }))
++ await armGeometry(page)
+  await dialog.getByRole('button',{name:'创建',exact:true}).click()
+  await expect(page.getByRole('status')).toContainText('应用已创建')
+- expect((await samples).some(w=>w<opened!.width*.65)).toBe(true)
+  await expect(dialog).toHaveCount(0)
++ expectOrigin(await finishGeometry(page),source!)
+ })
+--- /dev/null
++++ b/tests/weaveos/motion-observer.ts
+@@ -0,0 +1,42 @@
++import {expect} from '@playwright/test'
++import type {Page} from '@playwright/test'
++export type Box={x:number;y:number;width:number;height:number}
++
++// Observe before the interaction, including the first committed layout. Sampling
++// cannot infer the expected origin from the component's own geometry function.
++export async function armGeometry(page:Page){
++ await page.evaluate(()=>{
++  type Capture={values:{x:number;y:number;width:number;height:number}[];stop:()=>void}
++  const host=window as typeof window&{weaveGeometry?:Capture}
++  host.weaveGeometry?.stop()
++  const values:Capture['values']=[]
++  let frame=0,active=true
++  const sample=()=>{const el=document.querySelector('[role="dialog"]');if(el){const b=el.getBoundingClientRect();if(b.width>0&&b.height>0)values.push({x:b.x,y:b.y,width:b.width,height:b.height})}}
++  const observer=new MutationObserver(sample)
++  observer.observe(document.body,{subtree:true,childList:true,attributes:true,attributeFilter:['style']})
++  const tick=()=>{sample();if(active)frame=requestAnimationFrame(tick)}
++  tick()
++  host.weaveGeometry={values,stop:()=>{active=false;cancelAnimationFrame(frame);observer.disconnect()}}
++ })
++}
++export async function finishGeometry(page:Page):Promise<Box[]>{
++ return page.evaluate(()=>{
++  const capture=(window as typeof window&{weaveGeometry?:{values:{x:number;y:number;width:number;height:number}[];stop:()=>void}}).weaveGeometry
++  if(!capture)throw new Error('geometry observation was not armed')
++  capture.stop();return capture.values
++ })
++}
++export function expectOrigin(samples:Box[],source:Box){
++ expect(samples.length,'actual rendered geometry samples').toBeGreaterThan(0)
++ const near=samples.some(b=>Math.abs(b.x-source.x)<=6&&Math.abs(b.y-source.y)<=6&&Math.abs(b.width-source.width)<=6&&Math.abs(b.height-source.height)<=6)
++ expect(near,`window must visit actual source bounds ${JSON.stringify(source)}; first=${JSON.stringify(samples[0])}; last=${JSON.stringify(samples.at(-1))}`).toBe(true)
++}
++export function expectStationary(samples:Box[],target:Box){
++ expect(samples.length,'reduced-motion transition must actually be observed').toBeGreaterThan(0)
++ for(const b of samples){
++  expect(Math.abs(b.x-target.x)).toBeLessThanOrEqual(1)
++  expect(Math.abs(b.y-target.y)).toBeLessThanOrEqual(1)
++  expect(Math.abs(b.width-target.width)).toBeLessThanOrEqual(1)
++  expect(Math.abs(b.height-target.height)).toBeLessThanOrEqual(1)
++ }
++}
+--- a/src/weaveos/data-workspace.tsx
++++ b/src/weaveos/data-workspace.tsx
+@@ -14,6 +14,7 @@
+ export function DataWorkspaceDemo(){
+  const [query,setQuery]=useState<Query>({page:1,sort:null}),[data,setData]=useState(()=>({query:{page:1,sort:null} as Query,rows:response({page:1,sort:null})})),[paused,setPaused]=useState(false),[pending,setPending]=useState(false),[failure,setFailure]=useState(false),[error,setError]=useState(''),[stale,setStale]=useState(false),[hidden,setHidden]=useState<string[]>([]),[selected,setSelected]=useState<Set<string>>(new Set())
+  useEffect(()=>{if(paused||!pending)return;const timer=setTimeout(()=>{if(failure){setError('模拟查询失败，请重试');setPending(false);return}setError('');setData({query,rows:response(query)});setPending(false);setSelected(new Set());setStale(false)},250);return()=>clearTimeout(timer)},[paused,pending,query,failure])
+- const request=(next:Query)=>{setQuery(next);setPending(true)}
+- return <section aria-label="数据工作区" className="wo-data-workspace"><div className="wo-page-heading"><div><span className="wo-eyebrow">DATA WORKSPACE</span><h1>报销记录</h1></div><Badge>组件预览</Badge></div><div className="wo-table-toolbar"><span data-testid="table-selected">已选 {selected.size} 条</span><div><FilterManagerDemo onApply={preset=>request({...query,page:1,filter:preset?.filter??null})}/><Button variant="ghost" aria-label="重新加载记录" disabled={pending} onClick={()=>request({...query,page:1})}><RefreshCw size={16}/></Button><MorphDialog><MorphDialogTrigger render={<Button variant="secondary"/>}><Columns3 size={15}/>显示字段</MorphDialogTrigger><MorphDialogContent><MorphDialogTitle className="wo-dialog-title">显示字段</MorphDialogTitle><MorphDialogDescription className="wo-dialog-description">仅调整显示，不改变筛选与排序</MorphDialogDescription><div className="wo-form">{columns.map(c=><Checkbox key={c.key} label={c.header} checked={!hidden.includes(c.key)} onCheckedChange={show=>setHidden(prev=>show?prev.filter(k=>k!==c.key):[...prev,c.key])}/>)}</div><div className="wo-dialog-footer"><MorphDialogClose render={<Button/>}>完成</MorphDialogClose></div></MorphDialogContent></MorphDialog></div></div><DataTable label="报销记录" rows={data.rows} columns={columns} rowKey={r=>r.id} hiddenColumns={hidden} sort={data.query.sort} onSortChange={sort=>request({...query,page:1,sort})} selectedKeys={selected} onSelectionChange={setSelected} loading={pending} error={error} onRetry={()=>request(query)} refreshRequired={stale} onRefresh={()=>request({...query,page:1})}/><Pagination page={data.query.page} pageSize={data.query.pageSize??20} onPageSizeChange={pageSize=>request({...query,page:1,pageSize})} total={10_000_000} onPageChange={page=>request({...query,page})} disabled={pending||stale}/><details open className="wo-data-demo-controls"><summary>演示控制</summary><Checkbox label="暂停模拟响应" checked={paused} onCheckedChange={setPaused}/><Checkbox label="模拟查询失败" checked={failure} onCheckedChange={setFailure}/><Button variant="secondary" onClick={()=>setStale(true)}>模拟相关数据变化</Button><output data-testid="table-request">{JSON.stringify(query)}</output></details></section>
++ const [requestCount,setRequestCount]=useState(0)
++ const request=(next:Query)=>{setRequestCount(count=>count+1);setQuery(next);setPending(true)}
++ return <section aria-label="数据工作区" className="wo-data-workspace"><div className="wo-page-heading"><div><span className="wo-eyebrow">DATA WORKSPACE</span><h1>报销记录</h1></div><Badge>组件预览</Badge></div><div className="wo-table-toolbar"><span data-testid="table-selected">已选 {selected.size} 条</span><div><FilterManagerDemo onApply={preset=>request({...query,page:1,filter:preset?.filter??null})}/><Button variant="ghost" aria-label="重新加载记录" disabled={pending} onClick={()=>request({...query,page:1})}><RefreshCw size={16}/></Button><MorphDialog><MorphDialogTrigger render={<Button variant="secondary"/>}><Columns3 size={15}/>显示字段</MorphDialogTrigger><MorphDialogContent><MorphDialogTitle className="wo-dialog-title">显示字段</MorphDialogTitle><MorphDialogDescription className="wo-dialog-description">仅调整显示，不改变筛选与排序</MorphDialogDescription><div className="wo-form">{columns.map(c=><Checkbox key={c.key} label={c.header} checked={!hidden.includes(c.key)} onCheckedChange={show=>setHidden(prev=>show?prev.filter(k=>k!==c.key):[...prev,c.key])}/>)}</div><div className="wo-dialog-footer"><MorphDialogClose render={<Button/>}>完成</MorphDialogClose></div></MorphDialogContent></MorphDialog></div></div><DataTable label="报销记录" rows={data.rows} columns={columns} rowKey={r=>r.id} hiddenColumns={hidden} sort={data.query.sort} onSortChange={sort=>request({...query,page:1,sort})} selectedKeys={selected} onSelectionChange={setSelected} loading={pending} error={error} onRetry={()=>request(query)} refreshRequired={stale} onRefresh={()=>request({...query,page:1})}/><Pagination page={data.query.page} pageSize={data.query.pageSize??20} onPageSizeChange={pageSize=>request({...query,page:1,pageSize})} total={10_000_000} onPageChange={page=>request({...query,page})} disabled={pending||stale}/><details open className="wo-data-demo-controls"><summary>演示控制</summary><Checkbox label="暂停模拟响应" checked={paused} onCheckedChange={setPaused}/><Checkbox label="模拟查询失败" checked={failure} onCheckedChange={setFailure}/><Button variant="secondary" onClick={()=>setStale(true)}>模拟相关数据变化</Button><output data-testid="table-request-count" className="wo-sr-only">{requestCount}</output><output data-testid="table-request">{JSON.stringify(query)}</output></details></section>
+ }

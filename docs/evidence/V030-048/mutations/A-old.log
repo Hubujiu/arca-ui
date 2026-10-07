@@ -1,0 +1,35 @@
+
+> arca-ui@0.0.1 test:weaveos
+> playwright test -c playwright.weaveos.config.ts --grep ^window geometry
+
+[WebServer] (node:3945) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] (node:3958) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+✔ AND and OR compose without flattening or changing meaning (1.367264ms)
+✔ text supports only equal or not equal, numeric supports all six (0.454774ms)
+✔ depth three is valid and depth four is rejected (0.21647ms)
+✔ condition budget is twenty, independent of grouping (0.281016ms)
+✔ unknown fields, operators, empty groups and malformed leaves fail closed (0.251492ms)
+✔ empty text is an explicit valid equality, exact decimal strings remain unchanged (0.166777ms)
+✔ oversized and cyclic filters are rejected without throwing (0.22301ms)
+✖ opening starts at the source center with its size (4.013962ms)
+✖ each distinct source yields its own trajectory (0.465629ms)
+✔ absent source uses no displacement (0.204213ms)
+✔ invalid or zero rectangles fall back safely (0.156512ms)
+✔ no division by zero from an unmeasured panel (0.088171ms)
+✔ consumer artifact exports controls, theme and source-aware dialog (0.346964ms)
+✔ package has typed exports, explicit React peers and safe unpublished metadata (0.234928ms)
+✔ artifact has no source aliases or demo app and CSS stays scoped (0.41193ms)
+✔ distributed license and source attribution accompany components (0.1082ms)
+✔ small pages list exact pages; large totals use bounded windows (0.255458ms)
+✔ first and last pages retain nearby navigation without enumerating total (0.109512ms)
+✔ page input accepts only in-range integers, not coercions or partial numbers (0.15536ms)
+✔ invalid page metadata cannot produce navigable links (0.169511ms)
+Error: No tests found
+
+npm notice
+npm notice New major version of npm available! 11.9.0 -> 12.2.0
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.0
+npm notice To update run: npm install -g npm@12.2.0
+npm notice

@@ -1,0 +1,7 @@
+tests/weaveos/filter-manager.spec.ts: OK
+tests/weaveos/package.test.mjs: OK
+tests/weaveos/studio.spec.ts: OK
+tests/weaveos/data-workspace.spec.ts: OK
+tests/weaveos/origin-motion.spec.ts: OK
+tests/weaveos/motion-observer.ts: OK
+src/weaveos/data-workspace.tsx: OK

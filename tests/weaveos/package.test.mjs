@@ -4,8 +4,8 @@ import fs from 'node:fs'
 import * as ui from '../../dist-library/index.js'
 const directory=new URL('../../dist-library/',import.meta.url)
 test('consumer artifact exports controls, theme and source-aware dialog',()=>{
- for(const name of ['Button','Input','Checkbox','Switch','Select','Badge','WeaveTheme','MorphDialog','MorphDialogTrigger','MorphDialogContent','MorphDialogTitle','MorphDialogDescription','MorphDialogClose','springs','originTransform','DataTable','Pagination','FilterManager','validateFilter','WorkspaceTabs','Breadcrumbs']) assert.ok(ui[name],`missing public export ${name}`)
- assert.equal('Studio' in ui,false);assert.equal('FilterManagerDemo' in ui,false);assert.equal('DataWorkspaceDemo' in ui,false)
+ const approved=['Button','Input','Checkbox','Switch','Select','Badge','WeaveTheme','MorphDialog','MorphDialogTrigger','MorphDialogContent','MorphDialogTitle','MorphDialogDescription','MorphDialogClose','springs','originTransform','DataTable','Pagination','FilterManager','validateFilter','WorkspaceTabs','Breadcrumbs','Textarea','DecimalInput','NullableBooleanInput','Tooltip','TooltipProvider','TooltipTrigger','TooltipContent','Progress','Skeleton']
+ assert.deepEqual(Object.keys(ui).sort(),approved.sort(),'the approved public component surface is exact, including every delivered control')
 })
 test('package has typed exports, explicit React peers and safe unpublished metadata',()=>{
  const p=JSON.parse(fs.readFileSync(new URL('package.json',directory)))

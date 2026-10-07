@@ -1,0 +1,167 @@
+{
+  "config": {
+    "argv": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node",
+      "/workspace/arca-ui-v030-048/node_modules/.bin/playwright",
+      "test",
+      "-c",
+      "playwright.weaveos.config.ts",
+      "--grep",
+      "constructs AND"
+    ],
+    "configFile": "/workspace/arca-ui-v030-048/playwright.weaveos.config.ts",
+    "rootDir": "/workspace/arca-ui-v030-048/tests/weaveos",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/workspace/arca-ui-v030-048/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "/workspace/arca-ui-v030-048/tests/weaveos",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 20000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "test-results/weaveos.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.63.0",
+    "workers": 2,
+    "webServer": {
+      "command": "npm run dev:weaveos",
+      "url": "http://127.0.0.1:5189/weaveos.html",
+      "reuseExistingServer": true
+    }
+  },
+  "suites": [
+    {
+      "title": "filter-manager.spec.ts",
+      "file": "filter-manager.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "constructs AND with an OR subgroup and persists exact conditions",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 20000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 3324,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 1\u001b[39m\n\n\u001b[33m@@ -15,10 +15,10 @@\u001b[39m\n\u001b[2m            },\u001b[22m\n\u001b[2m          ],\u001b[22m\n\u001b[2m          \"operator\": \"or\",\u001b[22m\n\u001b[2m        },\u001b[22m\n\u001b[2m      ],\u001b[22m\n\u001b[32m-     \"operator\": \"and\",\u001b[39m\n\u001b[31m+     \"operator\": \"or\",\u001b[39m\n\u001b[2m    },\u001b[22m\n\u001b[2m    \"id\": Any<String>,\u001b[22m\n\u001b[2m    \"name\": \"财务检查\",\u001b[22m\n\u001b[2m  }\u001b[22m",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 1\u001b[39m\n\n\u001b[33m@@ -15,10 +15,10 @@\u001b[39m\n\u001b[2m            },\u001b[22m\n\u001b[2m          ],\u001b[22m\n\u001b[2m          \"operator\": \"or\",\u001b[22m\n\u001b[2m        },\u001b[22m\n\u001b[2m      ],\u001b[22m\n\u001b[32m-     \"operator\": \"and\",\u001b[39m\n\u001b[31m+     \"operator\": \"or\",\u001b[39m\n\u001b[2m    },\u001b[22m\n\u001b[2m    \"id\": Any<String>,\u001b[22m\n\u001b[2m    \"name\": \"财务检查\",\u001b[22m\n\u001b[2m  }\u001b[22m\n    at /workspace/arca-ui-v030-048/tests/weaveos/filter-manager.spec.ts:25:16",
+                    "location": {
+                      "file": "/workspace/arca-ui-v030-048/tests/weaveos/filter-manager.spec.ts",
+                      "column": 16,
+                      "line": 25
+                    },
+                    "snippet": "  23 |  await expect(dialog.getByRole('button',{name:'应用：财务检查'})).toBeVisible()\n  24 |  const saved=JSON.parse(await page.getByTestId('filter-saved').innerText()).find((preset:{name:string})=>preset.name==='财务检查')\n> 25 |  expect(saved).toEqual({id:expect.any(String),name:'财务检查',filter:{operator:'and',children:[{fieldId:'reason',operator:'eq',value:'差旅'},{operator:'or',children:[{fieldId:'reason',operator:'eq',value:'客户'}]}]}})\n     |                ^\n  26 | })\n  27 | test('failed persistence retains editor and never reports saved',async({page})=>{\n  28 |  await page.getByRole('dialog').getByRole('button',{name:'新建筛选'}).click()"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/workspace/arca-ui-v030-048/tests/weaveos/filter-manager.spec.ts",
+                        "column": 16,
+                        "line": 25
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 1\u001b[39m\n\n\u001b[33m@@ -15,10 +15,10 @@\u001b[39m\n\u001b[2m            },\u001b[22m\n\u001b[2m          ],\u001b[22m\n\u001b[2m          \"operator\": \"or\",\u001b[22m\n\u001b[2m        },\u001b[22m\n\u001b[2m      ],\u001b[22m\n\u001b[32m-     \"operator\": \"and\",\u001b[39m\n\u001b[31m+     \"operator\": \"or\",\u001b[39m\n\u001b[2m    },\u001b[22m\n\u001b[2m    \"id\": Any<String>,\u001b[22m\n\u001b[2m    \"name\": \"财务检查\",\u001b[22m\n\u001b[2m  }\u001b[22m\n\n  23 |  await expect(dialog.getByRole('button',{name:'应用：财务检查'})).toBeVisible()\n  24 |  const saved=JSON.parse(await page.getByTestId('filter-saved').innerText()).find((preset:{name:string})=>preset.name==='财务检查')\n> 25 |  expect(saved).toEqual({id:expect.any(String),name:'财务检查',filter:{operator:'and',children:[{fieldId:'reason',operator:'eq',value:'差旅'},{operator:'or',children:[{fieldId:'reason',operator:'eq',value:'客户'}]}]}})\n     |                ^\n  26 | })\n  27 | test('failed persistence retains editor and never reports saved',async({page})=>{\n  28 |  await page.getByRole('dialog').getByRole('button',{name:'新建筛选'}).click()\n    at /workspace/arca-ui-v030-048/tests/weaveos/filter-manager.spec.ts:25:16"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-07T12:46:38.356Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/workspace/arca-ui-v030-048/test-results/filter-manager-constructs--a4e12-d-persists-exact-conditions-chromium/test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/workspace/arca-ui-v030-048/test-results/filter-manager-constructs--a4e12-d-persists-exact-conditions-chromium/error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/workspace/arca-ui-v030-048/test-results/filter-manager-constructs--a4e12-d-persists-exact-conditions-chromium/trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/workspace/arca-ui-v030-048/tests/weaveos/filter-manager.spec.ts",
+                    "column": 16,
+                    "line": 25
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "b91ab34b409cb1106fc3-1010dc6bd34d00415cf4",
+          "file": "filter-manager.spec.ts",
+          "line": 14,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-07T12:46:36.497Z",
+    "duration": 5557.4039999999995,
+    "expected": 0,
+    "skipped": 0,
+    "unexpected": 1,
+    "flaky": 0
+  }
+}

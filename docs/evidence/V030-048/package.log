@@ -1,0 +1,21 @@
+
+> arca-ui@0.0.1 test:weaveos:package
+> node --test tests/weaveos/package.test.mjs
+
+✔ consumer artifact exports controls, theme and source-aware dialog (1.403197ms)
+✔ package has typed exports, explicit React peers and safe unpublished metadata (0.304271ms)
+✔ artifact has no source aliases or demo app and CSS stays scoped (0.466971ms)
+✔ distributed license and source attribution accompany components (0.163302ms)
+ℹ tests 4
+ℹ suites 0
+ℹ pass 4
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 509.760653
+npm notice
+npm notice New major version of npm available! 11.9.0 -> 12.2.0
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.0
+npm notice To update run: npm install -g npm@12.2.0
+npm notice

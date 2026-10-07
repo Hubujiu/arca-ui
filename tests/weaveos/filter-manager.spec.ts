@@ -21,8 +21,8 @@ test('constructs AND with an OR subgroup and persists exact conditions',async({p
  await page.screenshot({path:'test-results/weaveos-filter-nested.png'})
  await dialog.getByRole('button',{name:'保存筛选',exact:true}).click()
  await expect(dialog.getByRole('button',{name:'应用：财务检查'})).toBeVisible()
- await expect(page.getByTestId('filter-saved')).toContainText('"operator":"or"')
- await expect(page.getByTestId('filter-saved')).toContainText('"value":"差旅"')
+ const saved=JSON.parse(await page.getByTestId('filter-saved').innerText()).find((preset:{name:string})=>preset.name==='财务检查')
+ expect(saved).toEqual({id:expect.any(String),name:'财务检查',filter:{operator:'and',children:[{fieldId:'reason',operator:'eq',value:'差旅'},{operator:'or',children:[{fieldId:'reason',operator:'eq',value:'客户'}]}]}})
 })
 test('failed persistence retains editor and never reports saved',async({page})=>{
  await page.getByRole('dialog').getByRole('button',{name:'新建筛选'}).click()
@@ -44,17 +44,14 @@ test('dirty Escape asks before discarding and restores source focus',async({page
 test('text comparisons exclude range operators and editor is accessible',async({page})=>{
  await page.getByRole('button',{name:'新建筛选'}).click()
  await page.getByRole('combobox',{name:'比较方式 1.1'}).click()
- await expect(page.getByRole('option',{name:'等于',exact:true})).toBeVisible();await expect(page.getByRole('option',{name:'不等于',exact:true})).toBeVisible()
- await expect(page.getByRole('option',{name:'大于',exact:true})).toHaveCount(0)
+ await expect(page.getByRole('option')).toHaveText(['等于','不等于'])
  await page.keyboard.press('Escape')
  const scan=await new AxeBuilder({page}).include('[role="dialog"]').analyze();expect(scan.violations).toEqual([])
  await page.screenshot({path:'test-results/weaveos-filter-editor.png',fullPage:false})
 })
 test('applying a preset emits a page-one host query without client-side table filtering',async({page})=>{
  await page.getByRole('button',{name:'应用：待审批'}).click()
- await expect(page.getByTestId('table-request')).toContainText('"filter":{"operator":"and"')
- await expect(page.getByTestId('table-request')).toContainText('"fieldId":"status"')
- await expect(page.getByTestId('table-request')).toContainText('"page":1')
+ await expect.poll(async()=>JSON.parse(await page.getByTestId('table-request').innerText())).toEqual({page:1,sort:null,filter:{operator:'and',children:[{fieldId:'status',operator:'eq',value:'审批中'}]}})
 })
 test('editing a saved preset preserves identity, saving alone does not apply',async({page})=>{
  await page.getByRole('button',{name:'编辑：待审批'}).click();await expect(page.getByLabel('筛选名称')).toHaveValue('待审批')

@@ -28,12 +28,14 @@ test('hide a column changes display without clearing sort or issuing a query',as
  await page.getByRole('button',{name:'排序：金额'}).click()
  await expect(page.getByTestId('table-request')).toContainText('"key":"amount"')
  const request=await page.getByTestId('table-request').innerText()
+ const count=await page.getByTestId('table-request-count').innerText()
  await page.getByRole('button',{name:'显示字段'}).click()
  const dialog=page.getByRole('dialog',{name:'显示字段'});await expect(dialog).toBeVisible()
  await dialog.getByRole('checkbox',{name:'金额',exact:true}).uncheck()
  await dialog.getByRole('button',{name:'完成',exact:true}).click();await expect(dialog).toBeHidden()
  await expect(page.getByRole('columnheader',{name:/金额/})).toHaveCount(0)
  await expect(page.getByTestId('table-request')).toHaveText(request)
+ await expect(page.getByTestId('table-request-count')).toHaveText(count)
 })
 test('related data change requires refresh and refresh requests page one',async({page})=>{
  await page.getByLabel('跳转页码').fill('8');await page.getByLabel('跳转页码').press('Enter');await expect(page.getByText('当前第 8 页',{exact:true})).toBeVisible()
@@ -62,9 +64,11 @@ test('page-size change is a controlled request that resets to first page',async(
 })
 test('invalid arbitrary page never emits a coerced query',async({page})=>{
  const before=await page.getByTestId('table-request').innerText()
+ const count=await page.getByTestId('table-request-count').innerText()
  await page.getByLabel('跳转页码').fill('1.5');await page.getByLabel('跳转页码').press('Enter')
  await expect(page.getByRole('alert')).toContainText('整数')
  await expect(page.getByTestId('table-request')).toHaveText(before)
+ await expect(page.getByTestId('table-request-count')).toHaveText(count)
 })
 test('failed response keeps previous confirmed page and exposes an explicit retry',async({page})=>{
  await page.getByRole('checkbox',{name:'模拟查询失败'}).check()
