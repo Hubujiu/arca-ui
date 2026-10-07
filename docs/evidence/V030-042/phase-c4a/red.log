@@ -1,0 +1,848 @@
+﻿2026-10-07T06:25:23.9322688Z Current runner version: '2.337.0'
+2026-10-07T06:25:23.9345936Z ##[group]Runner Image Provisioner
+2026-10-07T06:25:23.9346733Z Hosted Compute Agent
+2026-10-07T06:25:23.9347299Z Version: 20260901.588
+2026-10-07T06:25:23.9347911Z Commit: f88ec8081b781fac6c440065ac7ff9e710ce3d0b
+2026-10-07T06:25:23.9348587Z Build Date: 2026-09-01T19:56:44Z
+2026-10-07T06:25:23.9349363Z Worker ID: {206db387-3b6a-4169-b702-4b92ca2556f0}
+2026-10-07T06:25:23.9350009Z Azure Region: westus2
+2026-10-07T06:25:23.9350540Z ##[endgroup]
+2026-10-07T06:25:23.9352000Z ##[group]Operating System
+2026-10-07T06:25:23.9352562Z Ubuntu
+2026-10-07T06:25:23.9353059Z 24.04.5
+2026-10-07T06:25:23.9353519Z LTS
+2026-10-07T06:25:23.9353974Z ##[endgroup]
+2026-10-07T06:25:23.9354520Z ##[group]Runner Image
+2026-10-07T06:25:23.9355090Z Image: ubuntu-24.04
+2026-10-07T06:25:23.9355620Z Version: 20260927.320.1
+2026-10-07T06:25:23.9356749Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20260927.320/images/ubuntu/Ubuntu2404-Readme.md
+2026-10-07T06:25:23.9358156Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20260927.320
+2026-10-07T06:25:23.9359016Z ##[endgroup]
+2026-10-07T06:25:23.9360462Z ##[group]GITHUB_TOKEN Permissions
+2026-10-07T06:25:23.9362479Z Contents: read
+2026-10-07T06:25:23.9363076Z Metadata: read
+2026-10-07T06:25:23.9363578Z ##[endgroup]
+2026-10-07T06:25:23.9365690Z Secret source: Actions
+2026-10-07T06:25:23.9366633Z Cache mode: write
+2026-10-07T06:25:23.9367241Z Prepare workflow directory
+2026-10-07T06:25:23.9661683Z Prepare all required actions
+2026-10-07T06:25:23.9707897Z Getting action download info
+2026-10-07T06:25:24.3465970Z Download action repository 'actions/checkout@v4' (SHA:11d5960a326750d5838078e36cf38b85af677262)
+2026-10-07T06:25:24.4177347Z Download action repository 'actions/setup-node@v4' (SHA:49933ea5288caeca8642d1e84afbd3f7d6820020)
+2026-10-07T06:25:24.4895595Z Download action repository 'actions/upload-artifact@v4' (SHA:ea165f8d65b6e75b540449e92b4886f43607fa02)
+2026-10-07T06:25:24.6670827Z Complete job name: browser
+2026-10-07T06:25:24.7489847Z ##[group]Run actions/checkout@v4
+2026-10-07T06:25:24.7490676Z with:
+2026-10-07T06:25:24.7491082Z   repository: Hubujiu/arca-ui
+2026-10-07T06:25:24.7494679Z   token: ***
+2026-10-07T06:25:24.7495073Z   ssh-strict: true
+2026-10-07T06:25:24.7495469Z   ssh-user: git
+2026-10-07T06:25:24.7495863Z   persist-credentials: true
+2026-10-07T06:25:24.7496294Z   clean: true
+2026-10-07T06:25:24.7496741Z   sparse-checkout-cone-mode: true
+2026-10-07T06:25:24.7497201Z   fetch-depth: 1
+2026-10-07T06:25:24.7497584Z   fetch-tags: false
+2026-10-07T06:25:24.7497979Z   show-progress: true
+2026-10-07T06:25:24.7498381Z   lfs: false
+2026-10-07T06:25:24.7498759Z   submodules: false
+2026-10-07T06:25:24.7499349Z   set-safe-directory: true
+2026-10-07T06:25:24.7499813Z   allow-unsafe-pr-checkout: false
+2026-10-07T06:25:24.7500524Z ##[endgroup]
+2026-10-07T06:25:24.8468614Z Syncing repository: Hubujiu/arca-ui
+2026-10-07T06:25:24.8471524Z ##[group]Getting Git version info
+2026-10-07T06:25:24.8472824Z Working directory is '/home/runner/work/arca-ui/arca-ui'
+2026-10-07T06:25:24.8474558Z [command]/usr/bin/git version
+2026-10-07T06:25:24.8496471Z git version 2.55.0
+2026-10-07T06:25:24.8516284Z ##[endgroup]
+2026-10-07T06:25:24.8532255Z Temporarily overriding HOME='/home/runner/work/_temp/df4b2c3a-cb76-46c2-89a7-f77e06e3e3eb' before making global git config changes
+2026-10-07T06:25:24.8535078Z Adding repository directory to the temporary git global config as a safe directory
+2026-10-07T06:25:24.8538535Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/arca-ui/arca-ui
+2026-10-07T06:25:24.8584047Z Deleting the contents of '/home/runner/work/arca-ui/arca-ui'
+2026-10-07T06:25:24.8590847Z ##[group]Initializing the repository
+2026-10-07T06:25:24.8593465Z [command]/usr/bin/git init /home/runner/work/arca-ui/arca-ui
+2026-10-07T06:25:24.8681061Z hint: Using 'master' as the name for the initial branch. This default branch name
+2026-10-07T06:25:24.8683293Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+2026-10-07T06:25:24.8685552Z hint: to use in all of your new repositories, which will suppress this warning,
+2026-10-07T06:25:24.8687097Z hint: call:
+2026-10-07T06:25:24.8688009Z hint:
+2026-10-07T06:25:24.8689588Z hint: 	git config --global init.defaultBranch <name>
+2026-10-07T06:25:24.8691293Z hint:
+2026-10-07T06:25:24.8692427Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2026-10-07T06:25:24.8694128Z hint: 'development'. The just-created branch can be renamed via this command:
+2026-10-07T06:25:24.8695388Z hint:
+2026-10-07T06:25:24.8696142Z hint: 	git branch -m <name>
+2026-10-07T06:25:24.8696987Z hint:
+2026-10-07T06:25:24.8698110Z hint: Disable this message with "git config set advice.defaultBranchName false"
+2026-10-07T06:25:24.8699891Z Initialized empty Git repository in /home/runner/work/arca-ui/arca-ui/.git/
+2026-10-07T06:25:24.8702887Z [command]/usr/bin/git remote add origin https://github.com/Hubujiu/arca-ui
+2026-10-07T06:25:24.8738905Z ##[endgroup]
+2026-10-07T06:25:24.8740698Z ##[group]Disabling automatic garbage collection
+2026-10-07T06:25:24.8742205Z [command]/usr/bin/git config --local gc.auto 0
+2026-10-07T06:25:24.8782921Z ##[endgroup]
+2026-10-07T06:25:24.8784425Z ##[group]Setting up auth
+2026-10-07T06:25:24.8785893Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-10-07T06:25:24.8800617Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-10-07T06:25:24.9141133Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-10-07T06:25:24.9183379Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-10-07T06:25:24.9382221Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-10-07T06:25:24.9414860Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-10-07T06:25:24.9586583Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2026-10-07T06:25:24.9620089Z ##[endgroup]
+2026-10-07T06:25:24.9620917Z ##[group]Fetching the repository
+2026-10-07T06:25:24.9629225Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +50d4808afeda570dcf686368598b6885d97c6ec3:refs/remotes/origin/task/V030-042-weaveos-components
+2026-10-07T06:25:25.4513154Z From https://github.com/Hubujiu/arca-ui
+2026-10-07T06:25:25.4514164Z  * [new ref]         50d4808afeda570dcf686368598b6885d97c6ec3 -> origin/task/V030-042-weaveos-components
+2026-10-07T06:25:25.4518450Z ##[endgroup]
+2026-10-07T06:25:25.4520184Z ##[group]Determining the checkout info
+2026-10-07T06:25:25.4522133Z ##[endgroup]
+2026-10-07T06:25:25.4527081Z [command]/usr/bin/git sparse-checkout disable
+2026-10-07T06:25:25.4570663Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+2026-10-07T06:25:25.4597754Z ##[group]Checking out the ref
+2026-10-07T06:25:25.4602000Z [command]/usr/bin/git checkout --progress --force -B task/V030-042-weaveos-components refs/remotes/origin/task/V030-042-weaveos-components
+2026-10-07T06:25:25.5107566Z Switched to a new branch 'task/V030-042-weaveos-components'
+2026-10-07T06:25:25.5113027Z branch 'task/V030-042-weaveos-components' set up to track 'origin/task/V030-042-weaveos-components'.
+2026-10-07T06:25:25.5117094Z ##[endgroup]
+2026-10-07T06:25:25.5156253Z [command]/usr/bin/git log -1 --format=%H
+2026-10-07T06:25:25.5177312Z 50d4808afeda570dcf686368598b6885d97c6ec3
+2026-10-07T06:25:25.5434249Z ##[group]Run actions/setup-node@v4
+2026-10-07T06:25:25.5434763Z with:
+2026-10-07T06:25:25.5435133Z   node-version: 24.19.0
+2026-10-07T06:25:25.5435546Z   cache: npm
+2026-10-07T06:25:25.5436061Z   always-auth: false
+2026-10-07T06:25:25.5436470Z   check-latest: false
+2026-10-07T06:25:25.5440215Z   token: ***
+2026-10-07T06:25:25.5440588Z ##[endgroup]
+2026-10-07T06:25:25.6795189Z Attempting to download 24.19.0...
+2026-10-07T06:25:25.6894026Z (node:2253) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-10-07T06:25:25.6895186Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-10-07T06:25:26.2486340Z Acquiring 24.19.0 - x64 from https://github.com/actions/node-versions/releases/download/24.19.0-30872449280/node-24.19.0-linux-x64.tar.gz
+2026-10-07T06:25:26.7878996Z Extracting ...
+2026-10-07T06:25:26.7979370Z [command]/usr/bin/tar xz --strip 1 --warning=no-unknown-keyword --overwrite -C /home/runner/work/_temp/8d3c6cb4-cc0b-4d23-a2b6-b97742c954dc -f /home/runner/work/_temp/541e1869-80dc-4c38-ba1c-d47102338358
+2026-10-07T06:25:27.9690815Z Adding to the cache ...
+2026-10-07T06:25:29.2191077Z ##[group]Environment details
+2026-10-07T06:25:29.4466397Z node: v24.19.0
+2026-10-07T06:25:29.4466942Z npm: 11.17.0
+2026-10-07T06:25:29.4467250Z yarn: 1.22.22
+2026-10-07T06:25:29.4467960Z ##[endgroup]
+2026-10-07T06:25:29.4485728Z [command]/opt/hostedtoolcache/node/24.19.0/x64/bin/npm config get cache
+2026-10-07T06:25:29.5332926Z /home/runner/.npm
+2026-10-07T06:25:29.7884435Z Cache hit for: node-cache-Linux-x64-npm-e49477bd2ac87adee467bcfea498780880a69ec42aeb10ad505d060aeecf5f10
+2026-10-07T06:25:29.8000268Z (node:2253) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+2026-10-07T06:25:31.0839433Z Received 12582912 of 123576884 (10.2%), 12.0 MBs/sec
+2026-10-07T06:25:31.9694376Z Received 123576884 of 123576884 (100.0%), 62.5 MBs/sec
+2026-10-07T06:25:31.9695207Z Cache Size: ~118 MB (123576884 B)
+2026-10-07T06:25:31.9836961Z [command]/usr/bin/tar -xf /home/runner/work/_temp/59995198-f034-4cdf-80d0-33ffe93f8966/cache.tzst -P -C /home/runner/work/arca-ui/arca-ui --use-compress-program unzstd
+2026-10-07T06:25:32.1378467Z Cache restored successfully
+2026-10-07T06:25:32.1426856Z Cache restored from key: node-cache-Linux-x64-npm-e49477bd2ac87adee467bcfea498780880a69ec42aeb10ad505d060aeecf5f10
+2026-10-07T06:25:32.1558135Z ##[group]Run npm ci --ignore-scripts
+2026-10-07T06:25:32.1558572Z [36;1mnpm ci --ignore-scripts[0m
+2026-10-07T06:25:32.1731384Z shell: /usr/bin/bash -e {0}
+2026-10-07T06:25:32.1731698Z ##[endgroup]
+2026-10-07T06:25:43.0826406Z 
+2026-10-07T06:25:43.0833225Z added 517 packages, and audited 518 packages in 11s
+2026-10-07T06:25:43.0833863Z 
+2026-10-07T06:25:43.0834213Z 163 packages are looking for funding
+2026-10-07T06:25:43.0834676Z   run `npm fund` for details
+2026-10-07T06:25:43.0896200Z 
+2026-10-07T06:25:43.0896673Z 8 high severity vulnerabilities
+2026-10-07T06:25:43.0896934Z 
+2026-10-07T06:25:43.0897205Z To address issues that do not require attention, run:
+2026-10-07T06:25:43.0897579Z   npm audit fix
+2026-10-07T06:25:43.0897730Z 
+2026-10-07T06:25:43.0897970Z To address all issues (including breaking changes), run:
+2026-10-07T06:25:43.0898335Z   npm audit fix --force
+2026-10-07T06:25:43.0898487Z 
+2026-10-07T06:25:43.0898622Z Run `npm audit` for details.
+2026-10-07T06:25:43.1480889Z ##[group]Run npx playwright install --with-deps chromium
+2026-10-07T06:25:43.1481338Z [36;1mnpx playwright install --with-deps chromium[0m
+2026-10-07T06:25:43.1520909Z shell: /usr/bin/bash -e {0}
+2026-10-07T06:25:43.1521219Z ##[endgroup]
+2026-10-07T06:25:43.8264787Z Installing dependencies...
+2026-10-07T06:25:43.8344703Z Switching to root user to install dependencies...
+2026-10-07T06:25:43.9091080Z Get:1 file:/etc/apt/apt-mirrors.txt Mirrorlist [144 B]
+2026-10-07T06:25:43.9720758Z Hit:2 http://azure.archive.ubuntu.com/ubuntu noble InRelease
+2026-10-07T06:25:43.9726341Z Get:6 https://packages.microsoft.com/ubuntu/24.04/prod noble InRelease [3600 B]
+2026-10-07T06:25:43.9746408Z Get:3 http://azure.archive.ubuntu.com/ubuntu noble-updates InRelease [126 kB]
+2026-10-07T06:25:43.9773708Z Get:4 http://azure.archive.ubuntu.com/ubuntu noble-backports InRelease [126 kB]
+2026-10-07T06:25:43.9800207Z Get:5 http://azure.archive.ubuntu.com/ubuntu noble-security InRelease [126 kB]
+2026-10-07T06:25:44.0624169Z Get:7 https://packages.microsoft.com/ubuntu/24.04/prod noble/main armhf Packages [12.6 kB]
+2026-10-07T06:25:44.0701946Z Get:8 https://packages.microsoft.com/ubuntu/24.04/prod noble/main amd64 Packages [519 kB]
+2026-10-07T06:25:44.0770390Z Get:9 https://packages.microsoft.com/ubuntu/24.04/prod noble/main arm64 Packages [463 kB]
+2026-10-07T06:25:44.1010718Z Get:10 http://azure.archive.ubuntu.com/ubuntu noble-updates/main amd64 Packages [1375 kB]
+2026-10-07T06:25:44.1100715Z Get:11 http://azure.archive.ubuntu.com/ubuntu noble-updates/main Translation-en [306 kB]
+2026-10-07T06:25:44.1130416Z Get:12 http://azure.archive.ubuntu.com/ubuntu noble-updates/main amd64 Components [181 kB]
+2026-10-07T06:25:44.1132054Z Get:13 http://azure.archive.ubuntu.com/ubuntu noble-updates/universe amd64 Packages [1701 kB]
+2026-10-07T06:25:44.1212274Z Get:14 http://azure.archive.ubuntu.com/ubuntu noble-updates/universe Translation-en [341 kB]
+2026-10-07T06:25:44.1230265Z Get:15 http://azure.archive.ubuntu.com/ubuntu noble-updates/universe amd64 Components [388 kB]
+2026-10-07T06:25:44.1253450Z Get:16 http://azure.archive.ubuntu.com/ubuntu noble-updates/restricted amd64 Packages [1730 kB]
+2026-10-07T06:25:44.1370343Z Get:17 http://azure.archive.ubuntu.com/ubuntu noble-updates/restricted Translation-en [396 kB]
+2026-10-07T06:25:44.1385148Z Get:18 http://azure.archive.ubuntu.com/ubuntu noble-updates/multiverse Translation-en [13.3 kB]
+2026-10-07T06:25:44.1391125Z Get:19 http://azure.archive.ubuntu.com/ubuntu noble-updates/multiverse amd64 Components [940 B]
+2026-10-07T06:25:44.1929956Z Get:20 http://azure.archive.ubuntu.com/ubuntu noble-backports/main amd64 Components [5752 B]
+2026-10-07T06:25:44.1939541Z Get:21 http://azure.archive.ubuntu.com/ubuntu noble-backports/universe amd64 Components [12.6 kB]
+2026-10-07T06:25:44.1945309Z Get:22 http://azure.archive.ubuntu.com/ubuntu noble-security/main amd64 Packages [1073 kB]
+2026-10-07T06:25:44.1998563Z Get:23 http://azure.archive.ubuntu.com/ubuntu noble-security/main Translation-en [223 kB]
+2026-10-07T06:25:44.2013591Z Get:24 http://azure.archive.ubuntu.com/ubuntu noble-security/main amd64 Components [46.4 kB]
+2026-10-07T06:25:44.2021277Z Get:25 http://azure.archive.ubuntu.com/ubuntu noble-security/universe amd64 Packages [1218 kB]
+2026-10-07T06:25:44.2081051Z Get:26 http://azure.archive.ubuntu.com/ubuntu noble-security/universe Translation-en [245 kB]
+2026-10-07T06:25:44.2095540Z Get:27 http://azure.archive.ubuntu.com/ubuntu noble-security/universe amd64 Components [76.3 kB]
+2026-10-07T06:25:44.2104650Z Get:28 http://azure.archive.ubuntu.com/ubuntu noble-security/restricted amd64 Packages [1566 kB]
+2026-10-07T06:25:44.2172830Z Get:29 http://azure.archive.ubuntu.com/ubuntu noble-security/restricted Translation-en [361 kB]
+2026-10-07T06:25:44.2191726Z Get:30 http://azure.archive.ubuntu.com/ubuntu noble-security/multiverse Translation-en [11.6 kB]
+2026-10-07T06:25:48.5834488Z Fetched 12.6 MB in 1s (9271 kB/s)
+2026-10-07T06:25:49.4476657Z Reading package lists...
+2026-10-07T06:25:49.4734213Z Reading package lists...
+2026-10-07T06:25:49.6675781Z Building dependency tree...
+2026-10-07T06:25:49.6681201Z Reading state information...
+2026-10-07T06:25:49.8168673Z libasound2t64 is already the newest version (1.2.11-1ubuntu0.3).
+2026-10-07T06:25:49.8169805Z libasound2t64 set to manually installed.
+2026-10-07T06:25:49.8170511Z libatk-bridge2.0-0t64 is already the newest version (2.52.0-1build1).
+2026-10-07T06:25:49.8171264Z libatk-bridge2.0-0t64 set to manually installed.
+2026-10-07T06:25:49.8171889Z libatk1.0-0t64 is already the newest version (2.52.0-1build1).
+2026-10-07T06:25:49.8172450Z libatk1.0-0t64 set to manually installed.
+2026-10-07T06:25:49.8173041Z libatspi2.0-0t64 is already the newest version (2.52.0-1build1).
+2026-10-07T06:25:49.8174204Z libatspi2.0-0t64 set to manually installed.
+2026-10-07T06:25:49.8174891Z libcairo2 is already the newest version (1.18.0-3build1).
+2026-10-07T06:25:49.8175494Z libcairo2 set to manually installed.
+2026-10-07T06:25:49.8176181Z libcups2t64 is already the newest version (2.4.7-1.2ubuntu7.14).
+2026-10-07T06:25:49.8176802Z libcups2t64 set to manually installed.
+2026-10-07T06:25:49.8177456Z libdbus-1-3 is already the newest version (1.14.10-4ubuntu4.1).
+2026-10-07T06:25:49.8178238Z libdbus-1-3 set to manually installed.
+2026-10-07T06:25:49.8178919Z libdrm2 is already the newest version (2.4.125-1ubuntu0.1~24.04.2).
+2026-10-07T06:25:49.8179823Z libdrm2 set to manually installed.
+2026-10-07T06:25:49.8180605Z libglib2.0-0t64 is already the newest version (2.80.0-6ubuntu3.9).
+2026-10-07T06:25:49.8181320Z libglib2.0-0t64 set to manually installed.
+2026-10-07T06:25:49.8182008Z libnspr4 is already the newest version (2:4.35-1.1build1).
+2026-10-07T06:25:49.8182668Z libnspr4 set to manually installed.
+2026-10-07T06:25:49.8183274Z libnss3 is already the newest version (2:3.98-1ubuntu0.2).
+2026-10-07T06:25:49.8183858Z libnss3 set to manually installed.
+2026-10-07T06:25:49.8184509Z libpango-1.0-0 is already the newest version (1.52.1+ds-1build1).
+2026-10-07T06:25:49.8185128Z libpango-1.0-0 set to manually installed.
+2026-10-07T06:25:49.8185755Z libx11-6 is already the newest version (2:1.8.7-1build1).
+2026-10-07T06:25:49.8186153Z libx11-6 set to manually installed.
+2026-10-07T06:25:49.8186527Z libxcb1 is already the newest version (1.15-1ubuntu2).
+2026-10-07T06:25:49.8186875Z libxcb1 set to manually installed.
+2026-10-07T06:25:49.8187276Z libxcomposite1 is already the newest version (1:0.4.5-1build3).
+2026-10-07T06:25:49.8187686Z libxcomposite1 set to manually installed.
+2026-10-07T06:25:49.8188089Z libxdamage1 is already the newest version (1:1.1.6-1build1).
+2026-10-07T06:25:49.8188461Z libxdamage1 set to manually installed.
+2026-10-07T06:25:49.8189683Z libxext6 is already the newest version (2:1.3.4-1build2).
+2026-10-07T06:25:49.8190089Z libxext6 set to manually installed.
+2026-10-07T06:25:49.8190476Z libxfixes3 is already the newest version (1:6.0.0-2build1).
+2026-10-07T06:25:49.8190859Z libxfixes3 set to manually installed.
+2026-10-07T06:25:49.8191252Z libxkbcommon0 is already the newest version (1.6.0-1build1).
+2026-10-07T06:25:49.8191642Z libxkbcommon0 set to manually installed.
+2026-10-07T06:25:49.8192046Z libxrandr2 is already the newest version (2:1.5.2-2build1).
+2026-10-07T06:25:49.8192555Z libxrandr2 set to manually installed.
+2026-10-07T06:25:49.8192984Z xvfb is already the newest version (2:21.1.12-1ubuntu1.8).
+2026-10-07T06:25:49.8193505Z fonts-noto-color-emoji is already the newest version (2.047-0ubuntu0.24.04.1).
+2026-10-07T06:25:49.8194055Z libfontconfig1 is already the newest version (2.15.0-1.1ubuntu2).
+2026-10-07T06:25:49.8194454Z libfontconfig1 set to manually installed.
+2026-10-07T06:25:49.8195111Z fonts-liberation is already the newest version (1:2.1.5-3).
+2026-10-07T06:25:49.8195726Z fonts-liberation set to manually installed.
+2026-10-07T06:25:49.8196341Z The following additional packages will be installed:
+2026-10-07T06:25:49.8197107Z   libgl1-mesa-dri libglx-mesa0 mesa-libgallium xfonts-encodings xfonts-utils
+2026-10-07T06:25:49.8197817Z Recommended packages:
+2026-10-07T06:25:49.8198110Z   fonts-ipafont-mincho fonts-tlwg-loma
+2026-10-07T06:25:49.8460159Z The following NEW packages will be installed:
+2026-10-07T06:25:49.8461305Z   fonts-freefont-ttf fonts-ipafont-gothic fonts-tlwg-loma-otf fonts-unifont
+2026-10-07T06:25:49.8471387Z   fonts-wqy-zenhei xfonts-cyrillic xfonts-encodings xfonts-scalable
+2026-10-07T06:25:49.8472117Z   xfonts-utils
+2026-10-07T06:25:49.8477899Z The following packages will be upgraded:
+2026-10-07T06:25:49.8485399Z   libfreetype6 libgbm1 libgl1-mesa-dri libglx-mesa0 mesa-libgallium
+2026-10-07T06:25:49.8628915Z 5 upgraded, 9 newly installed, 0 to remove and 24 not upgraded.
+2026-10-07T06:25:49.8629651Z Need to get 32.5 MB of archives.
+2026-10-07T06:25:49.8630414Z After this operation, 79.5 MB of additional disk space will be used.
+2026-10-07T06:25:49.8630895Z Get:1 file:/etc/apt/apt-mirrors.txt Mirrorlist [144 B]
+2026-10-07T06:25:50.0196768Z Get:2 http://azure.archive.ubuntu.com/ubuntu noble/universe amd64 fonts-ipafont-gothic all 00303-21ubuntu1 [3513 kB]
+2026-10-07T06:25:50.1658832Z Get:3 http://azure.archive.ubuntu.com/ubuntu noble/main amd64 fonts-freefont-ttf all 20211204+svn4273-2 [5641 kB]
+2026-10-07T06:25:50.3275893Z Get:4 http://azure.archive.ubuntu.com/ubuntu noble/universe amd64 fonts-tlwg-loma-otf all 1:0.7.3-1 [107 kB]
+2026-10-07T06:25:50.3978283Z Get:5 http://azure.archive.ubuntu.com/ubuntu noble/universe amd64 fonts-unifont all 1:15.1.01-1build1 [2993 kB]
+2026-10-07T06:25:50.4893881Z Get:6 http://azure.archive.ubuntu.com/ubuntu noble/universe amd64 fonts-wqy-zenhei all 0.9.45-8 [7472 kB]
+2026-10-07T06:25:50.7054273Z Get:7 http://azure.archive.ubuntu.com/ubuntu noble-updates/main amd64 libfreetype6 amd64 2.13.2+dfsg-1ubuntu0.2 [403 kB]
+2026-10-07T06:25:50.7775870Z Get:8 http://azure.archive.ubuntu.com/ubuntu noble-updates/main amd64 libgl1-mesa-dri amd64 25.2.8-0ubuntu0.24.04.4 [38.0 kB]
+2026-10-07T06:25:50.8471031Z Get:9 http://azure.archive.ubuntu.com/ubuntu noble-updates/main amd64 libglx-mesa0 amd64 25.2.8-0ubuntu0.24.04.4 [110 kB]
+2026-10-07T06:25:50.9169866Z Get:10 http://azure.archive.ubuntu.com/ubuntu noble-updates/main amd64 libgbm1 amd64 25.2.8-0ubuntu0.24.04.4 [34.2 kB]
+2026-10-07T06:25:50.9864678Z Get:11 http://azure.archive.ubuntu.com/ubuntu noble-updates/main amd64 mesa-libgallium amd64 25.2.8-0ubuntu0.24.04.4 [10.8 MB]
+2026-10-07T06:25:51.2940461Z Get:12 http://azure.archive.ubuntu.com/ubuntu noble/main amd64 xfonts-encodings all 1:1.0.5-0ubuntu2 [578 kB]
+2026-10-07T06:25:51.3750057Z Get:13 http://azure.archive.ubuntu.com/ubuntu noble/main amd64 xfonts-utils amd64 1:7.7+6build3 [94.4 kB]
+2026-10-07T06:25:51.4457946Z Get:14 http://azure.archive.ubuntu.com/ubuntu noble/universe amd64 xfonts-cyrillic all 1:1.0.5+nmu1 [384 kB]
+2026-10-07T06:25:51.5226440Z Get:15 http://azure.archive.ubuntu.com/ubuntu noble/main amd64 xfonts-scalable all 1:1.0.3-1.3 [304 kB]
+2026-10-07T06:25:51.7628400Z Fetched 32.5 MB in 2s (19.4 MB/s)
+2026-10-07T06:25:51.7854634Z Selecting previously unselected package fonts-ipafont-gothic.
+2026-10-07T06:25:51.8053599Z (Reading database ... 
+2026-10-07T06:25:51.8054385Z (Reading database ... 5%
+2026-10-07T06:25:51.8054797Z (Reading database ... 10%
+2026-10-07T06:25:51.8055183Z (Reading database ... 15%
+2026-10-07T06:25:51.8055525Z (Reading database ... 20%
+2026-10-07T06:25:51.8055852Z (Reading database ... 25%
+2026-10-07T06:25:51.8056174Z (Reading database ... 30%
+2026-10-07T06:25:51.8056504Z (Reading database ... 35%
+2026-10-07T06:25:51.8057002Z (Reading database ... 40%
+2026-10-07T06:25:51.8057588Z (Reading database ... 45%
+2026-10-07T06:25:51.8058039Z (Reading database ... 50%
+2026-10-07T06:25:51.8101652Z (Reading database ... 55%
+2026-10-07T06:25:51.9143023Z (Reading database ... 60%
+2026-10-07T06:25:52.1631718Z (Reading database ... 65%
+2026-10-07T06:25:52.3533260Z (Reading database ... 70%
+2026-10-07T06:25:52.5212688Z (Reading database ... 75%
+2026-10-07T06:25:52.7011050Z (Reading database ... 80%
+2026-10-07T06:25:52.9095086Z (Reading database ... 85%
+2026-10-07T06:25:53.1040922Z (Reading database ... 90%
+2026-10-07T06:25:53.3113308Z (Reading database ... 95%
+2026-10-07T06:25:53.3113690Z (Reading database ... 100%
+2026-10-07T06:25:53.3114215Z (Reading database ... 202296 files and directories currently installed.)
+2026-10-07T06:25:53.3156435Z Preparing to unpack .../00-fonts-ipafont-gothic_00303-21ubuntu1_all.deb ...
+2026-10-07T06:25:53.3245382Z Unpacking fonts-ipafont-gothic (00303-21ubuntu1) ...
+2026-10-07T06:25:53.5506850Z Selecting previously unselected package fonts-freefont-ttf.
+2026-10-07T06:25:53.5616632Z Preparing to unpack .../01-fonts-freefont-ttf_20211204+svn4273-2_all.deb ...
+2026-10-07T06:25:53.5625253Z Unpacking fonts-freefont-ttf (20211204+svn4273-2) ...
+2026-10-07T06:25:53.6336227Z Selecting previously unselected package fonts-tlwg-loma-otf.
+2026-10-07T06:25:53.6445585Z Preparing to unpack .../02-fonts-tlwg-loma-otf_1%3a0.7.3-1_all.deb ...
+2026-10-07T06:25:53.6453548Z Unpacking fonts-tlwg-loma-otf (1:0.7.3-1) ...
+2026-10-07T06:25:53.6597256Z Selecting previously unselected package fonts-unifont.
+2026-10-07T06:25:53.6705386Z Preparing to unpack .../03-fonts-unifont_1%3a15.1.01-1build1_all.deb ...
+2026-10-07T06:25:53.6712482Z Unpacking fonts-unifont (1:15.1.01-1build1) ...
+2026-10-07T06:25:53.7629739Z Selecting previously unselected package fonts-wqy-zenhei.
+2026-10-07T06:25:53.7740480Z Preparing to unpack .../04-fonts-wqy-zenhei_0.9.45-8_all.deb ...
+2026-10-07T06:25:53.7816546Z Unpacking fonts-wqy-zenhei (0.9.45-8) ...
+2026-10-07T06:25:54.2628901Z Preparing to unpack .../05-libfreetype6_2.13.2+dfsg-1ubuntu0.2_amd64.deb ...
+2026-10-07T06:25:54.2650399Z Unpacking libfreetype6:amd64 (2.13.2+dfsg-1ubuntu0.2) over (2.13.2+dfsg-1ubuntu0.1) ...
+2026-10-07T06:25:54.2947899Z Preparing to unpack .../06-libgl1-mesa-dri_25.2.8-0ubuntu0.24.04.4_amd64.deb ...
+2026-10-07T06:25:54.3056231Z Unpacking libgl1-mesa-dri:amd64 (25.2.8-0ubuntu0.24.04.4) over (25.2.8-0ubuntu0.24.04.2) ...
+2026-10-07T06:25:54.3626128Z Preparing to unpack .../07-libglx-mesa0_25.2.8-0ubuntu0.24.04.4_amd64.deb ...
+2026-10-07T06:25:54.3645287Z Unpacking libglx-mesa0:amd64 (25.2.8-0ubuntu0.24.04.4) over (25.2.8-0ubuntu0.24.04.2) ...
+2026-10-07T06:25:54.3916957Z Preparing to unpack .../08-libgbm1_25.2.8-0ubuntu0.24.04.4_amd64.deb ...
+2026-10-07T06:25:54.3997259Z Unpacking libgbm1:amd64 (25.2.8-0ubuntu0.24.04.4) over (25.2.8-0ubuntu0.24.04.2) ...
+2026-10-07T06:25:54.4279353Z Preparing to unpack .../09-mesa-libgallium_25.2.8-0ubuntu0.24.04.4_amd64.deb ...
+2026-10-07T06:25:54.4298364Z Unpacking mesa-libgallium:amd64 (25.2.8-0ubuntu0.24.04.4) over (25.2.8-0ubuntu0.24.04.2) ...
+2026-10-07T06:25:54.5875427Z Selecting previously unselected package xfonts-encodings.
+2026-10-07T06:25:54.5990639Z Preparing to unpack .../10-xfonts-encodings_1%3a1.0.5-0ubuntu2_all.deb ...
+2026-10-07T06:25:54.5991683Z Unpacking xfonts-encodings (1:1.0.5-0ubuntu2) ...
+2026-10-07T06:25:54.6182164Z Selecting previously unselected package xfonts-utils.
+2026-10-07T06:25:54.6294772Z Preparing to unpack .../11-xfonts-utils_1%3a7.7+6build3_amd64.deb ...
+2026-10-07T06:25:54.6300858Z Unpacking xfonts-utils (1:7.7+6build3) ...
+2026-10-07T06:25:54.6623542Z Selecting previously unselected package xfonts-cyrillic.
+2026-10-07T06:25:54.6733910Z Preparing to unpack .../12-xfonts-cyrillic_1%3a1.0.5+nmu1_all.deb ...
+2026-10-07T06:25:54.6742324Z Unpacking xfonts-cyrillic (1:1.0.5+nmu1) ...
+2026-10-07T06:25:54.6964603Z Selecting previously unselected package xfonts-scalable.
+2026-10-07T06:25:54.7075914Z Preparing to unpack .../13-xfonts-scalable_1%3a1.0.3-1.3_all.deb ...
+2026-10-07T06:25:54.7084256Z Unpacking xfonts-scalable (1:1.0.3-1.3) ...
+2026-10-07T06:25:54.7423261Z Setting up mesa-libgallium:amd64 (25.2.8-0ubuntu0.24.04.4) ...
+2026-10-07T06:25:54.7440818Z Setting up libgbm1:amd64 (25.2.8-0ubuntu0.24.04.4) ...
+2026-10-07T06:25:54.7453789Z Setting up libgl1-mesa-dri:amd64 (25.2.8-0ubuntu0.24.04.4) ...
+2026-10-07T06:25:54.7511461Z Setting up fonts-wqy-zenhei (0.9.45-8) ...
+2026-10-07T06:25:54.7593311Z Setting up fonts-freefont-ttf (20211204+svn4273-2) ...
+2026-10-07T06:25:54.7606308Z Setting up fonts-tlwg-loma-otf (1:0.7.3-1) ...
+2026-10-07T06:25:54.7618830Z Setting up libfreetype6:amd64 (2.13.2+dfsg-1ubuntu0.2) ...
+2026-10-07T06:25:54.7630896Z Setting up xfonts-encodings (1:1.0.5-0ubuntu2) ...
+2026-10-07T06:25:54.7642992Z Setting up fonts-ipafont-gothic (00303-21ubuntu1) ...
+2026-10-07T06:25:54.7690138Z update-alternatives: using /usr/share/fonts/opentype/ipafont-gothic/ipag.ttf to provide /usr/share/fonts/truetype/fonts-japanese-gothic.ttf (fonts-japanese-gothic.ttf) in auto mode
+2026-10-07T06:25:54.7700650Z Setting up fonts-unifont (1:15.1.01-1build1) ...
+2026-10-07T06:25:54.7712815Z Setting up libglx-mesa0:amd64 (25.2.8-0ubuntu0.24.04.4) ...
+2026-10-07T06:25:54.7726584Z Setting up xfonts-utils (1:7.7+6build3) ...
+2026-10-07T06:25:54.7755281Z Setting up xfonts-cyrillic (1:1.0.5+nmu1) ...
+2026-10-07T06:25:54.8047649Z Setting up xfonts-scalable (1:1.0.3-1.3) ...
+2026-10-07T06:25:54.8246679Z Processing triggers for libc-bin (2.39-0ubuntu8.9) ...
+2026-10-07T06:25:54.8763049Z Processing triggers for man-db (2.12.0-4build2) ...
+2026-10-07T06:25:54.8779955Z Not building database; man-db/auto-update is not 'true'.
+2026-10-07T06:25:54.8792425Z Processing triggers for fontconfig (2.15.0-1.1ubuntu2) ...
+2026-10-07T06:25:56.2097873Z 
+2026-10-07T06:25:56.2098696Z Running kernel seems to be up-to-date.
+2026-10-07T06:25:56.2099212Z 
+2026-10-07T06:25:56.2099509Z Restarting services...
+2026-10-07T06:25:56.2180319Z  systemctl restart php8.3-fpm.service
+2026-10-07T06:25:56.3085393Z 
+2026-10-07T06:25:56.3095394Z No containers need to be restarted.
+2026-10-07T06:25:56.3101356Z 
+2026-10-07T06:25:56.3101820Z No user sessions are running outdated binaries.
+2026-10-07T06:25:56.3102221Z 
+2026-10-07T06:25:56.3102736Z No VM guests are running outdated hypervisor (qemu) binaries on this host.
+2026-10-07T06:25:57.3271685Z Downloading Chrome for Testing 153.0.8010.12 (playwright chromium v1243) from https://cdn.playwright.dev/builds/cft/153.0.8010.12/linux64/chrome-linux64.zip
+2026-10-07T06:25:57.7434206Z |                                                                                |   0% of 186.8 MiB
+2026-10-07T06:25:57.9838590Z |■■■■■■■■                                                                        |  10% of 186.8 MiB
+2026-10-07T06:25:58.1155851Z |■■■■■■■■■■■■■■■■                                                                |  20% of 186.8 MiB
+2026-10-07T06:25:58.3213479Z |■■■■■■■■■■■■■■■■■■■■■■■■                                                        |  30% of 186.8 MiB
+2026-10-07T06:25:58.4906823Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                                |  40% of 186.8 MiB
+2026-10-07T06:25:58.6753839Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                        |  50% of 186.8 MiB
+2026-10-07T06:25:58.8329625Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                |  60% of 186.8 MiB
+2026-10-07T06:25:58.9478897Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                        |  70% of 186.8 MiB
+2026-10-07T06:25:59.0438659Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                |  80% of 186.8 MiB
+2026-10-07T06:25:59.1472754Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■        |  90% of 186.8 MiB
+2026-10-07T06:25:59.2723945Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■| 100% of 186.8 MiB
+2026-10-07T06:26:02.0740624Z Chrome for Testing 153.0.8010.12 (playwright chromium v1243) downloaded to /home/runner/.cache/ms-playwright/chromium-1243
+2026-10-07T06:26:02.0744554Z Downloading FFmpeg (playwright ffmpeg v1011) from https://cdn.playwright.dev/dbazure/download/playwright/builds/ffmpeg/1011/ffmpeg-linux.zip
+2026-10-07T06:26:02.6667621Z |                                                                                |   0% of 2.3 MiB
+2026-10-07T06:26:02.7153216Z |■■■■■■■■                                                                        |  10% of 2.3 MiB
+2026-10-07T06:26:02.7474292Z |■■■■■■■■■■■■■■■■                                                                |  20% of 2.3 MiB
+2026-10-07T06:26:02.7699502Z |■■■■■■■■■■■■■■■■■■■■■■■■                                                        |  30% of 2.3 MiB
+2026-10-07T06:26:02.7794271Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                                |  40% of 2.3 MiB
+2026-10-07T06:26:02.7947990Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                        |  50% of 2.3 MiB
+2026-10-07T06:26:02.8014914Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                |  60% of 2.3 MiB
+2026-10-07T06:26:02.8161201Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                        |  70% of 2.3 MiB
+2026-10-07T06:26:02.8201265Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                |  80% of 2.3 MiB
+2026-10-07T06:26:02.8247872Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■        |  90% of 2.3 MiB
+2026-10-07T06:26:02.8375942Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■| 100% of 2.3 MiB
+2026-10-07T06:26:02.8896464Z FFmpeg (playwright ffmpeg v1011) downloaded to /home/runner/.cache/ms-playwright/ffmpeg-1011
+2026-10-07T06:26:02.8899900Z Downloading Chrome Headless Shell 153.0.8010.12 (playwright chromium-headless-shell v1243) from https://cdn.playwright.dev/builds/cft/153.0.8010.12/linux64/chrome-headless-shell-linux64.zip
+2026-10-07T06:26:03.2550392Z |                                                                                |   0% of 114.3 MiB
+2026-10-07T06:26:03.3408036Z |■■■■■■■■                                                                        |  10% of 114.3 MiB
+2026-10-07T06:26:03.4059518Z |■■■■■■■■■■■■■■■■                                                                |  20% of 114.3 MiB
+2026-10-07T06:26:03.4665604Z |■■■■■■■■■■■■■■■■■■■■■■■■                                                        |  30% of 114.3 MiB
+2026-10-07T06:26:03.5370002Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                                |  40% of 114.3 MiB
+2026-10-07T06:26:03.5961209Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                        |  50% of 114.3 MiB
+2026-10-07T06:26:03.6521860Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                |  60% of 114.3 MiB
+2026-10-07T06:26:03.7115973Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                        |  70% of 114.3 MiB
+2026-10-07T06:26:03.7801469Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                |  80% of 114.3 MiB
+2026-10-07T06:26:03.8440937Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■        |  90% of 114.3 MiB
+2026-10-07T06:26:03.8986845Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■| 100% of 114.3 MiB
+2026-10-07T06:26:05.9126605Z Chrome Headless Shell 153.0.8010.12 (playwright chromium-headless-shell v1243) downloaded to /home/runner/.cache/ms-playwright/chromium_headless_shell-1243
+2026-10-07T06:26:05.9453495Z ##[group]Run sudo apt-get install -y fonts-noto-cjk
+2026-10-07T06:26:05.9453890Z [36;1msudo apt-get install -y fonts-noto-cjk[0m
+2026-10-07T06:26:05.9490775Z shell: /usr/bin/bash -e {0}
+2026-10-07T06:26:05.9491053Z ##[endgroup]
+2026-10-07T06:26:05.9738754Z Reading package lists...
+2026-10-07T06:26:06.1673805Z Building dependency tree...
+2026-10-07T06:26:06.1678103Z Reading state information...
+2026-10-07T06:26:06.3188728Z Suggested packages:
+2026-10-07T06:26:06.3189206Z   fonts-noto-cjk-extra
+2026-10-07T06:26:06.3311085Z The following NEW packages will be installed:
+2026-10-07T06:26:06.3319334Z   fonts-noto-cjk
+2026-10-07T06:26:06.3465211Z 0 upgraded, 1 newly installed, 0 to remove and 24 not upgraded.
+2026-10-07T06:26:06.3465869Z Need to get 61.2 MB of archives.
+2026-10-07T06:26:06.3466479Z After this operation, 93.2 MB of additional disk space will be used.
+2026-10-07T06:26:06.3467083Z Get:1 file:/etc/apt/apt-mirrors.txt Mirrorlist [144 B]
+2026-10-07T06:26:06.5744121Z Get:2 http://azure.archive.ubuntu.com/ubuntu noble/main amd64 fonts-noto-cjk all 1:20230817+repack1-3 [61.2 MB]
+2026-10-07T06:26:08.8142090Z Fetched 61.2 MB in 2s (27.3 MB/s)
+2026-10-07T06:26:08.8309157Z Selecting previously unselected package fonts-noto-cjk.
+2026-10-07T06:26:08.8340033Z (Reading database ... 
+2026-10-07T06:26:08.8340466Z (Reading database ... 5%
+2026-10-07T06:26:08.8340870Z (Reading database ... 10%
+2026-10-07T06:26:08.8341295Z (Reading database ... 15%
+2026-10-07T06:26:08.8341683Z (Reading database ... 20%
+2026-10-07T06:26:08.8342073Z (Reading database ... 25%
+2026-10-07T06:26:08.8342451Z (Reading database ... 30%
+2026-10-07T06:26:08.8342837Z (Reading database ... 35%
+2026-10-07T06:26:08.8343220Z (Reading database ... 40%
+2026-10-07T06:26:08.8343639Z (Reading database ... 45%
+2026-10-07T06:26:08.8344028Z (Reading database ... 50%
+2026-10-07T06:26:08.8358904Z (Reading database ... 55%
+2026-10-07T06:26:08.8449840Z (Reading database ... 60%
+2026-10-07T06:26:08.8472043Z (Reading database ... 65%
+2026-10-07T06:26:08.8490075Z (Reading database ... 70%
+2026-10-07T06:26:08.8519275Z (Reading database ... 75%
+2026-10-07T06:26:08.8547870Z (Reading database ... 80%
+2026-10-07T06:26:08.8569196Z (Reading database ... 85%
+2026-10-07T06:26:08.8713338Z (Reading database ... 90%
+2026-10-07T06:26:08.8991194Z (Reading database ... 95%
+2026-10-07T06:26:08.8991563Z (Reading database ... 100%
+2026-10-07T06:26:08.8991984Z (Reading database ... 202563 files and directories currently installed.)
+2026-10-07T06:26:08.9032867Z Preparing to unpack .../fonts-noto-cjk_1%3a20230817+repack1-3_all.deb ...
+2026-10-07T06:26:08.9091713Z Unpacking fonts-noto-cjk (1:20230817+repack1-3) ...
+2026-10-07T06:26:09.3224772Z Setting up fonts-noto-cjk (1:20230817+repack1-3) ...
+2026-10-07T06:26:09.3277258Z Processing triggers for fontconfig (2.15.0-1.1ubuntu2) ...
+2026-10-07T06:26:09.8402332Z 
+2026-10-07T06:26:09.8403043Z Running kernel seems to be up-to-date.
+2026-10-07T06:26:09.8403285Z 
+2026-10-07T06:26:09.8403470Z No services need to be restarted.
+2026-10-07T06:26:09.8403652Z 
+2026-10-07T06:26:09.8403802Z No containers need to be restarted.
+2026-10-07T06:26:09.8403977Z 
+2026-10-07T06:26:09.8404153Z No user sessions are running outdated binaries.
+2026-10-07T06:26:09.8404360Z 
+2026-10-07T06:26:09.8404621Z No VM guests are running outdated hypervisor (qemu) binaries on this host.
+2026-10-07T06:26:10.7254464Z ##[group]Run npm run test:weaveos:unit
+2026-10-07T06:26:10.7254793Z [36;1mnpm run test:weaveos:unit[0m
+2026-10-07T06:26:10.7291788Z shell: /usr/bin/bash -e {0}
+2026-10-07T06:26:10.7292073Z ##[endgroup]
+2026-10-07T06:26:10.8248141Z 
+2026-10-07T06:26:10.8248722Z > arca-ui@0.0.1 test:weaveos:unit
+2026-10-07T06:26:10.8249752Z > node --test tests/weaveos/geometry.test.mjs tests/weaveos/pagination.test.mjs tests/weaveos/filter-model.test.mjs
+2026-10-07T06:26:10.8250431Z 
+2026-10-07T06:26:11.0061482Z ✔ AND and OR compose without flattening or changing meaning (1.71781ms)
+2026-10-07T06:26:11.0065753Z ✔ text supports only equal or not equal, numeric supports all six (0.784674ms)
+2026-10-07T06:26:11.0068169Z ✔ depth three is valid and depth four is rejected (0.271064ms)
+2026-10-07T06:26:11.0069467Z ✔ condition budget is twenty, independent of grouping (0.327492ms)
+2026-10-07T06:26:11.0070772Z ✔ unknown fields, operators, empty groups and malformed leaves fail closed (0.440992ms)
+2026-10-07T06:26:11.0072244Z ✔ empty text is an explicit valid equality, exact decimal strings remain unchanged (0.241586ms)
+2026-10-07T06:26:11.0073419Z ✔ oversized and cyclic filters are rejected without throwing (0.444246ms)
+2026-10-07T06:26:11.0270841Z ✔ opening starts at the source center with its size (2.156515ms)
+2026-10-07T06:26:11.0272342Z ✔ each distinct source yields its own trajectory (0.254075ms)
+2026-10-07T06:26:11.0273522Z ✔ absent source uses no displacement (0.236646ms)
+2026-10-07T06:26:11.0274595Z ✔ invalid or zero rectangles fall back safely (0.278695ms)
+2026-10-07T06:26:11.0275705Z ✔ no division by zero from an unmeasured panel (0.35327ms)
+2026-10-07T06:26:11.0353871Z ✔ small pages list exact pages; large totals use bounded windows (2.086046ms)
+2026-10-07T06:26:11.0355633Z ✔ first and last pages retain nearby navigation without enumerating total (0.391454ms)
+2026-10-07T06:26:11.0357530Z ✔ page input accepts only in-range integers, not coercions or partial numbers (0.368784ms)
+2026-10-07T06:26:11.0359012Z ✔ invalid page metadata cannot produce navigable links (0.257482ms)
+2026-10-07T06:26:11.0360095Z ℹ tests 16
+2026-10-07T06:26:11.0360617Z ℹ suites 0
+2026-10-07T06:26:11.0361115Z ℹ pass 16
+2026-10-07T06:26:11.0361622Z ℹ fail 0
+2026-10-07T06:26:11.0362142Z ℹ cancelled 0
+2026-10-07T06:26:11.0362674Z ℹ skipped 0
+2026-10-07T06:26:11.0363175Z ℹ todo 0
+2026-10-07T06:26:11.0363750Z ℹ duration_ms 178.42084
+2026-10-07T06:26:11.0484633Z ##[group]Run npx eslint src/weaveos
+2026-10-07T06:26:11.0484946Z [36;1mnpx eslint src/weaveos[0m
+2026-10-07T06:26:11.0521421Z shell: /usr/bin/bash -e {0}
+2026-10-07T06:26:11.0521695Z ##[endgroup]
+2026-10-07T06:26:14.1596969Z ##[group]Run npx tsc -b
+2026-10-07T06:26:14.1597285Z [36;1mnpx tsc -b[0m
+2026-10-07T06:26:14.1633039Z shell: /usr/bin/bash -e {0}
+2026-10-07T06:26:14.1633342Z ##[endgroup]
+2026-10-07T06:26:21.9956897Z ##[group]Run npm run build:weaveos
+2026-10-07T06:26:21.9957203Z [36;1mnpm run build:weaveos[0m
+2026-10-07T06:26:21.9992408Z shell: /usr/bin/bash -e {0}
+2026-10-07T06:26:21.9992686Z ##[endgroup]
+2026-10-07T06:26:22.0889322Z 
+2026-10-07T06:26:22.0890028Z > arca-ui@0.0.1 build:weaveos
+2026-10-07T06:26:22.0890661Z > vite build --config vite.weaveos.config.ts
+2026-10-07T06:26:22.0891029Z 
+2026-10-07T06:26:22.3531909Z [36mvite v8.3.0 [32mbuilding client environment for production...[36m[39m
+2026-10-07T06:26:22.3632204Z transforming...
+2026-10-07T06:26:22.6082523Z ✓ 2622 modules transformed.
+2026-10-07T06:26:22.6655100Z rendering chunks...
+2026-10-07T06:26:22.7719369Z computing gzip size...
+2026-10-07T06:26:22.7815989Z dist-weaveos/weaveos.html                                            0.37 kB │ gzip:   0.29 kB
+2026-10-07T06:26:22.7816657Z dist-weaveos/assets/geist-cyrillic-ext-wght-normal-DjL33-gN.woff2    7.42 kB
+2026-10-07T06:26:22.7817365Z dist-weaveos/assets/geist-vietnamese-wght-normal-6IgcOCM7.woff2      8.00 kB
+2026-10-07T06:26:22.7817966Z dist-weaveos/assets/geist-cyrillic-wght-normal-BEAKL7Jp.woff2       15.08 kB
+2026-10-07T06:26:22.7818555Z dist-weaveos/assets/geist-latin-ext-wght-normal-DC-KSUi6.woff2      16.51 kB
+2026-10-07T06:26:22.7819382Z dist-weaveos/assets/geist-latin-wght-normal-BgDaEnEv.woff2          29.40 kB
+2026-10-07T06:26:22.7820120Z dist-weaveos/assets/weaveos-BCCw1AwX.css                            43.17 kB │ gzip:   9.79 kB
+2026-10-07T06:26:22.7820840Z dist-weaveos/assets/weaveos-RMTMg9e1.js                            615.13 kB │ gzip: 200.86 kB
+2026-10-07T06:26:22.7821447Z 
+2026-10-07T06:26:22.7864620Z [33m[plugin builtin:vite-reporter] 
+2026-10-07T06:26:22.7865132Z (!) Some chunks are larger than 500 kB after minification. Consider:
+2026-10-07T06:26:22.7865654Z - Using dynamic import() to code-split the application
+2026-10-07T06:26:22.7866454Z - Use build.rolldownOptions.output.codeSplitting to improve chunking: https://rolldown.rs/reference/OutputOptions.codeSplitting
+2026-10-07T06:26:22.7867308Z - Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.[39m
+2026-10-07T06:26:22.7984345Z [32m✓ built in 444ms[39m
+2026-10-07T06:26:22.8280378Z ##[group]Run npm run build:weaveos:library
+2026-10-07T06:26:22.8280712Z [36;1mnpm run build:weaveos:library[0m
+2026-10-07T06:26:22.8316885Z shell: /usr/bin/bash -e {0}
+2026-10-07T06:26:22.8317161Z ##[endgroup]
+2026-10-07T06:26:22.9256111Z 
+2026-10-07T06:26:22.9256631Z > arca-ui@0.0.1 build:weaveos:library
+2026-10-07T06:26:22.9257956Z > vite build --config vite.weaveos-library.config.ts && tsc -p tsconfig.weaveos-library.json && node scripts/weaveos/package.mjs
+2026-10-07T06:26:22.9258851Z 
+2026-10-07T06:26:23.0874740Z [36mvite v8.3.0 [32mbuilding client environment for production...[36m[39m
+2026-10-07T06:26:23.0994715Z transforming...
+2026-10-07T06:26:23.1069142Z ✓ 25 modules transformed.
+2026-10-07T06:26:23.1120269Z rendering chunks...
+2026-10-07T06:26:23.1180075Z computing gzip size...
+2026-10-07T06:26:23.1184648Z dist-library/index.js  46.43 kB │ gzip: 11.98 kB
+2026-10-07T06:26:23.1185071Z 
+2026-10-07T06:26:23.1220407Z [32m✓ built in 31ms[39m
+2026-10-07T06:26:25.1730481Z Prepared private/unpublished component artifact at dist-library
+2026-10-07T06:26:25.1839860Z ##[group]Run npm run test:weaveos:package
+2026-10-07T06:26:25.1840213Z [36;1mnpm run test:weaveos:package[0m
+2026-10-07T06:26:25.1876583Z shell: /usr/bin/bash -e {0}
+2026-10-07T06:26:25.1876860Z ##[endgroup]
+2026-10-07T06:26:25.2800837Z 
+2026-10-07T06:26:25.2801493Z > arca-ui@0.0.1 test:weaveos:package
+2026-10-07T06:26:25.2802285Z > node --test tests/weaveos/package.test.mjs
+2026-10-07T06:26:25.2802721Z 
+2026-10-07T06:26:25.8038834Z ✔ consumer artifact exports controls, theme and source-aware dialog (0.872888ms)
+2026-10-07T06:26:25.8070679Z ✔ package has typed exports, explicit React peers and safe unpublished metadata (0.268132ms)
+2026-10-07T06:26:25.8080449Z ✔ artifact has no source aliases or demo app and CSS stays scoped (0.444632ms)
+2026-10-07T06:26:25.8113995Z ✔ distributed license and source attribution accompany components (0.207756ms)
+2026-10-07T06:26:25.8324719Z ℹ tests 4
+2026-10-07T06:26:25.8325158Z ℹ suites 0
+2026-10-07T06:26:25.8325502Z ℹ pass 4
+2026-10-07T06:26:25.8325954Z ℹ fail 0
+2026-10-07T06:26:25.8326316Z ℹ cancelled 0
+2026-10-07T06:26:25.8326714Z ℹ skipped 0
+2026-10-07T06:26:25.8327064Z ℹ todo 0
+2026-10-07T06:26:25.8327461Z ℹ duration_ms 519.507255
+2026-10-07T06:26:25.8443385Z ##[group]Run npm run test:weaveos
+2026-10-07T06:26:25.8443898Z [36;1mnpm run test:weaveos[0m
+2026-10-07T06:26:25.8499190Z shell: /usr/bin/bash -e {0}
+2026-10-07T06:26:25.8499651Z ##[endgroup]
+2026-10-07T06:26:25.9421518Z 
+2026-10-07T06:26:25.9422079Z > arca-ui@0.0.1 test:weaveos
+2026-10-07T06:26:25.9422537Z > playwright test -c playwright.weaveos.config.ts
+2026-10-07T06:26:25.9422776Z 
+2026-10-07T06:26:27.2598974Z ✔ AND and OR compose without flattening or changing meaning (1.279089ms)
+2026-10-07T06:26:27.2600576Z ✔ text supports only equal or not equal, numeric supports all six (0.509408ms)
+2026-10-07T06:26:27.2601593Z ✔ depth three is valid and depth four is rejected (0.183284ms)
+2026-10-07T06:26:27.2643983Z ✔ condition budget is twenty, independent of grouping (0.194378ms)
+2026-10-07T06:26:27.2644783Z ✔ unknown fields, operators, empty groups and malformed leaves fail closed (0.262702ms)
+2026-10-07T06:26:27.2645625Z ✔ empty text is an explicit valid equality, exact decimal strings remain unchanged (0.187908ms)
+2026-10-07T06:26:27.2646281Z ✔ oversized and cyclic filters are rejected without throwing (0.191147ms)
+2026-10-07T06:26:27.2868563Z ✔ opening starts at the source center with its size (1.631379ms)
+2026-10-07T06:26:27.2875135Z ✔ each distinct source yields its own trajectory (0.332547ms)
+2026-10-07T06:26:27.2876554Z ✔ absent source uses no displacement (4.012331ms)
+2026-10-07T06:26:27.2877664Z ✔ invalid or zero rectangles fall back safely (0.244518ms)
+2026-10-07T06:26:27.2879491Z ✔ no division by zero from an unmeasured panel (0.146652ms)
+2026-10-07T06:26:28.0053254Z ✔ consumer artifact exports controls, theme and source-aware dialog (0.323064ms)
+2026-10-07T06:26:28.0057200Z ✔ package has typed exports, explicit React peers and safe unpublished metadata (0.284009ms)
+2026-10-07T06:26:28.0063032Z ✔ artifact has no source aliases or demo app and CSS stays scoped (0.536272ms)
+2026-10-07T06:26:28.0065596Z ✔ distributed license and source attribution accompany components (0.174886ms)
+2026-10-07T06:26:28.0310869Z ✔ small pages list exact pages; large totals use bounded windows (0.525421ms)
+2026-10-07T06:26:28.0312984Z ✔ first and last pages retain nearby navigation without enumerating total (0.17832ms)
+2026-10-07T06:26:28.0316312Z ✔ page input accepts only in-range integers, not coercions or partial numbers (0.245285ms)
+2026-10-07T06:26:28.0319171Z ✔ invalid page metadata cannot produce navigable links (0.19929ms)
+2026-10-07T06:26:28.0683203Z 
+2026-10-07T06:26:28.0683801Z Running 45 tests using 2 workers
+2026-10-07T06:26:28.0684161Z 
+2026-10-07T06:26:32.2638754Z   ✓   2 [chromium] › tests/weaveos/data-workspace.spec.ts:5:1 › table renders only the current supplied page despite a large server total (1.8s)
+2026-10-07T06:26:33.0885680Z   ✓   1 [chromium] › tests/weaveos/data-workspace.spec.ts:11:1 › arbitrary page jump emits controlled request and waits for returned page (2.6s)
+2026-10-07T06:26:34.0304748Z   ✓   3 [chromium] › tests/weaveos/data-workspace.spec.ts:19:1 › text has no normal sort while numerical sorting is server-controlled (1.7s)
+2026-10-07T06:26:36.4741536Z   ✓   5 [chromium] › tests/weaveos/data-workspace.spec.ts:38:1 › related data change requires refresh and refresh requests page one (2.4s)
+2026-10-07T06:26:36.6332030Z   ✓   4 [chromium] › tests/weaveos/data-workspace.spec.ts:27:1 › hide a column changes display without clearing sort or issuing a query (3.5s)
+2026-10-07T06:26:38.1011267Z   ✓   6 [chromium] › tests/weaveos/data-workspace.spec.ts:46:1 › only current page selection is controlled and filtering does not happen locally (1.6s)
+2026-10-07T06:26:39.8081442Z   ✓   7 [chromium] › tests/weaveos/data-workspace.spec.ts:51:1 › table workspace passes settled accessibility and captures actual desktop UI (3.1s)
+2026-10-07T06:26:40.8652575Z   ✓   8 [chromium] › tests/weaveos/data-workspace.spec.ts:56:1 › page-size change is a controlled request that resets to first page (2.7s)
+2026-10-07T06:26:41.3681882Z   ✓   9 [chromium] › tests/weaveos/data-workspace.spec.ts:63:1 › invalid arbitrary page never emits a coerced query (1.5s)
+2026-10-07T06:26:43.1729517Z   ✓  11 [chromium] › tests/weaveos/feedback.spec.ts:3:1 › tooltip opens from keyboard focus, escapes and preserves trigger focus (1.8s)
+2026-10-07T06:26:43.9461427Z   ✓  10 [chromium] › tests/weaveos/data-workspace.spec.ts:69:1 › failed response keeps previous confirmed page and exposes an explicit retry (3.1s)
+2026-10-07T06:26:45.0350607Z   ✓  12 [chromium] › tests/weaveos/feedback.spec.ts:4:1 › progress distinguishes confirmed numeric value from indeterminate waiting (1.8s)
+2026-10-07T06:26:46.9112840Z   ✓  14 [chromium] › tests/weaveos/field-basics.spec.ts:4:1 › decimal string retains every digit and trailing zero through edits and blur (1.8s)
+2026-10-07T06:26:47.2457540Z   ✓  13 [chromium] › tests/weaveos/feedback.spec.ts:5:1 › skeleton is decorative and dark feedback controls remain accessible (3.3s)
+2026-10-07T06:26:48.7881900Z   ✓  15 [chromium] › tests/weaveos/field-basics.spec.ts:10:1 › decimal zero remains a string while clearing produces explicit null (1.9s)
+2026-10-07T06:26:49.3023980Z   ✓  16 [chromium] › tests/weaveos/field-basics.spec.ts:14:1 › nullable Boolean keeps null false and true separate (2.0s)
+2026-10-07T06:26:50.6172050Z   ✓  17 [chromium] › tests/weaveos/field-basics.spec.ts:21:1 › readonly fields cannot emit edits, including Boolean pointer and keyboard (1.8s)
+2026-10-07T06:26:51.0951544Z   ✓  18 [chromium] › tests/weaveos/field-basics.spec.ts:28:1 › multiline text preserves Unicode newlines and intentional empty text (1.8s)
+2026-10-07T06:26:53.1585825Z   ✓  19 [chromium] › tests/weaveos/field-basics.spec.ts:33:1 › field errors are associated with inputs and settled controls remain accessible (2.5s)
+2026-10-07T06:26:56.0220025Z   ✓  20 [chromium] › tests/weaveos/filter-manager.spec.ts:4:1 › opens saved-filter management first, with only one preset applied (4.9s)
+2026-10-07T06:26:56.8345601Z   ✓  21 [chromium] › tests/weaveos/filter-manager.spec.ts:14:1 › constructs AND with an OR subgroup and persists exact conditions (3.7s)
+2026-10-07T06:26:59.4765005Z   ✓  22 [chromium] › tests/weaveos/filter-manager.spec.ts:27:1 › failed persistence retains editor and never reports saved (3.4s)
+2026-10-07T06:27:00.0635665Z   ✓  23 [chromium] › tests/weaveos/filter-manager.spec.ts:36:1 › dirty Escape asks before discarding and restores source focus (3.2s)
+2026-10-07T06:27:02.4596038Z   ✓  25 [chromium] › tests/weaveos/filter-manager.spec.ts:53:1 › applying a preset emits a page-one host query without client-side table filtering (2.4s)
+2026-10-07T06:27:03.2046048Z   ✓  24 [chromium] › tests/weaveos/filter-manager.spec.ts:44:1 › text comparisons exclude range operators and editor is accessible (3.7s)
+2026-10-07T06:27:05.6531251Z   ✓  27 [chromium] › tests/weaveos/filter-manager.spec.ts:66:1 › deleting a preset requires confirmation and cancellation preserves it (2.4s)
+2026-10-07T06:27:05.8848789Z   ✓  26 [chromium] › tests/weaveos/filter-manager.spec.ts:59:1 › editing a saved preset preserves identity, saving alone does not apply (3.4s)
+2026-10-07T06:27:09.6350318Z V042_OPENING_GEOMETRY {"count":24,"widths":[440,97.9400634765625,102.1494140625,153.1239013671875,208.5518798828125,264.51123046875,384.60040283203125,427.81707763671875,438.59967041015625,440,440,440,440,440,440,440,440,440,440,440,440,440,440,440],"expanded":440}
+2026-10-07T06:27:09.7782586Z   ✓  28 [chromium] › tests/weaveos/origin-motion.spec.ts:3:1 › window geometry really travels from and returns toward the trigger (4.1s)
+2026-10-07T06:27:10.4381426Z   ✓  29 [chromium] › tests/weaveos/origin-motion.spec.ts:29:1 › successful save returns the window toward its source too (4.5s)
+2026-10-07T06:27:12.6017577Z   ✓  31 [chromium] › tests/weaveos/studio.spec.ts:6:1 › shell uses collapsible icon rail and edge-to-edge content card (2.1s)
+2026-10-07T06:27:14.3509635Z   ✓  30 [chromium] › tests/weaveos/preview.spec.ts:3:1 › capture component studio review images (4.5s)
+2026-10-07T06:27:15.3541374Z   ✓  32 [chromium] › tests/weaveos/studio.spec.ts:19:1 › source dialog has accessible title, focus isolation and restores origin (2.8s)
+2026-10-07T06:27:16.9795449Z   ✓  33 [chromium] › tests/weaveos/studio.spec.ts:34:1 › second source restores its own focus (2.6s)
+2026-10-07T06:27:20.3138520Z   ✓  34 [chromium] › tests/weaveos/studio.spec.ts:41:1 › close during opening and repeat never leaves an overlay or locked page (4.9s)
+2026-10-07T06:27:22.1779472Z   ✓  35 [chromium] › tests/weaveos/studio.spec.ts:49:1 › save feedback waits for result and errors retain editable input (5.2s)
+2026-10-07T06:27:23.5395692Z   ✓  36 [chromium] › tests/weaveos/studio.spec.ts:65:1 › nested select Escape dismisses only the list, then dialog (3.2s)
+2026-10-07T06:27:25.1893269Z   ✓  37 [chromium] › tests/weaveos/studio.spec.ts:74:1 › reduced motion preserves usable modal without scale displacement (3.0s)
+2026-10-07T06:27:26.3907675Z   ✓  38 [chromium] › tests/weaveos/studio.spec.ts:83:1 › mobile view fits viewport and dialog remains operable (2.8s)
+2026-10-07T06:27:26.8051799Z   ✓  39 [chromium] › tests/weaveos/studio.spec.ts:92:1 › theme controls, basic controls and component navigation work (1.6s)
+2026-10-07T06:27:29.6717111Z   ✓  40 [chromium] › tests/weaveos/studio.spec.ts:102:1 › studio and open modal have no serious accessibility violations (3.3s)
+2026-10-07T06:27:33.1495003Z   ✘  41 [chromium] › tests/weaveos/workspace-tabs.spec.ts:3:1 › workspace tabs keep pinned labels clean and nonclosable (6.3s)
+2026-10-07T06:27:49.8400271Z   ✘  42 [chromium] › tests/weaveos/workspace-tabs.spec.ts:4:1 › workspace tabs use arrow Home End navigation and skip disabled tabs (20.1s)
+2026-10-07T06:27:53.8617084Z   ✘  43 [chromium] › tests/weaveos/workspace-tabs.spec.ts:5:1 › workspace tab switch is controlled and never optimistically accepts a refused request (20.1s)
+2026-10-07T06:28:10.5487637Z   ✘  44 [chromium] › tests/weaveos/workspace-tabs.spec.ts:6:1 › workspace close only requests removal until its owner confirms (20.1s)
+2026-10-07T06:28:14.5324961Z   ✘  45 [chromium] › tests/weaveos/workspace-tabs.spec.ts:7:1 › workspace tabs have accessible dark panels and reduced-motion presentation (20.1s)
+2026-10-07T06:28:14.5676069Z 
+2026-10-07T06:28:14.5681212Z 
+2026-10-07T06:28:14.5691937Z   1) [chromium] › tests/weaveos/workspace-tabs.spec.ts:3:1 › workspace tabs keep pinned labels clean and nonclosable 
+2026-10-07T06:28:14.5692788Z 
+2026-10-07T06:28:14.5693032Z     Error: expect(locator).toHaveAttribute(expected) failed
+2026-10-07T06:28:14.5693460Z 
+2026-10-07T06:28:14.5694173Z     Locator: getByRole('tablist', { name: '应用标签页' }).getByRole('tab', { name: '工作台', exact: true })
+2026-10-07T06:28:14.5694874Z     Expected: "true"
+2026-10-07T06:28:14.5695222Z     Timeout: 5000ms
+2026-10-07T06:28:14.5695605Z     Error: element(s) not found
+2026-10-07T06:28:14.5696261Z 
+2026-10-07T06:28:14.5696379Z     Call log:
+2026-10-07T06:28:14.5697139Z       - Expect "toHaveAttribute" getByRole('tablist', { name: '应用标签页' }).getByRole('tab', { name: '工作台', exact: true }) with timeout 5000ms
+2026-10-07T06:28:14.5698545Z       - waiting for getByRole('tablist', { name: '应用标签页' }).getByRole('tab', { name: '工作台', exact: true })
+2026-10-07T06:28:14.5699354Z 
+2026-10-07T06:28:14.5699366Z 
+2026-10-07T06:28:14.5699931Z       1 | import{test,expect}from'@playwright/test';import AxeBuilder from'@axe-core/playwright';
+2026-10-07T06:28:14.5701476Z       2 | test.beforeEach(async({page})=>{await page.goto('/weaveos.html');await page.getByRole('button',{name:'导航与布局',exact:true}).click()});
+2026-10-07T06:28:14.5703832Z     > 3 | test('workspace tabs keep pinned labels clean and nonclosable',async({page})=>{const list=page.getByRole('tablist',{name:'应用标签页'});await expect(list.getByRole('tab',{name:'工作台',exact:true})).toHaveAttribute('aria-selected','true');await expect(list.getByRole('button',{name:'关闭工作台'})).toHaveCount(0);await expect(list).not.toContainText('固定');await expect(list.getByRole('button',{name:'关闭人事管理'})).toBeVisible()});
+2026-10-07T06:28:14.5705458Z         |                                                                                                                                                                                                ^
+2026-10-07T06:28:14.5708128Z       4 | test('workspace tabs use arrow Home End navigation and skip disabled tabs',async({page})=>{const list=page.getByRole('tablist',{name:'应用标签页'});const home=list.getByRole('tab',{name:'工作台',exact:true});await home.focus();await page.keyboard.press('ArrowRight');await expect(list.getByRole('tab',{name:'人事管理',exact:true})).toBeFocused();await page.keyboard.press('End');await expect(list.getByRole('tab',{name:'财务管理',exact:true})).toBeFocused();await page.keyboard.press('Home');await expect(home).toBeFocused();await expect(page.getByRole('tabpanel',{name:'工作台',exact:true})).toBeVisible()});
+2026-10-07T06:28:14.5713337Z       5 | test('workspace tab switch is controlled and never optimistically accepts a refused request',async({page})=>{const list=page.getByRole('tablist',{name:'应用标签页'});await page.getByRole('checkbox',{name:'暂不接受切换'}).check();await list.getByRole('tab',{name:'人事管理',exact:true}).click();await expect(list.getByRole('tab',{name:'工作台',exact:true})).toHaveAttribute('aria-selected','true');await expect(page.getByRole('tabpanel',{name:'工作台',exact:true})).toBeVisible();await page.getByRole('checkbox',{name:'暂不接受切换'}).uncheck();await list.getByRole('tab',{name:'人事管理',exact:true}).click();await expect(page.getByRole('tabpanel',{name:'人事管理',exact:true})).toBeVisible();await expect(page.getByRole('tabpanel',{name:'工作台',exact:true})).toBeHidden()});
+2026-10-07T06:28:14.5718109Z       6 | test('workspace close only requests removal until its owner confirms',async({page})=>{const list=page.getByRole('tablist',{name:'应用标签页'});await list.getByRole('button',{name:'关闭人事管理'}).click();await expect(list.getByRole('tab',{name:'人事管理',exact:true})).toBeVisible();await expect(page.getByRole('status',{name:'标签操作'})).toHaveText('请求关闭：人事管理');await page.getByRole('button',{name:'确认移除标签'}).click();await expect(list.getByRole('tab',{name:'人事管理',exact:true})).toHaveCount(0);await expect(list.getByRole('tab',{name:'工作台',exact:true})).toBeVisible()});
+2026-10-07T06:28:14.5720854Z         at /home/runner/work/arca-ui/arca-ui/tests/weaveos/workspace-tabs.spec.ts:3:192
+2026-10-07T06:28:14.5721178Z 
+2026-10-07T06:28:14.5721593Z     attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+2026-10-07T06:28:14.5722377Z     test-results/workspace-tabs-workspace-t-d278d-abels-clean-and-nonclosable-chromium/test-failed-1.png
+2026-10-07T06:28:14.5723159Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+2026-10-07T06:28:14.5723431Z 
+2026-10-07T06:28:14.5723882Z     Error Context: test-results/workspace-tabs-workspace-t-d278d-abels-clean-and-nonclosable-chromium/error-context.md
+2026-10-07T06:28:14.5724369Z 
+2026-10-07T06:28:14.5724749Z     attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+2026-10-07T06:28:14.5725436Z     test-results/workspace-tabs-workspace-t-d278d-abels-clean-and-nonclosable-chromium/trace.zip
+2026-10-07T06:28:14.5725916Z     Usage:
+2026-10-07T06:28:14.5726035Z 
+2026-10-07T06:28:14.5726494Z         npx playwright show-trace test-results/workspace-tabs-workspace-t-d278d-abels-clean-and-nonclosable-chromium/trace.zip
+2026-10-07T06:28:14.5726990Z 
+2026-10-07T06:28:14.5727319Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+2026-10-07T06:28:14.5727577Z 
+2026-10-07T06:28:14.5728096Z   2) [chromium] › tests/weaveos/workspace-tabs.spec.ts:4:1 › workspace tabs use arrow Home End navigation and skip disabled tabs 
+2026-10-07T06:28:14.5728537Z 
+2026-10-07T06:28:14.5728670Z     Test timeout of 20000ms exceeded.
+2026-10-07T06:28:14.5728854Z 
+2026-10-07T06:28:14.5729164Z     Error: locator.focus: Test timeout of 20000ms exceeded.
+2026-10-07T06:28:14.5729561Z     Call log:
+2026-10-07T06:28:14.5730085Z       - waiting for getByRole('tablist', { name: '应用标签页' }).getByRole('tab', { name: '工作台', exact: true })
+2026-10-07T06:28:14.5730420Z 
+2026-10-07T06:28:14.5730427Z 
+2026-10-07T06:28:14.5730970Z       2 | test.beforeEach(async({page})=>{await page.goto('/weaveos.html');await page.getByRole('button',{name:'导航与布局',exact:true}).click()});
+2026-10-07T06:28:14.5733590Z       3 | test('workspace tabs keep pinned labels clean and nonclosable',async({page})=>{const list=page.getByRole('tablist',{name:'应用标签页'});await expect(list.getByRole('tab',{name:'工作台',exact:true})).toHaveAttribute('aria-selected','true');await expect(list.getByRole('button',{name:'关闭工作台'})).toHaveCount(0);await expect(list).not.toContainText('固定');await expect(list.getByRole('button',{name:'关闭人事管理'})).toBeVisible()});
+2026-10-07T06:28:14.5737625Z     > 4 | test('workspace tabs use arrow Home End navigation and skip disabled tabs',async({page})=>{const list=page.getByRole('tablist',{name:'应用标签页'});const home=list.getByRole('tab',{name:'工作台',exact:true});await home.focus();await page.keyboard.press('ArrowRight');await expect(list.getByRole('tab',{name:'人事管理',exact:true})).toBeFocused();await page.keyboard.press('End');await expect(list.getByRole('tab',{name:'财务管理',exact:true})).toBeFocused();await page.keyboard.press('Home');await expect(home).toBeFocused();await expect(page.getByRole('tabpanel',{name:'工作台',exact:true})).toBeVisible()});
+2026-10-07T06:28:14.5739967Z         |                                                                                                                                                                                                                    ^
+2026-10-07T06:28:14.5743198Z       5 | test('workspace tab switch is controlled and never optimistically accepts a refused request',async({page})=>{const list=page.getByRole('tablist',{name:'应用标签页'});await page.getByRole('checkbox',{name:'暂不接受切换'}).check();await list.getByRole('tab',{name:'人事管理',exact:true}).click();await expect(list.getByRole('tab',{name:'工作台',exact:true})).toHaveAttribute('aria-selected','true');await expect(page.getByRole('tabpanel',{name:'工作台',exact:true})).toBeVisible();await page.getByRole('checkbox',{name:'暂不接受切换'}).uncheck();await list.getByRole('tab',{name:'人事管理',exact:true}).click();await expect(page.getByRole('tabpanel',{name:'人事管理',exact:true})).toBeVisible();await expect(page.getByRole('tabpanel',{name:'工作台',exact:true})).toBeHidden()});
+2026-10-07T06:28:14.5747545Z       6 | test('workspace close only requests removal until its owner confirms',async({page})=>{const list=page.getByRole('tablist',{name:'应用标签页'});await list.getByRole('button',{name:'关闭人事管理'}).click();await expect(list.getByRole('tab',{name:'人事管理',exact:true})).toBeVisible();await expect(page.getByRole('status',{name:'标签操作'})).toHaveText('请求关闭：人事管理');await page.getByRole('button',{name:'确认移除标签'}).click();await expect(list.getByRole('tab',{name:'人事管理',exact:true})).toHaveCount(0);await expect(list.getByRole('tab',{name:'工作台',exact:true})).toBeVisible()});
+2026-10-07T06:28:14.5752432Z       7 | test('workspace tabs have accessible dark panels and reduced-motion presentation',async({page})=>{await page.emulateMedia({reducedMotion:'reduce'});await page.getByRole('button',{name:'深色模式',exact:true}).click();const section=page.getByRole('region',{name:'工作区标签页'});await section.scrollIntoViewIfNeeded();await section.getByRole('tab',{name:'财务管理',exact:true}).click();await expect(page.getByRole('tabpanel',{name:'财务管理',exact:true})).toContainText('报销与费用');const results=await new AxeBuilder({page}).include('[data-testid="workspace-tabs-demo"]').analyze();expect(results.violations).toEqual([]);await page.screenshot({path:'test-results/weaveos-workspace-tabs-dark.png'})});
+2026-10-07T06:28:14.5754801Z         at /home/runner/work/arca-ui/arca-ui/tests/weaveos/workspace-tabs.spec.ts:4:212
+2026-10-07T06:28:14.5755132Z 
+2026-10-07T06:28:14.5755515Z     attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+2026-10-07T06:28:14.5756229Z     test-results/workspace-tabs-workspace-t-9d1a9-tion-and-skip-disabled-tabs-chromium/test-failed-1.png
+2026-10-07T06:28:14.5756996Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+2026-10-07T06:28:14.5757255Z 
+2026-10-07T06:28:14.5757701Z     Error Context: test-results/workspace-tabs-workspace-t-9d1a9-tion-and-skip-disabled-tabs-chromium/error-context.md
+2026-10-07T06:28:14.5758180Z 
+2026-10-07T06:28:14.5758549Z     attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+2026-10-07T06:28:14.5759473Z     test-results/workspace-tabs-workspace-t-9d1a9-tion-and-skip-disabled-tabs-chromium/trace.zip
+2026-10-07T06:28:14.5760116Z     Usage:
+2026-10-07T06:28:14.5760290Z 
+2026-10-07T06:28:14.5760752Z         npx playwright show-trace test-results/workspace-tabs-workspace-t-9d1a9-tion-and-skip-disabled-tabs-chromium/trace.zip
+2026-10-07T06:28:14.5761329Z 
+2026-10-07T06:28:14.5761679Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+2026-10-07T06:28:14.5761936Z 
+2026-10-07T06:28:14.5762516Z   3) [chromium] › tests/weaveos/workspace-tabs.spec.ts:5:1 › workspace tab switch is controlled and never optimistically accepts a refused request 
+2026-10-07T06:28:14.5763019Z 
+2026-10-07T06:28:14.5763148Z     Test timeout of 20000ms exceeded.
+2026-10-07T06:28:14.5763316Z 
+2026-10-07T06:28:14.5763500Z     Error: locator.check: Test timeout of 20000ms exceeded.
+2026-10-07T06:28:14.5763807Z     Call log:
+2026-10-07T06:28:14.5764169Z       - waiting for getByRole('checkbox', { name: '暂不接受切换' })
+2026-10-07T06:28:14.5764394Z 
+2026-10-07T06:28:14.5764400Z 
+2026-10-07T06:28:14.5766021Z       3 | test('workspace tabs keep pinned labels clean and nonclosable',async({page})=>{const list=page.getByRole('tablist',{name:'应用标签页'});await expect(list.getByRole('tab',{name:'工作台',exact:true})).toHaveAttribute('aria-selected','true');await expect(list.getByRole('button',{name:'关闭工作台'})).toHaveCount(0);await expect(list).not.toContainText('固定');await expect(list.getByRole('button',{name:'关闭人事管理'})).toBeVisible()});
+2026-10-07T06:28:14.5769784Z       4 | test('workspace tabs use arrow Home End navigation and skip disabled tabs',async({page})=>{const list=page.getByRole('tablist',{name:'应用标签页'});const home=list.getByRole('tab',{name:'工作台',exact:true});await home.focus();await page.keyboard.press('ArrowRight');await expect(list.getByRole('tab',{name:'人事管理',exact:true})).toBeFocused();await page.keyboard.press('End');await expect(list.getByRole('tab',{name:'财务管理',exact:true})).toBeFocused();await page.keyboard.press('Home');await expect(home).toBeFocused();await expect(page.getByRole('tabpanel',{name:'工作台',exact:true})).toBeVisible()});
+2026-10-07T06:28:14.5774380Z     > 5 | test('workspace tab switch is controlled and never optimistically accepts a refused request',async({page})=>{const list=page.getByRole('tablist',{name:'应用标签页'});await page.getByRole('checkbox',{name:'暂不接受切换'}).check();await list.getByRole('tab',{name:'人事管理',exact:true}).click();await expect(list.getByRole('tab',{name:'工作台',exact:true})).toHaveAttribute('aria-selected','true');await expect(page.getByRole('tabpanel',{name:'工作台',exact:true})).toBeVisible();await page.getByRole('checkbox',{name:'暂不接受切换'}).uncheck();await list.getByRole('tab',{name:'人事管理',exact:true}).click();await expect(page.getByRole('tabpanel',{name:'人事管理',exact:true})).toBeVisible();await expect(page.getByRole('tabpanel',{name:'工作台',exact:true})).toBeHidden()});
+2026-10-07T06:28:14.5777135Z         |                                                                                                                                                                                                                   ^
+2026-10-07T06:28:14.5779838Z       6 | test('workspace close only requests removal until its owner confirms',async({page})=>{const list=page.getByRole('tablist',{name:'应用标签页'});await list.getByRole('button',{name:'关闭人事管理'}).click();await expect(list.getByRole('tab',{name:'人事管理',exact:true})).toBeVisible();await expect(page.getByRole('status',{name:'标签操作'})).toHaveText('请求关闭：人事管理');await page.getByRole('button',{name:'确认移除标签'}).click();await expect(list.getByRole('tab',{name:'人事管理',exact:true})).toHaveCount(0);await expect(list.getByRole('tab',{name:'工作台',exact:true})).toBeVisible()});
+2026-10-07T06:28:14.5784698Z       7 | test('workspace tabs have accessible dark panels and reduced-motion presentation',async({page})=>{await page.emulateMedia({reducedMotion:'reduce'});await page.getByRole('button',{name:'深色模式',exact:true}).click();const section=page.getByRole('region',{name:'工作区标签页'});await section.scrollIntoViewIfNeeded();await section.getByRole('tab',{name:'财务管理',exact:true}).click();await expect(page.getByRole('tabpanel',{name:'财务管理',exact:true})).toContainText('报销与费用');const results=await new AxeBuilder({page}).include('[data-testid="workspace-tabs-demo"]').analyze();expect(results.violations).toEqual([]);await page.screenshot({path:'test-results/weaveos-workspace-tabs-dark.png'})});
+2026-10-07T06:28:14.5787773Z       8 |
+2026-10-07T06:28:14.5788265Z         at /home/runner/work/arca-ui/arca-ui/tests/weaveos/workspace-tabs.spec.ts:5:211
+2026-10-07T06:28:14.5788688Z 
+2026-10-07T06:28:14.5789377Z     attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+2026-10-07T06:28:14.5790198Z     test-results/workspace-tabs-workspace-t-27661-y-accepts-a-refused-request-chromium/test-failed-1.png
+2026-10-07T06:28:14.5790973Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+2026-10-07T06:28:14.5791411Z 
+2026-10-07T06:28:14.5791914Z     Error Context: test-results/workspace-tabs-workspace-t-27661-y-accepts-a-refused-request-chromium/error-context.md
+2026-10-07T06:28:14.5792421Z 
+2026-10-07T06:28:14.5792812Z     attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+2026-10-07T06:28:14.5793494Z     test-results/workspace-tabs-workspace-t-27661-y-accepts-a-refused-request-chromium/trace.zip
+2026-10-07T06:28:14.5793970Z     Usage:
+2026-10-07T06:28:14.5794088Z 
+2026-10-07T06:28:14.5794549Z         npx playwright show-trace test-results/workspace-tabs-workspace-t-27661-y-accepts-a-refused-request-chromium/trace.zip
+2026-10-07T06:28:14.5795130Z 
+2026-10-07T06:28:14.5795746Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+2026-10-07T06:28:14.5796234Z 
+2026-10-07T06:28:14.5797145Z   4) [chromium] › tests/weaveos/workspace-tabs.spec.ts:6:1 › workspace close only requests removal until its owner confirms 
+2026-10-07T06:28:14.5797777Z 
+2026-10-07T06:28:14.5798139Z     Test timeout of 20000ms exceeded.
+2026-10-07T06:28:14.5798377Z 
+2026-10-07T06:28:14.5798647Z     Error: locator.click: Test timeout of 20000ms exceeded.
+2026-10-07T06:28:14.5798984Z     Call log:
+2026-10-07T06:28:14.5799713Z       - waiting for getByRole('tablist', { name: '应用标签页' }).getByRole('button', { name: '关闭人事管理' })
+2026-10-07T06:28:14.5800045Z 
+2026-10-07T06:28:14.5800051Z 
+2026-10-07T06:28:14.5802366Z       4 | test('workspace tabs use arrow Home End navigation and skip disabled tabs',async({page})=>{const list=page.getByRole('tablist',{name:'应用标签页'});const home=list.getByRole('tab',{name:'工作台',exact:true});await home.focus();await page.keyboard.press('ArrowRight');await expect(list.getByRole('tab',{name:'人事管理',exact:true})).toBeFocused();await page.keyboard.press('End');await expect(list.getByRole('tab',{name:'财务管理',exact:true})).toBeFocused();await page.keyboard.press('Home');await expect(home).toBeFocused();await expect(page.getByRole('tabpanel',{name:'工作台',exact:true})).toBeVisible()});
+2026-10-07T06:28:14.5807034Z       5 | test('workspace tab switch is controlled and never optimistically accepts a refused request',async({page})=>{const list=page.getByRole('tablist',{name:'应用标签页'});await page.getByRole('checkbox',{name:'暂不接受切换'}).check();await list.getByRole('tab',{name:'人事管理',exact:true}).click();await expect(list.getByRole('tab',{name:'工作台',exact:true})).toHaveAttribute('aria-selected','true');await expect(page.getByRole('tabpanel',{name:'工作台',exact:true})).toBeVisible();await page.getByRole('checkbox',{name:'暂不接受切换'}).uncheck();await list.getByRole('tab',{name:'人事管理',exact:true}).click();await expect(page.getByRole('tabpanel',{name:'人事管理',exact:true})).toBeVisible();await expect(page.getByRole('tabpanel',{name:'工作台',exact:true})).toBeHidden()});
+2026-10-07T06:28:14.5811560Z     > 6 | test('workspace close only requests removal until its owner confirms',async({page})=>{const list=page.getByRole('tablist',{name:'应用标签页'});await list.getByRole('button',{name:'关闭人事管理'}).click();await expect(list.getByRole('tab',{name:'人事管理',exact:true})).toBeVisible();await expect(page.getByRole('status',{name:'标签操作'})).toHaveText('请求关闭：人事管理');await page.getByRole('button',{name:'确认移除标签'}).click();await expect(list.getByRole('tab',{name:'人事管理',exact:true})).toHaveCount(0);await expect(list.getByRole('tab',{name:'工作台',exact:true})).toBeVisible()});
+2026-10-07T06:28:14.5813503Z         |                                                                                                                                                                                          ^
+2026-10-07T06:28:14.5819929Z       7 | test('workspace tabs have accessible dark panels and reduced-motion presentation',async({page})=>{await page.emulateMedia({reducedMotion:'reduce'});await page.getByRole('button',{name:'深色模式',exact:true}).click();const section=page.getByRole('region',{name:'工作区标签页'});await section.scrollIntoViewIfNeeded();await section.getByRole('tab',{name:'财务管理',exact:true}).click();await expect(page.getByRole('tabpanel',{name:'财务管理',exact:true})).toContainText('报销与费用');const results=await new AxeBuilder({page}).include('[data-testid="workspace-tabs-demo"]').analyze();expect(results.violations).toEqual([]);await page.screenshot({path:'test-results/weaveos-workspace-tabs-dark.png'})});
+2026-10-07T06:28:14.5822182Z       8 |
+2026-10-07T06:28:14.5822574Z         at /home/runner/work/arca-ui/arca-ui/tests/weaveos/workspace-tabs.spec.ts:6:186
+2026-10-07T06:28:14.5822890Z 
+2026-10-07T06:28:14.5823306Z     attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+2026-10-07T06:28:14.5824022Z     test-results/workspace-tabs-workspace-c-1f5d0-al-until-its-owner-confirms-chromium/test-failed-1.png
+2026-10-07T06:28:14.5824775Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+2026-10-07T06:28:14.5825036Z 
+2026-10-07T06:28:14.5825475Z     Error Context: test-results/workspace-tabs-workspace-c-1f5d0-al-until-its-owner-confirms-chromium/error-context.md
+2026-10-07T06:28:14.5825958Z 
+2026-10-07T06:28:14.5826484Z     attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+2026-10-07T06:28:14.5827167Z     test-results/workspace-tabs-workspace-c-1f5d0-al-until-its-owner-confirms-chromium/trace.zip
+2026-10-07T06:28:14.5827735Z     Usage:
+2026-10-07T06:28:14.5827842Z 
+2026-10-07T06:28:14.5828303Z         npx playwright show-trace test-results/workspace-tabs-workspace-c-1f5d0-al-until-its-owner-confirms-chromium/trace.zip
+2026-10-07T06:28:14.5828793Z 
+2026-10-07T06:28:14.5829333Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+2026-10-07T06:28:14.5829718Z 
+2026-10-07T06:28:14.5830265Z   5) [chromium] › tests/weaveos/workspace-tabs.spec.ts:7:1 › workspace tabs have accessible dark panels and reduced-motion presentation 
+2026-10-07T06:28:14.5830730Z 
+2026-10-07T06:28:14.5830852Z     Test timeout of 20000ms exceeded.
+2026-10-07T06:28:14.5831036Z 
+2026-10-07T06:28:14.5831236Z     Error: locator.click: Test timeout of 20000ms exceeded.
+2026-10-07T06:28:14.5831546Z     Call log:
+2026-10-07T06:28:14.5832059Z       - waiting for getByRole('region', { name: '工作区标签页' }).getByRole('tab', { name: '财务管理', exact: true })
+2026-10-07T06:28:14.5832410Z 
+2026-10-07T06:28:14.5832416Z 
+2026-10-07T06:28:14.5835268Z       5 | test('workspace tab switch is controlled and never optimistically accepts a refused request',async({page})=>{const list=page.getByRole('tablist',{name:'应用标签页'});await page.getByRole('checkbox',{name:'暂不接受切换'}).check();await list.getByRole('tab',{name:'人事管理',exact:true}).click();await expect(list.getByRole('tab',{name:'工作台',exact:true})).toHaveAttribute('aria-selected','true');await expect(page.getByRole('tabpanel',{name:'工作台',exact:true})).toBeVisible();await page.getByRole('checkbox',{name:'暂不接受切换'}).uncheck();await list.getByRole('tab',{name:'人事管理',exact:true}).click();await expect(page.getByRole('tabpanel',{name:'人事管理',exact:true})).toBeVisible();await expect(page.getByRole('tabpanel',{name:'工作台',exact:true})).toBeHidden()});
+2026-10-07T06:28:14.5839671Z       6 | test('workspace close only requests removal until its owner confirms',async({page})=>{const list=page.getByRole('tablist',{name:'应用标签页'});await list.getByRole('button',{name:'关闭人事管理'}).click();await expect(list.getByRole('tab',{name:'人事管理',exact:true})).toBeVisible();await expect(page.getByRole('status',{name:'标签操作'})).toHaveText('请求关闭：人事管理');await page.getByRole('button',{name:'确认移除标签'}).click();await expect(list.getByRole('tab',{name:'人事管理',exact:true})).toHaveCount(0);await expect(list.getByRole('tab',{name:'工作台',exact:true})).toBeVisible()});
+2026-10-07T06:28:14.5844078Z     > 7 | test('workspace tabs have accessible dark panels and reduced-motion presentation',async({page})=>{await page.emulateMedia({reducedMotion:'reduce'});await page.getByRole('button',{name:'深色模式',exact:true}).click();const section=page.getByRole('region',{name:'工作区标签页'});await section.scrollIntoViewIfNeeded();await section.getByRole('tab',{name:'财务管理',exact:true}).click();await expect(page.getByRole('tabpanel',{name:'财务管理',exact:true})).toContainText('报销与费用');const results=await new AxeBuilder({page}).include('[data-testid="workspace-tabs-demo"]').analyze();expect(results.violations).toEqual([]);await page.screenshot({path:'test-results/weaveos-workspace-tabs-dark.png'})});
+2026-10-07T06:28:14.5846776Z         |                                                                                                                                                                                                                                                                                                                                                                           ^
+2026-10-07T06:28:14.5847400Z       8 |
+2026-10-07T06:28:14.5847787Z         at /home/runner/work/arca-ui/arca-ui/tests/weaveos/workspace-tabs.spec.ts:7:363
+2026-10-07T06:28:14.5848097Z 
+2026-10-07T06:28:14.5848479Z     attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+2026-10-07T06:28:14.5849320Z     test-results/workspace-tabs-workspace-t-34066-reduced-motion-presentation-chromium/test-failed-1.png
+2026-10-07T06:28:14.5850090Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+2026-10-07T06:28:14.5850428Z 
+2026-10-07T06:28:14.5850871Z     Error Context: test-results/workspace-tabs-workspace-t-34066-reduced-motion-presentation-chromium/error-context.md
+2026-10-07T06:28:14.5851351Z 
+2026-10-07T06:28:14.5851731Z     attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+2026-10-07T06:28:14.5852403Z     test-results/workspace-tabs-workspace-t-34066-reduced-motion-presentation-chromium/trace.zip
+2026-10-07T06:28:14.5852880Z     Usage:
+2026-10-07T06:28:14.5852994Z 
+2026-10-07T06:28:14.5853457Z         npx playwright show-trace test-results/workspace-tabs-workspace-t-34066-reduced-motion-presentation-chromium/trace.zip
+2026-10-07T06:28:14.5853941Z 
+2026-10-07T06:28:14.5854277Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+2026-10-07T06:28:14.5854543Z 
+2026-10-07T06:28:14.5854633Z   5 failed
+2026-10-07T06:28:14.5855206Z     [chromium] › tests/weaveos/workspace-tabs.spec.ts:3:1 › workspace tabs keep pinned labels clean and nonclosable 
+2026-10-07T06:28:14.5856079Z     [chromium] › tests/weaveos/workspace-tabs.spec.ts:4:1 › workspace tabs use arrow Home End navigation and skip disabled tabs 
+2026-10-07T06:28:14.5857064Z     [chromium] › tests/weaveos/workspace-tabs.spec.ts:5:1 › workspace tab switch is controlled and never optimistically accepts a refused request 
+2026-10-07T06:28:14.5858017Z     [chromium] › tests/weaveos/workspace-tabs.spec.ts:6:1 › workspace close only requests removal until its owner confirms 
+2026-10-07T06:28:14.5858945Z     [chromium] › tests/weaveos/workspace-tabs.spec.ts:7:1 › workspace tabs have accessible dark panels and reduced-motion presentation 
+2026-10-07T06:28:14.5859617Z   40 passed (1.8m)
+2026-10-07T06:28:14.5954574Z ##[error]Process completed with exit code 1.
+2026-10-07T06:28:14.6023825Z ##[group]Run actions/upload-artifact@v4
+2026-10-07T06:28:14.6024111Z with:
+2026-10-07T06:28:14.6024357Z   name: weaveos-browser-evidence
+2026-10-07T06:28:14.6024622Z   path: test-results/
+2026-10-07T06:28:14.6024854Z   retention-days: 14
+2026-10-07T06:28:14.6025082Z   if-no-files-found: warn
+2026-10-07T06:28:14.6025313Z   compression-level: 6
+2026-10-07T06:28:14.6025531Z   overwrite: false
+2026-10-07T06:28:14.6025746Z   include-hidden-files: false
+2026-10-07T06:28:14.6025989Z ##[endgroup]
+2026-10-07T06:28:14.7661375Z (node:4496) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-10-07T06:28:14.7662132Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-10-07T06:28:14.7774948Z With the provided path, there will be 22 files uploaded
+2026-10-07T06:28:14.7780244Z Artifact name is valid!
+2026-10-07T06:28:14.7780842Z Root directory input is valid!
+2026-10-07T06:28:15.1605683Z Beginning upload of artifact content to blob storage
+2026-10-07T06:28:15.3177448Z (node:4496) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+2026-10-07T06:28:16.0455953Z Uploaded bytes 3519702
+2026-10-07T06:28:16.1211930Z Finished uploading artifact content to blob storage!
+2026-10-07T06:28:16.1212790Z SHA256 digest of uploaded artifact zip is e4d80da2bef03b7c1fe8c5712918a5b7bd5d8911bf2d79a1af137b69ae01141f
+2026-10-07T06:28:16.1215005Z Finalizing artifact upload
+2026-10-07T06:28:16.3567963Z Artifact weaveos-browser-evidence.zip successfully finalized. Artifact ID 11464213948
+2026-10-07T06:28:16.3569001Z Artifact weaveos-browser-evidence has been successfully uploaded! Final size is 3519702 bytes. Artifact ID is 11464213948
+2026-10-07T06:28:16.3574811Z Artifact download URL: https://github.com/Hubujiu/arca-ui/actions/runs/37581403893/artifacts/11464213948
+2026-10-07T06:28:16.3773387Z Post job cleanup.
+2026-10-07T06:28:16.4563054Z [command]/usr/bin/git version
+2026-10-07T06:28:16.4600122Z git version 2.55.0
+2026-10-07T06:28:16.4635843Z Temporarily overriding HOME='/home/runner/work/_temp/9e8a4e6e-98b6-4ac9-870c-ddc93b501edc' before making global git config changes
+2026-10-07T06:28:16.4637716Z Adding repository directory to the temporary git global config as a safe directory
+2026-10-07T06:28:16.4641541Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/arca-ui/arca-ui
+2026-10-07T06:28:16.4676068Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-10-07T06:28:16.4706578Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-10-07T06:28:16.4910782Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-10-07T06:28:16.4934314Z http.https://github.com/.extraheader
+2026-10-07T06:28:16.4945285Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+2026-10-07T06:28:16.4976117Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-10-07T06:28:16.5195447Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-10-07T06:28:16.5228775Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-10-07T06:28:16.5566715Z Cleaning up orphan processes
+2026-10-07T06:28:16.5848295Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, actions/setup-node@v4, actions/upload-artifact@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+

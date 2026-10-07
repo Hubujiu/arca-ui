@@ -1,0 +1,67 @@
+{
+  "head_sha": "57c589ad3bb6923580958d36140d649005cb5c65",
+  "cases": [
+    {
+      "title": "workspace content starts below a full-width horizontal tab strip",
+      "file": "workspace-tabs.spec.ts",
+      "line": 8,
+      "column": 1,
+      "project": "chromium",
+      "status": "unexpected",
+      "expectedStatus": "passed",
+      "results": [
+        {
+          "workerIndex": 0,
+          "parallelIndex": 0,
+          "status": "failed",
+          "duration": 1404,
+          "error": {
+            "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeGreaterThanOrEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: >= \u001b[32m501.296875\u001b[39m\nReceived:    \u001b[31m455.296875\u001b[39m",
+            "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeGreaterThanOrEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: >= \u001b[32m501.296875\u001b[39m\nReceived:    \u001b[31m455.296875\u001b[39m\n    at /home/runner/work/arca-ui/arca-ui/tests/weaveos/workspace-tabs.spec.ts:8:433",
+            "location": {
+              "file": "/home/runner/work/arca-ui/arca-ui/tests/weaveos/workspace-tabs.spec.ts",
+              "column": 433,
+              "line": 8
+            },
+            "snippet": "\u001b[0m \u001b[90m 6 |\u001b[39m test(\u001b[32m'workspace close only requests removal until its owner confirms'\u001b[39m\u001b[33m,\u001b[39m\u001b[36masync\u001b[39m({page})\u001b[33m=>\u001b[39m{\u001b[36mconst\u001b[39m list\u001b[33m=\u001b[39mpage\u001b[33m.\u001b[39mgetByRole(\u001b[32m'tablist'\u001b[39m\u001b[33m,\u001b[39m{name\u001b[33m:\u001b[39m\u001b[32m'应用标签页'\u001b[39m})\u001b[33m;\u001b[39m\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByRole(\u001b[32m'button'\u001b[39m\u001b[33m,\u001b[39m{name\u001b[33m:\u001b[39m\u001b[32m'关闭人事管理'\u001b[39m})\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\u001b[36mawait\u001b[39m expect(list\u001b[33m.\u001b[39mgetByRole(\u001b[32m'tab'\u001b[39m\u001b[33m,\u001b[39m{name\u001b[33m:\u001b[39m\u001b[32m'人事管理'\u001b[39m\u001b[33m,\u001b[39mexact\u001b[33m:\u001b[39m\u001b[36mtrue\u001b[39m}))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mgetByRole(\u001b[32m'status'\u001b[39m\u001b[33m,\u001b[39m{name\u001b[33m:\u001b[39m\u001b[32m'标签操作'\u001b[39m}))\u001b[33m.\u001b[39mtoHaveText(\u001b[32m'请求关闭：人事管理'\u001b[39m)\u001b[33m;\u001b[39m\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByRole(\u001b[32m'button'\u001b[39m\u001b[33m,\u001b[39m{name\u001b[33m:\u001b[39m\u001b[32m'确认移除标签'\u001b[39m})\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\u001b[36mawait\u001b[39m expect(list\u001b[33m.\u001b[39mgetByRole(\u001b[32m'tab'\u001b[39m\u001b[33m,\u001b[39m{name\u001b[33m:\u001b[39m\u001b[32m'人事管理'\u001b[39m\u001b[33m,\u001b[39mexact\u001b[33m:\u001b[39m\u001b[36mtrue\u001b[39m}))\u001b[33m.\u001b[39mtoHaveCount(\u001b[35m0\u001b[39m)\u001b[33m;\u001b[39m\u001b[36mawait\u001b[39m expect(list\u001b[33m.\u001b[39mgetByRole(\u001b[32m'tab'\u001b[39m\u001b[33m,\u001b[39m{name\u001b[33m:\u001b[39m\u001b[32m'工作台'\u001b[39m\u001b[33m,\u001b[39mexact\u001b[33m:\u001b[39m\u001b[36mtrue\u001b[39m}))\u001b[33m.\u001b[39mtoBeVisible()})\u001b[33m;\u001b[39m\n \u001b[90m 7 |\u001b[39m test(\u001b[32m'workspace tabs have accessible dark panels and reduced-motion presentation'\u001b[39m\u001b[33m,\u001b[39m\u001b[36masync\u001b[39m({page})\u001b[33m=>\u001b[39m{\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39memulateMedia({reducedMotion\u001b[33m:\u001b[39m\u001b[32m'reduce'\u001b[39m})\u001b[33m;\u001b[39m\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByRole(\u001b[32m'button'\u001b[39m\u001b[33m,\u001b[39m{name\u001b[33m:\u001b[39m\u001b[32m'深色模式'\u001b[39m\u001b[33m,\u001b[39mexact\u001b[33m:\u001b[39m\u001b[36mtrue\u001b[39m})\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\u001b[36mconst\u001b[39m section\u001b[33m=\u001b[39mpage\u001b[33m.\u001b[39mgetByRole(\u001b[32m'region'\u001b[39m\u001b[33m,\u001b[39m{name\u001b[33m:\u001b[39m\u001b[32m'工作区标签页'\u001b[39m})\u001b[33m;\u001b[39m\u001b[36mawait\u001b[39m section\u001b[33m.\u001b[39mscrollIntoViewIfNeeded()\u001b[33m;\u001b[39m\u001b[36mawait\u001b[39m section\u001b[33m.\u001b[39mgetByRole(\u001b[32m'tab'\u001b[39m\u001b[33m,\u001b[39m{name\u001b[33m:\u001b[39m\u001b[32m'财务管理'\u001b[39m\u001b[33m,\u001b[39mexact\u001b[33m:\u001b[39m\u001b[36mtrue\u001b[39m})\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mgetByRole(\u001b[32m'tabpanel'\u001b[39m\u001b[33m,\u001b[39m{name\u001b[33m:\u001b[39m\u001b[32m'财务管理'\u001b[39m\u001b[33m,\u001b[39mexact\u001b[33m:\u001b[39m\u001b[36mtrue\u001b[39m}))\u001b[33m.\u001b[39mtoContainText(\u001b[32m'报销与费用'\u001b[39m)\u001b[33m;\u001b[39m\u001b[36mconst\u001b[39m results\u001b[33m=\u001b[39m\u001b[36mawait\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mAxeBuilder\u001b[39m({page})\u001b[33m.\u001b[39minclude(\u001b[32m'[data-testid=\"workspace-tabs-demo\"]'\u001b[39m)\u001b[33m.\u001b[39manalyze()\u001b[33m;\u001b[39mexpect(results\u001b[33m.\u001b[39mviolations)\u001b[33m.\u001b[39mtoEqual([])\u001b[33m;\u001b[39m\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mscreenshot({path\u001b[33m:\u001b[39m\u001b[32m'test-results/weaveos-workspace-tabs-dark.png'\u001b[39m})})\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 8 |\u001b[39m test(\u001b[32m'workspace content starts below a full-width horizontal tab strip'\u001b[39m\u001b[33m,\u001b[39m\u001b[36masync\u001b[39m({page})\u001b[33m=>\u001b[39m{\u001b[36mconst\u001b[39m section\u001b[33m=\u001b[39mpage\u001b[33m.\u001b[39mgetByRole(\u001b[32m'region'\u001b[39m\u001b[33m,\u001b[39m{name\u001b[33m:\u001b[39m\u001b[32m'工作区标签页'\u001b[39m})\u001b[33m;\u001b[39m\u001b[36mconst\u001b[39m list\u001b[33m=\u001b[39msection\u001b[33m.\u001b[39mgetByRole(\u001b[32m'tablist'\u001b[39m\u001b[33m,\u001b[39m{name\u001b[33m:\u001b[39m\u001b[32m'应用标签页'\u001b[39m})\u001b[33m;\u001b[39m\u001b[36mawait\u001b[39m list\u001b[33m.\u001b[39mgetByRole(\u001b[32m'tab'\u001b[39m\u001b[33m,\u001b[39m{name\u001b[33m:\u001b[39m\u001b[32m'财务管理'\u001b[39m\u001b[33m,\u001b[39mexact\u001b[33m:\u001b[39m\u001b[36mtrue\u001b[39m})\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\u001b[36mconst\u001b[39m a\u001b[33m=\u001b[39m\u001b[36mawait\u001b[39m list\u001b[33m.\u001b[39mboundingBox()\u001b[33m,\u001b[39mb\u001b[33m=\u001b[39m\u001b[36mawait\u001b[39m section\u001b[33m.\u001b[39mgetByRole(\u001b[32m'tabpanel'\u001b[39m\u001b[33m,\u001b[39m{name\u001b[33m:\u001b[39m\u001b[32m'财务管理'\u001b[39m\u001b[33m,\u001b[39mexact\u001b[33m:\u001b[39m\u001b[36mtrue\u001b[39m})\u001b[33m.\u001b[39mboundingBox()\u001b[33m;\u001b[39mexpect(a)\u001b[33m.\u001b[39mnot\u001b[33m.\u001b[39mtoBeNull()\u001b[33m;\u001b[39mexpect(b)\u001b[33m.\u001b[39mnot\u001b[33m.\u001b[39mtoBeNull()\u001b[33m;\u001b[39mexpect(b\u001b[33m!\u001b[39m\u001b[33m.\u001b[39my)\u001b[33m.\u001b[39mtoBeGreaterThanOrEqual(a\u001b[33m!\u001b[39m\u001b[33m.\u001b[39my\u001b[33m+\u001b[39ma\u001b[33m!\u001b[39m\u001b[33m.\u001b[39mheight\u001b[33m+\u001b[39m\u001b[35m12\u001b[39m)\u001b[33m;\u001b[39mexpect(\u001b[33mMath\u001b[39m\u001b[33m.\u001b[39mabs(a\u001b[33m!\u001b[39m\u001b[33m.\u001b[39mwidth\u001b[33m-\u001b[39mb\u001b[33m!\u001b[39m\u001b[33m.\u001b[39mwidth))\u001b[33m.\u001b[39mtoBeLessThanOrEqual(\u001b[35m2\u001b[39m)\u001b[33m;\u001b[39mexpect(\u001b[33mMath\u001b[39m\u001b[33m.\u001b[39mabs(a\u001b[33m!\u001b[39m\u001b[33m.\u001b[39mx\u001b[33m-\u001b[39mb\u001b[33m!\u001b[39m\u001b[33m.\u001b[39mx))\u001b[33m.\u001b[39mtoBeLessThanOrEqual(\u001b[35m2\u001b[39m)})\u001b[33m;\u001b[39m\n \u001b[90m   |\u001b[39m                                                                                                                                                                                                                                                                                                                                                                                                                                                 \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 9 |\u001b[39m\u001b[0m"
+          },
+          "errors": [
+            {
+              "location": {
+                "file": "/home/runner/work/arca-ui/arca-ui/tests/weaveos/workspace-tabs.spec.ts",
+                "column": 433,
+                "line": 8
+              },
+              "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeGreaterThanOrEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: >= \u001b[32m501.296875\u001b[39m\nReceived:    \u001b[31m455.296875\u001b[39m\n\n  6 | test('workspace close only requests removal until its owner confirms',async({page})=>{const list=page.getByRole('tablist',{name:'应用标签页'});await page.getByRole('button',{name:'关闭人事管理'}).click();await expect(list.getByRole('tab',{name:'人事管理',exact:true})).toBeVisible();await expect(page.getByRole('status',{name:'标签操作'})).toHaveText('请求关闭：人事管理');await page.getByRole('button',{name:'确认移除标签'}).click();await expect(list.getByRole('tab',{name:'人事管理',exact:true})).toHaveCount(0);await expect(list.getByRole('tab',{name:'工作台',exact:true})).toBeVisible()});\n  7 | test('workspace tabs have accessible dark panels and reduced-motion presentation',async({page})=>{await page.emulateMedia({reducedMotion:'reduce'});await page.getByRole('button',{name:'深色模式',exact:true}).click();const section=page.getByRole('region',{name:'工作区标签页'});await section.scrollIntoViewIfNeeded();await section.getByRole('tab',{name:'财务管理',exact:true}).click();await expect(page.getByRole('tabpanel',{name:'财务管理',exact:true})).toContainText('报销与费用');const results=await new AxeBuilder({page}).include('[data-testid=\"workspace-tabs-demo\"]').analyze();expect(results.violations).toEqual([]);await page.screenshot({path:'test-results/weaveos-workspace-tabs-dark.png'})});\n> 8 | test('workspace content starts below a full-width horizontal tab strip',async({page})=>{const section=page.getByRole('region',{name:'工作区标签页'});const list=section.getByRole('tablist',{name:'应用标签页'});await list.getByRole('tab',{name:'财务管理',exact:true}).click();const a=await list.boundingBox(),b=await section.getByRole('tabpanel',{name:'财务管理',exact:true}).boundingBox();expect(a).not.toBeNull();expect(b).not.toBeNull();expect(b!.y).toBeGreaterThanOrEqual(a!.y+a!.height+12);expect(Math.abs(a!.width-b!.width)).toBeLessThanOrEqual(2);expect(Math.abs(a!.x-b!.x)).toBeLessThanOrEqual(2)});\n    |                                                                                                                                                                                                                                                                                                                                                                                                                                                 ^\n  9 |\n    at /home/runner/work/arca-ui/arca-ui/tests/weaveos/workspace-tabs.spec.ts:8:433"
+            }
+          ],
+          "retry": 0,
+          "startTime": "2026-10-07T06:52:41.226Z",
+          "annotations": [],
+          "attachments": [
+            {
+              "name": "screenshot",
+              "contentType": "image/png",
+              "path": "/home/runner/work/arca-ui/arca-ui/test-results/workspace-tabs-workspace-c-4c681--width-horizontal-tab-strip-chromium/test-failed-1.png"
+            },
+            {
+              "name": "error-context",
+              "contentType": "text/markdown",
+              "path": "/home/runner/work/arca-ui/arca-ui/test-results/workspace-tabs-workspace-c-4c681--width-horizontal-tab-strip-chromium/error-context.md"
+            },
+            {
+              "name": "trace",
+              "contentType": "application/zip",
+              "path": "/home/runner/work/arca-ui/arca-ui/test-results/workspace-tabs-workspace-c-4c681--width-horizontal-tab-strip-chromium/trace.zip"
+            }
+          ],
+          "errorLocation": {
+            "file": "/home/runner/work/arca-ui/arca-ui/tests/weaveos/workspace-tabs.spec.ts",
+            "column": 433,
+            "line": 8
+          }
+        }
+      ]
+    }
+  ]
+}

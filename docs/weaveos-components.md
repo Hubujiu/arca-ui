@@ -37,3 +37,6 @@ DecimalInput is controlled with value:string|null and onValueChange; it preserve
 
 ## Hints and waiting
 Tooltip/TooltipTrigger/TooltipContent/TooltipProvider retain Base UI focus/hover/Escape and add project-owned role and shared describedby identity; content inherits WeaveTheme across Portal. Progress requires label and controlled finite value0..100 or null for indeterminate, and never simulates completion. Skeleton is decorative aria-hidden; host provides meaningful status. Reduced motion disables pulse/indeterminate movement. No backend task/progress API is implemented by these controls.
+
+## WorkspaceTabs
+Controlled items/value, onValueChange and onClose. Consumer owns routing, unsaved guards and removal; no optimistic tab switch or deletion. Pinned tabs have no close control. Base UI provides keyboard focus and tab/panel semantics; close buttons are positioned visual siblings outside tablist. Position work is O(N) on resize/scroll; spring uses layout transform, reduced motion removes spring movement. Exact MIT ReUI Tabs source is preserved; local composition forwards orientation and keeps its variant helper private for Fast Refresh.
