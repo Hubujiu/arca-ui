@@ -6,3 +6,6 @@ export type { WeaveColorMode } from './theme-context'
 export { springs } from './motion-tokens'
 export { originTransform } from './geometry'
 export type { Rect, OriginTransform } from './geometry'
+
+export { DataTable, Pagination } from "./data-table"
+export type { DataColumn, TableSort, DataTableProps, PaginationProps } from "./data-table"
