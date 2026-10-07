@@ -1,0 +1,30 @@
+2026-10-07T02:56:21.0818669Z Running 20 tests using 2 workers
+2026-10-07T02:56:23.8619728Z 
+2026-10-07T02:56:23.8621668Z   ✓   2 [chromium] › tests/weaveos/data-workspace.spec.ts:5:1 › table renders only the current supplied page despite a large server total (1.8s)
+2026-10-07T02:56:24.6340490Z   ✓   1 [chromium] › tests/weaveos/data-workspace.spec.ts:11:1 › arbitrary page jump emits controlled request and waits for returned page (2.6s)
+2026-10-07T02:56:25.5673510Z   ✓   3 [chromium] › tests/weaveos/data-workspace.spec.ts:19:1 › text has no normal sort while numerical sorting is server-controlled (1.7s)
+2026-10-07T02:56:27.9530441Z   ✓   4 [chromium] › tests/weaveos/data-workspace.spec.ts:27:1 › hide a column changes display without clearing sort or issuing a query (3.3s)
+2026-10-07T02:56:28.2710093Z   ✓   5 [chromium] › tests/weaveos/data-workspace.spec.ts:38:1 › related data change requires refresh and refresh requests page one (2.7s)
+2026-10-07T02:56:29.8214665Z   ✓   6 [chromium] › tests/weaveos/data-workspace.spec.ts:46:1 › only current page selection is controlled and filtering does not happen locally (1.8s)
+2026-10-07T02:56:31.8630695Z   ✓   7 [chromium] › tests/weaveos/data-workspace.spec.ts:51:1 › table workspace passes settled accessibility and captures actual desktop UI (3.6s)
+2026-10-07T02:56:33.6237845Z V042_OPENING_GEOMETRY {"count":19,"widths":[440,102.1494140625,109.11669921875,193.83642578125,248.4246826171875,312.2491455078125,425.425537109375,439.10797119140625,440,439.9999694824219,440,440,440,440,440,440,440,440,440],"expanded":440}
+2026-10-07T02:56:33.8710445Z   ✓   8 [chromium] › tests/weaveos/origin-motion.spec.ts:3:1 › window geometry really travels from and returns toward the trigger (4.0s)
+[Long media line omitted (130019 characters). Full original: https://github.com/Hubujiu/arca-ui/actions/runs/37564286669]
+[Long media line omitted (215786 characters). Full original: https://github.com/Hubujiu/arca-ui/actions/runs/37564286669]
+2026-10-07T02:56:37.2860701Z   ✓   9 [chromium] › tests/weaveos/origin-motion.spec.ts:29:1 › successful save returns the window toward its source too (5.0s)
+[Long media line omitted (107014 characters). Full original: https://github.com/Hubujiu/arca-ui/actions/runs/37564286669]
+[Long media line omitted (75686 characters). Full original: https://github.com/Hubujiu/arca-ui/actions/runs/37564286669]
+[Long media line omitted (61038 characters). Full original: https://github.com/Hubujiu/arca-ui/actions/runs/37564286669]
+2026-10-07T02:56:38.9378227Z   ✓  10 [chromium] › tests/weaveos/preview.spec.ts:3:1 › capture component studio review images (5.0s)
+2026-10-07T02:56:39.4120274Z   ✓  11 [chromium] › tests/weaveos/studio.spec.ts:6:1 › shell uses collapsible icon rail and edge-to-edge content card (2.4s)
+2026-10-07T02:56:41.8352761Z   ✓  12 [chromium] › tests/weaveos/studio.spec.ts:19:1 › source dialog has accessible title, focus isolation and restores origin (2.9s)
+2026-10-07T02:56:42.1885449Z   ✓  13 [chromium] › tests/weaveos/studio.spec.ts:34:1 › second source restores its own focus (2.8s)
+2026-10-07T02:56:46.9505005Z   ✓  14 [chromium] › tests/weaveos/studio.spec.ts:41:1 › close during opening and repeat never leaves an overlay or locked page (5.1s)
+2026-10-07T02:56:47.5566130Z   ✓  15 [chromium] › tests/weaveos/studio.spec.ts:49:1 › save feedback waits for result and errors retain editable input (5.3s)
+2026-10-07T02:56:50.0290150Z   ✓  17 [chromium] › tests/weaveos/studio.spec.ts:74:1 › reduced motion preserves usable modal without scale displacement (2.5s)
+2026-10-07T02:56:50.0411315Z   ✓  16 [chromium] › tests/weaveos/studio.spec.ts:65:1 › nested select Escape dismisses only the list, then dialog (3.1s)
+2026-10-07T02:56:51.8702255Z   ✓  19 [chromium] › tests/weaveos/studio.spec.ts:92:1 › theme controls, basic controls and component navigation work (1.8s)
+2026-10-07T02:56:53.3659800Z   ✓  18 [chromium] › tests/weaveos/studio.spec.ts:83:1 › mobile view fits viewport and dialog remains operable (3.3s)
+2026-10-07T02:56:55.1987092Z   ✓  20 [chromium] › tests/weaveos/studio.spec.ts:102:1 › studio and open modal have no serious accessibility violations (3.3s)
+2026-10-07T02:56:55.2932269Z 
+2026-10-07T02:56:55.2938129Z   20 passed (36.0s)

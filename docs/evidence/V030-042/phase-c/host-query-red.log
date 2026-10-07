@@ -1,0 +1,81 @@
+2026-10-07T03:14:35.6965264Z Running 28 tests using 2 workers
+2026-10-07T03:14:35.6966007Z 
+2026-10-07T03:14:38.8339510Z   ✓   2 [chromium] › tests/weaveos/data-workspace.spec.ts:5:1 › table renders only the current supplied page despite a large server total (1.7s)
+2026-10-07T03:14:39.8232127Z   ✓   1 [chromium] › tests/weaveos/data-workspace.spec.ts:11:1 › arbitrary page jump emits controlled request and waits for returned page (2.7s)
+2026-10-07T03:14:40.6931536Z   ✓   3 [chromium] › tests/weaveos/data-workspace.spec.ts:19:1 › text has no normal sort while numerical sorting is server-controlled (1.8s)
+2026-10-07T03:14:43.3527861Z   ✓   4 [chromium] › tests/weaveos/data-workspace.spec.ts:27:1 › hide a column changes display without clearing sort or issuing a query (3.5s)
+2026-10-07T03:14:43.3811980Z   ✓   5 [chromium] › tests/weaveos/data-workspace.spec.ts:38:1 › related data change requires refresh and refresh requests page one (2.7s)
+2026-10-07T03:14:45.0208611Z   ✓   6 [chromium] › tests/weaveos/data-workspace.spec.ts:46:1 › only current page selection is controlled and filtering does not happen locally (1.7s)
+2026-10-07T03:14:46.8817839Z   ✓   7 [chromium] › tests/weaveos/data-workspace.spec.ts:51:1 › table workspace passes settled accessibility and captures actual desktop UI (3.5s)
+2026-10-07T03:14:49.8244047Z   ✓   8 [chromium] › tests/weaveos/filter-manager.spec.ts:4:1 › opens saved-filter management first, with only one preset applied (4.8s)
+2026-10-07T03:14:50.5304663Z   ✓   9 [chromium] › tests/weaveos/filter-manager.spec.ts:14:1 › constructs AND with an OR subgroup and persists exact conditions (3.6s)
+2026-10-07T03:14:53.3762869Z   ✓  10 [chromium] › tests/weaveos/filter-manager.spec.ts:27:1 › failed persistence retains editor and never reports saved (3.5s)
+2026-10-07T03:14:54.0171693Z   ✓  11 [chromium] › tests/weaveos/filter-manager.spec.ts:36:1 › dirty Escape asks before discarding and restores source focus (3.5s)
+2026-10-07T03:14:56.9177264Z   ✓  12 [chromium] › tests/weaveos/filter-manager.spec.ts:44:1 › text comparisons exclude range operators and editor is accessible (3.5s)
+2026-10-07T03:14:59.7818326Z   ✓  14 [chromium] › tests/weaveos/filter-manager.spec.ts:59:1 › editing a saved preset preserves identity, saving alone does not apply (2.8s)
+2026-10-07T03:15:01.3139823Z   ✘  13 [chromium] › tests/weaveos/filter-manager.spec.ts:53:1 › applying a preset emits a page-one host query without client-side table filtering (7.2s)
+2026-10-07T03:15:02.3477257Z   ✓  15 [chromium] › tests/weaveos/filter-manager.spec.ts:66:1 › deleting a preset requires confirmation and cancellation preserves it (2.5s)
+2026-10-07T03:15:06.3136976Z V042_OPENING_GEOMETRY {"count":22,"widths":[440,99.237060546875,105.4547119140625,170.3157958984375,220.2017822265625,279.829345703125,395.88177490234375,432.3011474609375,439.9919738769531,439.9999694824219,439.9999694824219,439.9999694824219,440,440,440,440,440,440,440,440,440,440],"expanded":440}
+2026-10-07T03:15:06.4927175Z   ✓  16 [chromium] › tests/weaveos/origin-motion.spec.ts:3:1 › window geometry really travels from and returns toward the trigger (4.5s)
+2026-10-07T03:15:07.0507528Z   ✓  17 [chromium] › tests/weaveos/origin-motion.spec.ts:29:1 › successful save returns the window toward its source too (4.7s)
+[Long media line omitted (130019 characters). Full original: https://github.com/Hubujiu/arca-ui/actions/runs/37565731405]
+[Long media line omitted (220418 characters). Full original: https://github.com/Hubujiu/arca-ui/actions/runs/37565731405]
+2026-10-07T03:15:09.1275745Z   ✓  19 [chromium] › tests/weaveos/studio.spec.ts:6:1 › shell uses collapsible icon rail and edge-to-edge content card (2.0s)
+[Long media line omitted (106882 characters). Full original: https://github.com/Hubujiu/arca-ui/actions/runs/37565731405]
+[Long media line omitted (75518 characters). Full original: https://github.com/Hubujiu/arca-ui/actions/runs/37565731405]
+[Long media line omitted (61182 characters). Full original: https://github.com/Hubujiu/arca-ui/actions/runs/37565731405]
+2026-10-07T03:15:10.7448079Z   ✓  18 [chromium] › tests/weaveos/preview.spec.ts:3:1 › capture component studio review images (4.2s)
+2026-10-07T03:15:12.1447558Z   ✓  20 [chromium] › tests/weaveos/studio.spec.ts:19:1 › source dialog has accessible title, focus isolation and restores origin (3.0s)
+2026-10-07T03:15:13.6510519Z   ✓  21 [chromium] › tests/weaveos/studio.spec.ts:34:1 › second source restores its own focus (2.8s)
+2026-10-07T03:15:17.1600015Z   ✓  22 [chromium] › tests/weaveos/studio.spec.ts:41:1 › close during opening and repeat never leaves an overlay or locked page (5.0s)
+2026-10-07T03:15:18.9137777Z   ✓  23 [chromium] › tests/weaveos/studio.spec.ts:49:1 › save feedback waits for result and errors retain editable input (5.2s)
+2026-10-07T03:15:20.2908508Z   ✓  24 [chromium] › tests/weaveos/studio.spec.ts:65:1 › nested select Escape dismisses only the list, then dialog (3.1s)
+2026-10-07T03:15:21.3984751Z   ✓  25 [chromium] › tests/weaveos/studio.spec.ts:74:1 › reduced motion preserves usable modal without scale displacement (2.5s)
+2026-10-07T03:15:23.0321771Z   ✓  27 [chromium] › tests/weaveos/studio.spec.ts:92:1 › theme controls, basic controls and component navigation work (1.6s)
+2026-10-07T03:15:23.4350187Z   ✓  26 [chromium] › tests/weaveos/studio.spec.ts:83:1 › mobile view fits viewport and dialog remains operable (3.1s)
+2026-10-07T03:15:26.1237487Z   ✓  28 [chromium] › tests/weaveos/studio.spec.ts:102:1 › studio and open modal have no serious accessibility violations (3.1s)
+2026-10-07T03:15:26.2308039Z 
+2026-10-07T03:15:26.2313354Z 
+2026-10-07T03:15:26.2324535Z   1) [chromium] › tests/weaveos/filter-manager.spec.ts:53:1 › applying a preset emits a page-one host query without client-side table filtering 
+2026-10-07T03:15:26.2325891Z 
+2026-10-07T03:15:26.2326279Z     Error: expect(locator).toContainText(expected) failed
+2026-10-07T03:15:26.2326757Z 
+2026-10-07T03:15:26.2327029Z     Locator: getByTestId('table-request')
+2026-10-07T03:15:26.2327763Z     Expected substring: "\"filter\":{\"operator\":\"and\""
+2026-10-07T03:15:26.2329045Z     Received string:    "{\"page\":1,\"sort\":null}"
+2026-10-07T03:15:26.2329737Z     Timeout: 5000ms
+2026-10-07T03:15:26.2330018Z 
+2026-10-07T03:15:26.2330192Z     Call log:
+2026-10-07T03:15:26.2330928Z       - Expect "toContainText" getByTestId('table-request') with timeout 5000ms
+2026-10-07T03:15:26.2331849Z       - waiting for getByTestId('table-request')
+2026-10-07T03:15:26.2333106Z         14 × locator resolved to <output data-testid="table-request">{"page":1,"sort":null}</output>
+2026-10-07T03:15:26.2334013Z            - unexpected value "{"page":1,"sort":null}"
+2026-10-07T03:15:26.2334437Z 
+2026-10-07T03:15:26.2334460Z 
+2026-10-07T03:15:26.2335212Z       53 | test('applying a preset emits a page-one host query without client-side table filtering',async({page})=>{
+2026-10-07T03:15:26.2336898Z       54 |  await page.getByRole('button',{name:'应用：待审批'}).click()
+2026-10-07T03:15:26.2338055Z     > 55 |  await expect(page.getByTestId('table-request')).toContainText('"filter":{"operator":"and"')
+2026-10-07T03:15:26.2339099Z          |                                                  ^
+2026-10-07T03:15:26.2340458Z       56 |  await expect(page.getByTestId('table-request')).toContainText('"fieldId":"status"')
+2026-10-07T03:15:26.2341694Z       57 |  await expect(page.getByTestId('table-request')).toContainText('"page":1')
+2026-10-07T03:15:26.2342502Z       58 | })
+2026-10-07T03:15:26.2343249Z         at /home/runner/work/arca-ui/arca-ui/tests/weaveos/filter-manager.spec.ts:55:50
+2026-10-07T03:15:26.2343819Z 
+2026-10-07T03:15:26.2344594Z     attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+2026-10-07T03:15:26.2346639Z     test-results/filter-manager-applying-a--1af16-client-side-table-filtering-chromium/test-failed-1.png
+2026-10-07T03:15:26.2348263Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+2026-10-07T03:15:26.2348788Z 
+2026-10-07T03:15:26.2349705Z     Error Context: test-results/filter-manager-applying-a--1af16-client-side-table-filtering-chromium/error-context.md
+2026-10-07T03:15:26.2350642Z 
+2026-10-07T03:15:26.2351417Z     attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+2026-10-07T03:15:26.2352707Z     test-results/filter-manager-applying-a--1af16-client-side-table-filtering-chromium/trace.zip
+2026-10-07T03:15:26.2353601Z     Usage:
+2026-10-07T03:15:26.2353796Z 
+2026-10-07T03:15:26.2354702Z         npx playwright show-trace test-results/filter-manager-applying-a--1af16-client-side-table-filtering-chromium/trace.zip
+2026-10-07T03:15:26.2355987Z 
+2026-10-07T03:15:26.2356646Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+2026-10-07T03:15:26.2357165Z 
+2026-10-07T03:15:26.2357314Z   1 failed
+2026-10-07T03:15:26.2358577Z     [chromium] › tests/weaveos/filter-manager.spec.ts:53:1 › applying a preset emits a page-one host query without client-side table filtering 
+2026-10-07T03:15:26.2359670Z   27 passed (52.4s)
+2026-10-07T03:15:26.2831958Z ##[error]Process completed with exit code 1.

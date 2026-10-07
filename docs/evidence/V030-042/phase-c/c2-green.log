@@ -1,0 +1,35 @@
+2026-10-07T03:09:03.2609731Z Running 25 tests using 2 workers
+2026-10-07T03:09:03.2610037Z 
+2026-10-07T03:09:05.7596039Z   ✓   1 [chromium] › tests/weaveos/data-workspace.spec.ts:5:1 › table renders only the current supplied page despite a large server total (1.6s)
+2026-10-07T03:09:06.6531282Z   ✓   2 [chromium] › tests/weaveos/data-workspace.spec.ts:11:1 › arbitrary page jump emits controlled request and waits for returned page (2.5s)
+2026-10-07T03:09:07.5842038Z   ✓   3 [chromium] › tests/weaveos/data-workspace.spec.ts:19:1 › text has no normal sort while numerical sorting is server-controlled (1.8s)
+2026-10-07T03:09:10.2490218Z   ✓   4 [chromium] › tests/weaveos/data-workspace.spec.ts:27:1 › hide a column changes display without clearing sort or issuing a query (3.6s)
+2026-10-07T03:09:10.3390611Z   ✓   5 [chromium] › tests/weaveos/data-workspace.spec.ts:38:1 › related data change requires refresh and refresh requests page one (2.7s)
+2026-10-07T03:09:11.8356553Z   ✓   6 [chromium] › tests/weaveos/data-workspace.spec.ts:46:1 › only current page selection is controlled and filtering does not happen locally (1.6s)
+2026-10-07T03:09:13.6321729Z   ✓   7 [chromium] › tests/weaveos/data-workspace.spec.ts:51:1 › table workspace passes settled accessibility and captures actual desktop UI (3.3s)
+2026-10-07T03:09:16.3772741Z   ✓   8 [chromium] › tests/weaveos/filter-manager.spec.ts:4:1 › opens saved-filter management first, with only one preset applied (4.5s)
+2026-10-07T03:09:17.1011533Z   ✓   9 [chromium] › tests/weaveos/filter-manager.spec.ts:13:1 › constructs AND with an OR subgroup and persists exact conditions (3.4s)
+2026-10-07T03:09:19.8087524Z   ✓  10 [chromium] › tests/weaveos/filter-manager.spec.ts:25:1 › failed persistence retains editor and never reports saved (3.4s)
+2026-10-07T03:09:20.4586848Z   ✓  11 [chromium] › tests/weaveos/filter-manager.spec.ts:34:1 › dirty Escape asks before discarding and restores source focus (3.3s)
+2026-10-07T03:09:23.4695409Z   ✓  12 [chromium] › tests/weaveos/filter-manager.spec.ts:42:1 › text comparisons exclude range operators and editor is accessible (3.6s)
+2026-10-07T03:09:24.3949239Z V042_OPENING_GEOMETRY {"count":18,"widths":[440,100.6417236328125,105.4547119140625,176.160400390625,253.86676025390625,320.6197509765625,417.40191650390625,436.4937744140625,440.0000305175781,439.9999694824219,440,440,440,440,440,440,440,440],"expanded":440}
+2026-10-07T03:09:24.6002057Z   ✓  13 [chromium] › tests/weaveos/origin-motion.spec.ts:3:1 › window geometry really travels from and returns toward the trigger (4.1s)
+[Long media line omitted (130019 characters). Full original: https://github.com/Hubujiu/arca-ui/actions/runs/37565306854]
+[Long media line omitted (215746 characters). Full original: https://github.com/Hubujiu/arca-ui/actions/runs/37565306854]
+2026-10-07T03:09:27.3866786Z   ✓  14 [chromium] › tests/weaveos/origin-motion.spec.ts:29:1 › successful save returns the window toward its source too (3.9s)
+[Long media line omitted (107010 characters). Full original: https://github.com/Hubujiu/arca-ui/actions/runs/37565306854]
+[Long media line omitted (75534 characters). Full original: https://github.com/Hubujiu/arca-ui/actions/runs/37565306854]
+[Long media line omitted (61534 characters). Full original: https://github.com/Hubujiu/arca-ui/actions/runs/37565306854]
+2026-10-07T03:09:28.9946811Z   ✓  15 [chromium] › tests/weaveos/preview.spec.ts:3:1 › capture component studio review images (4.3s)
+2026-10-07T03:09:29.4916370Z   ✓  16 [chromium] › tests/weaveos/studio.spec.ts:6:1 › shell uses collapsible icon rail and edge-to-edge content card (2.1s)
+2026-10-07T03:09:31.8135147Z   ✓  17 [chromium] › tests/weaveos/studio.spec.ts:19:1 › source dialog has accessible title, focus isolation and restores origin (2.9s)
+2026-10-07T03:09:32.3138511Z   ✓  18 [chromium] › tests/weaveos/studio.spec.ts:34:1 › second source restores its own focus (2.8s)
+2026-10-07T03:09:37.0122247Z   ✓  19 [chromium] › tests/weaveos/studio.spec.ts:41:1 › close during opening and repeat never leaves an overlay or locked page (5.2s)
+2026-10-07T03:09:37.9338300Z   ✓  20 [chromium] › tests/weaveos/studio.spec.ts:49:1 › save feedback waits for result and errors retain editable input (5.6s)
+2026-10-07T03:09:40.0414065Z   ✓  21 [chromium] › tests/weaveos/studio.spec.ts:65:1 › nested select Escape dismisses only the list, then dialog (3.0s)
+2026-10-07T03:09:40.1830545Z   ✓  22 [chromium] › tests/weaveos/studio.spec.ts:74:1 › reduced motion preserves usable modal without scale displacement (2.2s)
+2026-10-07T03:09:41.8880119Z   ✓  24 [chromium] › tests/weaveos/studio.spec.ts:92:1 › theme controls, basic controls and component navigation work (1.7s)
+2026-10-07T03:09:43.1540547Z   ✓  23 [chromium] › tests/weaveos/studio.spec.ts:83:1 › mobile view fits viewport and dialog remains operable (3.1s)
+2026-10-07T03:09:45.1535286Z   ✓  25 [chromium] › tests/weaveos/studio.spec.ts:102:1 › studio and open modal have no serious accessibility violations (3.3s)
+2026-10-07T03:09:45.2534054Z 
+2026-10-07T03:09:45.2538778Z   25 passed (43.8s)
