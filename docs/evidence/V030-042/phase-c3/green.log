@@ -1,0 +1,673 @@
+﻿2026-10-07T04:31:59.6768593Z Current runner version: '2.337.0'
+2026-10-07T04:31:59.6795436Z ##[group]Runner Image Provisioner
+2026-10-07T04:31:59.6796399Z Hosted Compute Agent
+2026-10-07T04:31:59.6797085Z Version: 20260901.588
+2026-10-07T04:31:59.6797762Z Commit: f88ec8081b781fac6c440065ac7ff9e710ce3d0b
+2026-10-07T04:31:59.6798940Z Build Date: 2026-09-01T19:56:44Z
+2026-10-07T04:31:59.6799673Z Worker ID: {97a87598-4451-40a1-9f84-23eb483ecb31}
+2026-10-07T04:31:59.6800423Z Azure Region: centralus
+2026-10-07T04:31:59.6801096Z ##[endgroup]
+2026-10-07T04:31:59.6802624Z ##[group]Operating System
+2026-10-07T04:31:59.6803600Z Ubuntu
+2026-10-07T04:31:59.6804172Z 24.04.5
+2026-10-07T04:31:59.6804786Z LTS
+2026-10-07T04:31:59.6805405Z ##[endgroup]
+2026-10-07T04:31:59.6806022Z ##[group]Runner Image
+2026-10-07T04:31:59.6806736Z Image: ubuntu-24.04
+2026-10-07T04:31:59.6807311Z Version: 20260927.320.1
+2026-10-07T04:31:59.6808604Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20260927.320/images/ubuntu/Ubuntu2404-Readme.md
+2026-10-07T04:31:59.6810187Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20260927.320
+2026-10-07T04:31:59.6811576Z ##[endgroup]
+2026-10-07T04:31:59.6812697Z ##[group]GITHUB_TOKEN Permissions
+2026-10-07T04:31:59.6815162Z Contents: read
+2026-10-07T04:31:59.6815796Z Metadata: read
+2026-10-07T04:31:59.6816418Z ##[endgroup]
+2026-10-07T04:31:59.6818563Z Secret source: Actions
+2026-10-07T04:31:59.6819466Z Cache mode: write
+2026-10-07T04:31:59.6820514Z Prepare workflow directory
+2026-10-07T04:31:59.7158659Z Prepare all required actions
+2026-10-07T04:31:59.7208950Z Getting action download info
+2026-10-07T04:31:59.9998542Z Download action repository 'actions/checkout@v4' (SHA:11d5960a326750d5838078e36cf38b85af677262)
+2026-10-07T04:32:00.0857162Z Download action repository 'actions/setup-node@v4' (SHA:49933ea5288caeca8642d1e84afbd3f7d6820020)
+2026-10-07T04:32:00.1694093Z Download action repository 'actions/upload-artifact@v4' (SHA:ea165f8d65b6e75b540449e92b4886f43607fa02)
+2026-10-07T04:32:00.3811238Z Complete job name: browser
+2026-10-07T04:32:00.4612051Z ##[group]Run actions/checkout@v4
+2026-10-07T04:32:00.4612864Z with:
+2026-10-07T04:32:00.4613495Z   repository: Hubujiu/arca-ui
+2026-10-07T04:32:00.4617183Z   token: ***
+2026-10-07T04:32:00.4617583Z   ssh-strict: true
+2026-10-07T04:32:00.4617988Z   ssh-user: git
+2026-10-07T04:32:00.4618411Z   persist-credentials: true
+2026-10-07T04:32:00.4618867Z   clean: true
+2026-10-07T04:32:00.4619279Z   sparse-checkout-cone-mode: true
+2026-10-07T04:32:00.4619762Z   fetch-depth: 1
+2026-10-07T04:32:00.4620164Z   fetch-tags: false
+2026-10-07T04:32:00.4620578Z   show-progress: true
+2026-10-07T04:32:00.4620987Z   lfs: false
+2026-10-07T04:32:00.4621362Z   submodules: false
+2026-10-07T04:32:00.4621773Z   set-safe-directory: true
+2026-10-07T04:32:00.4622239Z   allow-unsafe-pr-checkout: false
+2026-10-07T04:32:00.4622953Z ##[endgroup]
+2026-10-07T04:32:00.5601033Z Syncing repository: Hubujiu/arca-ui
+2026-10-07T04:32:00.5603741Z ##[group]Getting Git version info
+2026-10-07T04:32:00.5605046Z Working directory is '/home/runner/work/arca-ui/arca-ui'
+2026-10-07T04:32:00.5606685Z [command]/usr/bin/git version
+2026-10-07T04:32:00.5693041Z git version 2.55.0
+2026-10-07T04:32:00.5720956Z ##[endgroup]
+2026-10-07T04:32:00.5737606Z Temporarily overriding HOME='/home/runner/work/_temp/2e75d076-5e7f-40c0-bc4b-21af92b45324' before making global git config changes
+2026-10-07T04:32:00.5740438Z Adding repository directory to the temporary git global config as a safe directory
+2026-10-07T04:32:00.5744737Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/arca-ui/arca-ui
+2026-10-07T04:32:00.5801460Z Deleting the contents of '/home/runner/work/arca-ui/arca-ui'
+2026-10-07T04:32:00.5806219Z ##[group]Initializing the repository
+2026-10-07T04:32:00.5810351Z [command]/usr/bin/git init /home/runner/work/arca-ui/arca-ui
+2026-10-07T04:32:00.5924670Z hint: Using 'master' as the name for the initial branch. This default branch name
+2026-10-07T04:32:00.5926877Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+2026-10-07T04:32:00.5929071Z hint: to use in all of your new repositories, which will suppress this warning,
+2026-10-07T04:32:00.5930600Z hint: call:
+2026-10-07T04:32:00.5931792Z hint:
+2026-10-07T04:32:00.5932856Z hint: 	git config --global init.defaultBranch <name>
+2026-10-07T04:32:00.5934360Z hint:
+2026-10-07T04:32:00.5935644Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2026-10-07T04:32:00.5937401Z hint: 'development'. The just-created branch can be renamed via this command:
+2026-10-07T04:32:00.5938845Z hint:
+2026-10-07T04:32:00.5939718Z hint: 	git branch -m <name>
+2026-10-07T04:32:00.5940549Z hint:
+2026-10-07T04:32:00.5942344Z hint: Disable this message with "git config set advice.defaultBranchName false"
+2026-10-07T04:32:00.5944453Z Initialized empty Git repository in /home/runner/work/arca-ui/arca-ui/.git/
+2026-10-07T04:32:00.5947872Z [command]/usr/bin/git remote add origin https://github.com/Hubujiu/arca-ui
+2026-10-07T04:32:00.5984711Z ##[endgroup]
+2026-10-07T04:32:00.5986066Z ##[group]Disabling automatic garbage collection
+2026-10-07T04:32:00.5989479Z [command]/usr/bin/git config --local gc.auto 0
+2026-10-07T04:32:00.6022783Z ##[endgroup]
+2026-10-07T04:32:00.6024440Z ##[group]Setting up auth
+2026-10-07T04:32:00.6030710Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-10-07T04:32:00.6064061Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-10-07T04:32:00.6456789Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-10-07T04:32:00.6490840Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-10-07T04:32:00.6728411Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-10-07T04:32:00.6765732Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-10-07T04:32:00.6995190Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2026-10-07T04:32:00.7041579Z ##[endgroup]
+2026-10-07T04:32:00.7042556Z ##[group]Fetching the repository
+2026-10-07T04:32:00.7056508Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +d5780374a45b837f3e06045679e63f6d7b04d602:refs/remotes/origin/task/V030-042-weaveos-components
+2026-10-07T04:32:01.3677773Z From https://github.com/Hubujiu/arca-ui
+2026-10-07T04:32:01.3705304Z  * [new ref]         d5780374a45b837f3e06045679e63f6d7b04d602 -> origin/task/V030-042-weaveos-components
+2026-10-07T04:32:01.3713581Z ##[endgroup]
+2026-10-07T04:32:01.3715106Z ##[group]Determining the checkout info
+2026-10-07T04:32:01.3716803Z ##[endgroup]
+2026-10-07T04:32:01.3717855Z [command]/usr/bin/git sparse-checkout disable
+2026-10-07T04:32:01.3748323Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+2026-10-07T04:32:01.3783076Z ##[group]Checking out the ref
+2026-10-07T04:32:01.3790300Z [command]/usr/bin/git checkout --progress --force -B task/V030-042-weaveos-components refs/remotes/origin/task/V030-042-weaveos-components
+2026-10-07T04:32:01.4496056Z Switched to a new branch 'task/V030-042-weaveos-components'
+2026-10-07T04:32:01.4499790Z branch 'task/V030-042-weaveos-components' set up to track 'origin/task/V030-042-weaveos-components'.
+2026-10-07T04:32:01.4507503Z ##[endgroup]
+2026-10-07T04:32:01.4556291Z [command]/usr/bin/git log -1 --format=%H
+2026-10-07T04:32:01.4583096Z d5780374a45b837f3e06045679e63f6d7b04d602
+2026-10-07T04:32:01.5022105Z ##[group]Run actions/setup-node@v4
+2026-10-07T04:32:01.5023754Z with:
+2026-10-07T04:32:01.5024719Z   node-version: 24.19.0
+2026-10-07T04:32:01.5025792Z   cache: npm
+2026-10-07T04:32:01.5026969Z   always-auth: false
+2026-10-07T04:32:01.5027992Z   check-latest: false
+2026-10-07T04:32:01.5037743Z   token: ***
+2026-10-07T04:32:01.5038706Z ##[endgroup]
+2026-10-07T04:32:01.6431137Z Attempting to download 24.19.0...
+2026-10-07T04:32:01.6546309Z (node:2332) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-10-07T04:32:01.6550470Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-10-07T04:32:02.3509096Z Acquiring 24.19.0 - x64 from https://github.com/actions/node-versions/releases/download/24.19.0-30872449280/node-24.19.0-linux-x64.tar.gz
+2026-10-07T04:32:02.9284370Z Extracting ...
+2026-10-07T04:32:02.9411930Z [command]/usr/bin/tar xz --strip 1 --warning=no-unknown-keyword --overwrite -C /home/runner/work/_temp/2e595084-6b23-46f5-a0f5-e26eaf954125 -f /home/runner/work/_temp/01055370-08e9-4d13-9ad4-36b25ae1b2a9
+2026-10-07T04:32:04.1365597Z Adding to the cache ...
+2026-10-07T04:32:06.2412471Z ##[group]Environment details
+2026-10-07T04:32:06.4907269Z node: v24.19.0
+2026-10-07T04:32:06.4907750Z npm: 11.17.0
+2026-10-07T04:32:06.4908082Z yarn: 1.22.22
+2026-10-07T04:32:06.4908804Z ##[endgroup]
+2026-10-07T04:32:06.4928166Z [command]/opt/hostedtoolcache/node/24.19.0/x64/bin/npm config get cache
+2026-10-07T04:32:06.5838534Z /home/runner/.npm
+2026-10-07T04:32:06.7451819Z Cache hit for: node-cache-Linux-x64-npm-e49477bd2ac87adee467bcfea498780880a69ec42aeb10ad505d060aeecf5f10
+2026-10-07T04:32:06.7615755Z (node:2332) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+2026-10-07T04:32:07.8901371Z Received 115188276 of 123576884 (93.2%), 109.9 MBs/sec
+2026-10-07T04:32:07.9430669Z Received 123576884 of 123576884 (100.0%), 111.9 MBs/sec
+2026-10-07T04:32:07.9431920Z Cache Size: ~118 MB (123576884 B)
+2026-10-07T04:32:07.9469187Z [command]/usr/bin/tar -xf /home/runner/work/_temp/1fd31dad-6eac-45fd-8262-52a4ff993cab/cache.tzst -P -C /home/runner/work/arca-ui/arca-ui --use-compress-program unzstd
+2026-10-07T04:32:08.2350389Z Cache restored successfully
+2026-10-07T04:32:08.2433631Z Cache restored from key: node-cache-Linux-x64-npm-e49477bd2ac87adee467bcfea498780880a69ec42aeb10ad505d060aeecf5f10
+2026-10-07T04:32:08.2669026Z ##[group]Run npm ci --ignore-scripts
+2026-10-07T04:32:08.2669421Z [36;1mnpm ci --ignore-scripts[0m
+2026-10-07T04:32:08.2928961Z shell: /usr/bin/bash -e {0}
+2026-10-07T04:32:08.2929263Z ##[endgroup]
+2026-10-07T04:32:23.0131802Z 
+2026-10-07T04:32:23.0139819Z added 517 packages, and audited 518 packages in 15s
+2026-10-07T04:32:23.0140312Z 
+2026-10-07T04:32:23.0140608Z 163 packages are looking for funding
+2026-10-07T04:32:23.0141087Z   run `npm fund` for details
+2026-10-07T04:32:23.0202294Z 
+2026-10-07T04:32:23.0202908Z 8 high severity vulnerabilities
+2026-10-07T04:32:23.0203412Z 
+2026-10-07T04:32:23.0203790Z To address issues that do not require attention, run:
+2026-10-07T04:32:23.0204340Z   npm audit fix
+2026-10-07T04:32:23.0204543Z 
+2026-10-07T04:32:23.0204930Z To address all issues (including breaking changes), run:
+2026-10-07T04:32:23.0205477Z   npm audit fix --force
+2026-10-07T04:32:23.0205715Z 
+2026-10-07T04:32:23.0205906Z Run `npm audit` for details.
+2026-10-07T04:32:23.1336041Z ##[group]Run npx playwright install --with-deps chromium
+2026-10-07T04:32:23.1336524Z [36;1mnpx playwright install --with-deps chromium[0m
+2026-10-07T04:32:23.1402728Z shell: /usr/bin/bash -e {0}
+2026-10-07T04:32:23.1403044Z ##[endgroup]
+2026-10-07T04:32:23.9206911Z Installing dependencies...
+2026-10-07T04:32:23.9287123Z Switching to root user to install dependencies...
+2026-10-07T04:32:24.0284921Z Get:1 file:/etc/apt/apt-mirrors.txt Mirrorlist [144 B]
+2026-10-07T04:32:24.0685585Z Hit:2 http://azure.archive.ubuntu.com/ubuntu noble InRelease
+2026-10-07T04:32:24.0720308Z Get:6 https://packages.microsoft.com/ubuntu/24.04/prod noble InRelease [3600 B]
+2026-10-07T04:32:24.0722488Z Get:3 http://azure.archive.ubuntu.com/ubuntu noble-updates InRelease [126 kB]
+2026-10-07T04:32:24.0748133Z Get:4 http://azure.archive.ubuntu.com/ubuntu noble-backports InRelease [126 kB]
+2026-10-07T04:32:24.0771277Z Get:5 http://azure.archive.ubuntu.com/ubuntu noble-security InRelease [126 kB]
+2026-10-07T04:32:24.2120241Z Get:7 https://packages.microsoft.com/ubuntu/24.04/prod noble/main amd64 Packages [519 kB]
+2026-10-07T04:32:24.2332910Z Get:8 https://packages.microsoft.com/ubuntu/24.04/prod noble/main arm64 Packages [463 kB]
+2026-10-07T04:32:24.2464990Z Get:9 https://packages.microsoft.com/ubuntu/24.04/prod noble/main armhf Packages [12.6 kB]
+2026-10-07T04:32:24.2710043Z Get:10 http://azure.archive.ubuntu.com/ubuntu noble-updates/main amd64 Packages [1375 kB]
+2026-10-07T04:32:24.2814536Z Get:11 http://azure.archive.ubuntu.com/ubuntu noble-updates/main Translation-en [306 kB]
+2026-10-07T04:32:24.2844753Z Get:12 http://azure.archive.ubuntu.com/ubuntu noble-updates/main amd64 Components [181 kB]
+2026-10-07T04:32:24.2857520Z Get:13 http://azure.archive.ubuntu.com/ubuntu noble-updates/universe amd64 Packages [1701 kB]
+2026-10-07T04:32:24.2935770Z Get:14 http://azure.archive.ubuntu.com/ubuntu noble-updates/universe Translation-en [341 kB]
+2026-10-07T04:32:24.2981193Z Get:15 http://azure.archive.ubuntu.com/ubuntu noble-updates/universe amd64 Components [388 kB]
+2026-10-07T04:32:24.3014738Z Get:16 http://azure.archive.ubuntu.com/ubuntu noble-updates/restricted amd64 Packages [1730 kB]
+2026-10-07T04:32:24.3102373Z Get:17 http://azure.archive.ubuntu.com/ubuntu noble-updates/restricted Translation-en [396 kB]
+2026-10-07T04:32:24.3128433Z Get:18 http://azure.archive.ubuntu.com/ubuntu noble-updates/multiverse Translation-en [13.3 kB]
+2026-10-07T04:32:24.3135800Z Get:19 http://azure.archive.ubuntu.com/ubuntu noble-updates/multiverse amd64 Components [940 B]
+2026-10-07T04:32:24.3996002Z Get:20 http://azure.archive.ubuntu.com/ubuntu noble-backports/main amd64 Components [5752 B]
+2026-10-07T04:32:24.4005242Z Get:21 http://azure.archive.ubuntu.com/ubuntu noble-backports/universe amd64 Components [12.6 kB]
+2026-10-07T04:32:24.4148079Z Get:22 http://azure.archive.ubuntu.com/ubuntu noble-security/main amd64 Packages [1073 kB]
+2026-10-07T04:32:24.4206755Z Get:23 http://azure.archive.ubuntu.com/ubuntu noble-security/main Translation-en [223 kB]
+2026-10-07T04:32:24.4229067Z Get:24 http://azure.archive.ubuntu.com/ubuntu noble-security/main amd64 Components [46.4 kB]
+2026-10-07T04:32:24.4239829Z Get:25 http://azure.archive.ubuntu.com/ubuntu noble-security/universe amd64 Packages [1218 kB]
+2026-10-07T04:32:24.4310758Z Get:26 http://azure.archive.ubuntu.com/ubuntu noble-security/universe Translation-en [245 kB]
+2026-10-07T04:32:24.4315835Z Get:27 http://azure.archive.ubuntu.com/ubuntu noble-security/universe amd64 Components [76.3 kB]
+2026-10-07T04:32:24.4331371Z Get:28 http://azure.archive.ubuntu.com/ubuntu noble-security/restricted amd64 Packages [1566 kB]
+2026-10-07T04:32:24.4414318Z Get:29 http://azure.archive.ubuntu.com/ubuntu noble-security/restricted Translation-en [361 kB]
+2026-10-07T04:32:24.4444303Z Get:30 http://azure.archive.ubuntu.com/ubuntu noble-security/multiverse Translation-en [11.6 kB]
+2026-10-07T04:32:28.6878341Z Fetched 12.6 MB in 1s (8963 kB/s)
+2026-10-07T04:32:29.5976094Z Reading package lists...
+2026-10-07T04:32:29.6260868Z Reading package lists...
+2026-10-07T04:32:29.8450741Z Building dependency tree...
+2026-10-07T04:32:29.8457597Z Reading state information...
+2026-10-07T04:32:29.9891621Z libasound2t64 is already the newest version (1.2.11-1ubuntu0.3).
+2026-10-07T04:32:29.9892427Z libasound2t64 set to manually installed.
+2026-10-07T04:32:29.9893428Z libatk-bridge2.0-0t64 is already the newest version (2.52.0-1build1).
+2026-10-07T04:32:29.9894258Z libatk-bridge2.0-0t64 set to manually installed.
+2026-10-07T04:32:29.9895034Z libatk1.0-0t64 is already the newest version (2.52.0-1build1).
+2026-10-07T04:32:29.9895739Z libatk1.0-0t64 set to manually installed.
+2026-10-07T04:32:29.9896499Z libatspi2.0-0t64 is already the newest version (2.52.0-1build1).
+2026-10-07T04:32:29.9897615Z libatspi2.0-0t64 set to manually installed.
+2026-10-07T04:32:29.9898360Z libcairo2 is already the newest version (1.18.0-3build1).
+2026-10-07T04:32:29.9898895Z libcairo2 set to manually installed.
+2026-10-07T04:32:29.9899395Z libcups2t64 is already the newest version (2.4.7-1.2ubuntu7.14).
+2026-10-07T04:32:29.9899858Z libcups2t64 set to manually installed.
+2026-10-07T04:32:29.9900300Z libdbus-1-3 is already the newest version (1.14.10-4ubuntu4.1).
+2026-10-07T04:32:29.9900710Z libdbus-1-3 set to manually installed.
+2026-10-07T04:32:29.9901150Z libdrm2 is already the newest version (2.4.125-1ubuntu0.1~24.04.2).
+2026-10-07T04:32:29.9901579Z libdrm2 set to manually installed.
+2026-10-07T04:32:29.9902005Z libglib2.0-0t64 is already the newest version (2.80.0-6ubuntu3.9).
+2026-10-07T04:32:29.9902431Z libglib2.0-0t64 set to manually installed.
+2026-10-07T04:32:29.9902860Z libnspr4 is already the newest version (2:4.35-1.1build1).
+2026-10-07T04:32:29.9903512Z libnspr4 set to manually installed.
+2026-10-07T04:32:29.9904283Z libnss3 is already the newest version (2:3.98-1ubuntu0.2).
+2026-10-07T04:32:29.9904968Z libnss3 set to manually installed.
+2026-10-07T04:32:29.9905758Z libpango-1.0-0 is already the newest version (1.52.1+ds-1build1).
+2026-10-07T04:32:29.9906495Z libpango-1.0-0 set to manually installed.
+2026-10-07T04:32:29.9907210Z libx11-6 is already the newest version (2:1.8.7-1build1).
+2026-10-07T04:32:29.9907739Z libx11-6 set to manually installed.
+2026-10-07T04:32:29.9908111Z libxcb1 is already the newest version (1.15-1ubuntu2).
+2026-10-07T04:32:29.9908470Z libxcb1 set to manually installed.
+2026-10-07T04:32:29.9908883Z libxcomposite1 is already the newest version (1:0.4.5-1build3).
+2026-10-07T04:32:29.9909300Z libxcomposite1 set to manually installed.
+2026-10-07T04:32:29.9909719Z libxdamage1 is already the newest version (1:1.1.6-1build1).
+2026-10-07T04:32:29.9910114Z libxdamage1 set to manually installed.
+2026-10-07T04:32:29.9910507Z libxext6 is already the newest version (2:1.3.4-1build2).
+2026-10-07T04:32:29.9910871Z libxext6 set to manually installed.
+2026-10-07T04:32:29.9911262Z libxfixes3 is already the newest version (1:6.0.0-2build1).
+2026-10-07T04:32:29.9911649Z libxfixes3 set to manually installed.
+2026-10-07T04:32:29.9912047Z libxkbcommon0 is already the newest version (1.6.0-1build1).
+2026-10-07T04:32:29.9912447Z libxkbcommon0 set to manually installed.
+2026-10-07T04:32:29.9912849Z libxrandr2 is already the newest version (2:1.5.2-2build1).
+2026-10-07T04:32:29.9913459Z libxrandr2 set to manually installed.
+2026-10-07T04:32:29.9913863Z xvfb is already the newest version (2:21.1.12-1ubuntu1.8).
+2026-10-07T04:32:29.9914398Z fonts-noto-color-emoji is already the newest version (2.047-0ubuntu0.24.04.1).
+2026-10-07T04:32:29.9914962Z libfontconfig1 is already the newest version (2.15.0-1.1ubuntu2).
+2026-10-07T04:32:29.9915381Z libfontconfig1 set to manually installed.
+2026-10-07T04:32:29.9916119Z fonts-liberation is already the newest version (1:2.1.5-3).
+2026-10-07T04:32:29.9916860Z fonts-liberation set to manually installed.
+2026-10-07T04:32:29.9917325Z The following additional packages will be installed:
+2026-10-07T04:32:29.9917827Z   libgl1-mesa-dri libglx-mesa0 mesa-libgallium xfonts-encodings xfonts-utils
+2026-10-07T04:32:29.9918467Z Recommended packages:
+2026-10-07T04:32:29.9918764Z   fonts-ipafont-mincho fonts-tlwg-loma
+2026-10-07T04:32:30.0260954Z The following NEW packages will be installed:
+2026-10-07T04:32:30.0261522Z   fonts-freefont-ttf fonts-ipafont-gothic fonts-tlwg-loma-otf fonts-unifont
+2026-10-07T04:32:30.0268022Z   fonts-wqy-zenhei xfonts-cyrillic xfonts-encodings xfonts-scalable
+2026-10-07T04:32:30.0268660Z   xfonts-utils
+2026-10-07T04:32:30.0272770Z The following packages will be upgraded:
+2026-10-07T04:32:30.0278529Z   libfreetype6 libgbm1 libgl1-mesa-dri libglx-mesa0 mesa-libgallium
+2026-10-07T04:32:30.0438373Z 5 upgraded, 9 newly installed, 0 to remove and 24 not upgraded.
+2026-10-07T04:32:30.0438858Z Need to get 32.5 MB of archives.
+2026-10-07T04:32:30.0439808Z After this operation, 79.5 MB of additional disk space will be used.
+2026-10-07T04:32:30.0440732Z Get:1 file:/etc/apt/apt-mirrors.txt Mirrorlist [144 B]
+2026-10-07T04:32:30.1987696Z Get:2 http://azure.archive.ubuntu.com/ubuntu noble/universe amd64 fonts-ipafont-gothic all 00303-21ubuntu1 [3513 kB]
+2026-10-07T04:32:30.2643763Z Get:3 http://azure.archive.ubuntu.com/ubuntu noble/main amd64 fonts-freefont-ttf all 20211204+svn4273-2 [5641 kB]
+2026-10-07T04:32:30.3510269Z Get:4 http://azure.archive.ubuntu.com/ubuntu noble/universe amd64 fonts-tlwg-loma-otf all 1:0.7.3-1 [107 kB]
+2026-10-07T04:32:30.3831187Z Get:5 http://azure.archive.ubuntu.com/ubuntu noble/universe amd64 fonts-unifont all 1:15.1.01-1build1 [2993 kB]
+2026-10-07T04:32:30.4395242Z Get:6 http://azure.archive.ubuntu.com/ubuntu noble/universe amd64 fonts-wqy-zenhei all 0.9.45-8 [7472 kB]
+2026-10-07T04:32:30.5318839Z Get:7 http://azure.archive.ubuntu.com/ubuntu noble-updates/main amd64 libfreetype6 amd64 2.13.2+dfsg-1ubuntu0.2 [403 kB]
+2026-10-07T04:32:30.5620119Z Get:8 http://azure.archive.ubuntu.com/ubuntu noble-updates/main amd64 libgl1-mesa-dri amd64 25.2.8-0ubuntu0.24.04.4 [38.0 kB]
+2026-10-07T04:32:30.5897981Z Get:9 http://azure.archive.ubuntu.com/ubuntu noble-updates/main amd64 libglx-mesa0 amd64 25.2.8-0ubuntu0.24.04.4 [110 kB]
+2026-10-07T04:32:30.6182426Z Get:10 http://azure.archive.ubuntu.com/ubuntu noble-updates/main amd64 libgbm1 amd64 25.2.8-0ubuntu0.24.04.4 [34.2 kB]
+2026-10-07T04:32:30.6457508Z Get:11 http://azure.archive.ubuntu.com/ubuntu noble-updates/main amd64 mesa-libgallium amd64 25.2.8-0ubuntu0.24.04.4 [10.8 MB]
+2026-10-07T04:32:30.7685276Z Get:12 http://azure.archive.ubuntu.com/ubuntu noble/main amd64 xfonts-encodings all 1:1.0.5-0ubuntu2 [578 kB]
+2026-10-07T04:32:30.8001946Z Get:13 http://azure.archive.ubuntu.com/ubuntu noble/main amd64 xfonts-utils amd64 1:7.7+6build3 [94.4 kB]
+2026-10-07T04:32:30.8282650Z Get:14 http://azure.archive.ubuntu.com/ubuntu noble/universe amd64 xfonts-cyrillic all 1:1.0.5+nmu1 [384 kB]
+2026-10-07T04:32:30.8586757Z Get:15 http://azure.archive.ubuntu.com/ubuntu noble/main amd64 xfonts-scalable all 1:1.0.3-1.3 [304 kB]
+2026-10-07T04:32:31.1062080Z Fetched 32.5 MB in 1s (39.2 MB/s)
+2026-10-07T04:32:31.1306824Z Selecting previously unselected package fonts-ipafont-gothic.
+2026-10-07T04:32:31.1589160Z (Reading database ... 
+2026-10-07T04:32:31.1589701Z (Reading database ... 5%
+2026-10-07T04:32:31.1590393Z (Reading database ... 10%
+2026-10-07T04:32:31.1590882Z (Reading database ... 15%
+2026-10-07T04:32:31.1591333Z (Reading database ... 20%
+2026-10-07T04:32:31.1591647Z (Reading database ... 25%
+2026-10-07T04:32:31.1592042Z (Reading database ... 30%
+2026-10-07T04:32:31.1592509Z (Reading database ... 35%
+2026-10-07T04:32:31.1592961Z (Reading database ... 40%
+2026-10-07T04:32:31.1597516Z (Reading database ... 45%
+2026-10-07T04:32:31.1598024Z (Reading database ... 50%
+2026-10-07T04:32:31.1636570Z (Reading database ... 55%
+2026-10-07T04:32:31.2618350Z (Reading database ... 60%
+2026-10-07T04:32:31.4520550Z (Reading database ... 65%
+2026-10-07T04:32:31.6581195Z (Reading database ... 70%
+2026-10-07T04:32:31.8603125Z (Reading database ... 75%
+2026-10-07T04:32:31.9639837Z (Reading database ... 80%
+2026-10-07T04:32:32.1179074Z (Reading database ... 85%
+2026-10-07T04:32:32.2246593Z (Reading database ... 90%
+2026-10-07T04:32:32.3211333Z (Reading database ... 95%
+2026-10-07T04:32:32.3211998Z (Reading database ... 100%
+2026-10-07T04:32:32.3212935Z (Reading database ... 202296 files and directories currently installed.)
+2026-10-07T04:32:32.3253551Z Preparing to unpack .../00-fonts-ipafont-gothic_00303-21ubuntu1_all.deb ...
+2026-10-07T04:32:32.3341691Z Unpacking fonts-ipafont-gothic (00303-21ubuntu1) ...
+2026-10-07T04:32:32.5632623Z Selecting previously unselected package fonts-freefont-ttf.
+2026-10-07T04:32:32.5757084Z Preparing to unpack .../01-fonts-freefont-ttf_20211204+svn4273-2_all.deb ...
+2026-10-07T04:32:32.5763346Z Unpacking fonts-freefont-ttf (20211204+svn4273-2) ...
+2026-10-07T04:32:32.6516663Z Selecting previously unselected package fonts-tlwg-loma-otf.
+2026-10-07T04:32:32.6641681Z Preparing to unpack .../02-fonts-tlwg-loma-otf_1%3a0.7.3-1_all.deb ...
+2026-10-07T04:32:32.6647623Z Unpacking fonts-tlwg-loma-otf (1:0.7.3-1) ...
+2026-10-07T04:32:32.6991498Z Selecting previously unselected package fonts-unifont.
+2026-10-07T04:32:32.7116716Z Preparing to unpack .../03-fonts-unifont_1%3a15.1.01-1build1_all.deb ...
+2026-10-07T04:32:32.7122670Z Unpacking fonts-unifont (1:15.1.01-1build1) ...
+2026-10-07T04:32:32.8130483Z Selecting previously unselected package fonts-wqy-zenhei.
+2026-10-07T04:32:32.8254983Z Preparing to unpack .../04-fonts-wqy-zenhei_0.9.45-8_all.deb ...
+2026-10-07T04:32:32.8348737Z Unpacking fonts-wqy-zenhei (0.9.45-8) ...
+2026-10-07T04:32:33.3069966Z Preparing to unpack .../05-libfreetype6_2.13.2+dfsg-1ubuntu0.2_amd64.deb ...
+2026-10-07T04:32:33.3099058Z Unpacking libfreetype6:amd64 (2.13.2+dfsg-1ubuntu0.2) over (2.13.2+dfsg-1ubuntu0.1) ...
+2026-10-07T04:32:33.3471850Z Preparing to unpack .../06-libgl1-mesa-dri_25.2.8-0ubuntu0.24.04.4_amd64.deb ...
+2026-10-07T04:32:33.3610328Z Unpacking libgl1-mesa-dri:amd64 (25.2.8-0ubuntu0.24.04.4) over (25.2.8-0ubuntu0.24.04.2) ...
+2026-10-07T04:32:33.4079677Z Preparing to unpack .../07-libglx-mesa0_25.2.8-0ubuntu0.24.04.4_amd64.deb ...
+2026-10-07T04:32:33.4101399Z Unpacking libglx-mesa0:amd64 (25.2.8-0ubuntu0.24.04.4) over (25.2.8-0ubuntu0.24.04.2) ...
+2026-10-07T04:32:33.4449654Z Preparing to unpack .../08-libgbm1_25.2.8-0ubuntu0.24.04.4_amd64.deb ...
+2026-10-07T04:32:33.4472738Z Unpacking libgbm1:amd64 (25.2.8-0ubuntu0.24.04.4) over (25.2.8-0ubuntu0.24.04.2) ...
+2026-10-07T04:32:33.4827576Z Preparing to unpack .../09-mesa-libgallium_25.2.8-0ubuntu0.24.04.4_amd64.deb ...
+2026-10-07T04:32:33.4849557Z Unpacking mesa-libgallium:amd64 (25.2.8-0ubuntu0.24.04.4) over (25.2.8-0ubuntu0.24.04.2) ...
+2026-10-07T04:32:33.6597969Z Selecting previously unselected package xfonts-encodings.
+2026-10-07T04:32:33.6724088Z Preparing to unpack .../10-xfonts-encodings_1%3a1.0.5-0ubuntu2_all.deb ...
+2026-10-07T04:32:33.6729762Z Unpacking xfonts-encodings (1:1.0.5-0ubuntu2) ...
+2026-10-07T04:32:33.7001596Z Selecting previously unselected package xfonts-utils.
+2026-10-07T04:32:33.7124948Z Preparing to unpack .../11-xfonts-utils_1%3a7.7+6build3_amd64.deb ...
+2026-10-07T04:32:33.7130549Z Unpacking xfonts-utils (1:7.7+6build3) ...
+2026-10-07T04:32:33.7469784Z Selecting previously unselected package xfonts-cyrillic.
+2026-10-07T04:32:33.7591876Z Preparing to unpack .../12-xfonts-cyrillic_1%3a1.0.5+nmu1_all.deb ...
+2026-10-07T04:32:33.7598755Z Unpacking xfonts-cyrillic (1:1.0.5+nmu1) ...
+2026-10-07T04:32:33.7916219Z Selecting previously unselected package xfonts-scalable.
+2026-10-07T04:32:33.8038155Z Preparing to unpack .../13-xfonts-scalable_1%3a1.0.3-1.3_all.deb ...
+2026-10-07T04:32:33.8043496Z Unpacking xfonts-scalable (1:1.0.3-1.3) ...
+2026-10-07T04:32:33.8461358Z Setting up mesa-libgallium:amd64 (25.2.8-0ubuntu0.24.04.4) ...
+2026-10-07T04:32:33.8479679Z Setting up libgbm1:amd64 (25.2.8-0ubuntu0.24.04.4) ...
+2026-10-07T04:32:33.8495486Z Setting up libgl1-mesa-dri:amd64 (25.2.8-0ubuntu0.24.04.4) ...
+2026-10-07T04:32:33.8564571Z Setting up fonts-wqy-zenhei (0.9.45-8) ...
+2026-10-07T04:32:33.8666757Z Setting up fonts-freefont-ttf (20211204+svn4273-2) ...
+2026-10-07T04:32:33.8682008Z Setting up fonts-tlwg-loma-otf (1:0.7.3-1) ...
+2026-10-07T04:32:33.8699626Z Setting up libfreetype6:amd64 (2.13.2+dfsg-1ubuntu0.2) ...
+2026-10-07T04:32:33.8717484Z Setting up xfonts-encodings (1:1.0.5-0ubuntu2) ...
+2026-10-07T04:32:33.8732626Z Setting up fonts-ipafont-gothic (00303-21ubuntu1) ...
+2026-10-07T04:32:33.8790402Z update-alternatives: using /usr/share/fonts/opentype/ipafont-gothic/ipag.ttf to provide /usr/share/fonts/truetype/fonts-japanese-gothic.ttf (fonts-japanese-gothic.ttf) in auto mode
+2026-10-07T04:32:33.8803297Z Setting up fonts-unifont (1:15.1.01-1build1) ...
+2026-10-07T04:32:33.8817899Z Setting up libglx-mesa0:amd64 (25.2.8-0ubuntu0.24.04.4) ...
+2026-10-07T04:32:33.8832796Z Setting up xfonts-utils (1:7.7+6build3) ...
+2026-10-07T04:32:33.8867452Z Setting up xfonts-cyrillic (1:1.0.5+nmu1) ...
+2026-10-07T04:32:33.9122132Z Setting up xfonts-scalable (1:1.0.3-1.3) ...
+2026-10-07T04:32:33.9371844Z Processing triggers for libc-bin (2.39-0ubuntu8.9) ...
+2026-10-07T04:32:34.0006302Z Processing triggers for man-db (2.12.0-4build2) ...
+2026-10-07T04:32:34.0025849Z Not building database; man-db/auto-update is not 'true'.
+2026-10-07T04:32:34.0037906Z Processing triggers for fontconfig (2.15.0-1.1ubuntu2) ...
+2026-10-07T04:32:34.6936817Z 
+2026-10-07T04:32:34.6937472Z Running kernel seems to be up-to-date.
+2026-10-07T04:32:34.6937869Z 
+2026-10-07T04:32:34.6938073Z Restarting services...
+2026-10-07T04:32:34.7011433Z  systemctl restart php8.3-fpm.service
+2026-10-07T04:32:34.8054001Z 
+2026-10-07T04:32:34.8054887Z No containers need to be restarted.
+2026-10-07T04:32:34.8055231Z 
+2026-10-07T04:32:34.8055497Z No user sessions are running outdated binaries.
+2026-10-07T04:32:34.8055799Z 
+2026-10-07T04:32:34.8056270Z No VM guests are running outdated hypervisor (qemu) binaries on this host.
+2026-10-07T04:32:35.6382429Z Downloading Chrome for Testing 153.0.8010.12 (playwright chromium v1243) from https://cdn.playwright.dev/builds/cft/153.0.8010.12/linux64/chrome-linux64.zip
+2026-10-07T04:32:36.0620461Z |                                                                                |   0% of 186.8 MiB
+2026-10-07T04:32:36.4103890Z |■■■■■■■■                                                                        |  10% of 186.8 MiB
+2026-10-07T04:32:36.4945818Z |■■■■■■■■■■■■■■■■                                                                |  20% of 186.8 MiB
+2026-10-07T04:32:36.5879433Z |■■■■■■■■■■■■■■■■■■■■■■■■                                                        |  30% of 186.8 MiB
+2026-10-07T04:32:36.6547415Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                                |  40% of 186.8 MiB
+2026-10-07T04:32:36.7528651Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                        |  50% of 186.8 MiB
+2026-10-07T04:32:36.8279118Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                |  60% of 186.8 MiB
+2026-10-07T04:32:36.9213718Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                        |  70% of 186.8 MiB
+2026-10-07T04:32:37.0091990Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                |  80% of 186.8 MiB
+2026-10-07T04:32:37.0891422Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■        |  90% of 186.8 MiB
+2026-10-07T04:32:37.1599551Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■| 100% of 186.8 MiB
+2026-10-07T04:32:40.2497536Z Chrome for Testing 153.0.8010.12 (playwright chromium v1243) downloaded to /home/runner/.cache/ms-playwright/chromium-1243
+2026-10-07T04:32:40.2502462Z Downloading FFmpeg (playwright ffmpeg v1011) from https://cdn.playwright.dev/dbazure/download/playwright/builds/ffmpeg/1011/ffmpeg-linux.zip
+2026-10-07T04:32:40.6049938Z |                                                                                |   0% of 2.3 MiB
+2026-10-07T04:32:40.6284837Z |■■■■■■■■                                                                        |  10% of 2.3 MiB
+2026-10-07T04:32:40.6397315Z |■■■■■■■■■■■■■■■■                                                                |  20% of 2.3 MiB
+2026-10-07T04:32:40.6464919Z |■■■■■■■■■■■■■■■■■■■■■■■■                                                        |  30% of 2.3 MiB
+2026-10-07T04:32:40.6543339Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                                |  40% of 2.3 MiB
+2026-10-07T04:32:40.6607950Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                        |  50% of 2.3 MiB
+2026-10-07T04:32:40.6639398Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                |  60% of 2.3 MiB
+2026-10-07T04:32:40.6649889Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                        |  70% of 2.3 MiB
+2026-10-07T04:32:40.6711117Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                |  80% of 2.3 MiB
+2026-10-07T04:32:40.6730498Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■        |  90% of 2.3 MiB
+2026-10-07T04:32:40.6776721Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■| 100% of 2.3 MiB
+2026-10-07T04:32:40.7369581Z FFmpeg (playwright ffmpeg v1011) downloaded to /home/runner/.cache/ms-playwright/ffmpeg-1011
+2026-10-07T04:32:40.7372877Z Downloading Chrome Headless Shell 153.0.8010.12 (playwright chromium-headless-shell v1243) from https://cdn.playwright.dev/builds/cft/153.0.8010.12/linux64/chrome-headless-shell-linux64.zip
+2026-10-07T04:32:41.1610566Z |                                                                                |   0% of 114.3 MiB
+2026-10-07T04:32:41.4211489Z |■■■■■■■■                                                                        |  10% of 114.3 MiB
+2026-10-07T04:32:41.4899202Z |■■■■■■■■■■■■■■■■                                                                |  20% of 114.3 MiB
+2026-10-07T04:32:41.5388206Z |■■■■■■■■■■■■■■■■■■■■■■■■                                                        |  30% of 114.3 MiB
+2026-10-07T04:32:41.6012053Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                                |  40% of 114.3 MiB
+2026-10-07T04:32:41.6582804Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                        |  50% of 114.3 MiB
+2026-10-07T04:32:41.6991665Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                |  60% of 114.3 MiB
+2026-10-07T04:32:41.7330158Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                        |  70% of 114.3 MiB
+2026-10-07T04:32:41.7871390Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                |  80% of 114.3 MiB
+2026-10-07T04:32:41.8257608Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■        |  90% of 114.3 MiB
+2026-10-07T04:32:41.8965407Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■| 100% of 114.3 MiB
+2026-10-07T04:32:44.0380761Z Chrome Headless Shell 153.0.8010.12 (playwright chromium-headless-shell v1243) downloaded to /home/runner/.cache/ms-playwright/chromium_headless_shell-1243
+2026-10-07T04:32:44.0721984Z ##[group]Run sudo apt-get install -y fonts-noto-cjk
+2026-10-07T04:32:44.0722416Z [36;1msudo apt-get install -y fonts-noto-cjk[0m
+2026-10-07T04:32:44.0785601Z shell: /usr/bin/bash -e {0}
+2026-10-07T04:32:44.0785863Z ##[endgroup]
+2026-10-07T04:32:44.1066543Z Reading package lists...
+2026-10-07T04:32:44.2915826Z Building dependency tree...
+2026-10-07T04:32:44.2923692Z Reading state information...
+2026-10-07T04:32:44.4419556Z Suggested packages:
+2026-10-07T04:32:44.4420054Z   fonts-noto-cjk-extra
+2026-10-07T04:32:44.4556498Z The following NEW packages will be installed:
+2026-10-07T04:32:44.4561911Z   fonts-noto-cjk
+2026-10-07T04:32:44.4721141Z 0 upgraded, 1 newly installed, 0 to remove and 24 not upgraded.
+2026-10-07T04:32:44.4721916Z Need to get 61.2 MB of archives.
+2026-10-07T04:32:44.4722647Z After this operation, 93.2 MB of additional disk space will be used.
+2026-10-07T04:32:44.4723748Z Get:1 file:/etc/apt/apt-mirrors.txt Mirrorlist [144 B]
+2026-10-07T04:32:44.5218720Z Get:2 http://azure.archive.ubuntu.com/ubuntu noble/main amd64 fonts-noto-cjk all 1:20230817+repack1-3 [61.2 MB]
+2026-10-07T04:32:45.4180705Z Fetched 61.2 MB in 1s (85.3 MB/s)
+2026-10-07T04:32:45.4369466Z Selecting previously unselected package fonts-noto-cjk.
+2026-10-07T04:32:45.4423702Z (Reading database ... 
+2026-10-07T04:32:45.4424186Z (Reading database ... 5%
+2026-10-07T04:32:45.4424654Z (Reading database ... 10%
+2026-10-07T04:32:45.4425098Z (Reading database ... 15%
+2026-10-07T04:32:45.4425548Z (Reading database ... 20%
+2026-10-07T04:32:45.4425805Z (Reading database ... 25%
+2026-10-07T04:32:45.4426053Z (Reading database ... 30%
+2026-10-07T04:32:45.4426294Z (Reading database ... 35%
+2026-10-07T04:32:45.4426538Z (Reading database ... 40%
+2026-10-07T04:32:45.4426818Z (Reading database ... 45%
+2026-10-07T04:32:45.4427056Z (Reading database ... 50%
+2026-10-07T04:32:45.4435894Z (Reading database ... 55%
+2026-10-07T04:32:45.4534019Z (Reading database ... 60%
+2026-10-07T04:32:45.4559238Z (Reading database ... 65%
+2026-10-07T04:32:45.4579812Z (Reading database ... 70%
+2026-10-07T04:32:45.4610994Z (Reading database ... 75%
+2026-10-07T04:32:45.4640637Z (Reading database ... 80%
+2026-10-07T04:32:45.4663476Z (Reading database ... 85%
+2026-10-07T04:32:45.4806916Z (Reading database ... 90%
+2026-10-07T04:32:45.5043233Z (Reading database ... 95%
+2026-10-07T04:32:45.5043930Z (Reading database ... 100%
+2026-10-07T04:32:45.5044568Z (Reading database ... 202563 files and directories currently installed.)
+2026-10-07T04:32:45.5081568Z Preparing to unpack .../fonts-noto-cjk_1%3a20230817+repack1-3_all.deb ...
+2026-10-07T04:32:45.5149652Z Unpacking fonts-noto-cjk (1:20230817+repack1-3) ...
+2026-10-07T04:32:45.9190204Z Setting up fonts-noto-cjk (1:20230817+repack1-3) ...
+2026-10-07T04:32:45.9261188Z Processing triggers for fontconfig (2.15.0-1.1ubuntu2) ...
+2026-10-07T04:32:46.5016266Z 
+2026-10-07T04:32:46.5016889Z Running kernel seems to be up-to-date.
+2026-10-07T04:32:46.5017381Z 
+2026-10-07T04:32:46.5017692Z No services need to be restarted.
+2026-10-07T04:32:46.5018017Z 
+2026-10-07T04:32:46.5018277Z No containers need to be restarted.
+2026-10-07T04:32:46.5018626Z 
+2026-10-07T04:32:46.5018955Z No user sessions are running outdated binaries.
+2026-10-07T04:32:46.5019320Z 
+2026-10-07T04:32:46.5019796Z No VM guests are running outdated hypervisor (qemu) binaries on this host.
+2026-10-07T04:32:47.3065621Z ##[group]Run npm run test:weaveos:unit
+2026-10-07T04:32:47.3065968Z [36;1mnpm run test:weaveos:unit[0m
+2026-10-07T04:32:47.3128980Z shell: /usr/bin/bash -e {0}
+2026-10-07T04:32:47.3129240Z ##[endgroup]
+2026-10-07T04:32:47.4128431Z 
+2026-10-07T04:32:47.4128981Z > arca-ui@0.0.1 test:weaveos:unit
+2026-10-07T04:32:47.4129777Z > node --test tests/weaveos/geometry.test.mjs tests/weaveos/pagination.test.mjs tests/weaveos/filter-model.test.mjs
+2026-10-07T04:32:47.4130570Z 
+2026-10-07T04:32:47.5938761Z ✔ AND and OR compose without flattening or changing meaning (5.012748ms)
+2026-10-07T04:32:47.5942709Z ✔ text supports only equal or not equal, numeric supports all six (3.889324ms)
+2026-10-07T04:32:47.5945060Z ✔ depth three is valid and depth four is rejected (0.257222ms)
+2026-10-07T04:32:47.5976488Z ✔ condition budget is twenty, independent of grouping (1.311476ms)
+2026-10-07T04:32:47.5977961Z ✔ unknown fields, operators, empty groups and malformed leaves fail closed (0.408294ms)
+2026-10-07T04:32:47.5979736Z ✔ empty text is an explicit valid equality, exact decimal strings remain unchanged (0.249387ms)
+2026-10-07T04:32:47.5982116Z ✔ oversized and cyclic filters are rejected without throwing (3.014987ms)
+2026-10-07T04:32:47.6124358Z ✔ opening starts at the source center with its size (2.637038ms)
+2026-10-07T04:32:47.6127003Z ✔ each distinct source yields its own trajectory (0.238536ms)
+2026-10-07T04:32:47.6128906Z ✔ absent source uses no displacement (0.465011ms)
+2026-10-07T04:32:47.6130439Z ✔ invalid or zero rectangles fall back safely (0.31013ms)
+2026-10-07T04:32:47.6132291Z ✔ no division by zero from an unmeasured panel (0.28808ms)
+2026-10-07T04:32:47.6134412Z ✔ small pages list exact pages; large totals use bounded windows (2.054908ms)
+2026-10-07T04:32:47.6137255Z ✔ first and last pages retain nearby navigation without enumerating total (0.283671ms)
+2026-10-07T04:32:47.6138678Z ✔ page input accepts only in-range integers, not coercions or partial numbers (0.315571ms)
+2026-10-07T04:32:47.6140134Z ✔ invalid page metadata cannot produce navigable links (0.436568ms)
+2026-10-07T04:32:47.6141017Z ℹ tests 16
+2026-10-07T04:32:47.6141553Z ℹ suites 0
+2026-10-07T04:32:47.6142084Z ℹ pass 16
+2026-10-07T04:32:47.6142600Z ℹ fail 0
+2026-10-07T04:32:47.6143329Z ℹ cancelled 0
+2026-10-07T04:32:47.6144140Z ℹ skipped 0
+2026-10-07T04:32:47.6144834Z ℹ todo 0
+2026-10-07T04:32:47.6145593Z ℹ duration_ms 168.268239
+2026-10-07T04:32:47.6290239Z ##[group]Run npx eslint src/weaveos
+2026-10-07T04:32:47.6290579Z [36;1mnpx eslint src/weaveos[0m
+2026-10-07T04:32:47.6352651Z shell: /usr/bin/bash -e {0}
+2026-10-07T04:32:47.6352915Z ##[endgroup]
+2026-10-07T04:32:50.7433767Z ##[group]Run npx tsc -b
+2026-10-07T04:32:50.7434104Z [36;1mnpx tsc -b[0m
+2026-10-07T04:32:50.7496287Z shell: /usr/bin/bash -e {0}
+2026-10-07T04:32:50.7496561Z ##[endgroup]
+2026-10-07T04:32:58.9633480Z ##[group]Run npm run build:weaveos
+2026-10-07T04:32:58.9633831Z [36;1mnpm run build:weaveos[0m
+2026-10-07T04:32:58.9692899Z shell: /usr/bin/bash -e {0}
+2026-10-07T04:32:58.9693380Z ##[endgroup]
+2026-10-07T04:32:59.0735867Z 
+2026-10-07T04:32:59.0736295Z > arca-ui@0.0.1 build:weaveos
+2026-10-07T04:32:59.0736734Z > vite build --config vite.weaveos.config.ts
+2026-10-07T04:32:59.0736971Z 
+2026-10-07T04:32:59.3681729Z [36mvite v8.3.0 [32mbuilding client environment for production...[36m[39m
+2026-10-07T04:32:59.3778987Z transforming...
+2026-10-07T04:32:59.6473922Z ✓ 2576 modules transformed.
+2026-10-07T04:32:59.7026101Z rendering chunks...
+2026-10-07T04:32:59.7868267Z computing gzip size...
+2026-10-07T04:32:59.7963718Z dist-weaveos/weaveos.html                                            0.37 kB │ gzip:   0.30 kB
+2026-10-07T04:32:59.7965148Z dist-weaveos/assets/geist-cyrillic-ext-wght-normal-DjL33-gN.woff2    7.42 kB
+2026-10-07T04:32:59.7966653Z dist-weaveos/assets/geist-vietnamese-wght-normal-6IgcOCM7.woff2      8.00 kB
+2026-10-07T04:32:59.7967789Z dist-weaveos/assets/geist-cyrillic-wght-normal-BEAKL7Jp.woff2       15.08 kB
+2026-10-07T04:32:59.7968500Z dist-weaveos/assets/geist-latin-ext-wght-normal-DC-KSUi6.woff2      16.51 kB
+2026-10-07T04:32:59.7969120Z dist-weaveos/assets/geist-latin-wght-normal-BgDaEnEv.woff2          29.40 kB
+2026-10-07T04:32:59.7969896Z dist-weaveos/assets/weaveos-ia1A6GLz.css                            39.43 kB │ gzip:   9.05 kB
+2026-10-07T04:32:59.7970673Z dist-weaveos/assets/weaveos-DofKgZkA.js                            582.85 kB │ gzip: 190.57 kB
+2026-10-07T04:32:59.7971282Z 
+2026-10-07T04:32:59.8007568Z [33m[plugin builtin:vite-reporter] 
+2026-10-07T04:32:59.8008466Z (!) Some chunks are larger than 500 kB after minification. Consider:
+2026-10-07T04:32:59.8009389Z - Using dynamic import() to code-split the application
+2026-10-07T04:32:59.8010510Z - Use build.rolldownOptions.output.codeSplitting to improve chunking: https://rolldown.rs/reference/OutputOptions.codeSplitting
+2026-10-07T04:32:59.8011866Z - Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.[39m
+2026-10-07T04:32:59.8152581Z [32m✓ built in 446ms[39m
+2026-10-07T04:32:59.8540205Z ##[group]Run npm run build:weaveos:library
+2026-10-07T04:32:59.8540582Z [36;1mnpm run build:weaveos:library[0m
+2026-10-07T04:32:59.8602739Z shell: /usr/bin/bash -e {0}
+2026-10-07T04:32:59.8603006Z ##[endgroup]
+2026-10-07T04:32:59.9633077Z 
+2026-10-07T04:32:59.9633857Z > arca-ui@0.0.1 build:weaveos:library
+2026-10-07T04:32:59.9634807Z > vite build --config vite.weaveos-library.config.ts && tsc -p tsconfig.weaveos-library.json && node scripts/weaveos/package.mjs
+2026-10-07T04:32:59.9635371Z 
+2026-10-07T04:33:00.1319310Z [36mvite v8.3.0 [32mbuilding client environment for production...[36m[39m
+2026-10-07T04:33:00.1432993Z transforming...
+2026-10-07T04:33:00.1509138Z ✓ 21 modules transformed.
+2026-10-07T04:33:00.1556362Z rendering chunks...
+2026-10-07T04:33:00.1610736Z computing gzip size...
+2026-10-07T04:33:00.1619914Z dist-library/index.js  41.60 kB │ gzip: 10.97 kB
+2026-10-07T04:33:00.1620755Z 
+2026-10-07T04:33:00.1634377Z [32m✓ built in 30ms[39m
+2026-10-07T04:33:02.3034904Z Prepared private/unpublished component artifact at dist-library
+2026-10-07T04:33:02.3191662Z ##[group]Run npm run test:weaveos:package
+2026-10-07T04:33:02.3192285Z [36;1mnpm run test:weaveos:package[0m
+2026-10-07T04:33:02.3282439Z shell: /usr/bin/bash -e {0}
+2026-10-07T04:33:02.3282899Z ##[endgroup]
+2026-10-07T04:33:02.4300805Z 
+2026-10-07T04:33:02.4301277Z > arca-ui@0.0.1 test:weaveos:package
+2026-10-07T04:33:02.4302007Z > node --test tests/weaveos/package.test.mjs
+2026-10-07T04:33:02.4302377Z 
+2026-10-07T04:33:02.9900848Z ✔ consumer artifact exports controls, theme and source-aware dialog (1.013728ms)
+2026-10-07T04:33:02.9904505Z ✔ package has typed exports, explicit React peers and safe unpublished metadata (0.292338ms)
+2026-10-07T04:33:02.9934172Z ✔ artifact has no source aliases or demo app and CSS stays scoped (0.463969ms)
+2026-10-07T04:33:02.9952451Z ✔ distributed license and source attribution accompany components (0.204263ms)
+2026-10-07T04:33:03.0306599Z ℹ tests 4
+2026-10-07T04:33:03.0307134Z ℹ suites 0
+2026-10-07T04:33:03.0307563Z ℹ pass 4
+2026-10-07T04:33:03.0309281Z ℹ fail 0
+2026-10-07T04:33:03.0309748Z ℹ cancelled 0
+2026-10-07T04:33:03.0310224Z ℹ skipped 0
+2026-10-07T04:33:03.0310646Z ℹ todo 0
+2026-10-07T04:33:03.0311120Z ℹ duration_ms 568.531468
+2026-10-07T04:33:03.0440367Z ##[group]Run npm run test:weaveos
+2026-10-07T04:33:03.0440700Z [36;1mnpm run test:weaveos[0m
+2026-10-07T04:33:03.0503804Z shell: /usr/bin/bash -e {0}
+2026-10-07T04:33:03.0504091Z ##[endgroup]
+2026-10-07T04:33:03.1505441Z 
+2026-10-07T04:33:03.1505954Z > arca-ui@0.0.1 test:weaveos
+2026-10-07T04:33:03.1506511Z > playwright test -c playwright.weaveos.config.ts
+2026-10-07T04:33:03.1506772Z 
+2026-10-07T04:33:04.4414238Z ✔ AND and OR compose without flattening or changing meaning (1.974217ms)
+2026-10-07T04:33:04.4454842Z ✔ text supports only equal or not equal, numeric supports all six (0.817081ms)
+2026-10-07T04:33:04.4475759Z ✔ depth three is valid and depth four is rejected (1.662543ms)
+2026-10-07T04:33:04.4521449Z ✔ condition budget is twenty, independent of grouping (0.245661ms)
+2026-10-07T04:33:04.4523533Z ✔ unknown fields, operators, empty groups and malformed leaves fail closed (0.36301ms)
+2026-10-07T04:33:04.4525544Z ✔ empty text is an explicit valid equality, exact decimal strings remain unchanged (0.232525ms)
+2026-10-07T04:33:04.4527193Z ✔ oversized and cyclic filters are rejected without throwing (0.332021ms)
+2026-10-07T04:33:04.4677724Z ✔ opening starts at the source center with its size (2.161558ms)
+2026-10-07T04:33:04.4679251Z ✔ each distinct source yields its own trajectory (0.465021ms)
+2026-10-07T04:33:04.4702337Z ✔ absent source uses no displacement (1.055116ms)
+2026-10-07T04:33:04.4734436Z ✔ invalid or zero rectangles fall back safely (0.247554ms)
+2026-10-07T04:33:04.4744239Z ✔ no division by zero from an unmeasured panel (0.174738ms)
+2026-10-07T04:33:05.2988669Z ✔ consumer artifact exports controls, theme and source-aware dialog (0.351959ms)
+2026-10-07T04:33:05.2991915Z ✔ package has typed exports, explicit React peers and safe unpublished metadata (0.304681ms)
+2026-10-07T04:33:05.2997320Z ✔ artifact has no source aliases or demo app and CSS stays scoped (0.491601ms)
+2026-10-07T04:33:05.2999993Z ✔ distributed license and source attribution accompany components (0.182202ms)
+2026-10-07T04:33:05.3142991Z ✔ small pages list exact pages; large totals use bounded windows (0.451175ms)
+2026-10-07T04:33:05.3146078Z ✔ first and last pages retain nearby navigation without enumerating total (0.278992ms)
+2026-10-07T04:33:05.3149756Z ✔ page input accepts only in-range integers, not coercions or partial numbers (0.253024ms)
+2026-10-07T04:33:05.3152585Z ✔ invalid page metadata cannot produce navigable links (0.209762ms)
+2026-10-07T04:33:05.3630868Z 
+2026-10-07T04:33:05.3631720Z Running 37 tests using 2 workers
+2026-10-07T04:33:05.3632062Z 
+2026-10-07T04:33:07.9375977Z   ✓   1 [chromium] › tests/weaveos/data-workspace.spec.ts:5:1 › table renders only the current supplied page despite a large server total (1.7s)
+2026-10-07T04:33:08.8735403Z   ✓   2 [chromium] › tests/weaveos/data-workspace.spec.ts:11:1 › arbitrary page jump emits controlled request and waits for returned page (2.7s)
+2026-10-07T04:33:09.6945252Z   ✓   3 [chromium] › tests/weaveos/data-workspace.spec.ts:19:1 › text has no normal sort while numerical sorting is server-controlled (1.7s)
+2026-10-07T04:33:12.2497425Z   ✓   4 [chromium] › tests/weaveos/data-workspace.spec.ts:27:1 › hide a column changes display without clearing sort or issuing a query (3.4s)
+2026-10-07T04:33:12.2766497Z   ✓   5 [chromium] › tests/weaveos/data-workspace.spec.ts:38:1 › related data change requires refresh and refresh requests page one (2.6s)
+2026-10-07T04:33:13.9669798Z   ✓   6 [chromium] › tests/weaveos/data-workspace.spec.ts:46:1 › only current page selection is controlled and filtering does not happen locally (1.7s)
+2026-10-07T04:33:15.7538647Z   ✓   7 [chromium] › tests/weaveos/data-workspace.spec.ts:51:1 › table workspace passes settled accessibility and captures actual desktop UI (3.5s)
+2026-10-07T04:33:17.1005483Z   ✓   8 [chromium] › tests/weaveos/data-workspace.spec.ts:56:1 › page-size change is a controlled request that resets to first page (3.1s)
+2026-10-07T04:33:17.7369384Z   ✓   9 [chromium] › tests/weaveos/data-workspace.spec.ts:63:1 › invalid arbitrary page never emits a coerced query (1.9s)
+2026-10-07T04:33:19.3985038Z   ✓  11 [chromium] › tests/weaveos/field-basics.spec.ts:4:1 › decimal string retains every digit and trailing zero through edits and blur (1.6s)
+2026-10-07T04:33:20.5487101Z   ✓  10 [chromium] › tests/weaveos/data-workspace.spec.ts:69:1 › failed response keeps previous confirmed page and exposes an explicit retry (3.4s)
+2026-10-07T04:33:21.2404768Z   ✓  12 [chromium] › tests/weaveos/field-basics.spec.ts:10:1 › decimal zero remains a string while clearing produces explicit null (1.8s)
+2026-10-07T04:33:22.5336506Z   ✓  13 [chromium] › tests/weaveos/field-basics.spec.ts:14:1 › nullable Boolean keeps null false and true separate (1.9s)
+2026-10-07T04:33:23.0396138Z   ✓  14 [chromium] › tests/weaveos/field-basics.spec.ts:21:1 › readonly fields cannot emit edits, including Boolean pointer and keyboard (1.8s)
+2026-10-07T04:33:24.2632286Z   ✓  15 [chromium] › tests/weaveos/field-basics.spec.ts:28:1 › multiline text preserves Unicode newlines and intentional empty text (1.7s)
+2026-10-07T04:33:25.6626050Z   ✓  16 [chromium] › tests/weaveos/field-basics.spec.ts:33:1 › field errors are associated with inputs and settled controls remain accessible (2.6s)
+2026-10-07T04:33:29.2189311Z   ✓  17 [chromium] › tests/weaveos/filter-manager.spec.ts:4:1 › opens saved-filter management first, with only one preset applied (4.9s)
+2026-10-07T04:33:29.5360051Z   ✓  18 [chromium] › tests/weaveos/filter-manager.spec.ts:14:1 › constructs AND with an OR subgroup and persists exact conditions (3.8s)
+2026-10-07T04:33:32.6150615Z   ✓  19 [chromium] › tests/weaveos/filter-manager.spec.ts:27:1 › failed persistence retains editor and never reports saved (3.4s)
+2026-10-07T04:33:32.8600917Z   ✓  20 [chromium] › tests/weaveos/filter-manager.spec.ts:36:1 › dirty Escape asks before discarding and restores source focus (3.3s)
+2026-10-07T04:33:35.4378433Z   ✓  22 [chromium] › tests/weaveos/filter-manager.spec.ts:53:1 › applying a preset emits a page-one host query without client-side table filtering (2.6s)
+2026-10-07T04:33:36.4646062Z   ✓  21 [chromium] › tests/weaveos/filter-manager.spec.ts:44:1 › text comparisons exclude range operators and editor is accessible (3.8s)
+2026-10-07T04:33:38.7626724Z   ✓  23 [chromium] › tests/weaveos/filter-manager.spec.ts:59:1 › editing a saved preset preserves identity, saving alone does not apply (3.3s)
+2026-10-07T04:33:38.9897526Z   ✓  24 [chromium] › tests/weaveos/filter-manager.spec.ts:66:1 › deleting a preset requires confirmation and cancellation preserves it (2.5s)
+2026-10-07T04:33:42.8120708Z V042_OPENING_GEOMETRY {"count":23,"widths":[440,96.7559814453125,99.237060546875,103.7552490234375,161.6409912109375,211.47784423828125,259.2301025390625,381.14410400390625,427.49713134765625,439.5149230957031,440,440,440,440,440,440,440,440,440,440,440,440,440],"expanded":440}
+2026-10-07T04:33:42.9510273Z   ✓  25 [chromium] › tests/weaveos/origin-motion.spec.ts:3:1 › window geometry really travels from and returns toward the trigger (4.2s)
+2026-10-07T04:33:43.5498557Z   ✓  26 [chromium] › tests/weaveos/origin-motion.spec.ts:29:1 › successful save returns the window toward its source too (4.5s)
+2026-10-07T04:33:45.7945059Z   ✓  28 [chromium] › tests/weaveos/studio.spec.ts:6:1 › shell uses collapsible icon rail and edge-to-edge content card (2.0s)
+2026-10-07T04:33:47.5062948Z   ✓  27 [chromium] › tests/weaveos/preview.spec.ts:3:1 › capture component studio review images (4.5s)
+2026-10-07T04:33:48.4165176Z   ✓  29 [chromium] › tests/weaveos/studio.spec.ts:19:1 › source dialog has accessible title, focus isolation and restores origin (2.8s)
+2026-10-07T04:33:50.1204161Z   ✓  30 [chromium] › tests/weaveos/studio.spec.ts:34:1 › second source restores its own focus (2.6s)
+2026-10-07T04:33:53.4560520Z   ✓  31 [chromium] › tests/weaveos/studio.spec.ts:41:1 › close during opening and repeat never leaves an overlay or locked page (5.0s)
+2026-10-07T04:33:55.6890141Z   ✓  32 [chromium] › tests/weaveos/studio.spec.ts:49:1 › save feedback waits for result and errors retain editable input (5.5s)
+2026-10-07T04:33:56.3409109Z   ✓  33 [chromium] › tests/weaveos/studio.spec.ts:65:1 › nested select Escape dismisses only the list, then dialog (2.9s)
+2026-10-07T04:33:58.0954180Z   ✓  34 [chromium] › tests/weaveos/studio.spec.ts:74:1 › reduced motion preserves usable modal without scale displacement (2.4s)
+2026-10-07T04:33:59.3809378Z   ✓  35 [chromium] › tests/weaveos/studio.spec.ts:83:1 › mobile view fits viewport and dialog remains operable (3.0s)
+2026-10-07T04:33:59.6840115Z   ✓  36 [chromium] › tests/weaveos/studio.spec.ts:92:1 › theme controls, basic controls and component navigation work (1.6s)
+2026-10-07T04:34:02.3486296Z   ✓  37 [chromium] › tests/weaveos/studio.spec.ts:102:1 › studio and open modal have no serious accessibility violations (3.0s)
+2026-10-07T04:34:02.4472601Z 
+2026-10-07T04:34:02.4478096Z   37 passed (58.7s)
+2026-10-07T04:34:02.4908393Z ##[group]Run actions/upload-artifact@v4
+2026-10-07T04:34:02.4908704Z with:
+2026-10-07T04:34:02.4908925Z   name: weaveos-browser-evidence
+2026-10-07T04:34:02.4909191Z   path: test-results/
+2026-10-07T04:34:02.4909418Z   retention-days: 14
+2026-10-07T04:34:02.4909650Z   if-no-files-found: warn
+2026-10-07T04:34:02.4909886Z   compression-level: 6
+2026-10-07T04:34:02.4910105Z   overwrite: false
+2026-10-07T04:34:02.4910331Z   include-hidden-files: false
+2026-10-07T04:34:02.4910588Z ##[endgroup]
+2026-10-07T04:34:02.6549351Z (node:4216) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-10-07T04:34:02.6550184Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-10-07T04:34:02.6620628Z With the provided path, there will be 6 files uploaded
+2026-10-07T04:34:02.6627191Z Artifact name is valid!
+2026-10-07T04:34:02.6627979Z Root directory input is valid!
+2026-10-07T04:34:02.9227591Z Beginning upload of artifact content to blob storage
+2026-10-07T04:34:02.9973556Z (node:4216) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+2026-10-07T04:34:03.3273153Z Uploaded bytes 1238300
+2026-10-07T04:34:03.3685007Z Finished uploading artifact content to blob storage!
+2026-10-07T04:34:03.3686440Z SHA256 digest of uploaded artifact zip is 5f4718c79949354026072691d3413edbaef434fb52fd1edf39aca878b01cfad4
+2026-10-07T04:34:03.3687562Z Finalizing artifact upload
+2026-10-07T04:34:03.6127098Z Artifact weaveos-browser-evidence.zip successfully finalized. Artifact ID 11461720509
+2026-10-07T04:34:03.6129021Z Artifact weaveos-browser-evidence has been successfully uploaded! Final size is 1238300 bytes. Artifact ID is 11461720509
+2026-10-07T04:34:03.6134270Z Artifact download URL: https://github.com/Hubujiu/arca-ui/actions/runs/37571905995/artifacts/11461720509
+2026-10-07T04:34:03.6314960Z Post job cleanup.
+2026-10-07T04:34:03.7501086Z (node:4228) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-10-07T04:34:03.7502484Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-10-07T04:34:03.7505161Z Cache hit occurred on the primary key node-cache-Linux-x64-npm-e49477bd2ac87adee467bcfea498780880a69ec42aeb10ad505d060aeecf5f10, not saving cache.
+2026-10-07T04:34:03.7635966Z Post job cleanup.
+2026-10-07T04:34:03.8564499Z [command]/usr/bin/git version
+2026-10-07T04:34:03.8619351Z git version 2.55.0
+2026-10-07T04:34:03.8663748Z Temporarily overriding HOME='/home/runner/work/_temp/79801951-85b9-4f18-9708-e2a663277f27' before making global git config changes
+2026-10-07T04:34:03.8665734Z Adding repository directory to the temporary git global config as a safe directory
+2026-10-07T04:34:03.8669168Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/arca-ui/arca-ui
+2026-10-07T04:34:03.8720322Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-10-07T04:34:03.8769149Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-10-07T04:34:03.9092914Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-10-07T04:34:03.9145447Z http.https://github.com/.extraheader
+2026-10-07T04:34:03.9181736Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+2026-10-07T04:34:03.9215310Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-10-07T04:34:03.9471713Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-10-07T04:34:03.9509015Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-10-07T04:34:03.9897202Z Cleaning up orphan processes
+2026-10-07T04:34:04.0239203Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, actions/setup-node@v4, actions/upload-artifact@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
