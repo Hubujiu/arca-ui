@@ -14,3 +14,6 @@ export { FilterManager } from "./filter-manager"
 export type { FilterManagerProps } from "./filter-manager"
 export { validateFilter } from "./filter-model"
 export type { FilterField, FilterPreset, FilterGroup, FilterCondition, FilterOperator } from "./filter-model"
+
+export { Textarea, DecimalInput, NullableBooleanInput } from './field-controls'
+export type { FieldPresentation, DecimalInputProps, NullableBooleanInputProps } from './field-controls'
