@@ -20,3 +20,6 @@ export type { FieldPresentation, DecimalInputProps, NullableBooleanInputProps } 
 
 export {Tooltip,TooltipProvider,TooltipTrigger,TooltipContent,Progress,Skeleton} from './feedback'
 export type {ProgressProps} from './feedback'
+
+export {WorkspaceTabs} from './workspace-tabs'
+export type {WorkspaceTab,WorkspaceTabsProps} from './workspace-tabs'
