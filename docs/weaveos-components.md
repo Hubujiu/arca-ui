@@ -34,3 +34,6 @@ Current table/filter work supplements the previous13 spring-dialog/focus/navigat
 
 ## Field input contracts
 DecimalInput is controlled with value:string|null and onValueChange; it preserves decimal characters and trailing zeros without float conversion or client rounding. Clearing returns null; "0" remains string. NullableBooleanInput is controlled boolean|null with explicit unset/yes/no, and respects readOnly/disabled. Both accept label, hint, error, required, name and optional id with associated descriptions. Textarea forwards native textarea props with the fixed ReUI Base skin. Backend validation/precision/permissions remain the host responsibility. Field demo values are synthetic and not saved.
+
+## Hints and waiting
+Tooltip/TooltipTrigger/TooltipContent/TooltipProvider retain Base UI focus/hover/Escape and add project-owned role and shared describedby identity; content inherits WeaveTheme across Portal. Progress requires label and controlled finite value0..100 or null for indeterminate, and never simulates completion. Skeleton is decorative aria-hidden; host provides meaningful status. Reduced motion disables pulse/indeterminate movement. No backend task/progress API is implemented by these controls.
