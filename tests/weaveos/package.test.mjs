@@ -4,8 +4,8 @@ import fs from 'node:fs'
 import * as ui from '../../dist-library/index.js'
 const directory=new URL('../../dist-library/',import.meta.url)
 test('consumer artifact exports controls, theme and source-aware dialog',()=>{
- for(const name of ['Button','Input','Checkbox','Switch','Select','Badge','WeaveTheme','MorphDialog','MorphDialogTrigger','MorphDialogContent','MorphDialogTitle','MorphDialogDescription','MorphDialogClose','springs','originTransform']) assert.ok(ui[name],`missing public export ${name}`)
- assert.equal('Studio' in ui,false)
+ for(const name of ['Button','Input','Checkbox','Switch','Select','Badge','WeaveTheme','MorphDialog','MorphDialogTrigger','MorphDialogContent','MorphDialogTitle','MorphDialogDescription','MorphDialogClose','springs','originTransform','DataTable','Pagination','FilterManager','validateFilter']) assert.ok(ui[name],`missing public export ${name}`)
+ assert.equal('Studio' in ui,false);assert.equal('FilterManagerDemo' in ui,false);assert.equal('DataWorkspaceDemo' in ui,false)
 })
 test('package has typed exports, explicit React peers and safe unpublished metadata',()=>{
  const p=JSON.parse(fs.readFileSync(new URL('package.json',directory)))
@@ -19,7 +19,7 @@ test('artifact has no source aliases or demo app and CSS stays scoped',()=>{
  const js=fs.readFileSync(new URL('index.js',directory),'utf8')
  assert.ok(!js.includes('@/'));assert.ok(!js.includes('createRoot('));assert.ok(!js.includes('模拟保存失败'))
  const css=fs.existsSync(new URL('styles.css',directory))?fs.readFileSync(new URL('styles.css',directory),'utf8'):''
- assert.ok(css.includes('.wo-theme'));assert.ok(css.includes('.wo-dialog'));assert.ok(!/(^|})\s*body\s*\{/.test(css));assert.ok(!css.includes('@import "tailwindcss"'))
+ assert.ok(css.includes('.wo-table'));assert.ok(css.includes('.wo-pagination'));assert.ok(css.includes('.wo-filter'));assert.ok(css.includes('.wo-theme'));assert.ok(css.includes('.wo-dialog'));assert.ok(!/(^|})\s*body\s*\{/.test(css));assert.ok(!css.includes('@import "tailwindcss"'))
 })
 test('distributed license and source attribution accompany components',()=>{
  for(const name of ['REUI-LICENSE.txt','THIRD-PARTY.md'])assert.ok(fs.existsSync(new URL(name,directory)),`missing ${name}`)

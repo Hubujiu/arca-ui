@@ -51,5 +51,5 @@ test('only current page selection is controlled and filtering does not happen lo
 test('table workspace passes settled accessibility and captures actual desktop UI',async({page})=>{
  await expect(page.getByRole('table',{name:'报销记录'})).toBeVisible()
  const scan=await new AxeBuilder({page}).include('[data-testid="workspace-card"]').analyze();expect(scan.violations).toEqual([])
- await page.screenshot({path:'test-results/weaveos-data-workspace.png',fullPage:true})
+ await page.screenshot({path:'test-results/weaveos-data-workspace.png',fullPage:false})
 })
