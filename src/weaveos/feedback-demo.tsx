@@ -1,1 +1,5 @@
-export function FeedbackDemo(){return <section aria-label="提示与等待状态" data-testid="feedback-demo"/>}
+import{useState}from'react'
+import{Info}from'lucide-react'
+import{Checkbox}from'./primitives'
+import{Tooltip,TooltipTrigger,TooltipContent,TooltipProvider,Progress,Skeleton}from'./feedback'
+export function FeedbackDemo(){const[unknown,setUnknown]=useState(false);return <section aria-label="提示与等待状态" data-testid="feedback-demo" className="wo-feedback-demo"><header><h2>提示与等待</h2><TooltipProvider><Tooltip><TooltipTrigger className="wo-icon-button" aria-label="字段说明"><Info size={17}/></TooltipTrigger><TooltipContent>仅说明字段用途，不改变权限</TooltipContent></Tooltip></TooltipProvider></header><div className="wo-feedback-grid"><div><Progress label="处理进度" value={unknown?null:32}/><div className="wo-feedback-status"><span role="status" aria-label="处理状态">正在处理</span><Checkbox label="未知进度" checked={unknown} onCheckedChange={setUnknown}/></div></div><div className="wo-feedback-skeletons"><Skeleton data-testid="loading-skeleton" style={{width:38,height:38,borderRadius:10}}/><div><Skeleton style={{width:'72%',height:10}}/><Skeleton style={{width:'45%',height:8,marginTop:11}}/></div></div></div></section>}
