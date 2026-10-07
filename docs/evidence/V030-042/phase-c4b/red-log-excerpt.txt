@@ -1,0 +1,795 @@
+﻿2026-10-07T08:38:33.5424560Z Current runner version: '2.337.0'
+2026-10-07T08:38:33.5451138Z ##[group]Runner Image Provisioner
+2026-10-07T08:38:33.5452146Z Hosted Compute Agent
+2026-10-07T08:38:33.5452768Z Version: 20260901.588
+2026-10-07T08:38:33.5453452Z Commit: f88ec8081b781fac6c440065ac7ff9e710ce3d0b
+2026-10-07T08:38:33.5454514Z Build Date: 2026-09-01T19:56:44Z
+2026-10-07T08:38:33.5455200Z Worker ID: {454229f0-8dde-44eb-9239-03fcf6cc1672}
+2026-10-07T08:38:33.5455905Z Azure Region: westus2
+2026-10-07T08:38:33.5456549Z ##[endgroup]
+2026-10-07T08:38:33.5458260Z ##[group]Operating System
+2026-10-07T08:38:33.5459009Z Ubuntu
+2026-10-07T08:38:33.5459534Z 24.04.5
+2026-10-07T08:38:33.5460036Z LTS
+2026-10-07T08:38:33.5460621Z ##[endgroup]
+2026-10-07T08:38:33.5461213Z ##[group]Runner Image
+2026-10-07T08:38:33.5461849Z Image: ubuntu-24.04
+2026-10-07T08:38:33.5462440Z Version: 20260927.320.1
+2026-10-07T08:38:33.5463773Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20260927.320/images/ubuntu/Ubuntu2404-Readme.md
+2026-10-07T08:38:33.5465624Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20260927.320
+2026-10-07T08:38:33.5466987Z ##[endgroup]
+2026-10-07T08:38:33.5468157Z ##[group]GITHUB_TOKEN Permissions
+2026-10-07T08:38:33.5470361Z Contents: read
+2026-10-07T08:38:33.5471024Z Metadata: read
+2026-10-07T08:38:33.5471587Z ##[endgroup]
+2026-10-07T08:38:33.5474046Z Secret source: Actions
+2026-10-07T08:38:33.5475024Z Cache mode: write
+2026-10-07T08:38:33.5475814Z Prepare workflow directory
+2026-10-07T08:38:33.5821768Z Prepare all required actions
+2026-10-07T08:38:33.5872931Z Getting action download info
+2026-10-07T08:38:33.9516237Z Download action repository 'actions/checkout@v4' (SHA:11d5960a326750d5838078e36cf38b85af677262)
+2026-10-07T08:38:34.0744426Z Download action repository 'actions/setup-node@v4' (SHA:49933ea5288caeca8642d1e84afbd3f7d6820020)
+2026-10-07T08:38:34.1616576Z Download action repository 'actions/upload-artifact@v4' (SHA:ea165f8d65b6e75b540449e92b4886f43607fa02)
+2026-10-07T08:38:34.3767071Z Complete job name: browser
+2026-10-07T08:38:34.4588122Z ##[group]Run actions/checkout@v4
+2026-10-07T08:38:34.4589001Z with:
+2026-10-07T08:38:34.4589448Z   repository: Hubujiu/arca-ui
+2026-10-07T08:38:34.4593066Z   token: ***
+2026-10-07T08:38:34.4593495Z   ssh-strict: true
+2026-10-07T08:38:34.4594198Z   ssh-user: git
+2026-10-07T08:38:34.4594657Z   persist-credentials: true
+2026-10-07T08:38:34.4595140Z   clean: true
+2026-10-07T08:38:34.4595581Z   sparse-checkout-cone-mode: true
+2026-10-07T08:38:34.4596095Z   fetch-depth: 1
+2026-10-07T08:38:34.4596517Z   fetch-tags: false
+2026-10-07T08:38:34.4596964Z   show-progress: true
+2026-10-07T08:38:34.4597413Z   lfs: false
+2026-10-07T08:38:34.4597825Z   submodules: false
+2026-10-07T08:38:34.4598268Z   set-safe-directory: true
+2026-10-07T08:38:34.4598777Z   allow-unsafe-pr-checkout: false
+2026-10-07T08:38:34.4599570Z ##[endgroup]
+2026-10-07T08:38:34.5765516Z Syncing repository: Hubujiu/arca-ui
+2026-10-07T08:38:34.5768404Z ##[group]Getting Git version info
+2026-10-07T08:38:34.5769754Z Working directory is '/home/runner/work/arca-ui/arca-ui'
+2026-10-07T08:38:34.5771463Z [command]/usr/bin/git version
+2026-10-07T08:38:34.5860707Z git version 2.55.0
+2026-10-07T08:38:34.5887855Z ##[endgroup]
+2026-10-07T08:38:34.5904179Z Temporarily overriding HOME='/home/runner/work/_temp/5b24e0aa-4e7b-4df0-a757-0b235729b9dd' before making global git config changes
+2026-10-07T08:38:34.5906492Z Adding repository directory to the temporary git global config as a safe directory
+2026-10-07T08:38:34.5909889Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/arca-ui/arca-ui
+2026-10-07T08:38:34.5968954Z Deleting the contents of '/home/runner/work/arca-ui/arca-ui'
+2026-10-07T08:38:34.5975743Z ##[group]Initializing the repository
+2026-10-07T08:38:34.5982389Z [command]/usr/bin/git init /home/runner/work/arca-ui/arca-ui
+2026-10-07T08:38:34.6124863Z hint: Using 'master' as the name for the initial branch. This default branch name
+2026-10-07T08:38:34.6127288Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+2026-10-07T08:38:34.6129551Z hint: to use in all of your new repositories, which will suppress this warning,
+2026-10-07T08:38:34.6131313Z hint: call:
+2026-10-07T08:38:34.6132615Z hint:
+2026-10-07T08:38:34.6134076Z hint: 	git config --global init.defaultBranch <name>
+2026-10-07T08:38:34.6135602Z hint:
+2026-10-07T08:38:34.6136963Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2026-10-07T08:38:34.6138832Z hint: 'development'. The just-created branch can be renamed via this command:
+2026-10-07T08:38:34.6140251Z hint:
+2026-10-07T08:38:34.6141139Z hint: 	git branch -m <name>
+2026-10-07T08:38:34.6142541Z hint:
+2026-10-07T08:38:34.6144189Z hint: Disable this message with "git config set advice.defaultBranchName false"
+2026-10-07T08:38:34.6146608Z Initialized empty Git repository in /home/runner/work/arca-ui/arca-ui/.git/
+2026-10-07T08:38:34.6150064Z [command]/usr/bin/git remote add origin https://github.com/Hubujiu/arca-ui
+2026-10-07T08:38:34.6234613Z ##[endgroup]
+2026-10-07T08:38:34.6236288Z ##[group]Disabling automatic garbage collection
+2026-10-07T08:38:34.6239755Z [command]/usr/bin/git config --local gc.auto 0
+2026-10-07T08:38:34.6284849Z ##[endgroup]
+2026-10-07T08:38:34.6286589Z ##[group]Setting up auth
+2026-10-07T08:38:34.6294112Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-10-07T08:38:34.6334542Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-10-07T08:38:34.6825313Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-10-07T08:38:34.6880069Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-10-07T08:38:34.7116207Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-10-07T08:38:34.7155016Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-10-07T08:38:34.7392558Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2026-10-07T08:38:34.7436592Z ##[endgroup]
+2026-10-07T08:38:34.7437432Z ##[group]Fetching the repository
+2026-10-07T08:38:34.7447159Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +122e386f2f1644afedae0941a13f42c81daff0ab:refs/remotes/origin/task/V030-042-weaveos-components
+2026-10-07T08:38:35.4217361Z From https://github.com/Hubujiu/arca-ui
+2026-10-07T08:38:35.4220646Z  * [new ref]         122e386f2f1644afedae0941a13f42c81daff0ab -> origin/task/V030-042-weaveos-components
+2026-10-07T08:38:35.4227440Z ##[endgroup]
+2026-10-07T08:38:35.4229489Z ##[group]Determining the checkout info
+2026-10-07T08:38:35.4231660Z ##[endgroup]
+2026-10-07T08:38:35.4233257Z [command]/usr/bin/git sparse-checkout disable
+2026-10-07T08:38:35.4287675Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+2026-10-07T08:38:35.4323653Z ##[group]Checking out the ref
+2026-10-07T08:38:35.4330650Z [command]/usr/bin/git checkout --progress --force -B task/V030-042-weaveos-components refs/remotes/origin/task/V030-042-weaveos-components
+2026-10-07T08:38:35.5090402Z Switched to a new branch 'task/V030-042-weaveos-components'
+2026-10-07T08:38:35.5097688Z branch 'task/V030-042-weaveos-components' set up to track 'origin/task/V030-042-weaveos-components'.
+2026-10-07T08:38:35.5105624Z ##[endgroup]
+2026-10-07T08:38:35.5154640Z [command]/usr/bin/git log -1 --format=%H
+2026-10-07T08:38:35.5182521Z 122e386f2f1644afedae0941a13f42c81daff0ab
+2026-10-07T08:38:35.5648759Z ##[group]Run actions/setup-node@v4
+2026-10-07T08:38:35.5650044Z with:
+2026-10-07T08:38:35.5650942Z   node-version: 24.19.0
+2026-10-07T08:38:35.5651975Z   cache: npm
+2026-10-07T08:38:35.5653111Z   always-auth: false
+2026-10-07T08:38:35.5654322Z   check-latest: false
+2026-10-07T08:38:35.5664256Z   token: ***
+2026-10-07T08:38:35.5665254Z ##[endgroup]
+2026-10-07T08:38:35.7088371Z Attempting to download 24.19.0...
+2026-10-07T08:38:35.7196458Z (node:2331) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-10-07T08:38:35.7199579Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-10-07T08:38:36.3192294Z Acquiring 24.19.0 - x64 from https://github.com/actions/node-versions/releases/download/24.19.0-30872449280/node-24.19.0-linux-x64.tar.gz
+2026-10-07T08:38:36.8056917Z Extracting ...
+2026-10-07T08:38:36.8194629Z [command]/usr/bin/tar xz --strip 1 --warning=no-unknown-keyword --overwrite -C /home/runner/work/_temp/df7b5057-728a-40c5-a662-e67cbd7c125b -f /home/runner/work/_temp/4bd7919d-a86e-4eff-879b-49f9fe8fa81a
+2026-10-07T08:38:38.0562035Z Adding to the cache ...
+2026-10-07T08:38:40.0397145Z ##[group]Environment details
+2026-10-07T08:38:40.2735844Z node: v24.19.0
+2026-10-07T08:38:40.2736334Z npm: 11.17.0
+2026-10-07T08:38:40.2736731Z yarn: 1.22.22
+2026-10-07T08:38:40.2737585Z ##[endgroup]
+2026-10-07T08:38:40.2757884Z [command]/opt/hostedtoolcache/node/24.19.0/x64/bin/npm config get cache
+2026-10-07T08:38:40.3759336Z /home/runner/.npm
+2026-10-07T08:38:40.6400005Z Cache hit for: node-cache-Linux-x64-npm-e49477bd2ac87adee467bcfea498780880a69ec42aeb10ad505d060aeecf5f10
+2026-10-07T08:38:40.6513107Z (node:2331) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+2026-10-07T08:38:41.9112992Z Received 4194304 of 123576884 (3.4%), 4.0 MBs/sec
+2026-10-07T08:38:42.8029664Z Received 123576884 of 123576884 (100.0%), 62.3 MBs/sec
+2026-10-07T08:38:42.8035279Z Cache Size: ~118 MB (123576884 B)
+2026-10-07T08:38:42.8156050Z [command]/usr/bin/tar -xf /home/runner/work/_temp/afeb75c3-b4e2-47eb-a787-c17e481be192/cache.tzst -P -C /home/runner/work/arca-ui/arca-ui --use-compress-program unzstd
+2026-10-07T08:38:43.0918443Z Cache restored successfully
+2026-10-07T08:38:43.0994614Z Cache restored from key: node-cache-Linux-x64-npm-e49477bd2ac87adee467bcfea498780880a69ec42aeb10ad505d060aeecf5f10
+2026-10-07T08:38:43.1236591Z ##[group]Run npm ci --ignore-scripts
+2026-10-07T08:38:43.1237075Z [36;1mnpm ci --ignore-scripts[0m
+2026-10-07T08:38:43.1606801Z shell: /usr/bin/bash -e {0}
+2026-10-07T08:38:43.1607134Z ##[endgroup]
+2026-10-07T08:38:57.6242563Z 
+2026-10-07T08:38:57.6252253Z added 517 packages, and audited 518 packages in 14s
+2026-10-07T08:38:57.6252766Z 
+2026-10-07T08:38:57.6253084Z 163 packages are looking for funding
+2026-10-07T08:38:57.6253632Z   run `npm fund` for details
+2026-10-07T08:38:57.6316624Z 
+2026-10-07T08:38:57.6317138Z 8 high severity vulnerabilities
+2026-10-07T08:38:57.6317528Z 
+2026-10-07T08:38:57.6317792Z To address issues that do not require attention, run:
+2026-10-07T08:38:57.6318206Z   npm audit fix
+2026-10-07T08:38:57.6318346Z 
+2026-10-07T08:38:57.6318621Z To address all issues (including breaking changes), run:
+2026-10-07T08:38:57.6319004Z   npm audit fix --force
+2026-10-07T08:38:57.6319174Z 
+2026-10-07T08:38:57.6319310Z Run `npm audit` for details.
+2026-10-07T08:38:57.7380164Z ##[group]Run npx playwright install --with-deps chromium
+2026-10-07T08:38:57.7380649Z [36;1mnpx playwright install --with-deps chromium[0m
+2026-10-07T08:38:57.7446759Z shell: /usr/bin/bash -e {0}
+2026-10-07T08:38:57.7447071Z ##[endgroup]
+2026-10-07T08:38:58.4884834Z Installing dependencies...
+2026-10-07T08:38:58.4966942Z Switching to root user to install dependencies...
+2026-10-07T08:38:58.5846012Z Get:1 file:/etc/apt/apt-mirrors.txt Mirrorlist [144 B]
+2026-10-07T08:38:58.6095531Z Hit:2 http://azure.archive.ubuntu.com/ubuntu noble InRelease
+2026-10-07T08:38:58.6139784Z Get:3 http://azure.archive.ubuntu.com/ubuntu noble-updates InRelease [126 kB]
+2026-10-07T08:38:58.6179334Z Get:4 http://azure.archive.ubuntu.com/ubuntu noble-backports InRelease [126 kB]
+2026-10-07T08:38:58.6211750Z Get:5 http://azure.archive.ubuntu.com/ubuntu noble-security InRelease [126 kB]
+2026-10-07T08:38:58.6289631Z Get:6 https://packages.microsoft.com/ubuntu/24.04/prod noble InRelease [3600 B]
+2026-10-07T08:38:58.7356288Z Get:7 http://azure.archive.ubuntu.com/ubuntu noble-updates/main amd64 Packages [1375 kB]
+2026-10-07T08:38:58.7491320Z Get:8 http://azure.archive.ubuntu.com/ubuntu noble-updates/main Translation-en [306 kB]
+2026-10-07T08:38:58.7512160Z Get:9 http://azure.archive.ubuntu.com/ubuntu noble-updates/main amd64 Components [181 kB]
+2026-10-07T08:38:58.7535233Z Get:10 http://azure.archive.ubuntu.com/ubuntu noble-updates/universe amd64 Packages [1701 kB]
+2026-10-07T08:38:58.7638477Z Get:11 http://azure.archive.ubuntu.com/ubuntu noble-updates/universe Translation-en [341 kB]
+2026-10-07T08:38:58.7645204Z Get:12 http://azure.archive.ubuntu.com/ubuntu noble-updates/universe amd64 Components [388 kB]
+2026-10-07T08:38:58.7678420Z Get:13 http://azure.archive.ubuntu.com/ubuntu noble-updates/restricted amd64 Packages [1730 kB]
+2026-10-07T08:38:58.7791421Z Get:14 http://azure.archive.ubuntu.com/ubuntu noble-updates/restricted Translation-en [396 kB]
+2026-10-07T08:38:58.7818896Z Get:15 http://azure.archive.ubuntu.com/ubuntu noble-updates/multiverse Translation-en [13.3 kB]
+2026-10-07T08:38:58.7824375Z Get:16 http://azure.archive.ubuntu.com/ubuntu noble-updates/multiverse amd64 Components [940 B]
+2026-10-07T08:38:58.8415229Z Get:17 http://azure.archive.ubuntu.com/ubuntu noble-backports/main amd64 Components [5752 B]
+2026-10-07T08:38:58.8416345Z Get:18 http://azure.archive.ubuntu.com/ubuntu noble-backports/universe amd64 Components [12.6 kB]
+2026-10-07T08:38:58.8476029Z Get:19 http://azure.archive.ubuntu.com/ubuntu noble-security/main amd64 Packages [1073 kB]
+2026-10-07T08:38:58.8552428Z Get:20 http://azure.archive.ubuntu.com/ubuntu noble-security/main Translation-en [223 kB]
+2026-10-07T08:38:58.8575064Z Get:21 http://azure.archive.ubuntu.com/ubuntu noble-security/main amd64 Components [46.4 kB]
+2026-10-07T08:38:58.8576528Z Get:22 http://azure.archive.ubuntu.com/ubuntu noble-security/universe amd64 Packages [1218 kB]
+2026-10-07T08:38:58.8646576Z Get:23 http://azure.archive.ubuntu.com/ubuntu noble-security/universe Translation-en [245 kB]
+2026-10-07T08:38:58.8675157Z Get:24 http://azure.archive.ubuntu.com/ubuntu noble-security/universe amd64 Components [76.3 kB]
+2026-10-07T08:38:58.8695145Z Get:25 http://azure.archive.ubuntu.com/ubuntu noble-security/restricted amd64 Packages [1566 kB]
+2026-10-07T08:38:58.8775631Z Get:26 http://azure.archive.ubuntu.com/ubuntu noble-security/restricted Translation-en [361 kB]
+2026-10-07T08:38:58.8804997Z Get:27 http://azure.archive.ubuntu.com/ubuntu noble-security/multiverse Translation-en [11.6 kB]
+2026-10-07T08:38:58.9023206Z Get:28 https://packages.microsoft.com/ubuntu/24.04/prod noble/main arm64 Packages [463 kB]
+2026-10-07T08:38:58.9115414Z Get:29 https://packages.microsoft.com/ubuntu/24.04/prod noble/main amd64 Packages [519 kB]
+2026-10-07T08:38:58.9178224Z Get:30 https://packages.microsoft.com/ubuntu/24.04/prod noble/main armhf Packages [12.6 kB]
+2026-10-07T08:39:03.2168873Z Fetched 12.6 MB in 1s (9580 kB/s)
+2026-10-07T08:39:04.0338421Z Reading package lists...
+2026-10-07T08:39:04.0582256Z Reading package lists...
+2026-10-07T08:39:04.2320873Z Building dependency tree...
+2026-10-07T08:39:04.2328231Z Reading state information...
+2026-10-07T08:39:04.3665758Z libasound2t64 is already the newest version (1.2.11-1ubuntu0.3).
+2026-10-07T08:39:04.3666790Z libasound2t64 set to manually installed.
+2026-10-07T08:39:04.3667835Z libatk-bridge2.0-0t64 is already the newest version (2.52.0-1build1).
+2026-10-07T08:39:04.3668801Z libatk-bridge2.0-0t64 set to manually installed.
+2026-10-07T08:39:04.3669738Z libatk1.0-0t64 is already the newest version (2.52.0-1build1).
+2026-10-07T08:39:04.3670582Z libatk1.0-0t64 set to manually installed.
+2026-10-07T08:39:04.3671462Z libatspi2.0-0t64 is already the newest version (2.52.0-1build1).
+2026-10-07T08:39:04.3672997Z libatspi2.0-0t64 set to manually installed.
+2026-10-07T08:39:04.3674229Z libcairo2 is already the newest version (1.18.0-3build1).
+2026-10-07T08:39:04.3675128Z libcairo2 set to manually installed.
+2026-10-07T08:39:04.3676095Z libcups2t64 is already the newest version (2.4.7-1.2ubuntu7.14).
+2026-10-07T08:39:04.3676881Z libcups2t64 set to manually installed.
+2026-10-07T08:39:04.3677465Z libdbus-1-3 is already the newest version (1.14.10-4ubuntu4.1).
+2026-10-07T08:39:04.3678256Z libdbus-1-3 set to manually installed.
+2026-10-07T08:39:04.3679070Z libdrm2 is already the newest version (2.4.125-1ubuntu0.1~24.04.2).
+2026-10-07T08:39:04.3679864Z libdrm2 set to manually installed.
+2026-10-07T08:39:04.3680650Z libglib2.0-0t64 is already the newest version (2.80.0-6ubuntu3.9).
+2026-10-07T08:39:04.3681447Z libglib2.0-0t64 set to manually installed.
+2026-10-07T08:39:04.3682071Z libnspr4 is already the newest version (2:4.35-1.1build1).
+2026-10-07T08:39:04.3682574Z libnspr4 set to manually installed.
+2026-10-07T08:39:04.3683059Z libnss3 is already the newest version (2:3.98-1ubuntu0.2).
+2026-10-07T08:39:04.3683524Z libnss3 set to manually installed.
+2026-10-07T08:39:04.3684261Z libpango-1.0-0 is already the newest version (1.52.1+ds-1build1).
+2026-10-07T08:39:04.3684789Z libpango-1.0-0 set to manually installed.
+2026-10-07T08:39:04.3685760Z libx11-6 is already the newest version (2:1.8.7-1build1).
+2026-10-07T08:39:04.3686587Z libx11-6 set to manually installed.
+2026-10-07T08:39:04.3687398Z libxcb1 is already the newest version (1.15-1ubuntu2).
+2026-10-07T08:39:04.3688111Z libxcb1 set to manually installed.
+2026-10-07T08:39:04.3689088Z libxcomposite1 is already the newest version (1:0.4.5-1build3).
+2026-10-07T08:39:04.3689908Z libxcomposite1 set to manually installed.
+2026-10-07T08:39:04.3690743Z libxdamage1 is already the newest version (1:1.1.6-1build1).
+2026-10-07T08:39:04.3691696Z libxdamage1 set to manually installed.
+2026-10-07T08:39:04.3692466Z libxext6 is already the newest version (2:1.3.4-1build2).
+2026-10-07T08:39:04.3693177Z libxext6 set to manually installed.
+2026-10-07T08:39:04.3694152Z libxfixes3 is already the newest version (1:6.0.0-2build1).
+2026-10-07T08:39:04.3694869Z libxfixes3 set to manually installed.
+2026-10-07T08:39:04.3695618Z libxkbcommon0 is already the newest version (1.6.0-1build1).
+2026-10-07T08:39:04.3696523Z libxkbcommon0 set to manually installed.
+2026-10-07T08:39:04.3697313Z libxrandr2 is already the newest version (2:1.5.2-2build1).
+2026-10-07T08:39:04.3698023Z libxrandr2 set to manually installed.
+2026-10-07T08:39:04.3698735Z xvfb is already the newest version (2:21.1.12-1ubuntu1.8).
+2026-10-07T08:39:04.3699740Z fonts-noto-color-emoji is already the newest version (2.047-0ubuntu0.24.04.1).
+2026-10-07T08:39:04.3700783Z libfontconfig1 is already the newest version (2.15.0-1.1ubuntu2).
+2026-10-07T08:39:04.3701746Z libfontconfig1 set to manually installed.
+2026-10-07T08:39:04.3702529Z fonts-liberation is already the newest version (1:2.1.5-3).
+2026-10-07T08:39:04.3703294Z fonts-liberation set to manually installed.
+2026-10-07T08:39:04.3704285Z The following additional packages will be installed:
+2026-10-07T08:39:04.3705262Z   libgl1-mesa-dri libglx-mesa0 mesa-libgallium xfonts-encodings xfonts-utils
+2026-10-07T08:39:04.3706372Z Recommended packages:
+2026-10-07T08:39:04.3706948Z   fonts-ipafont-mincho fonts-tlwg-loma
+2026-10-07T08:39:04.3894945Z The following NEW packages will be installed:
+2026-10-07T08:39:04.3895851Z   fonts-freefont-ttf fonts-ipafont-gothic fonts-tlwg-loma-otf fonts-unifont
+2026-10-07T08:39:04.3900344Z   fonts-wqy-zenhei xfonts-cyrillic xfonts-encodings xfonts-scalable
+2026-10-07T08:39:04.3901016Z   xfonts-utils
+2026-10-07T08:39:04.3904185Z The following packages will be upgraded:
+2026-10-07T08:39:04.3908674Z   libfreetype6 libgbm1 libgl1-mesa-dri libglx-mesa0 mesa-libgallium
+2026-10-07T08:39:04.4071085Z 5 upgraded, 9 newly installed, 0 to remove and 24 not upgraded.
+2026-10-07T08:39:04.4071874Z Need to get 32.5 MB of archives.
+2026-10-07T08:39:04.4072990Z After this operation, 79.5 MB of additional disk space will be used.
+2026-10-07T08:39:04.4074055Z Get:1 file:/etc/apt/apt-mirrors.txt Mirrorlist [144 B]
+2026-10-07T08:39:04.4938944Z Get:2 http://azure.archive.ubuntu.com/ubuntu noble/universe amd64 fonts-ipafont-gothic all 00303-21ubuntu1 [3513 kB]
+2026-10-07T08:39:04.6380418Z Get:3 http://azure.archive.ubuntu.com/ubuntu noble/main amd64 fonts-freefont-ttf all 20211204+svn4273-2 [5641 kB]
+2026-10-07T08:39:04.8365391Z Get:4 http://azure.archive.ubuntu.com/ubuntu noble/universe amd64 fonts-tlwg-loma-otf all 1:0.7.3-1 [107 kB]
+2026-10-07T08:39:04.9084890Z Get:5 http://azure.archive.ubuntu.com/ubuntu noble/universe amd64 fonts-unifont all 1:15.1.01-1build1 [2993 kB]
+2026-10-07T08:39:05.0458324Z Get:6 http://azure.archive.ubuntu.com/ubuntu noble/universe amd64 fonts-wqy-zenhei all 0.9.45-8 [7472 kB]
+2026-10-07T08:39:05.2853534Z Get:7 http://azure.archive.ubuntu.com/ubuntu noble-updates/main amd64 libfreetype6 amd64 2.13.2+dfsg-1ubuntu0.2 [403 kB]
+2026-10-07T08:39:05.3642408Z Get:8 http://azure.archive.ubuntu.com/ubuntu noble-updates/main amd64 libgl1-mesa-dri amd64 25.2.8-0ubuntu0.24.04.4 [38.0 kB]
+2026-10-07T08:39:05.4364242Z Get:9 http://azure.archive.ubuntu.com/ubuntu noble-updates/main amd64 libglx-mesa0 amd64 25.2.8-0ubuntu0.24.04.4 [110 kB]
+2026-10-07T08:39:05.5086730Z Get:10 http://azure.archive.ubuntu.com/ubuntu noble-updates/main amd64 libgbm1 amd64 25.2.8-0ubuntu0.24.04.4 [34.2 kB]
+2026-10-07T08:39:05.5798438Z Get:11 http://azure.archive.ubuntu.com/ubuntu noble-updates/main amd64 mesa-libgallium amd64 25.2.8-0ubuntu0.24.04.4 [10.8 MB]
+2026-10-07T08:39:05.8926404Z Get:12 http://azure.archive.ubuntu.com/ubuntu noble/main amd64 xfonts-encodings all 1:1.0.5-0ubuntu2 [578 kB]
+2026-10-07T08:39:05.9752777Z Get:13 http://azure.archive.ubuntu.com/ubuntu noble/main amd64 xfonts-utils amd64 1:7.7+6build3 [94.4 kB]
+2026-10-07T08:39:06.0475877Z Get:14 http://azure.archive.ubuntu.com/ubuntu noble/universe amd64 xfonts-cyrillic all 1:1.0.5+nmu1 [384 kB]
+2026-10-07T08:39:06.1255782Z Get:15 http://azure.archive.ubuntu.com/ubuntu noble/main amd64 xfonts-scalable all 1:1.0.3-1.3 [304 kB]
+2026-10-07T08:39:06.3906707Z Fetched 32.5 MB in 2s (18.7 MB/s)
+2026-10-07T08:39:06.4153422Z Selecting previously unselected package fonts-ipafont-gothic.
+2026-10-07T08:39:06.4498699Z (Reading database ... 
+2026-10-07T08:39:06.4499200Z (Reading database ... 5%
+2026-10-07T08:39:06.4499531Z (Reading database ... 10%
+2026-10-07T08:39:06.4499850Z (Reading database ... 15%
+2026-10-07T08:39:06.4500152Z (Reading database ... 20%
+2026-10-07T08:39:06.4500451Z (Reading database ... 25%
+2026-10-07T08:39:06.4500749Z (Reading database ... 30%
+2026-10-07T08:39:06.4501054Z (Reading database ... 35%
+2026-10-07T08:39:06.4501358Z (Reading database ... 40%
+2026-10-07T08:39:06.4501656Z (Reading database ... 45%
+2026-10-07T08:39:06.4501957Z (Reading database ... 50%
+2026-10-07T08:39:06.4556455Z (Reading database ... 55%
+2026-10-07T08:39:06.5611151Z (Reading database ... 60%
+2026-10-07T08:39:06.7675689Z (Reading database ... 65%
+2026-10-07T08:39:06.9730940Z (Reading database ... 70%
+2026-10-07T08:39:07.3154543Z (Reading database ... 75%
+2026-10-07T08:39:07.5313714Z (Reading database ... 80%
+2026-10-07T08:39:07.7164595Z (Reading database ... 85%
+2026-10-07T08:39:07.9304152Z (Reading database ... 90%
+2026-10-07T08:39:08.0743090Z (Reading database ... 95%
+2026-10-07T08:39:08.0743495Z (Reading database ... 100%
+2026-10-07T08:39:08.0744433Z (Reading database ... 202296 files and directories currently installed.)
+2026-10-07T08:39:08.0806873Z Preparing to unpack .../00-fonts-ipafont-gothic_00303-21ubuntu1_all.deb ...
+2026-10-07T08:39:08.1297300Z Unpacking fonts-ipafont-gothic (00303-21ubuntu1) ...
+2026-10-07T08:39:08.4222970Z Selecting previously unselected package fonts-freefont-ttf.
+2026-10-07T08:39:08.4382578Z Preparing to unpack .../01-fonts-freefont-ttf_20211204+svn4273-2_all.deb ...
+2026-10-07T08:39:08.4395383Z Unpacking fonts-freefont-ttf (20211204+svn4273-2) ...
+2026-10-07T08:39:08.5898612Z Selecting previously unselected package fonts-tlwg-loma-otf.
+2026-10-07T08:39:08.6034137Z Preparing to unpack .../02-fonts-tlwg-loma-otf_1%3a0.7.3-1_all.deb ...
+2026-10-07T08:39:08.6113578Z Unpacking fonts-tlwg-loma-otf (1:0.7.3-1) ...
+2026-10-07T08:39:08.6368633Z Selecting previously unselected package fonts-unifont.
+2026-10-07T08:39:08.6502879Z Preparing to unpack .../03-fonts-unifont_1%3a15.1.01-1build1_all.deb ...
+2026-10-07T08:39:08.6512868Z Unpacking fonts-unifont (1:15.1.01-1build1) ...
+2026-10-07T08:39:08.8202863Z Selecting previously unselected package fonts-wqy-zenhei.
+2026-10-07T08:39:08.8349878Z Preparing to unpack .../04-fonts-wqy-zenhei_0.9.45-8_all.deb ...
+2026-10-07T08:39:08.8751094Z Unpacking fonts-wqy-zenhei (0.9.45-8) ...
+2026-10-07T08:39:09.6459891Z Preparing to unpack .../05-libfreetype6_2.13.2+dfsg-1ubuntu0.2_amd64.deb ...
+2026-10-07T08:39:09.6492109Z Unpacking libfreetype6:amd64 (2.13.2+dfsg-1ubuntu0.2) over (2.13.2+dfsg-1ubuntu0.1) ...
+2026-10-07T08:39:09.6868912Z Preparing to unpack .../06-libgl1-mesa-dri_25.2.8-0ubuntu0.24.04.4_amd64.deb ...
+2026-10-07T08:39:09.7008074Z Unpacking libgl1-mesa-dri:amd64 (25.2.8-0ubuntu0.24.04.4) over (25.2.8-0ubuntu0.24.04.2) ...
+2026-10-07T08:39:09.7495174Z Preparing to unpack .../07-libglx-mesa0_25.2.8-0ubuntu0.24.04.4_amd64.deb ...
+2026-10-07T08:39:09.7515203Z Unpacking libglx-mesa0:amd64 (25.2.8-0ubuntu0.24.04.4) over (25.2.8-0ubuntu0.24.04.2) ...
+2026-10-07T08:39:09.7858680Z Preparing to unpack .../08-libgbm1_25.2.8-0ubuntu0.24.04.4_amd64.deb ...
+2026-10-07T08:39:09.7879036Z Unpacking libgbm1:amd64 (25.2.8-0ubuntu0.24.04.4) over (25.2.8-0ubuntu0.24.04.2) ...
+2026-10-07T08:39:09.8229793Z Preparing to unpack .../09-mesa-libgallium_25.2.8-0ubuntu0.24.04.4_amd64.deb ...
+2026-10-07T08:39:09.8250039Z Unpacking mesa-libgallium:amd64 (25.2.8-0ubuntu0.24.04.4) over (25.2.8-0ubuntu0.24.04.2) ...
+2026-10-07T08:39:09.9969635Z Selecting previously unselected package xfonts-encodings.
+2026-10-07T08:39:10.0095330Z Preparing to unpack .../10-xfonts-encodings_1%3a1.0.5-0ubuntu2_all.deb ...
+2026-10-07T08:39:10.0103161Z Unpacking xfonts-encodings (1:1.0.5-0ubuntu2) ...
+2026-10-07T08:39:10.0387491Z Selecting previously unselected package xfonts-utils.
+2026-10-07T08:39:10.0511314Z Preparing to unpack .../11-xfonts-utils_1%3a7.7+6build3_amd64.deb ...
+2026-10-07T08:39:10.0517788Z Unpacking xfonts-utils (1:7.7+6build3) ...
+2026-10-07T08:39:10.0877170Z Selecting previously unselected package xfonts-cyrillic.
+2026-10-07T08:39:10.0998565Z Preparing to unpack .../12-xfonts-cyrillic_1%3a1.0.5+nmu1_all.deb ...
+2026-10-07T08:39:10.1005594Z Unpacking xfonts-cyrillic (1:1.0.5+nmu1) ...
+2026-10-07T08:39:10.1331025Z Selecting previously unselected package xfonts-scalable.
+2026-10-07T08:39:10.1452816Z Preparing to unpack .../13-xfonts-scalable_1%3a1.0.3-1.3_all.deb ...
+2026-10-07T08:39:10.1459674Z Unpacking xfonts-scalable (1:1.0.3-1.3) ...
+2026-10-07T08:39:10.1890173Z Setting up mesa-libgallium:amd64 (25.2.8-0ubuntu0.24.04.4) ...
+2026-10-07T08:39:10.1907874Z Setting up libgbm1:amd64 (25.2.8-0ubuntu0.24.04.4) ...
+2026-10-07T08:39:10.1924335Z Setting up libgl1-mesa-dri:amd64 (25.2.8-0ubuntu0.24.04.4) ...
+2026-10-07T08:39:10.2186115Z Setting up fonts-wqy-zenhei (0.9.45-8) ...
+2026-10-07T08:39:10.2294176Z Setting up fonts-freefont-ttf (20211204+svn4273-2) ...
+2026-10-07T08:39:10.2311088Z Setting up fonts-tlwg-loma-otf (1:0.7.3-1) ...
+2026-10-07T08:39:10.2328394Z Setting up libfreetype6:amd64 (2.13.2+dfsg-1ubuntu0.2) ...
+2026-10-07T08:39:10.2344600Z Setting up xfonts-encodings (1:1.0.5-0ubuntu2) ...
+2026-10-07T08:39:10.2360675Z Setting up fonts-ipafont-gothic (00303-21ubuntu1) ...
+2026-10-07T08:39:10.2421248Z update-alternatives: using /usr/share/fonts/opentype/ipafont-gothic/ipag.ttf to provide /usr/share/fonts/truetype/fonts-japanese-gothic.ttf (fonts-japanese-gothic.ttf) in auto mode
+2026-10-07T08:39:10.2452945Z Setting up fonts-unifont (1:15.1.01-1build1) ...
+2026-10-07T08:39:10.2471559Z Setting up libglx-mesa0:amd64 (25.2.8-0ubuntu0.24.04.4) ...
+2026-10-07T08:39:10.2488620Z Setting up xfonts-utils (1:7.7+6build3) ...
+2026-10-07T08:39:10.2525395Z Setting up xfonts-cyrillic (1:1.0.5+nmu1) ...
+2026-10-07T08:39:10.2798503Z Setting up xfonts-scalable (1:1.0.3-1.3) ...
+2026-10-07T08:39:10.3076495Z Processing triggers for libc-bin (2.39-0ubuntu8.9) ...
+2026-10-07T08:39:10.3438276Z Processing triggers for man-db (2.12.0-4build2) ...
+2026-10-07T08:39:10.3458938Z Not building database; man-db/auto-update is not 'true'.
+2026-10-07T08:39:10.3469645Z Processing triggers for fontconfig (2.15.0-1.1ubuntu2) ...
+2026-10-07T08:39:11.0857815Z 
+2026-10-07T08:39:11.0858566Z Running kernel seems to be up-to-date.
+2026-10-07T08:39:11.0858970Z 
+2026-10-07T08:39:11.0859116Z Restarting services...
+2026-10-07T08:39:11.0935909Z  systemctl restart php8.3-fpm.service
+2026-10-07T08:39:11.1917852Z 
+2026-10-07T08:39:11.1919456Z No containers need to be restarted.
+2026-10-07T08:39:11.1919867Z 
+2026-10-07T08:39:11.1920191Z No user sessions are running outdated binaries.
+2026-10-07T08:39:11.1920574Z 
+2026-10-07T08:39:11.1921115Z No VM guests are running outdated hypervisor (qemu) binaries on this host.
+2026-10-07T08:39:11.9938877Z Downloading Chrome for Testing 153.0.8010.12 (playwright chromium v1243) from https://cdn.playwright.dev/builds/cft/153.0.8010.12/linux64/chrome-linux64.zip
+2026-10-07T08:39:12.3822733Z |                                                                                |   0% of 186.8 MiB
+2026-10-07T08:39:12.5414624Z |■■■■■■■■                                                                        |  10% of 186.8 MiB
+2026-10-07T08:39:12.6762365Z |■■■■■■■■■■■■■■■■                                                                |  20% of 186.8 MiB
+2026-10-07T08:39:12.7806504Z |■■■■■■■■■■■■■■■■■■■■■■■■                                                        |  30% of 186.8 MiB
+2026-10-07T08:39:12.8746715Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                                |  40% of 186.8 MiB
+2026-10-07T08:39:12.9707472Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                        |  50% of 186.8 MiB
+2026-10-07T08:39:13.0961388Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                |  60% of 186.8 MiB
+2026-10-07T08:39:13.1878266Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                        |  70% of 186.8 MiB
+2026-10-07T08:39:13.2878053Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                |  80% of 186.8 MiB
+2026-10-07T08:39:13.3856031Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■        |  90% of 186.8 MiB
+2026-10-07T08:39:13.4897779Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■| 100% of 186.8 MiB
+2026-10-07T08:39:16.6490713Z Chrome for Testing 153.0.8010.12 (playwright chromium v1243) downloaded to /home/runner/.cache/ms-playwright/chromium-1243
+2026-10-07T08:39:16.6495014Z Downloading FFmpeg (playwright ffmpeg v1011) from https://cdn.playwright.dev/dbazure/download/playwright/builds/ffmpeg/1011/ffmpeg-linux.zip
+2026-10-07T08:39:17.2072039Z |                                                                                |   0% of 2.3 MiB
+2026-10-07T08:39:17.2215306Z |■■■■■■■■                                                                        |  10% of 2.3 MiB
+2026-10-07T08:39:17.2283142Z |■■■■■■■■■■■■■■■■                                                                |  20% of 2.3 MiB
+2026-10-07T08:39:17.2331392Z |■■■■■■■■■■■■■■■■■■■■■■■■                                                        |  30% of 2.3 MiB
+2026-10-07T08:39:17.2367791Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                                |  40% of 2.3 MiB
+2026-10-07T08:39:17.2393150Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                        |  50% of 2.3 MiB
+2026-10-07T08:39:17.2431626Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                |  60% of 2.3 MiB
+2026-10-07T08:39:17.2444471Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                        |  70% of 2.3 MiB
+2026-10-07T08:39:17.2466361Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                |  80% of 2.3 MiB
+2026-10-07T08:39:17.2487182Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■        |  90% of 2.3 MiB
+2026-10-07T08:39:17.2497138Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■| 100% of 2.3 MiB
+2026-10-07T08:39:17.3085307Z FFmpeg (playwright ffmpeg v1011) downloaded to /home/runner/.cache/ms-playwright/ffmpeg-1011
+2026-10-07T08:39:17.3088946Z Downloading Chrome Headless Shell 153.0.8010.12 (playwright chromium-headless-shell v1243) from https://cdn.playwright.dev/builds/cft/153.0.8010.12/linux64/chrome-headless-shell-linux64.zip
+2026-10-07T08:39:17.6957208Z |                                                                                |   0% of 114.3 MiB
+2026-10-07T08:39:17.7971088Z |■■■■■■■■                                                                        |  10% of 114.3 MiB
+2026-10-07T08:39:17.8609103Z |■■■■■■■■■■■■■■■■                                                                |  20% of 114.3 MiB
+2026-10-07T08:39:17.9132815Z |■■■■■■■■■■■■■■■■■■■■■■■■                                                        |  30% of 114.3 MiB
+2026-10-07T08:39:17.9693974Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                                |  40% of 114.3 MiB
+2026-10-07T08:39:18.0311121Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                        |  50% of 114.3 MiB
+2026-10-07T08:39:18.0812973Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                |  60% of 114.3 MiB
+2026-10-07T08:39:18.1444906Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                        |  70% of 114.3 MiB
+2026-10-07T08:39:18.1885884Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                |  80% of 114.3 MiB
+2026-10-07T08:39:18.2432771Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■        |  90% of 114.3 MiB
+2026-10-07T08:39:18.3065134Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■| 100% of 114.3 MiB
+2026-10-07T08:39:20.4926122Z Chrome Headless Shell 153.0.8010.12 (playwright chromium-headless-shell v1243) downloaded to /home/runner/.cache/ms-playwright/chromium_headless_shell-1243
+2026-10-07T08:39:20.5249698Z ##[group]Run sudo apt-get install -y fonts-noto-cjk
+2026-10-07T08:39:20.5250127Z [36;1msudo apt-get install -y fonts-noto-cjk[0m
+2026-10-07T08:39:20.5313298Z shell: /usr/bin/bash -e {0}
+2026-10-07T08:39:20.5313561Z ##[endgroup]
+2026-10-07T08:39:20.5586430Z Reading package lists...
+2026-10-07T08:39:20.7234321Z Building dependency tree...
+2026-10-07T08:39:20.7241648Z Reading state information...
+2026-10-07T08:39:20.8635458Z Suggested packages:
+2026-10-07T08:39:20.8635958Z   fonts-noto-cjk-extra
+2026-10-07T08:39:20.8773410Z The following NEW packages will be installed:
+2026-10-07T08:39:20.8779362Z   fonts-noto-cjk
+2026-10-07T08:39:20.8949241Z 0 upgraded, 1 newly installed, 0 to remove and 24 not upgraded.
+2026-10-07T08:39:20.8950089Z Need to get 61.2 MB of archives.
+2026-10-07T08:39:20.8950960Z After this operation, 93.2 MB of additional disk space will be used.
+2026-10-07T08:39:20.8951905Z Get:1 file:/etc/apt/apt-mirrors.txt Mirrorlist [144 B]
+2026-10-07T08:39:21.0794631Z Get:2 http://azure.archive.ubuntu.com/ubuntu noble/main amd64 fonts-noto-cjk all 1:20230817+repack1-3 [61.2 MB]
+2026-10-07T08:39:24.5814378Z Fetched 61.2 MB in 3s (17.7 MB/s)
+2026-10-07T08:39:24.6002243Z Selecting previously unselected package fonts-noto-cjk.
+2026-10-07T08:39:24.6057821Z (Reading database ... 
+2026-10-07T08:39:24.6058560Z (Reading database ... 5%
+2026-10-07T08:39:24.6059198Z (Reading database ... 10%
+2026-10-07T08:39:24.6059646Z (Reading database ... 15%
+2026-10-07T08:39:24.6060068Z (Reading database ... 20%
+2026-10-07T08:39:24.6060510Z (Reading database ... 25%
+2026-10-07T08:39:24.6060923Z (Reading database ... 30%
+2026-10-07T08:39:24.6061363Z (Reading database ... 35%
+2026-10-07T08:39:24.6061784Z (Reading database ... 40%
+2026-10-07T08:39:24.6062247Z (Reading database ... 45%
+2026-10-07T08:39:24.6062663Z (Reading database ... 50%
+2026-10-07T08:39:24.6077946Z (Reading database ... 55%
+2026-10-07T08:39:24.6178943Z (Reading database ... 60%
+2026-10-07T08:39:24.6206029Z (Reading database ... 65%
+2026-10-07T08:39:24.6227812Z (Reading database ... 70%
+2026-10-07T08:39:24.6261328Z (Reading database ... 75%
+2026-10-07T08:39:24.6291607Z (Reading database ... 80%
+2026-10-07T08:39:24.6315150Z (Reading database ... 85%
+2026-10-07T08:39:24.6463586Z (Reading database ... 90%
+2026-10-07T08:39:24.6705809Z (Reading database ... 95%
+2026-10-07T08:39:24.6706211Z (Reading database ... 100%
+2026-10-07T08:39:24.6706790Z (Reading database ... 202563 files and directories currently installed.)
+2026-10-07T08:39:24.6743485Z Preparing to unpack .../fonts-noto-cjk_1%3a20230817+repack1-3_all.deb ...
+2026-10-07T08:39:24.6810860Z Unpacking fonts-noto-cjk (1:20230817+repack1-3) ...
+2026-10-07T08:39:25.0813585Z Setting up fonts-noto-cjk (1:20230817+repack1-3) ...
+2026-10-07T08:39:25.0878330Z Processing triggers for fontconfig (2.15.0-1.1ubuntu2) ...
+2026-10-07T08:39:25.6681060Z 
+2026-10-07T08:39:25.6681784Z Running kernel seems to be up-to-date.
+2026-10-07T08:39:25.6682292Z 
+2026-10-07T08:39:25.6682658Z No services need to be restarted.
+2026-10-07T08:39:25.6683025Z 
+2026-10-07T08:39:25.6683243Z No containers need to be restarted.
+2026-10-07T08:39:25.6683493Z 
+2026-10-07T08:39:25.6683731Z No user sessions are running outdated binaries.
+2026-10-07T08:39:25.6684410Z 
+2026-10-07T08:39:25.6684815Z No VM guests are running outdated hypervisor (qemu) binaries on this host.
+2026-10-07T08:39:26.4963669Z ##[group]Run npm run test:weaveos:unit
+2026-10-07T08:39:26.4964364Z [36;1mnpm run test:weaveos:unit[0m
+2026-10-07T08:39:26.5027430Z shell: /usr/bin/bash -e {0}
+2026-10-07T08:39:26.5027703Z ##[endgroup]
+2026-10-07T08:39:26.6073063Z 
+2026-10-07T08:39:26.6073596Z > arca-ui@0.0.1 test:weaveos:unit
+2026-10-07T08:39:26.6074715Z > node --test tests/weaveos/geometry.test.mjs tests/weaveos/pagination.test.mjs tests/weaveos/filter-model.test.mjs
+2026-10-07T08:39:26.6075500Z 
+2026-10-07T08:39:26.7843138Z ✔ AND and OR compose without flattening or changing meaning (1.975664ms)
+2026-10-07T08:39:26.7879275Z ✔ text supports only equal or not equal, numeric supports all six (0.804298ms)
+2026-10-07T08:39:26.7909387Z ✔ depth three is valid and depth four is rejected (0.258194ms)
+2026-10-07T08:39:26.7974969Z ✔ condition budget is twenty, independent of grouping (0.362751ms)
+2026-10-07T08:39:26.8012724Z ✔ unknown fields, operators, empty groups and malformed leaves fail closed (0.323186ms)
+2026-10-07T08:39:26.8046168Z ✔ empty text is an explicit valid equality, exact decimal strings remain unchanged (0.298049ms)
+2026-10-07T08:39:26.8047676Z ✔ oversized and cyclic filters are rejected without throwing (0.462618ms)
+2026-10-07T08:39:26.8065595Z ✔ opening starts at the source center with its size (5.202174ms)
+2026-10-07T08:39:26.8066908Z ✔ each distinct source yields its own trajectory (0.23474ms)
+2026-10-07T08:39:26.8102388Z ✔ absent source uses no displacement (0.235271ms)
+2026-10-07T08:39:26.8104848Z ✔ invalid or zero rectangles fall back safely (0.264335ms)
+2026-10-07T08:39:26.8106179Z ✔ no division by zero from an unmeasured panel (0.584737ms)
+2026-10-07T08:39:26.8213409Z ✔ small pages list exact pages; large totals use bounded windows (2.480522ms)
+2026-10-07T08:39:26.8215796Z ✔ first and last pages retain nearby navigation without enumerating total (0.359334ms)
+2026-10-07T08:39:26.8217310Z ✔ page input accepts only in-range integers, not coercions or partial numbers (0.445706ms)
+2026-10-07T08:39:26.8218695Z ✔ invalid page metadata cannot produce navigable links (0.278372ms)
+2026-10-07T08:39:26.8219503Z ℹ tests 16
+2026-10-07T08:39:26.8219940Z ℹ suites 0
+2026-10-07T08:39:26.8220457Z ℹ pass 16
+2026-10-07T08:39:26.8220866Z ℹ fail 0
+2026-10-07T08:39:26.8221278Z ℹ cancelled 0
+2026-10-07T08:39:26.8221717Z ℹ skipped 0
+2026-10-07T08:39:26.8222150Z ℹ todo 0
+2026-10-07T08:39:26.8222603Z ℹ duration_ms 182.136281
+2026-10-07T08:39:26.8372973Z ##[group]Run npx eslint src/weaveos
+2026-10-07T08:39:26.8373310Z [36;1mnpx eslint src/weaveos[0m
+2026-10-07T08:39:26.8448901Z shell: /usr/bin/bash -e {0}
+2026-10-07T08:39:26.8449350Z ##[endgroup]
+2026-10-07T08:39:30.3145937Z ##[group]Run npx tsc -b
+2026-10-07T08:39:30.3146504Z [36;1mnpx tsc -b[0m
+2026-10-07T08:39:30.3231397Z shell: /usr/bin/bash -e {0}
+2026-10-07T08:39:30.3231684Z ##[endgroup]
+2026-10-07T08:39:39.1884429Z ##[group]Run npm run build:weaveos
+2026-10-07T08:39:39.1884795Z [36;1mnpm run build:weaveos[0m
+2026-10-07T08:39:39.1946619Z shell: /usr/bin/bash -e {0}
+2026-10-07T08:39:39.1946891Z ##[endgroup]
+2026-10-07T08:39:39.2958394Z 
+2026-10-07T08:39:39.2958964Z > arca-ui@0.0.1 build:weaveos
+2026-10-07T08:39:39.2959711Z > vite build --config vite.weaveos.config.ts
+2026-10-07T08:39:39.2960131Z 
+2026-10-07T08:39:39.5890205Z [36mvite v8.3.0 [32mbuilding client environment for production...[36m[39m
+2026-10-07T08:39:39.5997074Z transforming...
+2026-10-07T08:39:39.8779294Z ✓ 2642 modules transformed.
+2026-10-07T08:39:39.9333241Z rendering chunks...
+2026-10-07T08:39:40.0386471Z computing gzip size...
+2026-10-07T08:39:40.0490499Z dist-weaveos/weaveos.html                                            0.37 kB │ gzip:   0.29 kB
+2026-10-07T08:39:40.0491234Z dist-weaveos/assets/geist-cyrillic-ext-wght-normal-DjL33-gN.woff2    7.42 kB
+2026-10-07T08:39:40.0491980Z dist-weaveos/assets/geist-vietnamese-wght-normal-6IgcOCM7.woff2      8.00 kB
+2026-10-07T08:39:40.0492626Z dist-weaveos/assets/geist-cyrillic-wght-normal-BEAKL7Jp.woff2       15.08 kB
+2026-10-07T08:39:40.0493263Z dist-weaveos/assets/geist-latin-ext-wght-normal-DC-KSUi6.woff2      16.51 kB
+2026-10-07T08:39:40.0494171Z dist-weaveos/assets/geist-latin-wght-normal-BgDaEnEv.woff2          29.40 kB
+2026-10-07T08:39:40.0494990Z dist-weaveos/assets/weaveos-DdkVYbFN.css                            49.75 kB │ gzip:  10.77 kB
+2026-10-07T08:39:40.0495774Z dist-weaveos/assets/weaveos-BTOxHVSy.js                            629.27 kB │ gzip: 204.97 kB
+2026-10-07T08:39:40.0496424Z 
+2026-10-07T08:39:40.0544064Z [33m[plugin builtin:vite-reporter] 
+2026-10-07T08:39:40.0544895Z (!) Some chunks are larger than 500 kB after minification. Consider:
+2026-10-07T08:39:40.0545534Z - Using dynamic import() to code-split the application
+2026-10-07T08:39:40.0546589Z - Use build.rolldownOptions.output.codeSplitting to improve chunking: https://rolldown.rs/reference/OutputOptions.codeSplitting
+2026-10-07T08:39:40.0547720Z - Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.[39m
+2026-10-07T08:39:40.0699340Z [32m✓ built in 479ms[39m
+2026-10-07T08:39:40.1120109Z ##[group]Run npm run build:weaveos:library
+2026-10-07T08:39:40.1120503Z [36;1mnpm run build:weaveos:library[0m
+2026-10-07T08:39:40.1183047Z shell: /usr/bin/bash -e {0}
+2026-10-07T08:39:40.1183343Z ##[endgroup]
+2026-10-07T08:39:40.2218507Z 
+2026-10-07T08:39:40.2219333Z > arca-ui@0.0.1 build:weaveos:library
+2026-10-07T08:39:40.2220187Z > vite build --config vite.weaveos-library.config.ts && tsc -p tsconfig.weaveos-library.json && node scripts/weaveos/package.mjs
+2026-10-07T08:39:40.2220742Z 
+2026-10-07T08:39:40.3950144Z [36mvite v8.3.0 [32mbuilding client environment for production...[36m[39m
+2026-10-07T08:39:40.4125252Z transforming...
+2026-10-07T08:39:40.4212222Z ✓ 27 modules transformed.
+2026-10-07T08:39:40.4264676Z rendering chunks...
+2026-10-07T08:39:40.4332867Z computing gzip size...
+2026-10-07T08:39:40.4348579Z dist-library/index.js  52.47 kB │ gzip: 13.56 kB
+2026-10-07T08:39:40.4348991Z 
+2026-10-07T08:39:40.4360913Z [32m✓ built in 38ms[39m
+2026-10-07T08:39:42.7751227Z Prepared private/unpublished component artifact at dist-library
+2026-10-07T08:39:42.7927614Z ##[group]Run npm run test:weaveos:package
+2026-10-07T08:39:42.7927979Z [36;1mnpm run test:weaveos:package[0m
+2026-10-07T08:39:42.7989014Z shell: /usr/bin/bash -e {0}
+2026-10-07T08:39:42.7989279Z ##[endgroup]
+2026-10-07T08:39:42.9016110Z 
+2026-10-07T08:39:42.9016803Z > arca-ui@0.0.1 test:weaveos:package
+2026-10-07T08:39:42.9017440Z > node --test tests/weaveos/package.test.mjs
+2026-10-07T08:39:42.9017686Z 
+2026-10-07T08:39:43.5090059Z ✔ consumer artifact exports controls, theme and source-aware dialog (0.934262ms)
+2026-10-07T08:39:43.5099124Z ✔ package has typed exports, explicit React peers and safe unpublished metadata (0.253335ms)
+2026-10-07T08:39:43.5160043Z ✔ artifact has no source aliases or demo app and CSS stays scoped (0.472335ms)
+2026-10-07T08:39:43.5169558Z ✔ distributed license and source attribution accompany components (0.236534ms)
+2026-10-07T08:39:43.5423657Z ℹ tests 4
+2026-10-07T08:39:43.5424448Z ℹ suites 0
+2026-10-07T08:39:43.5424907Z ℹ pass 4
+2026-10-07T08:39:43.5425432Z ℹ fail 0
+2026-10-07T08:39:43.5425902Z ℹ cancelled 0
+2026-10-07T08:39:43.5426365Z ℹ skipped 0
+2026-10-07T08:39:43.5426785Z ℹ todo 0
+2026-10-07T08:39:43.5427303Z ℹ duration_ms 603.601841
+2026-10-07T08:39:43.5555644Z ##[group]Run npm run test:weaveos
+2026-10-07T08:39:43.5556002Z [36;1mnpm run test:weaveos[0m
+2026-10-07T08:39:43.5617470Z shell: /usr/bin/bash -e {0}
+2026-10-07T08:39:43.5617760Z ##[endgroup]
+2026-10-07T08:39:43.6620403Z 
+2026-10-07T08:39:43.6620931Z > arca-ui@0.0.1 test:weaveos
+2026-10-07T08:39:43.6621518Z > playwright test -c playwright.weaveos.config.ts
+2026-10-07T08:39:43.6621788Z 
+2026-10-07T08:39:45.0952948Z ✔ AND and OR compose without flattening or changing meaning (1.766912ms)
+2026-10-07T08:39:45.0955809Z ✔ text supports only equal or not equal, numeric supports all six (0.734598ms)
+2026-10-07T08:39:45.0957335Z ✔ depth three is valid and depth four is rejected (0.253505ms)
+2026-10-07T08:39:45.0967220Z ✔ condition budget is twenty, independent of grouping (0.3362ms)
+2026-10-07T08:39:45.0970526Z ✔ unknown fields, operators, empty groups and malformed leaves fail closed (0.339797ms)
+2026-10-07T08:39:45.0972464Z ✔ empty text is an explicit valid equality, exact decimal strings remain unchanged (0.229851ms)
+2026-10-07T08:39:45.0974306Z ✔ oversized and cyclic filters are rejected without throwing (0.318757ms)
+2026-10-07T08:39:45.1333538Z ✔ opening starts at the source center with its size (1.878091ms)
+2026-10-07T08:39:45.1365196Z ✔ each distinct source yields its own trajectory (0.349765ms)
+2026-10-07T08:39:45.1387177Z ✔ absent source uses no displacement (2.548225ms)
+2026-10-07T08:39:45.1429938Z ✔ invalid or zero rectangles fall back safely (0.246582ms)
+2026-10-07T08:39:45.1430533Z ✔ no division by zero from an unmeasured panel (0.204724ms)
+2026-10-07T08:39:45.9553219Z ✔ consumer artifact exports controls, theme and source-aware dialog (0.308268ms)
+2026-10-07T08:39:45.9557199Z ✔ package has typed exports, explicit React peers and safe unpublished metadata (0.331281ms)
+2026-10-07T08:39:45.9562009Z ✔ artifact has no source aliases or demo app and CSS stays scoped (0.443261ms)
+2026-10-07T08:39:45.9564397Z ✔ distributed license and source attribution accompany components (0.142176ms)
+2026-10-07T08:39:45.9671110Z ✔ small pages list exact pages; large totals use bounded windows (0.397044ms)
+2026-10-07T08:39:45.9673111Z ✔ first and last pages retain nearby navigation without enumerating total (0.170119ms)
+2026-10-07T08:39:45.9676708Z ✔ page input accepts only in-range integers, not coercions or partial numbers (0.228418ms)
+2026-10-07T08:39:45.9679071Z ✔ invalid page metadata cannot produce navigable links (0.190918ms)
+2026-10-07T08:39:46.0076704Z 
+2026-10-07T08:39:46.0077320Z Running 49 tests using 2 workers
+2026-10-07T08:39:46.0077693Z 
+2026-10-07T08:39:53.8132651Z   ✘   2 [chromium] › tests/weaveos/breadcrumbs.spec.ts:6:1 › breadcrumbs expose ancestor links and exactly one noninteractive current page (6.8s)
+2026-10-07T08:40:01.1937071Z   ✘   3 [chromium] › tests/weaveos/breadcrumbs.spec.ts:28:1 › long breadcrumb labels remain accessible and fit a narrow dark viewport (6.7s)
+2026-10-07T08:40:03.0131823Z   ✓   4 [chromium] › tests/weaveos/data-workspace.spec.ts:5:1 › table renders only the current supplied page despite a large server total (1.2s)
+2026-10-07T08:40:04.8734322Z   ✓   5 [chromium] › tests/weaveos/data-workspace.spec.ts:11:1 › arbitrary page jump emits controlled request and waits for returned page (1.8s)
+2026-10-07T08:40:06.2752284Z   ✓   6 [chromium] › tests/weaveos/data-workspace.spec.ts:19:1 › text has no normal sort while numerical sorting is server-controlled (1.4s)
+2026-10-07T08:40:07.1385095Z   ✘   1 [chromium] › tests/weaveos/breadcrumbs.spec.ts:18:1 › breadcrumb navigation remains owned by the host and works from keyboard (20.2s)
+2026-10-07T08:40:09.4875658Z   ✓   7 [chromium] › tests/weaveos/data-workspace.spec.ts:27:1 › hide a column changes display without clearing sort or issuing a query (3.2s)
+2026-10-07T08:40:10.9354731Z   ✓   8 [chromium] › tests/weaveos/data-workspace.spec.ts:38:1 › related data change requires refresh and refresh requests page one (2.9s)
+2026-10-07T08:40:11.3631276Z   ✓   9 [chromium] › tests/weaveos/data-workspace.spec.ts:46:1 › only current page selection is controlled and filtering does not happen locally (1.9s)
+2026-10-07T08:40:14.2489426Z   ✓  11 [chromium] › tests/weaveos/data-workspace.spec.ts:56:1 › page-size change is a controlled request that resets to first page (2.9s)
+2026-10-07T08:40:14.3636422Z   ✓  10 [chromium] › tests/weaveos/data-workspace.spec.ts:51:1 › table workspace passes settled accessibility and captures actual desktop UI (3.4s)
+2026-10-07T08:40:15.8880515Z   ✓  12 [chromium] › tests/weaveos/data-workspace.spec.ts:63:1 › invalid arbitrary page never emits a coerced query (1.6s)
+2026-10-07T08:40:17.3657069Z   ✓  13 [chromium] › tests/weaveos/data-workspace.spec.ts:69:1 › failed response keeps previous confirmed page and exposes an explicit retry (3.0s)
+2026-10-07T08:40:17.7364044Z   ✓  14 [chromium] › tests/weaveos/feedback.spec.ts:3:1 › tooltip opens from keyboard focus, escapes and preserves trigger focus (1.8s)
+2026-10-07T08:40:19.0264871Z   ✓  15 [chromium] › tests/weaveos/feedback.spec.ts:4:1 › progress distinguishes confirmed numeric value from indeterminate waiting (1.6s)
+2026-10-07T08:40:20.5865456Z   ✓  16 [chromium] › tests/weaveos/feedback.spec.ts:5:1 › skeleton is decorative and dark feedback controls remain accessible (2.8s)
+2026-10-07T08:40:20.6398484Z   ✓  17 [chromium] › tests/weaveos/field-basics.spec.ts:4:1 › decimal string retains every digit and trailing zero through edits and blur (1.6s)
+2026-10-07T08:40:22.1357083Z   ✓  18 [chromium] › tests/weaveos/field-basics.spec.ts:10:1 › decimal zero remains a string while clearing produces explicit null (1.5s)
+2026-10-07T08:40:22.5081050Z   ✓  19 [chromium] › tests/weaveos/field-basics.spec.ts:14:1 › nullable Boolean keeps null false and true separate (1.8s)
+2026-10-07T08:40:23.7066306Z   ✓  20 [chromium] › tests/weaveos/field-basics.spec.ts:21:1 › readonly fields cannot emit edits, including Boolean pointer and keyboard (1.6s)
+2026-10-07T08:40:24.1385993Z   ✓  21 [chromium] › tests/weaveos/field-basics.spec.ts:28:1 › multiline text preserves Unicode newlines and intentional empty text (1.6s)
+2026-10-07T08:40:26.2110059Z   ✓  22 [chromium] › tests/weaveos/field-basics.spec.ts:33:1 › field errors are associated with inputs and settled controls remain accessible (2.5s)
+2026-10-07T08:40:29.2292422Z   ✓  23 [chromium] › tests/weaveos/filter-manager.spec.ts:4:1 › opens saved-filter management first, with only one preset applied (5.1s)
+2026-10-07T08:40:30.1146298Z   ✓  24 [chromium] › tests/weaveos/filter-manager.spec.ts:14:1 › constructs AND with an OR subgroup and persists exact conditions (3.9s)
+2026-10-07T08:40:32.7145644Z   ✓  25 [chromium] › tests/weaveos/filter-manager.spec.ts:27:1 › failed persistence retains editor and never reports saved (3.5s)
+2026-10-07T08:40:33.6216354Z   ✓  26 [chromium] › tests/weaveos/filter-manager.spec.ts:36:1 › dirty Escape asks before discarding and restores source focus (3.5s)
+2026-10-07T08:40:36.2336279Z   ✓  28 [chromium] › tests/weaveos/filter-manager.spec.ts:53:1 › applying a preset emits a page-one host query without client-side table filtering (2.6s)
+2026-10-07T08:40:36.4383705Z   ✓  27 [chromium] › tests/weaveos/filter-manager.spec.ts:44:1 › text comparisons exclude range operators and editor is accessible (3.7s)
+2026-10-07T08:40:39.2748919Z   ✓  30 [chromium] › tests/weaveos/filter-manager.spec.ts:66:1 › deleting a preset requires confirmation and cancellation preserves it (2.8s)
+2026-10-07T08:40:39.8426082Z   ✓  29 [chromium] › tests/weaveos/filter-manager.spec.ts:59:1 › editing a saved preset preserves identity, saving alone does not apply (3.6s)
+2026-10-07T08:40:43.2786251Z V042_OPENING_GEOMETRY {"count":20,"widths":[440,97.9400634765625,102.1494140625,109.11669921875,153.1239013671875,202.6793212890625,251.1552734375,382.31524658203125,427.1700439453125,438.47906494140625,440.2005615234375,439.9999694824219,439.9999694824219,440,440,440,440,440,440,440],"expanded":440}
+2026-10-07T08:40:43.4818979Z   ✓  31 [chromium] › tests/weaveos/origin-motion.spec.ts:3:1 › window geometry really travels from and returns toward the trigger (4.2s)
+2026-10-07T08:40:44.2829955Z   ✓  32 [chromium] › tests/weaveos/origin-motion.spec.ts:29:1 › successful save returns the window toward its source too (4.4s)
+2026-10-07T08:40:46.3840379Z   ✓  34 [chromium] › tests/weaveos/studio.spec.ts:6:1 › shell uses collapsible icon rail and edge-to-edge content card (2.1s)
+2026-10-07T08:40:48.1543743Z   ✓  33 [chromium] › tests/weaveos/preview.spec.ts:3:1 › capture component studio review images (4.6s)
+2026-10-07T08:40:49.2969321Z   ✓  35 [chromium] › tests/weaveos/studio.spec.ts:19:1 › source dialog has accessible title, focus isolation and restores origin (2.9s)
+2026-10-07T08:40:50.8737250Z   ✓  36 [chromium] › tests/weaveos/studio.spec.ts:34:1 › second source restores its own focus (2.7s)
+2026-10-07T08:40:54.3971455Z   ✓  37 [chromium] › tests/weaveos/studio.spec.ts:41:1 › close during opening and repeat never leaves an overlay or locked page (5.1s)
+2026-10-07T08:40:56.0881625Z   ✓  38 [chromium] › tests/weaveos/studio.spec.ts:49:1 › save feedback waits for result and errors retain editable input (5.2s)
+2026-10-07T08:40:57.7250190Z   ✓  39 [chromium] › tests/weaveos/studio.spec.ts:65:1 › nested select Escape dismisses only the list, then dialog (3.3s)
+2026-10-07T08:40:58.5955963Z   ✓  40 [chromium] › tests/weaveos/studio.spec.ts:74:1 › reduced motion preserves usable modal without scale displacement (2.5s)
+2026-10-07T08:41:00.3819763Z   ✓  42 [chromium] › tests/weaveos/studio.spec.ts:92:1 › theme controls, basic controls and component navigation work (1.8s)
+2026-10-07T08:41:00.9667727Z   ✓  41 [chromium] › tests/weaveos/studio.spec.ts:83:1 › mobile view fits viewport and dialog remains operable (3.2s)
+2026-10-07T08:41:02.3905740Z   ✓  44 [chromium] › tests/weaveos/workspace-tabs.spec.ts:3:1 › workspace tabs keep pinned labels clean and nonclosable (1.4s)
+2026-10-07T08:41:03.9606989Z   ✓  45 [chromium] › tests/weaveos/workspace-tabs.spec.ts:4:1 › workspace tabs use arrow Home End navigation and skip disabled tabs (1.6s)
+2026-10-07T08:41:04.2883245Z   ✓  43 [chromium] › tests/weaveos/studio.spec.ts:102:1 › studio and open modal have no serious accessibility violations (3.9s)
+2026-10-07T08:41:05.8211881Z   ✓  46 [chromium] › tests/weaveos/workspace-tabs.spec.ts:5:1 › workspace tab switch is controlled and never optimistically accepts a refused request (1.8s)
+2026-10-07T08:41:06.0235270Z   ✓  47 [chromium] › tests/weaveos/workspace-tabs.spec.ts:6:1 › workspace close only requests removal until its owner confirms (1.7s)
+2026-10-07T08:41:07.5793623Z   ✓  49 [chromium] › tests/weaveos/workspace-tabs.spec.ts:8:1 › workspace content starts below a full-width horizontal tab strip (1.5s)
+2026-10-07T08:41:08.2967421Z   ✓  48 [chromium] › tests/weaveos/workspace-tabs.spec.ts:7:1 › workspace tabs have accessible dark panels and reduced-motion presentation (2.5s)
+2026-10-07T08:41:08.4058191Z 
+2026-10-07T08:41:08.4063790Z 
+2026-10-07T08:41:08.4074665Z   1) [chromium] › tests/weaveos/breadcrumbs.spec.ts:6:1 › breadcrumbs expose ancestor links and exactly one noninteractive current page 
+2026-10-07T08:41:08.4075748Z 
+2026-10-07T08:41:08.4076129Z     Error: expect(locator).toHaveCount(expected) failed
+2026-10-07T08:41:08.4076568Z 
+2026-10-07T08:41:08.4077553Z     Locator:  getByRole('region', { name: '面包屑组件' }).getByRole('navigation', { name: '应用路径' }).getByRole('listitem')
+2026-10-07T08:41:08.4078513Z     Expected: 3
+2026-10-07T08:41:08.4078946Z     Received: 0
+2026-10-07T08:41:08.4079337Z     Timeout:  5000ms
+2026-10-07T08:41:08.4079603Z 
+2026-10-07T08:41:08.4079766Z     Call log:
+2026-10-07T08:41:08.4081277Z       - Expect "toHaveCount" getByRole('region', { name: '面包屑组件' }).getByRole('navigation', { name: '应用路径' }).getByRole('listitem') with timeout 5000ms
+2026-10-07T08:41:08.4083214Z       - waiting for getByRole('region', { name: '面包屑组件' }).getByRole('navigation', { name: '应用路径' }).getByRole('listitem')
+2026-10-07T08:41:08.4084772Z         14 × locator resolved to 0 elements
+2026-10-07T08:41:08.4085374Z            - unexpected value "0"
+2026-10-07T08:41:08.4085709Z 
+2026-10-07T08:41:08.4085720Z 
+2026-10-07T08:41:08.4086253Z        7 |  const section=page.getByRole('region',{name:'面包屑组件'})
+2026-10-07T08:41:08.4087288Z        8 |  const nav=section.getByRole('navigation',{name:'应用路径'})
+2026-10-07T08:41:08.4088162Z     >  9 |  await expect(nav.getByRole('listitem')).toHaveCount(3)
+2026-10-07T08:41:08.4088885Z          |                                          ^
+2026-10-07T08:41:08.4090197Z       10 |  await expect(nav.getByRole('link',{name:'工作台',exact:true})).toHaveAttribute('href','/weaveos.html#workspace')
+2026-10-07T08:41:08.4091925Z       11 |  await expect(nav.getByRole('link',{name:'人事管理',exact:true})).toHaveAttribute('href','/weaveos.html#people')
+2026-10-07T08:41:08.4094094Z       12 |  const current=nav.locator('[aria-current="page"]');await expect(current).toHaveCount(1);await expect(current).toHaveText('成员记录')
+2026-10-07T08:41:08.4095603Z         at /home/runner/work/arca-ui/arca-ui/tests/weaveos/breadcrumbs.spec.ts:9:42
+2026-10-07T08:41:08.4096209Z 
+2026-10-07T08:41:08.4097057Z     attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+2026-10-07T08:41:08.4098496Z     test-results/breadcrumbs-breadcrumbs-ex-39096-noninteractive-current-page-chromium/test-failed-1.png
+2026-10-07T08:41:08.4100000Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+2026-10-07T08:41:08.4100548Z 
+2026-10-07T08:41:08.4101467Z     Error Context: test-results/breadcrumbs-breadcrumbs-ex-39096-noninteractive-current-page-chromium/error-context.md
+2026-10-07T08:41:08.4102836Z 
+2026-10-07T08:41:08.4103644Z     attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+2026-10-07T08:41:08.4105715Z     test-results/breadcrumbs-breadcrumbs-ex-39096-noninteractive-current-page-chromium/trace.zip
+2026-10-07T08:41:08.4106730Z     Usage:
+2026-10-07T08:41:08.4106945Z 
+2026-10-07T08:41:08.4107894Z         npx playwright show-trace test-results/breadcrumbs-breadcrumbs-ex-39096-noninteractive-current-page-chromium/trace.zip
+2026-10-07T08:41:08.4108883Z 
+2026-10-07T08:41:08.4109595Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+2026-10-07T08:41:08.4110127Z 
+2026-10-07T08:41:08.4111193Z   2) [chromium] › tests/weaveos/breadcrumbs.spec.ts:18:1 › breadcrumb navigation remains owned by the host and works from keyboard 
+2026-10-07T08:41:08.4112083Z 
+2026-10-07T08:41:08.4112318Z     Test timeout of 20000ms exceeded.
+2026-10-07T08:41:08.4112636Z 
+2026-10-07T08:41:08.4112984Z     Error: locator.focus: Test timeout of 20000ms exceeded.
+2026-10-07T08:41:08.4113541Z     Call log:
+2026-10-07T08:41:08.4115100Z       - waiting for getByRole('region', { name: '面包屑组件' }).getByRole('navigation', { name: '应用路径' }).getByRole('link', { name: '人事管理', exact: true })
+2026-10-07T08:41:08.4115978Z 
+2026-10-07T08:41:08.4115986Z 
+2026-10-07T08:41:08.4116439Z       19 |  const section=page.getByRole('region',{name:'面包屑组件'})
+2026-10-07T08:41:08.4117567Z       20 |  const nav=section.getByRole('navigation',{name:'应用路径'});const before=page.url()
+2026-10-07T08:41:08.4119078Z     > 21 |  const ancestor=nav.getByRole('link',{name:'人事管理',exact:true});await ancestor.focus();await page.keyboard.press('Enter')
+2026-10-07T08:41:08.4120194Z          |                                                                               ^
+2026-10-07T08:41:08.4121186Z       22 |  await expect(section.getByRole('status')).toHaveText('导航请求：people')
+2026-10-07T08:41:08.4122515Z       23 |  expect(page.url()).toBe(before);await expect(nav.locator('[aria-current="page"]')).toHaveText('成员记录')
+2026-10-07T08:41:08.4124469Z       24 |  await nav.getByRole('link',{name:'工作台',exact:true}).click();await expect(section.getByRole('status')).toHaveText('导航请求：workspace')
+2026-10-07T08:41:08.4125938Z         at /home/runner/work/arca-ui/arca-ui/tests/weaveos/breadcrumbs.spec.ts:21:79
+2026-10-07T08:41:08.4126508Z 
+2026-10-07T08:41:08.4127234Z     attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+2026-10-07T08:41:08.4128576Z     test-results/breadcrumbs-breadcrumb-nav-3136a-ost-and-works-from-keyboard-chromium/test-failed-1.png
+2026-10-07T08:41:08.4130006Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+2026-10-07T08:41:08.4130505Z 
+2026-10-07T08:41:08.4131326Z     Error Context: test-results/breadcrumbs-breadcrumb-nav-3136a-ost-and-works-from-keyboard-chromium/error-context.md
+2026-10-07T08:41:08.4132215Z 
+2026-10-07T08:41:08.4133143Z     attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+2026-10-07T08:41:08.4134632Z     test-results/breadcrumbs-breadcrumb-nav-3136a-ost-and-works-from-keyboard-chromium/trace.zip
+2026-10-07T08:41:08.4135710Z     Usage:
+2026-10-07T08:41:08.4135902Z 
+2026-10-07T08:41:08.4136779Z         npx playwright show-trace test-results/breadcrumbs-breadcrumb-nav-3136a-ost-and-works-from-keyboard-chromium/trace.zip
+2026-10-07T08:41:08.4137705Z 
+2026-10-07T08:41:08.4138337Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+2026-10-07T08:41:08.4138843Z 
+2026-10-07T08:41:08.4139822Z   3) [chromium] › tests/weaveos/breadcrumbs.spec.ts:28:1 › long breadcrumb labels remain accessible and fit a narrow dark viewport 
+2026-10-07T08:41:08.4140696Z 
+2026-10-07T08:41:08.4140979Z     Error: expect(locator).toBeVisible() failed
+2026-10-07T08:41:08.4141348Z 
+2026-10-07T08:41:08.4142705Z     Locator: getByRole('region', { name: '面包屑组件' }).getByRole('navigation', { name: '长路径' }).getByRole('link', { name: '跨区域人事与组织发展管理中心跨区域人事与组织发展管理中心跨区域人事与组织发展管理中心跨区域人事与组织发展管理中心', exact: true })
+2026-10-07T08:41:08.4144087Z     Expected: visible
+2026-10-07T08:41:08.4144529Z     Timeout: 5000ms
+2026-10-07T08:41:08.4144981Z     Error: element(s) not found
+2026-10-07T08:41:08.4145310Z 
+2026-10-07T08:41:08.4145476Z     Call log:
+2026-10-07T08:41:08.4147323Z       - Expect "toBeVisible" getByRole('region', { name: '面包屑组件' }).getByRole('navigation', { name: '长路径' }).getByRole('link', { name: '跨区域人事与组织发展管理中心跨区域人事与组织发展管理中心跨区域人事与组织发展管理中心跨区域人事与组织发展管理中心', exact: true }) with timeout 5000ms
+2026-10-07T08:41:08.4149985Z       - waiting for getByRole('region', { name: '面包屑组件' }).getByRole('navigation', { name: '长路径' }).getByRole('link', { name: '跨区域人事与组织发展管理中心跨区域人事与组织发展管理中心跨区域人事与组织发展管理中心跨区域人事与组织发展管理中心', exact: true })
+2026-10-07T08:41:08.4151202Z 
+2026-10-07T08:41:08.4151221Z 
+2026-10-07T08:41:08.4152024Z       30 |  const section=page.getByRole('region',{name:'面包屑组件'});await section.scrollIntoViewIfNeeded()
+2026-10-07T08:41:08.4153216Z       31 |  const long='跨区域人事与组织发展管理中心'.repeat(4)
+2026-10-07T08:41:08.4154871Z     > 32 |  await expect(section.getByRole('navigation',{name:'长路径'}).getByRole('link',{name:long,exact:true})).toBeVisible()
+2026-10-07T08:41:08.4156115Z          |                                                                                                      ^
+2026-10-07T08:41:08.4157229Z       33 |  expect(await page.evaluate(()=>document.documentElement.scrollWidth)).toBeLessThanOrEqual(390)
+2026-10-07T08:41:08.4158809Z       34 |  const audit=await new AxeBuilder({page}).include('[data-testid="breadcrumbs-demo"]').analyze();expect(audit.violations).toEqual([])
+2026-10-07T08:41:08.4161030Z       35 |  await page.setViewportSize({width:1440,height:1000});await section.scrollIntoViewIfNeeded();await page.screenshot({path:'test-results/weaveos-breadcrumbs-dark.png'})
+2026-10-07T08:41:08.4162701Z         at /home/runner/work/arca-ui/arca-ui/tests/weaveos/breadcrumbs.spec.ts:32:102
+2026-10-07T08:41:08.4163474Z 
+2026-10-07T08:41:08.4164541Z     attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+2026-10-07T08:41:08.4165916Z     test-results/breadcrumbs-long-breadcrum-e6f97--fit-a-narrow-dark-viewport-chromium/test-failed-1.png
+2026-10-07T08:41:08.4167379Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+2026-10-07T08:41:08.4167878Z 
+2026-10-07T08:41:08.4168725Z     Error Context: test-results/breadcrumbs-long-breadcrum-e6f97--fit-a-narrow-dark-viewport-chromium/error-context.md
+2026-10-07T08:41:08.4169627Z 
+2026-10-07T08:41:08.4170337Z     attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+2026-10-07T08:41:08.4171600Z     test-results/breadcrumbs-long-breadcrum-e6f97--fit-a-narrow-dark-viewport-chromium/trace.zip
+2026-10-07T08:41:08.4172473Z     Usage:
+2026-10-07T08:41:08.4172660Z 
+2026-10-07T08:41:08.4173562Z         npx playwright show-trace test-results/breadcrumbs-long-breadcrum-e6f97--fit-a-narrow-dark-viewport-chromium/trace.zip
+2026-10-07T08:41:08.4174683Z 
+2026-10-07T08:41:08.4175321Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+2026-10-07T08:41:08.4176025Z 
+2026-10-07T08:41:08.4176161Z   3 failed
+2026-10-07T08:41:08.4177371Z     [chromium] › tests/weaveos/breadcrumbs.spec.ts:6:1 › breadcrumbs expose ancestor links and exactly one noninteractive current page 
+2026-10-07T08:41:08.4179221Z     [chromium] › tests/weaveos/breadcrumbs.spec.ts:18:1 › breadcrumb navigation remains owned by the host and works from keyboard 
+2026-10-07T08:41:08.4181009Z     [chromium] › tests/weaveos/breadcrumbs.spec.ts:28:1 › long breadcrumb labels remain accessible and fit a narrow dark viewport 
+2026-10-07T08:41:08.4182127Z   46 passed (1.4m)
+2026-10-07T08:41:08.4565367Z ##[error]Process completed with exit code 1.
+2026-10-07T08:41:08.4648019Z ##[group]Run actions/upload-artifact@v4
+2026-10-07T08:41:08.4648330Z with:
+2026-10-07T08:41:08.4648554Z   name: weaveos-browser-evidence
+2026-10-07T08:41:08.4648818Z   path: test-results/
+2026-10-07T08:41:08.4649041Z   retention-days: 14
+2026-10-07T08:41:08.4649285Z   if-no-files-found: warn
+2026-10-07T08:41:08.4649521Z   compression-level: 6
+2026-10-07T08:41:08.4649745Z   overwrite: false
+2026-10-07T08:41:08.4649961Z   include-hidden-files: false
+2026-10-07T08:41:08.4650199Z ##[endgroup]
+2026-10-07T08:41:08.6327555Z (node:4647) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-10-07T08:41:08.6328534Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-10-07T08:41:08.6437872Z With the provided path, there will be 17 files uploaded
+2026-10-07T08:41:08.6439008Z Artifact name is valid!
+2026-10-07T08:41:08.6439564Z Root directory input is valid!
+2026-10-07T08:41:09.0233052Z Beginning upload of artifact content to blob storage
+2026-10-07T08:41:09.1821193Z (node:4647) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+2026-10-07T08:41:09.9222910Z Uploaded bytes 3422491
+2026-10-07T08:41:09.9986901Z Finished uploading artifact content to blob storage!
+2026-10-07T08:41:09.9988136Z SHA256 digest of uploaded artifact zip is eff359d3451bc7e1fc604c3232df37583d3d476bd96e629d108b83210a5a1443
+2026-10-07T08:41:09.9989297Z Finalizing artifact upload
+2026-10-07T08:41:10.2872799Z Artifact weaveos-browser-evidence.zip successfully finalized. Artifact ID 11470442680
+2026-10-07T08:41:10.2874640Z Artifact weaveos-browser-evidence has been successfully uploaded! Final size is 3422491 bytes. Artifact ID is 11470442680
+2026-10-07T08:41:10.2881444Z Artifact download URL: https://github.com/Hubujiu/arca-ui/actions/runs/37595113397/artifacts/11470442680
+2026-10-07T08:41:10.3078144Z Post job cleanup.
+2026-10-07T08:41:10.3927641Z [command]/usr/bin/git version
+2026-10-07T08:41:10.3971533Z git version 2.55.0
+2026-10-07T08:41:10.4012177Z Temporarily overriding HOME='/home/runner/work/_temp/4dc6019c-0d93-4786-a4ce-662bc1550321' before making global git config changes
+2026-10-07T08:41:10.4014513Z Adding repository directory to the temporary git global config as a safe directory
+2026-10-07T08:41:10.4019435Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/arca-ui/arca-ui
+2026-10-07T08:41:10.4058661Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-10-07T08:41:10.4097702Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-10-07T08:41:10.4357945Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-10-07T08:41:10.4389064Z http.https://github.com/.extraheader
+2026-10-07T08:41:10.4401693Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+2026-10-07T08:41:10.4437131Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-10-07T08:41:10.4705023Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-10-07T08:41:10.4747001Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-10-07T08:41:10.5140089Z Cleaning up orphan processes
+2026-10-07T08:41:10.5480064Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, actions/setup-node@v4, actions/upload-artifact@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/

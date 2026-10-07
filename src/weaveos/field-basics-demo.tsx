@@ -1,0 +1,7 @@
+import {useState} from 'react'
+import {Checkbox} from './primitives'
+import {DecimalInput,NullableBooleanInput,Textarea} from './field-controls'
+export function FieldBasicsDemo(){
+ const [amount,setAmount]=useState<string|null>(null),[approved,setApproved]=useState<boolean|null>(null),[notes,setNotes]=useState(''),[readonly,setReadonly]=useState(false),[error,setError]=useState(false)
+ return <section aria-label="项目字段控件" data-testid="field-basics" className="wo-field-demo"><header><h2>字段控件</h2><div><Checkbox label="字段只读" checked={readonly} onCheckedChange={setReadonly}/><Checkbox label="模拟字段错误" checked={error} onCheckedChange={setError}/></div></header><div className="wo-field-demo-grid"><div><DecimalInput label="精确金额" value={amount} onValueChange={setAmount} readOnly={readonly} placeholder="0.00" hint="保留输入精度" error={error?'金额不能为空':undefined}/><NullableBooleanInput label="审批布尔" value={approved} onValueChange={setApproved} readOnly={readonly}/><div className="wo-field-control"><label htmlFor="demo-notes">补充说明</label><Textarea id="demo-notes" value={notes} onChange={event=>setNotes(event.target.value)} readOnly={readonly} rows={4} placeholder="输入说明…"/></div></div><aside aria-label="控件输出"><h3>受控值</h3><dl><dt>金额</dt><dd><output data-testid="decimal-value">{JSON.stringify(amount)}</output></dd><dt>布尔</dt><dd><output data-testid="boolean-value">{JSON.stringify(approved)}</output></dd><dt>说明</dt><dd><output data-testid="textarea-value">{JSON.stringify(notes)}</output></dd></dl></aside></div></section>
+}

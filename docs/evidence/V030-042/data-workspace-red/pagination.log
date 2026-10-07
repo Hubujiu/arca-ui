@@ -1,0 +1,88 @@
+✖ small pages list exact pages; large totals use bounded windows (2.230984ms)
+✖ first and last pages retain nearby navigation without enumerating total (0.351251ms)
+✖ page input accepts only in-range integers, not coercions or partial numbers (0.266664ms)
+✔ invalid page metadata cannot produce navigable links (0.263478ms)
+ℹ tests 4
+ℹ suites 0
+ℹ pass 1
+ℹ fail 3
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 126.638584
+
+✖ failing tests:
+
+test at tests/weaveos/pagination.test.mjs:3:1
+✖ small pages list exact pages; large totals use bounded windows (2.230984ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:
+  + actual - expected
+  
+  + []
+  - [
+  -   1
+  - ]
+  
+      at TestContext.<anonymous> (file:///workspace/scratch/75c2273f6a80/arca-ui-V030-042/tests/weaveos/pagination.test.mjs:3:83)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.start (node:internal/test_runner/test:1242:17)
+      at startSubtestAfterBootstrap (node:internal/test_runner/harness:387:17) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: [],
+    expected: [ 1 ],
+    operator: 'deepStrictEqual',
+    diff: 'simple'
+  }
+
+test at tests/weaveos/pagination.test.mjs:4:1
+✖ first and last pages retain nearby navigation without enumerating total (0.351251ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:
+  + actual - expected
+  
+  + []
+  - [
+  -   1,
+  -   2,
+  -   3,
+  -   4,
+  -   'gap',
+  -   10
+  - ]
+  
+      at TestContext.<anonymous> (file:///workspace/scratch/75c2273f6a80/arca-ui-V030-042/tests/weaveos/pagination.test.mjs:4:92)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:387:3) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: [],
+    expected: [ 1, 2, 3, 4, 'gap', 10 ],
+    operator: 'deepStrictEqual',
+    diff: 'simple'
+  }
+
+test at tests/weaveos/pagination.test.mjs:5:1
+✖ page input accepts only in-range integers, not coercions or partial numbers (0.266664ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  null !== 123
+  
+      at TestContext.<anonymous> (file:///workspace/scratch/75c2273f6a80/arca-ui-V030-042/tests/weaveos/pagination.test.mjs:5:96)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: null,
+    expected: 123,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }

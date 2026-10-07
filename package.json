@@ -9,7 +9,13 @@
     "lint": "eslint .",
     "format": "prettier --write \"**/*.{ts,tsx}\"",
     "typecheck": "tsc --noEmit",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "test:weaveos": "playwright test -c playwright.weaveos.config.ts",
+    "dev:weaveos": "vite --config vite.weaveos.config.ts",
+    "build:weaveos": "vite build --config vite.weaveos.config.ts",
+    "test:weaveos:unit": "node --test tests/weaveos/geometry.test.mjs tests/weaveos/pagination.test.mjs tests/weaveos/filter-model.test.mjs",
+    "build:weaveos:library": "vite build --config vite.weaveos-library.config.ts && tsc -p tsconfig.weaveos-library.json && node scripts/weaveos/package.mjs",
+    "test:weaveos:package": "node --test tests/weaveos/package.test.mjs"
   },
   "dependencies": {
     "@base-ui/react": "^1.8.0",
@@ -42,7 +48,9 @@
     "tw-animate-css": "^1.4.0"
   },
   "devDependencies": {
+    "@axe-core/playwright": "4.13.0",
     "@eslint/js": "^10",
+    "@playwright/test": "1.63.0",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",

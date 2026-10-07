@@ -1,0 +1,13 @@
+✔ opening starts at the source center with its size (1.347838ms)
+✔ each distinct source yields its own trajectory (0.149637ms)
+✔ absent source uses no displacement (0.21158ms)
+✔ invalid or zero rectangles fall back safely (0.146191ms)
+✔ no division by zero from an unmeasured panel (0.181514ms)
+ℹ tests 5
+ℹ suites 0
+ℹ pass 5
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 111.968398

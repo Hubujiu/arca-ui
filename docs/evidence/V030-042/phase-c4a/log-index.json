@@ -1,0 +1,32 @@
+[
+  {
+    "stage": "red",
+    "raw_log_sha256": "f1f055119e6d0995bfec690058704a7aecfdbffee7ef1e5d6cd45b3c3c2bc686",
+    "excerpt_sha256": "7d0026559c929046aa4ec1c369e10b993de27c64933449a6e8deda898b42c046",
+    "omitted_over_8000_character_media_lines": 5
+  },
+  {
+    "stage": "aria-first",
+    "raw_log_sha256": "386432ea59624ed5241474666c8adf6bd1118adb008ce989be79ce9d6f43760b",
+    "excerpt_sha256": "b10471c6fb432c7809034579bfb54dd3ddaf39efd9ef91c772b5a116fc02fb92",
+    "omitted_over_8000_character_media_lines": 5
+  },
+  {
+    "stage": "aria-green",
+    "raw_log_sha256": "567a392093a572a5b7c746677a526294a054e769b617d8e87b63df27524ffb49",
+    "excerpt_sha256": "dbe228812147cf656c7323cbff6671749d1500e64ec3c7c1670c5e52337c9286",
+    "omitted_over_8000_character_media_lines": 5
+  },
+  {
+    "stage": "layout-red",
+    "raw_log_sha256": "08793ee8279c418d45c8d9e7db5d371d3a9fa02b18a3c5af72bdccc387de0aec",
+    "excerpt_sha256": "c9d4264fe83814ea86288e11f8502622f17c67126085cc6fc4debf0f187433ac",
+    "omitted_over_8000_character_media_lines": 5
+  },
+  {
+    "stage": "green",
+    "raw_log_sha256": "cf9896544171265bb863b0905d67e0ec01d4b149c9d5ab868e5c13d3a5a14803",
+    "excerpt_sha256": "1144503bef29e41843f55bb8f969b57530037ca544bac8af70d40c2500685c0b",
+    "omitted_over_8000_character_media_lines": 5
+  }
+]

@@ -1,0 +1,120 @@
+✖ AND and OR compose without flattening or changing meaning (1.452537ms)
+✖ text supports only equal or not equal, numeric supports all six (0.302057ms)
+✖ depth three is valid and depth four is rejected (0.177488ms)
+✖ condition budget is twenty, independent of grouping (0.176597ms)
+✔ unknown fields, operators, empty groups and malformed leaves fail closed (0.253173ms)
+✖ empty text is an explicit valid equality, exact decimal strings remain unchanged (0.185531ms)
+✔ oversized and cyclic filters are rejected without throwing (0.136246ms)
+ℹ tests 7
+ℹ suites 0
+ℹ pass 2
+ℹ fail 5
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 109.842682
+
+✖ failing tests:
+
+test at tests/weaveos/filter-model.test.mjs:7:1
+✖ AND and OR compose without flattening or changing meaning (1.452537ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  '筛选尚未实现' !== null
+  
+      at TestContext.<anonymous> (file:///workspace/scratch/75c2273f6a80/arca-ui-V030-042/tests/weaveos/filter-model.test.mjs:9:9)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.start (node:internal/test_runner/test:1242:17)
+      at startSubtestAfterBootstrap (node:internal/test_runner/harness:387:17) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: '筛选尚未实现',
+    expected: null,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tests/weaveos/filter-model.test.mjs:11:1
+✖ text supports only equal or not equal, numeric supports all six (0.302057ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  '筛选尚未实现' !== null
+  
+      at TestContext.<anonymous> (file:///workspace/scratch/75c2273f6a80/arca-ui-V030-042/tests/weaveos/filter-model.test.mjs:12:38)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:387:3) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: '筛选尚未实现',
+    expected: null,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tests/weaveos/filter-model.test.mjs:16:1
+✖ depth three is valid and depth four is rejected (0.177488ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  '筛选尚未实现' !== null
+  
+      at TestContext.<anonymous> (file:///workspace/scratch/75c2273f6a80/arca-ui-V030-042/tests/weaveos/filter-model.test.mjs:17:9)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: '筛选尚未实现',
+    expected: null,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tests/weaveos/filter-model.test.mjs:20:1
+✖ condition budget is twenty, independent of grouping (0.176597ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  '筛选尚未实现' !== null
+  
+      at TestContext.<anonymous> (file:///workspace/scratch/75c2273f6a80/arca-ui-V030-042/tests/weaveos/filter-model.test.mjs:21:9)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: '筛选尚未实现',
+    expected: null,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tests/weaveos/filter-model.test.mjs:27:1
+✖ empty text is an explicit valid equality, exact decimal strings remain unchanged (0.185531ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  '筛选尚未实现' !== null
+  
+      at TestContext.<anonymous> (file:///workspace/scratch/75c2273f6a80/arca-ui-V030-042/tests/weaveos/filter-model.test.mjs:28:9)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: '筛选尚未实现',
+    expected: null,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }

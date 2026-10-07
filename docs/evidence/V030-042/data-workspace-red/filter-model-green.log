@@ -1,0 +1,15 @@
+✔ AND and OR compose without flattening or changing meaning (1.03865ms)
+✔ text supports only equal or not equal, numeric supports all six (0.518774ms)
+✔ depth three is valid and depth four is rejected (0.213063ms)
+✔ condition budget is twenty, independent of grouping (0.169186ms)
+✔ unknown fields, operators, empty groups and malformed leaves fail closed (0.18505ms)
+✔ empty text is an explicit valid equality, exact decimal strings remain unchanged (0.117067ms)
+✔ oversized and cyclic filters are rejected without throwing (0.201905ms)
+ℹ tests 7
+ℹ suites 0
+ℹ pass 7
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 212.809545

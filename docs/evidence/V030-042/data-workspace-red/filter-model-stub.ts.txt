@@ -1,0 +1,6 @@
+export type FilterOperator='eq'|'neq'|'gt'|'gte'|'lt'|'lte'
+export interface FilterField{id:string;label:string;type:'text'|'number'|'time'}
+export interface FilterCondition{fieldId:string;operator:FilterOperator;value:string}
+export interface FilterGroup{operator:'and'|'or';children:(FilterCondition|FilterGroup)[]}
+export interface FilterPreset{id:string;name:string;filter:FilterGroup}
+export function validateFilter(_filter:unknown,_fields:readonly FilterField[]):string|null{return '筛选尚未实现'}

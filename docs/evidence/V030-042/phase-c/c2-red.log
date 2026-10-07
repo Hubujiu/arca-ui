@@ -1,0 +1,208 @@
+2026-10-07T02:58:47.0758971Z Running 25 tests using 2 workers
+2026-10-07T02:58:47.0759177Z 
+2026-10-07T02:58:49.1211980Z   ✓   1 [chromium] › tests/weaveos/data-workspace.spec.ts:5:1 › table renders only the current supplied page despite a large server total (1.3s)
+2026-10-07T02:58:49.8577107Z   ✓   2 [chromium] › tests/weaveos/data-workspace.spec.ts:11:1 › arbitrary page jump emits controlled request and waits for returned page (2.1s)
+2026-10-07T02:58:50.5427754Z   ✓   3 [chromium] › tests/weaveos/data-workspace.spec.ts:19:1 › text has no normal sort while numerical sorting is server-controlled (1.4s)
+2026-10-07T02:58:52.6954778Z   ✓   5 [chromium] › tests/weaveos/data-workspace.spec.ts:38:1 › related data change requires refresh and refresh requests page one (2.1s)
+2026-10-07T02:58:52.9167549Z   ✓   4 [chromium] › tests/weaveos/data-workspace.spec.ts:27:1 › hide a column changes display without clearing sort or issuing a query (3.0s)
+2026-10-07T02:58:54.1700118Z   ✓   6 [chromium] › tests/weaveos/data-workspace.spec.ts:46:1 › only current page selection is controlled and filtering does not happen locally (1.5s)
+2026-10-07T02:58:55.7945903Z   ✓   7 [chromium] › tests/weaveos/data-workspace.spec.ts:51:1 › table workspace passes settled accessibility and captures actual desktop UI (2.9s)
+2026-10-07T02:59:00.6010532Z   ✘   8 [chromium] › tests/weaveos/filter-manager.spec.ts:4:1 › opens saved-filter management first, with only one preset applied (6.4s)
+2026-10-07T02:59:16.0228785Z   ✘   9 [chromium] › tests/weaveos/filter-manager.spec.ts:13:1 › constructs AND with an OR subgroup and persists exact conditions (20.1s)
+2026-10-07T02:59:21.2399793Z   ✘  10 [chromium] › tests/weaveos/filter-manager.spec.ts:25:1 › failed persistence retains editor and never reports saved (20.1s)
+2026-10-07T02:59:36.6783409Z   ✘  11 [chromium] › tests/weaveos/filter-manager.spec.ts:34:1 › dirty Escape asks before discarding and restores source focus (20.1s)
+2026-10-07T02:59:40.5829200Z V042_OPENING_GEOMETRY {"count":33,"widths":[440,94.7471923828125,96.7559814453125,124.2679443359375,155.94189453125,202.6793212890625,320.6197509765625,389.9908447265625,423.4862060546875,435.8802185058594,439.3829345703125,440.16229248046875,440,439.9999694824219,439.9999694824219,440,440,440,440,440,440,440,440,440,440,440,440,440,440,440,440,440,440],"expanded":440}
+2026-10-07T02:59:40.7229800Z   ✓  13 [chromium] › tests/weaveos/origin-motion.spec.ts:3:1 › window geometry really travels from and returns toward the trigger (3.6s)
+2026-10-07T02:59:41.9321198Z   ✘  12 [chromium] › tests/weaveos/filter-manager.spec.ts:42:1 › text comparisons exclude range operators and editor is accessible (20.2s)
+[Long media line omitted (130019 characters). Full original: https://github.com/Hubujiu/arca-ui/actions/runs/37564477537]
+[Long media line omitted (215746 characters). Full original: https://github.com/Hubujiu/arca-ui/actions/runs/37564477537]
+2026-10-07T02:59:44.7057130Z   ✓  14 [chromium] › tests/weaveos/origin-motion.spec.ts:29:1 › successful save returns the window toward its source too (3.9s)
+[Long media line omitted (106730 characters). Full original: https://github.com/Hubujiu/arca-ui/actions/runs/37564477537]
+[Long media line omitted (75498 characters). Full original: https://github.com/Hubujiu/arca-ui/actions/runs/37564477537]
+[Long media line omitted (61190 characters). Full original: https://github.com/Hubujiu/arca-ui/actions/runs/37564477537]
+2026-10-07T02:59:46.3134834Z   ✓  15 [chromium] › tests/weaveos/preview.spec.ts:3:1 › capture component studio review images (3.9s)
+2026-10-07T02:59:46.5595515Z   ✓  16 [chromium] › tests/weaveos/studio.spec.ts:6:1 › shell uses collapsible icon rail and edge-to-edge content card (1.8s)
+2026-10-07T02:59:48.9358510Z   ✓  17 [chromium] › tests/weaveos/studio.spec.ts:19:1 › source dialog has accessible title, focus isolation and restores origin (2.6s)
+2026-10-07T02:59:49.0732405Z   ✓  18 [chromium] › tests/weaveos/studio.spec.ts:34:1 › second source restores its own focus (2.5s)
+2026-10-07T02:59:53.6428719Z   ✓  19 [chromium] › tests/weaveos/studio.spec.ts:41:1 › close during opening and repeat never leaves an overlay or locked page (4.7s)
+2026-10-07T02:59:54.3755353Z   ✓  20 [chromium] › tests/weaveos/studio.spec.ts:49:1 › save feedback waits for result and errors retain editable input (5.3s)
+2026-10-07T02:59:56.2393451Z   ✓  21 [chromium] › tests/weaveos/studio.spec.ts:65:1 › nested select Escape dismisses only the list, then dialog (2.6s)
+2026-10-07T02:59:56.2836780Z   ✓  22 [chromium] › tests/weaveos/studio.spec.ts:74:1 › reduced motion preserves usable modal without scale displacement (1.9s)
+2026-10-07T02:59:57.6652222Z   ✓  24 [chromium] › tests/weaveos/studio.spec.ts:92:1 › theme controls, basic controls and component navigation work (1.4s)
+2026-10-07T02:59:58.9311748Z   ✓  23 [chromium] › tests/weaveos/studio.spec.ts:83:1 › mobile view fits viewport and dialog remains operable (2.7s)
+2026-10-07T03:00:00.3346478Z   ✓  25 [chromium] › tests/weaveos/studio.spec.ts:102:1 › studio and open modal have no serious accessibility violations (2.7s)
+2026-10-07T03:00:00.4120617Z 
+2026-10-07T03:00:00.4125236Z 
+2026-10-07T03:00:00.4134210Z   1) [chromium] › tests/weaveos/filter-manager.spec.ts:4:1 › opens saved-filter management first, with only one preset applied 
+2026-10-07T03:00:00.4134629Z 
+2026-10-07T03:00:00.4134809Z     Error: expect(locator).toBeVisible() failed
+2026-10-07T03:00:00.4135117Z 
+2026-10-07T03:00:00.4135381Z     Locator: getByRole('dialog', { name: '自定义筛选' })
+2026-10-07T03:00:00.4135652Z     Expected: visible
+2026-10-07T03:00:00.4135842Z     Timeout: 5000ms
+2026-10-07T03:00:00.4136045Z     Error: element(s) not found
+2026-10-07T03:00:00.4136182Z 
+2026-10-07T03:00:00.4136258Z     Call log:
+2026-10-07T03:00:00.4136755Z       - Expect "toBeVisible" getByRole('dialog', { name: '自定义筛选' }) with timeout 5000ms
+2026-10-07T03:00:00.4137432Z       - waiting for getByRole('dialog', { name: '自定义筛选' })
+2026-10-07T03:00:00.4137700Z 
+2026-10-07T03:00:00.4137709Z 
+2026-10-07T03:00:00.4138818Z       3 | test.beforeEach(async({page})=>{await page.goto('/weaveos.html');await page.getByRole('button',{name:'数据工作区',exact:true}).click();await page.getByRole('button',{name:'自定义筛选',exact:true}).click()})
+2026-10-07T03:00:00.4140047Z       4 | test('opens saved-filter management first, with only one preset applied',async({page})=>{
+2026-10-07T03:00:00.4140964Z     > 5 |  const dialog=page.getByRole('dialog',{name:'自定义筛选'});await expect(dialog).toBeVisible()
+2026-10-07T03:00:00.4141578Z         |                                                                            ^
+2026-10-07T03:00:00.4142176Z       6 |  await dialog.getByRole('button',{name:'应用：待审批'}).click()
+2026-10-07T03:00:00.4142648Z       7 |  await expect(page.getByTestId('filter-applied')).toHaveText('待审批')
+2026-10-07T03:00:00.4143451Z       8 |  await page.getByRole('button',{name:'自定义筛选',exact:true}).click()
+2026-10-07T03:00:00.4144293Z         at /home/runner/work/arca-ui/arca-ui/tests/weaveos/filter-manager.spec.ts:5:76
+2026-10-07T03:00:00.4144690Z 
+2026-10-07T03:00:00.4145194Z     attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+2026-10-07T03:00:00.4146092Z     test-results/filter-manager-opens-saved-8138a-ith-only-one-preset-applied-chromium/test-failed-1.png
+2026-10-07T03:00:00.4147078Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+2026-10-07T03:00:00.4147425Z 
+2026-10-07T03:00:00.4148012Z     Error Context: test-results/filter-manager-opens-saved-8138a-ith-only-one-preset-applied-chromium/error-context.md
+2026-10-07T03:00:00.4148637Z 
+2026-10-07T03:00:00.4149137Z     attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+2026-10-07T03:00:00.4150046Z     test-results/filter-manager-opens-saved-8138a-ith-only-one-preset-applied-chromium/trace.zip
+2026-10-07T03:00:00.4150896Z     Usage:
+2026-10-07T03:00:00.4151034Z 
+2026-10-07T03:00:00.4151665Z         npx playwright show-trace test-results/filter-manager-opens-saved-8138a-ith-only-one-preset-applied-chromium/trace.zip
+2026-10-07T03:00:00.4152294Z 
+2026-10-07T03:00:00.4152770Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+2026-10-07T03:00:00.4153113Z 
+2026-10-07T03:00:00.4153728Z   2) [chromium] › tests/weaveos/filter-manager.spec.ts:13:1 › constructs AND with an OR subgroup and persists exact conditions 
+2026-10-07T03:00:00.4154093Z 
+2026-10-07T03:00:00.4154200Z     Test timeout of 20000ms exceeded.
+2026-10-07T03:00:00.4154351Z 
+2026-10-07T03:00:00.4154505Z     Error: locator.click: Test timeout of 20000ms exceeded.
+2026-10-07T03:00:00.4154767Z     Call log:
+2026-10-07T03:00:00.4155124Z       - waiting for getByRole('dialog').getByRole('button', { name: '新建筛选' })
+2026-10-07T03:00:00.4155355Z 
+2026-10-07T03:00:00.4155383Z 
+2026-10-07T03:00:00.4155460Z       12 | })
+2026-10-07T03:00:00.4155801Z       13 | test('constructs AND with an OR subgroup and persists exact conditions',async({page})=>{
+2026-10-07T03:00:00.4156409Z     > 14 |  const dialog=page.getByRole('dialog');await dialog.getByRole('button',{name:'新建筛选'}).click()
+2026-10-07T03:00:00.4156846Z          |                                                                                       ^
+2026-10-07T03:00:00.4157230Z       15 |  await dialog.getByLabel('筛选名称').fill('财务检查')
+2026-10-07T03:00:00.4157626Z       16 |  await dialog.getByLabel('条件值 1.1',{exact:true}).fill('差旅')
+2026-10-07T03:00:00.4158076Z       17 |  await dialog.getByRole('button',{name:'添加或条件组 1',exact:true}).click()
+2026-10-07T03:00:00.4158513Z         at /home/runner/work/arca-ui/arca-ui/tests/weaveos/filter-manager.spec.ts:14:87
+2026-10-07T03:00:00.4158770Z 
+2026-10-07T03:00:00.4159239Z     attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+2026-10-07T03:00:00.4159837Z     test-results/filter-manager-constructs--a4e12-d-persists-exact-conditions-chromium/test-failed-1.png
+2026-10-07T03:00:00.4160454Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+2026-10-07T03:00:00.4160675Z 
+2026-10-07T03:00:00.4161030Z     Error Context: test-results/filter-manager-constructs--a4e12-d-persists-exact-conditions-chromium/error-context.md
+2026-10-07T03:00:00.4161400Z 
+2026-10-07T03:00:00.4161705Z     attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+2026-10-07T03:00:00.4162246Z     test-results/filter-manager-constructs--a4e12-d-persists-exact-conditions-chromium/trace.zip
+2026-10-07T03:00:00.4162628Z     Usage:
+2026-10-07T03:00:00.4162728Z 
+2026-10-07T03:00:00.4163092Z         npx playwright show-trace test-results/filter-manager-constructs--a4e12-d-persists-exact-conditions-chromium/trace.zip
+2026-10-07T03:00:00.4163479Z 
+2026-10-07T03:00:00.4163951Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+2026-10-07T03:00:00.4164176Z 
+2026-10-07T03:00:00.4164562Z   3) [chromium] › tests/weaveos/filter-manager.spec.ts:25:1 › failed persistence retains editor and never reports saved 
+2026-10-07T03:00:00.4164899Z 
+2026-10-07T03:00:00.4165007Z     Test timeout of 20000ms exceeded.
+2026-10-07T03:00:00.4165148Z 
+2026-10-07T03:00:00.4165303Z     Error: locator.click: Test timeout of 20000ms exceeded.
+2026-10-07T03:00:00.4165559Z     Call log:
+2026-10-07T03:00:00.4165901Z       - waiting for getByRole('dialog').getByRole('button', { name: '新建筛选' })
+2026-10-07T03:00:00.4166124Z 
+2026-10-07T03:00:00.4166134Z 
+2026-10-07T03:00:00.4166203Z       24 | })
+2026-10-07T03:00:00.4166531Z       25 | test('failed persistence retains editor and never reports saved',async({page})=>{
+2026-10-07T03:00:00.4167037Z     > 26 |  await page.getByRole('dialog').getByRole('button',{name:'新建筛选'}).click()
+2026-10-07T03:00:00.4167410Z          |                                                                   ^
+2026-10-07T03:00:00.4167908Z       27 |  await page.getByLabel('筛选名称').fill('失败不丢失')
+2026-10-07T03:00:00.4168290Z       28 |  await page.getByRole('checkbox',{name:'模拟筛选保存失败'}).check()
+2026-10-07T03:00:00.4168707Z       29 |  await page.getByRole('button',{name:'保存筛选',exact:true}).click()
+2026-10-07T03:00:00.4169133Z         at /home/runner/work/arca-ui/arca-ui/tests/weaveos/filter-manager.spec.ts:26:67
+2026-10-07T03:00:00.4169384Z 
+2026-10-07T03:00:00.4169698Z     attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+2026-10-07T03:00:00.4170268Z     test-results/filter-manager-failed-pers-15a54-tor-and-never-reports-saved-chromium/test-failed-1.png
+2026-10-07T03:00:00.4170897Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+2026-10-07T03:00:00.4171213Z 
+2026-10-07T03:00:00.4171588Z     Error Context: test-results/filter-manager-failed-pers-15a54-tor-and-never-reports-saved-chromium/error-context.md
+2026-10-07T03:00:00.4171998Z 
+2026-10-07T03:00:00.4172320Z     attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+2026-10-07T03:00:00.4172861Z     test-results/filter-manager-failed-pers-15a54-tor-and-never-reports-saved-chromium/trace.zip
+2026-10-07T03:00:00.4173252Z     Usage:
+2026-10-07T03:00:00.4173345Z 
+2026-10-07T03:00:00.4173909Z         npx playwright show-trace test-results/filter-manager-failed-pers-15a54-tor-and-never-reports-saved-chromium/trace.zip
+2026-10-07T03:00:00.4174302Z 
+2026-10-07T03:00:00.4174589Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+2026-10-07T03:00:00.4174803Z 
+2026-10-07T03:00:00.4175202Z   4) [chromium] › tests/weaveos/filter-manager.spec.ts:34:1 › dirty Escape asks before discarding and restores source focus 
+2026-10-07T03:00:00.4175555Z 
+2026-10-07T03:00:00.4175658Z     Test timeout of 20000ms exceeded.
+2026-10-07T03:00:00.4175947Z 
+2026-10-07T03:00:00.4176103Z     Error: locator.click: Test timeout of 20000ms exceeded.
+2026-10-07T03:00:00.4176362Z     Call log:
+2026-10-07T03:00:00.4176640Z       - waiting for getByRole('button', { name: '新建筛选' })
+2026-10-07T03:00:00.4176821Z 
+2026-10-07T03:00:00.4176825Z 
+2026-10-07T03:00:00.4176899Z       33 | })
+2026-10-07T03:00:00.4177224Z       34 | test('dirty Escape asks before discarding and restores source focus',async({page})=>{
+2026-10-07T03:00:00.4177819Z     > 35 |  await page.getByRole('button',{name:'新建筛选'}).click();await page.getByLabel('筛选名称').fill('未保存')
+2026-10-07T03:00:00.4178237Z          |                                               ^
+2026-10-07T03:00:00.4178514Z       36 |  await page.keyboard.press('Escape')
+2026-10-07T03:00:00.4179019Z       37 |  const dialog=page.getByRole('dialog');await expect(dialog.getByText('放弃未保存的修改？')).toBeVisible()
+2026-10-07T03:00:00.4179689Z       38 |  await dialog.getByRole('button',{name:'继续编辑'}).click();await expect(page.getByLabel('筛选名称')).toHaveValue('未保存')
+2026-10-07T03:00:00.4180641Z         at /home/runner/work/arca-ui/arca-ui/tests/weaveos/filter-manager.spec.ts:35:47
+2026-10-07T03:00:00.4180899Z 
+2026-10-07T03:00:00.4181227Z     attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+2026-10-07T03:00:00.4181810Z     test-results/filter-manager-dirty-Escap-68bb9-g-and-restores-source-focus-chromium/test-failed-1.png
+2026-10-07T03:00:00.4182425Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+2026-10-07T03:00:00.4182634Z 
+2026-10-07T03:00:00.4182986Z     Error Context: test-results/filter-manager-dirty-Escap-68bb9-g-and-restores-source-focus-chromium/error-context.md
+2026-10-07T03:00:00.4183356Z 
+2026-10-07T03:00:00.4183871Z     attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+2026-10-07T03:00:00.4184439Z     test-results/filter-manager-dirty-Escap-68bb9-g-and-restores-source-focus-chromium/trace.zip
+2026-10-07T03:00:00.4184832Z     Usage:
+2026-10-07T03:00:00.4184927Z 
+2026-10-07T03:00:00.4185297Z         npx playwright show-trace test-results/filter-manager-dirty-Escap-68bb9-g-and-restores-source-focus-chromium/trace.zip
+2026-10-07T03:00:00.4185676Z 
+2026-10-07T03:00:00.4185956Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+2026-10-07T03:00:00.4186172Z 
+2026-10-07T03:00:00.4186581Z   5) [chromium] › tests/weaveos/filter-manager.spec.ts:42:1 › text comparisons exclude range operators and editor is accessible 
+2026-10-07T03:00:00.4186951Z 
+2026-10-07T03:00:00.4187059Z     Test timeout of 20000ms exceeded.
+2026-10-07T03:00:00.4187206Z 
+2026-10-07T03:00:00.4187354Z     Error: locator.click: Test timeout of 20000ms exceeded.
+2026-10-07T03:00:00.4187609Z     Call log:
+2026-10-07T03:00:00.4187886Z       - waiting for getByRole('button', { name: '新建筛选' })
+2026-10-07T03:00:00.4188064Z 
+2026-10-07T03:00:00.4188069Z 
+2026-10-07T03:00:00.4188267Z       41 | })
+2026-10-07T03:00:00.4188627Z       42 | test('text comparisons exclude range operators and editor is accessible',async({page})=>{
+2026-10-07T03:00:00.4189101Z     > 43 |  await page.getByRole('button',{name:'新建筛选'}).click()
+2026-10-07T03:00:00.4189400Z          |                                               ^
+2026-10-07T03:00:00.4189766Z       44 |  await page.getByRole('combobox',{name:'比较方式 1.1'}).click()
+2026-10-07T03:00:00.4190476Z       45 |  await expect(page.getByRole('option',{name:'等于',exact:true})).toBeVisible();await expect(page.getByRole('option',{name:'不等于',exact:true})).toBeVisible()
+2026-10-07T03:00:00.4191140Z       46 |  await expect(page.getByRole('option',{name:'大于',exact:true})).toHaveCount(0)
+2026-10-07T03:00:00.4191601Z         at /home/runner/work/arca-ui/arca-ui/tests/weaveos/filter-manager.spec.ts:43:47
+2026-10-07T03:00:00.4191852Z 
+2026-10-07T03:00:00.4192158Z     attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+2026-10-07T03:00:00.4192964Z     test-results/filter-manager-text-compar-fccfc-rs-and-editor-is-accessible-chromium/test-failed-1.png
+2026-10-07T03:00:00.4194032Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+2026-10-07T03:00:00.4194326Z 
+2026-10-07T03:00:00.4194677Z     Error Context: test-results/filter-manager-text-compar-fccfc-rs-and-editor-is-accessible-chromium/error-context.md
+2026-10-07T03:00:00.4195051Z 
+2026-10-07T03:00:00.4195365Z     attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+2026-10-07T03:00:00.4195896Z     test-results/filter-manager-text-compar-fccfc-rs-and-editor-is-accessible-chromium/trace.zip
+2026-10-07T03:00:00.4196282Z     Usage:
+2026-10-07T03:00:00.4196375Z 
+2026-10-07T03:00:00.4196745Z         npx playwright show-trace test-results/filter-manager-text-compar-fccfc-rs-and-editor-is-accessible-chromium/trace.zip
+2026-10-07T03:00:00.4197128Z 
+2026-10-07T03:00:00.4197408Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+2026-10-07T03:00:00.4197782Z 
+2026-10-07T03:00:00.4197887Z   5 failed
+2026-10-07T03:00:00.4198600Z     [chromium] › tests/weaveos/filter-manager.spec.ts:4:1 › opens saved-filter management first, with only one preset applied 
+2026-10-07T03:00:00.4199348Z     [chromium] › tests/weaveos/filter-manager.spec.ts:13:1 › constructs AND with an OR subgroup and persists exact conditions 
+2026-10-07T03:00:00.4200081Z     [chromium] › tests/weaveos/filter-manager.spec.ts:25:1 › failed persistence retains editor and never reports saved 
+2026-10-07T03:00:00.4201025Z     [chromium] › tests/weaveos/filter-manager.spec.ts:34:1 › dirty Escape asks before discarding and restores source focus 
+2026-10-07T03:00:00.4202131Z     [chromium] › tests/weaveos/filter-manager.spec.ts:42:1 › text comparisons exclude range operators and editor is accessible 
+2026-10-07T03:00:00.4202563Z   20 passed (1.2m)
+2026-10-07T03:00:00.4522246Z ##[error]Process completed with exit code 1.

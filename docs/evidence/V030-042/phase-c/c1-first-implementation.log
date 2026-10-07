@@ -1,0 +1,136 @@
+2026-10-07T02:53:03.4893579Z Running 20 tests using 2 workers
+2026-10-07T02:53:03.4893818Z 
+2026-10-07T02:53:05.7869150Z   ✓   1 [chromium] › tests/weaveos/data-workspace.spec.ts:5:1 › table renders only the current supplied page despite a large server total (1.5s)
+2026-10-07T02:53:06.6719173Z   ✓   2 [chromium] › tests/weaveos/data-workspace.spec.ts:11:1 › arbitrary page jump emits controlled request and waits for returned page (2.4s)
+2026-10-07T02:53:09.4091982Z   ✓   4 [chromium] › tests/weaveos/data-workspace.spec.ts:27:1 › hide a column changes display without clearing sort or issuing a query (2.7s)
+2026-10-07T02:53:11.3342439Z   ✓   5 [chromium] › tests/weaveos/data-workspace.spec.ts:38:1 › related data change requires refresh and refresh requests page one (1.9s)
+2026-10-07T02:53:12.2956161Z   ✘   3 [chromium] › tests/weaveos/data-workspace.spec.ts:19:1 › text has no normal sort while numerical sorting is server-controlled (6.4s)
+2026-10-07T02:53:14.7130480Z   ✓   7 [chromium] › tests/weaveos/data-workspace.spec.ts:51:1 › table workspace passes settled accessibility and captures actual desktop UI (1.9s)
+2026-10-07T02:53:18.1985417Z V042_OPENING_GEOMETRY {"count":32,"widths":[440,93.9332275390625,95.68994140625,124.2679443359375,155.94189453125,202.6793212890625,322.6497802734375,393.98565673828125,425.0538330078125,436.377197265625,439.5149230957031,440.2005615234375,440.0000305175781,440,439.9999694824219,440,440,440,440,440,440,440,440,440,440,440,440,440,440,440,440,440],"expanded":440}
+2026-10-07T02:53:18.3638952Z   ✓   8 [chromium] › tests/weaveos/origin-motion.spec.ts:3:1 › window geometry really travels from and returns toward the trigger (3.6s)
+2026-10-07T02:53:22.2859125Z   ✓   9 [chromium] › tests/weaveos/origin-motion.spec.ts:29:1 › successful save returns the window toward its source too (3.9s)
+[Long media line omitted (130019 characters). Full original: https://github.com/Hubujiu/arca-ui/actions/runs/37564021114]
+[Long media line omitted (215786 characters). Full original: https://github.com/Hubujiu/arca-ui/actions/runs/37564021114]
+[Long media line omitted (106862 characters). Full original: https://github.com/Hubujiu/arca-ui/actions/runs/37564021114]
+[Long media line omitted (75498 characters). Full original: https://github.com/Hubujiu/arca-ui/actions/runs/37564021114]
+[Long media line omitted (61406 characters). Full original: https://github.com/Hubujiu/arca-ui/actions/runs/37564021114]
+2026-10-07T02:53:25.7880890Z   ✓  10 [chromium] › tests/weaveos/preview.spec.ts:3:1 › capture component studio review images (3.5s)
+2026-10-07T02:53:27.2602685Z   ✓  11 [chromium] › tests/weaveos/studio.spec.ts:6:1 › shell uses collapsible icon rail and edge-to-edge content card (1.5s)
+2026-10-07T02:53:29.2372249Z   ✓  12 [chromium] › tests/weaveos/studio.spec.ts:19:1 › source dialog has accessible title, focus isolation and restores origin (2.0s)
+2026-10-07T02:53:31.3364626Z   ✓  13 [chromium] › tests/weaveos/studio.spec.ts:34:1 › second source restores its own focus (2.1s)
+2026-10-07T02:53:31.6564896Z   ✘   6 [chromium] › tests/weaveos/data-workspace.spec.ts:46:1 › only current page selection is controlled and filtering does not happen locally (20.2s)
+2026-10-07T02:53:35.9722819Z   ✓  14 [chromium] › tests/weaveos/studio.spec.ts:41:1 › close during opening and repeat never leaves an overlay or locked page (4.6s)
+2026-10-07T02:53:37.4146738Z   ✓  15 [chromium] › tests/weaveos/studio.spec.ts:49:1 › save feedback waits for result and errors retain editable input (5.2s)
+2026-10-07T02:53:38.6808548Z   ✓  16 [chromium] › tests/weaveos/studio.spec.ts:65:1 › nested select Escape dismisses only the list, then dialog (2.7s)
+2026-10-07T02:53:39.4450898Z   ✓  17 [chromium] › tests/weaveos/studio.spec.ts:74:1 › reduced motion preserves usable modal without scale displacement (2.0s)
+2026-10-07T02:53:40.6772554Z   ✓  19 [chromium] › tests/weaveos/studio.spec.ts:92:1 › theme controls, basic controls and component navigation work (1.2s)
+2026-10-07T02:53:41.2678961Z   ✓  18 [chromium] › tests/weaveos/studio.spec.ts:83:1 › mobile view fits viewport and dialog remains operable (2.6s)
+2026-10-07T02:53:43.2141607Z   ✓  20 [chromium] › tests/weaveos/studio.spec.ts:102:1 › studio and open modal have no serious accessibility violations (2.5s)
+2026-10-07T02:53:43.2912838Z 
+2026-10-07T02:53:43.2917130Z 
+2026-10-07T02:53:43.2927726Z   1) [chromium] › tests/weaveos/data-workspace.spec.ts:19:1 › text has no normal sort while numerical sorting is server-controlled 
+2026-10-07T02:53:43.2928430Z 
+2026-10-07T02:53:43.2928689Z     Error: expect(locator).toHaveText(expected) failed
+2026-10-07T02:53:43.2928995Z 
+2026-10-07T02:53:43.2929466Z     Locator: getByRole('table', { name: '报销记录' }).getByRole('row').nth(1)
+2026-10-07T02:53:43.2929943Z     Timeout: 5000ms
+2026-10-07T02:53:43.2930247Z     - Expected  - 5
+2026-10-07T02:53:43.2930525Z     + Received  + 1
+2026-10-07T02:53:43.2930686Z 
+2026-10-07T02:53:43.2930892Z     - 选择记录 BX-00001
+2026-10-07T02:53:43.2931170Z     - 	BX-00001	
+2026-10-07T02:53:43.2931449Z     - 林
+2026-10-07T02:53:43.2931724Z     - 林亦
+2026-10-07T02:53:43.2932559Z     - 	项目差旅	¥ 1,280.00	2026-10-07	已通过
+2026-10-07T02:53:43.2933157Z     + 选择记录 BX-00001BX-00001林林亦项目差旅¥ 1,280.002026-10-07已通过
+2026-10-07T02:53:43.2933448Z 
+2026-10-07T02:53:43.2933572Z     Call log:
+2026-10-07T02:53:43.2934298Z       - Expect "toHaveText" getByRole('table', { name: '报销记录' }).getByRole('row').nth(1) with timeout 5000ms
+2026-10-07T02:53:43.2935197Z       - waiting for getByRole('table', { name: '报销记录' }).getByRole('row').nth(1)
+2026-10-07T02:53:43.2936148Z         14 × locator resolved to <tr data-slot="table-row" class="cn-table-row has-aria-expanded:bg-muted/50">…</tr>
+2026-10-07T02:53:43.2937305Z            - unexpected value "选择记录 BX-00001BX-00001林林亦项目差旅¥ 1,280.002026-10-07已通过"
+2026-10-07T02:53:43.2937703Z 
+2026-10-07T02:53:43.2937710Z 
+2026-10-07T02:53:43.2938072Z       23 |  await page.getByRole('button',{name:'排序：金额'}).click()
+2026-10-07T02:53:43.2938916Z       24 |  await expect(page.getByTestId('table-request')).toContainText('"sort":{"key":"amount","direction":"asc"}')
+2026-10-07T02:53:43.2940048Z     > 25 |  await expect(page.getByRole('table',{name:'报销记录'}).getByRole('row').nth(1)).toHaveText(before)
+2026-10-07T02:53:43.2940730Z          |                                                                              ^
+2026-10-07T02:53:43.2941149Z       26 | })
+2026-10-07T02:53:43.2941731Z       27 | test('hide a column changes display without clearing sort or issuing a query',async({page})=>{
+2026-10-07T02:53:43.2942562Z       28 |  await page.getByRole('button',{name:'排序：金额'}).click()
+2026-10-07T02:53:43.2943195Z         at /home/runner/work/arca-ui/arca-ui/tests/weaveos/data-workspace.spec.ts:25:78
+2026-10-07T02:53:43.2943599Z 
+2026-10-07T02:53:43.2944101Z     attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+2026-10-07T02:53:43.2945098Z     test-results/data-workspace-text-has-no-c8f71-orting-is-server-controlled-chromium/test-failed-1.png
+2026-10-07T02:53:43.2946193Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+2026-10-07T02:53:43.2946559Z 
+2026-10-07T02:53:43.2947718Z     Error Context: test-results/data-workspace-text-has-no-c8f71-orting-is-server-controlled-chromium/error-context.md
+2026-10-07T02:53:43.2948405Z 
+2026-10-07T02:53:43.2949040Z     attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+2026-10-07T02:53:43.2949989Z     test-results/data-workspace-text-has-no-c8f71-orting-is-server-controlled-chromium/trace.zip
+2026-10-07T02:53:43.2950651Z     Usage:
+2026-10-07T02:53:43.2950790Z 
+2026-10-07T02:53:43.2951450Z         npx playwright show-trace test-results/data-workspace-text-has-no-c8f71-orting-is-server-controlled-chromium/trace.zip
+2026-10-07T02:53:43.2952084Z 
+2026-10-07T02:53:43.2952524Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+2026-10-07T02:53:43.2952875Z 
+2026-10-07T02:53:43.2953683Z   2) [chromium] › tests/weaveos/data-workspace.spec.ts:46:1 › only current page selection is controlled and filtering does not happen locally 
+2026-10-07T02:53:43.2954545Z 
+2026-10-07T02:53:43.2954708Z     Test timeout of 20000ms exceeded.
+2026-10-07T02:53:43.2954946Z 
+2026-10-07T02:53:43.2955190Z     Error: locator.check: Test timeout of 20000ms exceeded.
+2026-10-07T02:53:43.2955601Z     Call log:
+2026-10-07T02:53:43.2956076Z       - waiting for getByRole('checkbox', { name: '选择当前页记录' })
+2026-10-07T02:53:43.2958278Z         - locator resolved to <span tabindex="0" role="checkbox" data-unchecked="" id="base-ui-_r_f_" aria-checked="false" data-slot="checkbox" aria-labelledby="base-ui-_r_g_-label" class="cn-checkbox peer relative shrink-0 outline-none after:absolute after:-inset-x-3 after:-inset-y-2 disabled:cursor-not-allowed disabled:opacity-50 wo-checkbox"></span>
+2026-10-07T02:53:43.2959881Z       - attempting click action
+2026-10-07T02:53:43.2960394Z         2 × waiting for element to be visible, enabled and stable
+2026-10-07T02:53:43.2960895Z           - element is visible, enabled and stable
+2026-10-07T02:53:43.2961353Z           - scrolling into view if needed
+2026-10-07T02:53:43.2961726Z           - done scrolling
+2026-10-07T02:53:43.2962530Z           - <th scope="col" data-slot="table-head" class="cn-table-head wo-table-select">…</th> intercepts pointer events
+2026-10-07T02:53:43.2963152Z         - retrying click action
+2026-10-07T02:53:43.2963469Z         - waiting 20ms
+2026-10-07T02:53:43.2963964Z         2 × waiting for element to be visible, enabled and stable
+2026-10-07T02:53:43.2964469Z           - element is visible, enabled and stable
+2026-10-07T02:53:43.2964897Z           - scrolling into view if needed
+2026-10-07T02:53:43.2965252Z           - done scrolling
+2026-10-07T02:53:43.2966063Z           - <th scope="col" data-slot="table-head" class="cn-table-head wo-table-select">…</th> intercepts pointer events
+2026-10-07T02:53:43.2966759Z         - retrying click action
+2026-10-07T02:53:43.2967238Z           - waiting 100ms
+2026-10-07T02:53:43.2967758Z         37 × waiting for element to be visible, enabled and stable
+2026-10-07T02:53:43.2968292Z            - element is visible, enabled and stable
+2026-10-07T02:53:43.2968720Z            - scrolling into view if needed
+2026-10-07T02:53:43.2969082Z            - done scrolling
+2026-10-07T02:53:43.2969907Z            - <th scope="col" data-slot="table-head" class="cn-table-head wo-table-select">…</th> intercepts pointer events
+2026-10-07T02:53:43.2970601Z          - retrying click action
+2026-10-07T02:53:43.2970928Z            - waiting 500ms
+2026-10-07T02:53:43.2971117Z 
+2026-10-07T02:53:43.2971123Z 
+2026-10-07T02:53:43.2971235Z       45 | })
+2026-10-07T02:53:43.2971844Z       46 | test('only current page selection is controlled and filtering does not happen locally',async({page})=>{
+2026-10-07T02:53:43.2972790Z     > 47 |  await page.getByRole('checkbox',{name:'选择当前页记录'}).check()
+2026-10-07T02:53:43.2973334Z          |                                                    ^
+2026-10-07T02:53:43.2973952Z       48 |  await expect(page.getByTestId('table-selected')).toHaveText('已选 20 条')
+2026-10-07T02:53:43.2974979Z       49 |  await expect(page.getByRole('table',{name:'报销记录'}).getByRole('row')).toHaveCount(21)
+2026-10-07T02:53:43.2975532Z       50 | })
+2026-10-07T02:53:43.2976037Z         at /home/runner/work/arca-ui/arca-ui/tests/weaveos/data-workspace.spec.ts:47:52
+2026-10-07T02:53:43.2976455Z 
+2026-10-07T02:53:43.2977115Z     attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+2026-10-07T02:53:43.2978125Z     test-results/data-workspace-only-curren-f0154-ing-does-not-happen-locally-chromium/test-failed-1.png
+2026-10-07T02:53:43.2979178Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+2026-10-07T02:53:43.2979557Z 
+2026-10-07T02:53:43.2980163Z     Error Context: test-results/data-workspace-only-curren-f0154-ing-does-not-happen-locally-chromium/error-context.md
+2026-10-07T02:53:43.2980774Z 
+2026-10-07T02:53:43.2981259Z     attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+2026-10-07T02:53:43.2982392Z     test-results/data-workspace-only-curren-f0154-ing-does-not-happen-locally-chromium/trace.zip
+2026-10-07T02:53:43.2983052Z     Usage:
+2026-10-07T02:53:43.2983212Z 
+2026-10-07T02:53:43.2983857Z         npx playwright show-trace test-results/data-workspace-only-curren-f0154-ing-does-not-happen-locally-chromium/trace.zip
+2026-10-07T02:53:43.2984538Z 
+2026-10-07T02:53:43.2985052Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+2026-10-07T02:53:43.2985563Z 
+2026-10-07T02:53:43.2985668Z   2 failed
+2026-10-07T02:53:43.2986542Z     [chromium] › tests/weaveos/data-workspace.spec.ts:19:1 › text has no normal sort while numerical sorting is server-controlled 
+2026-10-07T02:53:43.2988144Z     [chromium] › tests/weaveos/data-workspace.spec.ts:46:1 › only current page selection is controlled and filtering does not happen locally 
+2026-10-07T02:53:43.2988944Z   18 passed (41.0s)
+2026-10-07T02:53:43.3307313Z ##[error]Process completed with exit code 1.

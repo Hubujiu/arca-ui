@@ -1,0 +1,69 @@
+✖ opening starts at the source center with its size (2.181187ms)
+✖ each distinct source yields its own trajectory (0.269547ms)
+✔ absent source uses no displacement (0.180853ms)
+✔ invalid or zero rectangles fall back safely (0.143937ms)
+✔ no division by zero from an unmeasured panel (0.097407ms)
+ℹ tests 5
+ℹ suites 0
+ℹ pass 3
+ℹ fail 2
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 125.957549
+
+✖ failing tests:
+
+test at tests/weaveos/geometry.test.mjs:5:1
+✖ opening starts at the source center with its size (2.181187ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:
+  + actual - expected
+  
+  + null
+  - {
+  -   scaleX: 0.1,
+  -   scaleY: 0.1,
+  -   x: -570,
+  -   y: -300
+  - }
+  
+      at TestContext.<anonymous> (file:///workspace/scratch/75c2273f6a80/arca-ui-V030-042/tests/weaveos/geometry.test.mjs:5:69)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.start (node:internal/test_runner/test:1242:17)
+      at startSubtestAfterBootstrap (node:internal/test_runner/harness:387:17) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: null,
+    expected: { x: -570, y: -300, scaleX: 0.1, scaleY: 0.1 },
+    operator: 'deepStrictEqual',
+    diff: 'simple'
+  }
+
+test at tests/weaveos/geometry.test.mjs:6:1
+✖ each distinct source yields its own trajectory (0.269547ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:
+  + actual - expected
+  
+  + null
+  - {
+  -   scaleX: 0.2,
+  -   scaleY: 0.2,
+  -   x: 360,
+  -   y: 340
+  - }
+  
+      at TestContext.<anonymous> (file:///workspace/scratch/75c2273f6a80/arca-ui-V030-042/tests/weaveos/geometry.test.mjs:6:66)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:387:3) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: null,
+    expected: { x: 360, y: 340, scaleX: 0.2, scaleY: 0.2 },
+    operator: 'deepStrictEqual',
+    diff: 'simple'
+  }

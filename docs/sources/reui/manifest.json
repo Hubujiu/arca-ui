@@ -1,0 +1,171 @@
+{
+  "commit": "ef0fe1252d9b24d69bdedee48a69ec9b29d1f217",
+  "license": "MIT",
+  "files": [
+    {
+      "upstream": "LICENSE.md",
+      "sha256": "09592ffefa6512b68dd7aa9031bc50d5d39cfcc9da08288f5eb1f9d236baca66",
+      "bytes": 1071
+    },
+    {
+      "upstream": "registry/styles/style-nova.css",
+      "sha256": "5d5751579c015b61e77cf0822862a43ac79f3e6fed236a17624be8e6d1ebea1d",
+      "bytes": 75461
+    },
+    {
+      "upstream": "registry/bases/base/ui/button.tsx",
+      "sha256": "74f982d7ad7a764e3c95a519fc063a671e66ad758ea31dc89d747838e20c2487",
+      "bytes": 1508
+    },
+    {
+      "upstream": "registry/bases/base/ui/input.tsx",
+      "sha256": "00213ec177e4556e69b6680128c18023d859a8e4eaf4106fbcf6abdc4f2c419b",
+      "bytes": 598
+    },
+    {
+      "upstream": "registry/bases/base/ui/textarea.tsx",
+      "sha256": "8f527c89dec40a9b372376dc93d2ebb149bfd82f209856d110ead1aabec19c6a",
+      "bytes": 446
+    },
+    {
+      "upstream": "registry/bases/base/ui/card.tsx",
+      "sha256": "0d525c03e086b0047f7c0700850281023359cfc020eb233fdb0d74ec870ebea0",
+      "bytes": 2031
+    },
+    {
+      "upstream": "registry/bases/base/ui/badge.tsx",
+      "sha256": "cad65ac68df79093dc7e9655a94cc60011a2f82b45fc42a0ad74a6e6323c4389",
+      "bytes": 1376
+    },
+    {
+      "upstream": "registry/bases/base/ui/separator.tsx",
+      "sha256": "9a80ff8c110e0c55489509f4f82ebcc929c0174b59544047147b7134f86a54e7",
+      "bytes": 535
+    },
+    {
+      "upstream": "registry/bases/base/ui/skeleton.tsx",
+      "sha256": "8fcbad84e494a75484a0975221fb40f54c4a7d68f79cfc305cb158d1feb1badf",
+      "bytes": 258
+    },
+    {
+      "upstream": "registry/bases/base/ui/checkbox.tsx",
+      "sha256": "67d7935d6fd74b026cd464acd0c4f60dd8519667364b4ca2c584c0c486c72f3a",
+      "bytes": 1022
+    },
+    {
+      "upstream": "registry/bases/base/ui/switch.tsx",
+      "sha256": "87aaf20b3209fabbcf0a9520c8b34733ddf2c91524c80ec72ed3dd3684f1bca3",
+      "bytes": 810
+    },
+    {
+      "upstream": "registry/bases/base/ui/radio-group.tsx",
+      "sha256": "c27fecb49f924d324d8c3d1354434508be0b59f202878d9713b8c1af1ebf5afa",
+      "bytes": 1129
+    },
+    {
+      "upstream": "registry/bases/base/ui/tabs.tsx",
+      "sha256": "1eda25325a7aae9184224247d837b94f98f162d4f697740cc2b1bd53bd35cec6",
+      "bytes": 3195
+    },
+    {
+      "upstream": "registry/bases/base/ui/select.tsx",
+      "sha256": "6348d30035b68867d5efffe9b0b1611718226bef9fdeef9554349d6b98252110",
+      "bytes": 5904
+    },
+    {
+      "upstream": "registry/bases/base/ui/popover.tsx",
+      "sha256": "935bab728b60fd867384ebc6097d6a46c937423e015503e0251999b686f38bb7",
+      "bytes": 2093
+    },
+    {
+      "upstream": "registry/bases/base/ui/tooltip.tsx",
+      "sha256": "dc5ec917d8276af9d66e7c951b0608d67c149bcb311072166bc8ce67ee2b7488",
+      "bytes": 1959
+    },
+    {
+      "upstream": "registry/bases/base/ui/progress.tsx",
+      "sha256": "00afc4c7f319f5f5e78c5e294250abc656e2f7e2839821b9e086555fbd91cd76",
+      "bytes": 1691
+    },
+    {
+      "upstream": "registry/bases/base/ui/scroll-area.tsx",
+      "sha256": "7e49845827447091a6493473779a05ba45cb8302e3703a6f9e4225dd6315cce2",
+      "bytes": 1478
+    },
+    {
+      "upstream": "registry/bases/base/ui/accordion.tsx",
+      "sha256": "2322a35cef124ca359476584e209bb21bc5c4b233b4dfdffc1a2c7a7839cad4f",
+      "bytes": 2743
+    },
+    {
+      "upstream": "registry/bases/base/ui/collapsible.tsx",
+      "sha256": "ead4349ff7b01d696ef89294a81d18ee1d3f732321398896462c834ab9b9e065",
+      "bytes": 658
+    },
+    {
+      "upstream": "registry/bases/base/ui/field.tsx",
+      "sha256": "e7305c507a3f777b0193045fdd5ebfb1c58020d3d8e0821cb9e8d19b203576b9",
+      "bytes": 5338
+    },
+    {
+      "upstream": "registry/bases/base/ui/avatar.tsx",
+      "sha256": "d9850dc6f9aaccf9f7aab3c730c3aef62b42ef8cd9404b2d7133f771e14a6cbd",
+      "bytes": 2676
+    },
+    {
+      "upstream": "registry/bases/base/ui/empty.tsx",
+      "sha256": "05c419160ac0226973f6f00d7d8865dc46645a75ea0697138992cdbc736efec4",
+      "bytes": 2276
+    },
+    {
+      "upstream": "registry/bases/base/ui/table.tsx",
+      "sha256": "77d15e11fcf1fb2f5e1b814aa64868e7644bb59c5e1498ecb93bcbdca1c7a070",
+      "bytes": 1965
+    },
+    {
+      "upstream": "registry/bases/base/ui/breadcrumb.tsx",
+      "sha256": "006bb74f110ce68ff5a0bc4846616561aada5f1df8dac042a2c8aef80d55ab73",
+      "bytes": 2973
+    },
+    {
+      "upstream": "registry/bases/base/ui/pagination.tsx",
+      "sha256": "71bc2c0a87e62898ddb261af9b9f66959dbd806dd231704c4b54c7452fc725c7",
+      "bytes": 3613
+    },
+    {
+      "upstream": "registry/bases/base/ui/dropdown-menu.tsx",
+      "sha256": "18c1829679694a9b9850afcabf1158a80ec3624fb5e03d0d4b13339b729e0503",
+      "bytes": 7461
+    },
+    {
+      "upstream": "registry/bases/base/ui/toggle.tsx",
+      "sha256": "b53df3a8d6ad7ae3853a5e72f8bbf11e39daababfc8b0e369347b355eb9af120",
+      "bytes": 1135
+    },
+    {
+      "upstream": "registry/bases/base/ui/toggle-group.tsx",
+      "sha256": "2562e00c69ad2ad15e4ce9fdbcf4c9cc42223b7ce7340db0ad3d203f23177c21",
+      "bytes": 2647
+    },
+    {
+      "upstream": "registry/bases/base/ui/spinner.tsx",
+      "sha256": "494f71fd2733709d0e43be44e3353d9df215b370137af0195251cbdfdcc9e17b",
+      "bytes": 531
+    },
+    {
+      "upstream": "registry/bases/base/ui/alert.tsx",
+      "sha256": "639c846b57885d8af4dbdf7ddab7b15fd4d392c051f7496c67e811154e7861d9",
+      "bytes": 1548
+    },
+    {
+      "upstream": "registry/bases/base/ui/dialog.tsx",
+      "sha256": "aba6df6cbf51a1edcc22e415a3a46a666fc8cb66729e47b3ed2ecd97f166adff",
+      "bytes": 3701
+    },
+    {
+      "upstream": "registry/bases/base/ui/sheet.tsx",
+      "sha256": "5816119da5f3468b0b91d2c65bcf6befe1d769b7867e236b9f18db83908581cb",
+      "bytes": 3922
+    }
+  ]
+}
